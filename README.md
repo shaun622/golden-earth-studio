@@ -18,6 +18,8 @@ Run `npm run check` for Astro and TypeScript validation, and `npm run build` to 
 3. Merge the approved change to `main`.
 4. Cloudflare builds and deploys `main`.
 
+Cloudflare Builds is connected to `shaun622/golden-earth-studio`. Production pushes run `npm run build` followed by `npx wrangler deploy`; other branches receive preview builds.
+
 The current homepage uses absolute links back to the live WordPress site for pages that have not been rebuilt yet. Replace these with local routes as each destination is migrated.
 
 Search indexing is disabled while this is a preview. Remove the `noindex` directive in `BaseLayout.astro` when the custom domain moves from WordPress to this build.
