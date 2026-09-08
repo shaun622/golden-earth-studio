@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from "astro:content";
+import ArtworkCard from "../../../components/ArtworkCard.astro";
+import ImageGallery from "../../../components/ImageGallery.astro";
+import ArtistLayout from "../../../layouts/ArtistLayout.astro";
+
+export async function getStaticPaths() {
+  const artists = await getCollection("artists");
+  return artists.map((artist) => ({ params: { artist: artist.data.slug }, props: { artist } }));
+}
+
+const { artist } = Astro.props;
+const { Content } = await render(artist);
+const artworks = await getCollection("artworks");
+const artworkById = new Map(artworks.map((entry) => [entry.data.id, entry.data]));
+const artistArtworks = artist.data.artworkIds.map((id) => artworkById.get(id)).filter(Boolean);
+---
+<ArtistLayout name={artist.data.name} description={artist.data.seoDescription} image={artist.data.portrait}>
+  <main id="content" class:list={["interior-main", "artist-page", `artist-page--${artist.data.profileVariant}`]}>
+    <section class="artist-profile">
+      <img class="artist-profile-portrait" src={artist.data.portrait} alt={`${artist.data.name} portrait`} width="900" height="1200" />
+      <div class="artist-profile-copy prose">
+        <p class="page-kicker">{artist.data.discipline}</p>
+        <h1>{artist.data.name}</h1>
+        <Content />
+        <p>For further information on pricing and availability, contact <a href="mailto:info@goldenearthstudio.co.uk">info@goldenearthstudio.co.uk</a>.</p>
+      </div>
+    </section>
+    {artist.data.studies.length > 0 && (
+      <section class="artist-studies" aria-labelledby="studies-heading">
+        <div class="section-heading-row"><h2 id="studies-heading">Material studies</h2><span></span></div>
+        <ImageGallery label={`${artist.data.name} material studies`} images={artist.data.studies.map((study) => ({ src: study.image, alt: study.caption, caption: study.caption }))} />
+      </section>
+    )}
+    {artistArtworks.length > 0 && (
+      <section class="artist-artworks" aria-labelledby="artist-artworks-heading">
+        <div class="section-heading-row"><h2 id="artist-artworks-heading">Artworks</h2><span></span></div>
+        <div class="catalogue-grid artwork-catalogue-grid">
+          {artistArtworks.map((artwork) => <ArtworkCard title={artwork!.title} artist={artwork!.artistName} image={artwork!.mainImage} href={`/gallery/${artwork!.id}/`} />)}
+        </div>
+      </section>
+    )}
+    <p class="back-link"><a href="/gallery/#artists">← Back to Artists</a></p>
+  </main>
+</ArtistLayout>

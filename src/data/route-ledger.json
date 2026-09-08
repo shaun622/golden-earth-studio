@@ -1,0 +1,95 @@
+{
+  "generated": [
+    "/",
+    "/gallery/",
+    "/collective/",
+    "/our-mission/",
+    "/journal/",
+    "/journal2/",
+    "/terms/",
+    "/privacy-policy/",
+    "/gallery/louis-vincent/",
+    "/gallery/jihyun-kim/",
+    "/gallery/jacob-chan/",
+    "/gallery/alexandra-yan-wong/",
+    "/gallery/adam-weismann/",
+    "/gallery/arran-gregory/",
+    "/gallery/zahed-tajeddin/",
+    "/gallery/rickie-cheuk/",
+    "/gallery/celia-dowson/",
+    "/gallery/eleanor-herbosch/",
+    "/gallery/louis-vincent/wall-panel-i/",
+    "/gallery/louis-vincent/plate/",
+    "/gallery/louis-vincent/conical-bowl/",
+    "/gallery/louis-vincent/bowl/",
+    "/gallery/louis-vincent/wall-panel-ii/",
+    "/gallery/jihyun-kim/teoju/",
+    "/gallery/jihyun-kim/small-teoju/",
+    "/gallery/jacob-chan/chess-set/",
+    "/gallery/jacob-chan/sake-set/",
+    "/gallery/jacob-chan/ginger-jar-2/",
+    "/gallery/jacob-chan/sake-bottle/",
+    "/gallery/jacob-chan/ginger-jar/",
+    "/gallery/jacob-chan/sake-bottle-2/",
+    "/gallery/alexandra-yan-wong/untitled-2025/",
+    "/gallery/adam-weismann/clay-2025/",
+    "/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/",
+    "/gallery/arran-gregory/heart-of-matter/",
+    "/gallery/zahed-tajeddin/bulls-matter/",
+    "/gallery/zahed-tajeddin/bowing-bull/",
+    "/gallery/zahed-tajeddin/elevation/",
+    "/gallery/zahed-tajeddin/stillness/",
+    "/gallery/rickie-cheuk/chopsticks/",
+    "/journal/were-hiring/",
+    "/journal/reframing-waste/",
+    "/journal/735kg-reclaimed/",
+    "/journal/ekta-bagri-residency/",
+    "/journal/subsurface-by-hal-strode/",
+    "/journal/arran-gregory-interview/",
+    "/journal/chp-masterclass/",
+    "/journal/london-craft-week/",
+    "/journal/ges-workshop-masterclass/",
+    "/journal/meet-olla-ceramics/",
+    "/journal/ceramics-monthly/",
+    "/journal/circular-ceramics/",
+    "/journal/excavation/",
+    "/journal/piling-begins/",
+    "/journal/grand-designs/",
+    "/journal/material-collection/",
+    "/journal/the-circular-economy-podcast/"
+  ],
+  "redirects": [
+    {
+      "from": "/directory/",
+      "to": "/gallery/",
+      "status": 301
+    },
+    {
+      "from": "/newsletter/",
+      "to": "/journal/",
+      "status": 301
+    },
+    {
+      "from": "/circular-ceramics-book/",
+      "to": "/journal/circular-ceramics/",
+      "status": 301
+    },
+    {
+      "from": "/grand-designs-live/",
+      "to": "/journal/grand-designs/",
+      "status": 301
+    },
+    {
+      "from": "/the-circular-economy-podcast/",
+      "to": "/journal/the-circular-economy-podcast/",
+      "status": 301
+    }
+  ],
+  "notFound": [
+    "/global-styles/",
+    "/glas-allt-shielf/",
+    "/the-art-relief-series/",
+    "/bear/",
+    "/hello-world/"
+  ]
+}

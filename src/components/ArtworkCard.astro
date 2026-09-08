@@ -4,14 +4,15 @@ interface Props {
   artist: string;
   image: string;
   href: string;
+  eager?: boolean;
 }
 
-const { title, artist, image, href } = Astro.props;
+const { title, artist, image, href, eager = false } = Astro.props;
 ---
 
 <article class="artwork-card">
   <a href={href} class="artwork-image-link" aria-label={`${title} by ${artist}`}>
-    <img src={image} alt={`${title} by ${artist}`} width="800" height="600" loading="lazy" />
+    <img src={image} alt={`${title} by ${artist}`} width="800" height="600" loading={eager ? "eager" : "lazy"} />
   </a>
   <h3><a href={href}>{title} <span>by {artist}</span></a></h3>
 </article>

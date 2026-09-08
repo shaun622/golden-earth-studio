@@ -1,0 +1,10 @@
+---
+interface Props { slug: string; title: string; date: string; image?: string | null; }
+const { slug, title, date, image } = Astro.props;
+---
+<article class="journal-card">
+  <a href={`/journal/${slug}/`} data-journal-open={slug}>
+    {image && <img src={image} alt="" width="800" height="950" loading="lazy" />}
+    <div><h2>{title}</h2><p>{date}</p></div>
+  </a>
+</article>

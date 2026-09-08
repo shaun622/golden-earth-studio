@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import ArtistCard from "../../components/ArtistCard.astro";
+import ArtworkCard from "../../components/ArtworkCard.astro";
+import ContactSection from "../../components/ContactSection.astro";
+import GalleryTabs from "../../components/GalleryTabs.astro";
+import InteriorLayout from "../../layouts/InteriorLayout.astro";
+import galleryOrder from "../../data/gallery.generated.json";
+
+const artists = await getCollection("artists");
+const artworks = await getCollection("artworks");
+const artistBySlug = new Map(artists.map((entry) => [entry.data.slug, entry.data]));
+const artworkById = new Map(artworks.map((entry) => [entry.data.id, entry.data]));
+---
+<InteriorLayout title="Gallery" description="Artists transforming construction by-products into fine art and functional ware.">
+  <main id="content" class="interior-main gallery-page">
+    <header class="page-intro page-intro--center">
+      <h1>Gallery</h1>
+      <p>Explore the artists who transform construction by-products into fine art and functional ware.</p>
+    </header>
+    <GalleryTabs>
+      <div slot="artists" class="catalogue-grid artist-catalogue-grid">
+        {galleryOrder.artistOrder.map((slug) => artistBySlug.get(slug)).filter(Boolean).map((artist) => (
+          <ArtistCard name={artist!.name} discipline={artist!.discipline} portrait={artist!.portrait} artwork={artist!.hoverImage} href={`/gallery/${artist!.slug}/`} />
+        ))}
+      </div>
+      <div slot="artwork" class="catalogue-grid artwork-catalogue-grid">
+        {galleryOrder.artworkOrder.map((id) => artworkById.get(id)).filter(Boolean).map((artwork, index) => (
+          <ArtworkCard title={artwork!.title} artist={artwork!.artistName} image={artwork!.mainImage} href={`/gallery/${artwork!.id}/`} eager={index < 3} />
+        ))}
+      </div>
+    </GalleryTabs>
+    <ContactSection variant="commission" />
+  </main>
+</InteriorLayout>

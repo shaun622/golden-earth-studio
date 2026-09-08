@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from "astro:content";
+import ArtworkCard from "../../../components/ArtworkCard.astro";
+import ContactForm from "../../../components/ContactForm.astro";
+import ImageGallery from "../../../components/ImageGallery.astro";
+import ArtworkLayout from "../../../layouts/ArtworkLayout.astro";
+
+export async function getStaticPaths() {
+  const artworks = await getCollection("artworks");
+  return artworks.map((artwork) => ({ params: { artist: artwork.data.artistSlug, artwork: artwork.data.slug }, props: { artwork } }));
+}
+
+const { artwork } = Astro.props;
+const { Content } = await render(artwork);
+const allArtworks = await getCollection("artworks");
+const artworkById = new Map(allArtworks.map((entry) => [entry.data.id, entry.data]));
+const related = artwork.data.relatedIds.map((id) => artworkById.get(id)).filter(Boolean);
+---
+<ArtworkLayout title={artwork.data.title} artist={artwork.data.artistName} description={artwork.data.seoDescription} image={artwork.data.mainImage}>
+  <main id="content" class="interior-main artwork-page">
+    <section class="artwork-detail">
+      <div class="artwork-detail-copy">
+        <p class="page-kicker"><a href={`/gallery/${artwork.data.artistSlug}/`}>{artwork.data.artistName}</a></p>
+        <h1>{artwork.data.title}</h1>
+        <dl class="artwork-facts">
+          {artwork.data.dimensions && <div><dt>Dimensions</dt><dd>{artwork.data.dimensions}</dd></div>}
+          {artwork.data.materials && <div><dt>Materials</dt><dd>{artwork.data.materials}</dd></div>}
+          {artwork.data.price && <div><dt>Price</dt><dd>{artwork.data.price}</dd></div>}
+        </dl>
+        <div class="prose"><Content /></div>
+        <section class="artwork-enquiry" aria-labelledby="enquire-heading">
+          <h2 id="enquire-heading">Enquire now</h2>
+          <ContactForm variant="artwork" artworkId={artwork.data.id} artworkTitle={artwork.data.title} />
+        </section>
+      </div>
+      <ImageGallery className="artwork-image-gallery" label={`${artwork.data.title} by ${artwork.data.artistName}`} images={artwork.data.gallery} />
+    </section>
+    {related.length > 0 && (
+      <section class="related-artworks" aria-labelledby="related-heading">
+        <div class="section-heading-row"><h2 id="related-heading">Related Artworks</h2><span></span></div>
+        <div class="catalogue-grid artwork-catalogue-grid">
+          {related.map((item) => <ArtworkCard title={item!.title} artist={item!.artistName} image={item!.mainImage} href={`/gallery/${item!.id}/`} />)}
+        </div>
+      </section>
+    )}
+  </main>
+</ArtworkLayout>

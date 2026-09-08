@@ -1,0 +1,21 @@
+---
+import { render } from "astro:content";
+interface Props { articles: Array<{ slug: string; title: string; date: string; image?: string | null; entry: any; legacyPopupId?: string | null }>; }
+const { articles } = Astro.props;
+const renderedArticles = await Promise.all(articles.map(async (article) => ({ ...article, Content: (await render(article.entry)).Content })));
+---
+<div data-journal-system>
+  {renderedArticles.map((article) => (
+    <template data-journal-template={article.slug} data-popup-id={article.legacyPopupId || undefined}>
+      <article class="journal-dialog-article">
+        {article.image && <img src={article.image} alt="" width="900" height="1100" loading="lazy" />}
+        <div class="prose"><p class="article-date">{article.date}</p><h2>{article.title}</h2><article.Content /></div>
+      </article>
+    </template>
+  ))}
+  <dialog class="journal-dialog" aria-label="Journal article">
+    <button type="button" class="dialog-close" data-journal-close>Close</button>
+    <div data-journal-content></div>
+  </dialog>
+</div>
+<script>import "../scripts/journal";</script>

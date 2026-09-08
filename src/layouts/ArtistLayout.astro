@@ -1,0 +1,8 @@
+---
+import InteriorLayout from "./InteriorLayout.astro";
+interface Props { name: string; description: string; image: string; }
+const { name, description, image } = Astro.props;
+---
+<InteriorLayout title={name} description={description} image={image} eyebrow="Artist">
+  <slot />
+</InteriorLayout>

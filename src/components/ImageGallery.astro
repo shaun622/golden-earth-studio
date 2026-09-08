@@ -1,0 +1,22 @@
+---
+interface ImageItem { src: string; alt: string; caption?: string; }
+interface Props { images: ImageItem[]; label: string; className?: string; }
+const { images, label, className = "" } = Astro.props;
+const galleryId = `lightbox-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+---
+<div class:list={["image-gallery", className]} data-lightbox>
+  <div class="image-gallery-grid">
+    {images.map((item, index) => (
+      <a href={item.src} data-lightbox-open data-alt={item.alt} data-caption={item.caption || item.alt} aria-label={`Open ${label} image ${index + 1}`}>
+        <img src={item.src} alt={item.alt} width="900" height="900" loading={index === 0 ? "eager" : "lazy"} />
+      </a>
+    ))}
+  </div>
+  <dialog id={galleryId} class="lightbox-dialog" aria-label={`${label} image viewer`}>
+    <button type="button" class="dialog-close" data-lightbox-close aria-label="Close image viewer">Close</button>
+    <button type="button" class="lightbox-step lightbox-step--previous" data-lightbox-step="-1" aria-label="Previous image">←</button>
+    <figure><img data-lightbox-image alt="" /><figcaption data-lightbox-caption></figcaption></figure>
+    <button type="button" class="lightbox-step lightbox-step--next" data-lightbox-step="1" aria-label="Next image">→</button>
+  </dialog>
+</div>
+<script>import "../scripts/lightbox";</script>
