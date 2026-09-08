@@ -1,0 +1,24 @@
+{
+  "id": 2464,
+  "kind": "page",
+  "title": "Newsletter",
+  "url": "https://goldenearthstudio.co.uk/newsletter/",
+  "slug": "newsletter",
+  "parent": 0,
+  "date": null,
+  "referenceFile": "content/2464.json",
+  "headings": [],
+  "text": "[newsletter]",
+  "links": [],
+  "images": [],
+  "referenceHtml": "<p>[newsletter]</p>\n",
+  "renderedEvidence": {
+    "headings": [
+      "Newsletter"
+    ],
+    "text": "Newsletter [newsletter]",
+    "links": [],
+    "images": [],
+    "referenceHtml": "<main id=\"content\" class=\"site-main post-2464 page type-page status-publish hentry\">\n\n\t\t\t<div class=\"page-header\">\n\t\t\t<h1 class=\"entry-title\">Newsletter</h1>\t\t</div>\n\t\n\t<div class=\"page-content\">\n\t\t<p>[newsletter]</p>\n\n\t\t\n\t\t\t</div>\n\n\t\n</main>"
+  }
+}
