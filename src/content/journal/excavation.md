@@ -3,9 +3,10 @@ id: "excavation"
 slug: "excavation"
 title: "Excavation"
 articleTitle: "Excavation Developments"
-indexDateLabel: "31 January 2022"
+indexDateLabel: "31| 01 | 2022"
 articleDateLabel: "31| 01 | 2022"
 displayOrder: 12
+cardImage: "/assets/migrated/journal/excavation-cover-7811a9b.webp"
 legacyPopupId: "2168"
 coverImage: "/assets/migrated/journal/excavation-cover-7811a9b.webp"
 showInIndex: true

@@ -3,9 +3,10 @@ id: "subsurface-by-hal-strode"
 slug: "subsurface-by-hal-strode"
 title: "Subsurface by Hal Strode"
 articleTitle: "Subsurface by Hal Strode"
-indexDateLabel: "16 September 2025"
+indexDateLabel: "16 | 09 | 2025"
 articleDateLabel: "16 | 09 | 2025"
 displayOrder: 4
+cardImage: "/assets/migrated/journal/subsurface-by-hal-strode-cover-724f0f8.webp"
 legacyPopupId: "4573"
 coverImage: "/assets/migrated/journal/subsurface-by-hal-strode-cover-724f0f8.webp"
 showInIndex: true

@@ -3,9 +3,10 @@ id: "london-craft-week"
 slug: "london-craft-week"
 title: "London Craft Week"
 articleTitle: "London Craft Week 2025"
-indexDateLabel: "12 May 2025"
+indexDateLabel: "12 | 05 | 2025"
 articleDateLabel: "12 | 05 | 2025"
 displayOrder: 7
+cardImage: "/assets/migrated/journal/london-craft-week-card-f9cdcd4.webp"
 legacyPopupId: "3708"
 coverImage: "/assets/migrated/journal/london-craft-week-cover-33a0a2a.webp"
 showInIndex: true

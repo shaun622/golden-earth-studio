@@ -9,12 +9,12 @@ const renderedArticles = await Promise.all(articles.map(async (article) => ({ ..
     <template data-journal-template={article.slug} data-popup-id={article.legacyPopupId || undefined}>
       <article class="journal-dialog-article">
         {article.image && <img src={article.image} alt="" width="900" height="1100" loading="lazy" />}
-        <div class="prose"><p class="article-date">{article.date}</p><h2>{article.title}</h2><article.Content /></div>
+        <div class="prose"><h2 class="journal-article-title">{article.title}</h2><p class="article-date">{article.date}</p><article.Content /></div>
       </article>
     </template>
   ))}
   <dialog class="journal-dialog" aria-label="Journal article">
-    <button type="button" class="dialog-close" data-journal-close>Close</button>
+    <button type="button" class="dialog-close" data-journal-close aria-label="Close article"><span aria-hidden="true">×</span></button>
     <div data-journal-content></div>
   </dialog>
 </div>

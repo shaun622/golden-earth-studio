@@ -3,9 +3,10 @@ id: "grand-designs"
 slug: "grand-designs"
 title: "Grand Designs"
 articleTitle: "Grand Designs Live Panel Talk"
-indexDateLabel: "8 May 2022"
+indexDateLabel: "08 | 05 | 2022"
 articleDateLabel: "08 | 05 | 2022"
 displayOrder: 14
+cardImage: "/assets/migrated/journal/grand-designs-cover-df87311.webp"
 legacyPopupId: "2096"
 coverImage: "/assets/migrated/journal/grand-designs-cover-df87311.webp"
 showInIndex: true

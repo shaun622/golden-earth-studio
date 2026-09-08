@@ -8,13 +8,14 @@ export async function getStaticPaths() {
 }
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const extraLinks = entry.data.externalLinks.filter((link) => !entry.body?.includes(link.href));
 ---
 <ArticleLayout title={entry.data.articleTitle} description={entry.data.seoDescription} image={entry.data.coverImage} date={entry.data.articleDateLabel}>
   <main id="content" class="interior-main article-page">
     <article class="article-shell">
       {entry.data.coverImage && <img class="article-cover" src={entry.data.coverImage} alt="" width="1100" height="1350" />}
-      <div class="article-copy prose"><p class="article-date">{entry.data.articleDateLabel}</p><h1>{entry.data.articleTitle}</h1><Content />
-        {entry.data.externalLinks.length > 0 && <p class="article-links">{entry.data.externalLinks.map((link) => <a class="text-link" href={link.href}>{link.text}</a>)}</p>}
+      <div class="article-copy prose"><h1>{entry.data.articleTitle}</h1><p class="article-date">{entry.data.articleDateLabel}</p><Content />
+        {extraLinks.length > 0 && <p class="article-links">{extraLinks.map((link) => <a class="text-link" href={link.href}>{link.text}</a>)}</p>}
       </div>
     </article>
     <p class="back-link"><a href="/journal/">← Back to Journal</a></p>

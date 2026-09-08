@@ -3,9 +3,10 @@ id: "ges-workshop-masterclass"
 slug: "ges-workshop-masterclass"
 title: "GES Workshop Masterclass"
 articleTitle: "GES Masterclass Workshop"
-indexDateLabel: "17 May 2025"
+indexDateLabel: "17 | 05 | 2025"
 articleDateLabel: "17 | 05 | 2025"
 displayOrder: 8
+cardImage: "/assets/migrated/journal/ges-workshop-masterclass-cover-8373f79.webp"
 legacyPopupId: "2503"
 coverImage: "/assets/migrated/journal/ges-workshop-masterclass-cover-8373f79.webp"
 showInIndex: true

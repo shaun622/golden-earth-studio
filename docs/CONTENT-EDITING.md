@@ -18,7 +18,7 @@ All public catalogue and Journal content lives in Markdown under `src/content`. 
 
 ## Add a Journal story
 
-1. Add `src/content/journal/<slug>.md` with the card title/date, article title/date, cover image, order, and Markdown body.
+1. Add `src/content/journal/<slug>.md` with the card title/date, article title/date, `cardImage` (landscape index image), `coverImage` (article image), order, and Markdown body. These images may be different. Keep card dates in the source `DD | MM | YYYY` format.
 2. Set `showInIndex: true` for a current Journal card. Leave `legacyPopupId: null` for new stories.
 3. Use ordinary Markdown links for external sources and keep long interviews complete in the body.
 

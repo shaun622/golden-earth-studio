@@ -4,11 +4,11 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/interior.css";
 
-interface Props { title: string; description: string; image?: string; eyebrow?: string; }
-const { title, description, image, eyebrow } = Astro.props;
+interface Props { title: string; description: string; image?: string; eyebrow?: string; className?: string; }
+const { title, description, image, eyebrow, className } = Astro.props;
 ---
 <BaseLayout title={`${title} – Golden Earth Studio`} description={description} image={image}>
-  <div class="interior-page">
+  <div class:list={["interior-page", className]}>
     <Header variant="interior" />
     {eyebrow && <p class="page-eyebrow">{eyebrow}</p>}
     <slot />

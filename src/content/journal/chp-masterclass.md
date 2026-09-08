@@ -3,9 +3,10 @@ id: "chp-masterclass"
 slug: "chp-masterclass"
 title: "CHP Masterclass"
 articleTitle: "County Hall Pottery Masterclass"
-indexDateLabel: "17 June 2025"
+indexDateLabel: "17 | 06 | 2025"
 articleDateLabel: "17 | 06 | 2025"
 displayOrder: 6
+cardImage: "/assets/migrated/journal/chp-masterclass-cover-2195916.webp"
 legacyPopupId: "3700"
 coverImage: "/assets/migrated/journal/chp-masterclass-cover-2195916.webp"
 showInIndex: true

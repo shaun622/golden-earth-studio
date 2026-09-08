@@ -3,9 +3,10 @@ id: "reframing-waste"
 slug: "reframing-waste"
 title: "Reframing Waste"
 articleTitle: "Reframing Waste"
-indexDateLabel: "12 November 2025"
+indexDateLabel: "12 | 11 | 2025"
 articleDateLabel: "12 | 11 | 2025"
 displayOrder: 1
+cardImage: "/assets/migrated/journal/reframing-waste-card-411d5c2.webp"
 legacyPopupId: "4586"
 coverImage: "/assets/migrated/journal/reframing-waste-cover-1b4f9bd.webp"
 showInIndex: true

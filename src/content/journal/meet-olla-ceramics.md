@@ -3,9 +3,10 @@ id: "meet-olla-ceramics"
 slug: "meet-olla-ceramics"
 title: "Meet Olla Ceramics"
 articleTitle: "Meet Olla Ceramics"
-indexDateLabel: "5 January 2025"
+indexDateLabel: "05 | 01 | 2025"
 articleDateLabel: "05 | 01 | 2025"
 displayOrder: 9
+cardImage: "/assets/migrated/journal/meet-olla-ceramics-card-da38784.webp"
 legacyPopupId: "2452"
 coverImage: "/assets/migrated/journal/meet-olla-ceramics-cover-be45884.webp"
 showInIndex: true

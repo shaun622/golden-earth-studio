@@ -528,12 +528,38 @@
     "status": "existing"
   },
   {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2026/01/Screenshot-2026-01-14-at-16.59.02.png",
+    "localPath": "/assets/migrated/journal/were-hiring-card-5b84b57.webp",
+    "alt": "We're Hiring",
+    "passthrough": false,
+    "bytes": 132676,
+    "sourceWidth": 1486,
+    "sourceHeight": 1232,
+    "width": 1486,
+    "height": 1232,
+    "format": "webp",
+    "status": "downloaded"
+  },
+  {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Copy-of-_DSC4157-2-scaled.jpg",
     "localPath": "/assets/migrated/journal/reframing-waste-cover-1b4f9bd.webp",
     "alt": "Reframing Waste",
     "passthrough": false,
     "bytes": 162862,
     "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.17.56.png",
+    "localPath": "/assets/migrated/journal/reframing-waste-card-411d5c2.webp",
+    "alt": "Reframing Waste",
+    "passthrough": false,
+    "bytes": 123006,
+    "sourceWidth": 1600,
+    "sourceHeight": 1062,
+    "width": 1600,
+    "height": 1062,
+    "format": "webp",
+    "status": "downloaded"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.19.35.png",
@@ -544,12 +570,38 @@
     "status": "existing"
   },
   {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.16.34.png",
+    "localPath": "/assets/migrated/journal/735kg-reclaimed-card-0f459c1.webp",
+    "alt": "735kg Reclaimed",
+    "passthrough": false,
+    "bytes": 68510,
+    "sourceWidth": 1600,
+    "sourceHeight": 1101,
+    "width": 1600,
+    "height": 1101,
+    "format": "webp",
+    "status": "downloaded"
+  },
+  {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.19.04.png",
     "localPath": "/assets/migrated/journal/ekta-bagri-residency-cover-9290b73.webp",
     "alt": "Ekta Bagri Residency",
     "passthrough": false,
     "bytes": 118918,
     "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.14.54.png",
+    "localPath": "/assets/migrated/journal/ekta-bagri-residency-card-0b376f6.webp",
+    "alt": "Ekta Bagri Residency",
+    "passthrough": false,
+    "bytes": 103010,
+    "sourceWidth": 1600,
+    "sourceHeight": 1063,
+    "width": 1600,
+    "height": 1063,
+    "format": "webp",
+    "status": "downloaded"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.00.01.png",
@@ -568,6 +620,19 @@
     "status": "existing"
   },
   {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/07/Screenshot-2025-07-17-at-12.31.27.png",
+    "localPath": "/assets/migrated/journal/arran-gregory-interview-card-68629c9.webp",
+    "alt": "Arran Gregory Interview",
+    "passthrough": false,
+    "bytes": 68566,
+    "sourceWidth": 606,
+    "sourceHeight": 848,
+    "width": 606,
+    "height": 848,
+    "format": "webp",
+    "status": "downloaded"
+  },
+  {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/07/Screenshot-2025-07-17-at-14.54.28.png",
     "localPath": "/assets/migrated/journal/chp-masterclass-cover-2195916.webp",
     "alt": "CHP Masterclass",
@@ -584,6 +649,19 @@
     "status": "existing"
   },
   {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/07/Screenshot-2025-07-17-at-15.08.02-1.png",
+    "localPath": "/assets/migrated/journal/london-craft-week-card-f9cdcd4.webp",
+    "alt": "London Craft Week",
+    "passthrough": false,
+    "bytes": 45656,
+    "sourceWidth": 556,
+    "sourceHeight": 742,
+    "width": 556,
+    "height": 742,
+    "format": "webp",
+    "status": "downloaded"
+  },
+  {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/04/Screenshot-2025-04-28-at-19.49.57.png",
     "localPath": "/assets/migrated/journal/ges-workshop-masterclass-cover-8373f79.webp",
     "alt": "GES Workshop Masterclass",
@@ -598,6 +676,19 @@
     "passthrough": false,
     "bytes": 47126,
     "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/01/Screenshot-2025-01-05-at-16.22.28.png",
+    "localPath": "/assets/migrated/journal/meet-olla-ceramics-card-da38784.webp",
+    "alt": "Meet Olla Ceramics",
+    "passthrough": false,
+    "bytes": 36584,
+    "sourceWidth": 980,
+    "sourceHeight": 1224,
+    "width": 980,
+    "height": 1224,
+    "format": "webp",
+    "status": "downloaded"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-15-at-11.01.34.jpeg",

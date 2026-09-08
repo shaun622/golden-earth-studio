@@ -3,9 +3,10 @@ id: "735kg-reclaimed"
 slug: "735kg-reclaimed"
 title: "735kg Reclaimed"
 articleTitle: "735kg Reclaimed"
-indexDateLabel: "29 October 2025"
+indexDateLabel: "29 | 10 | 2025"
 articleDateLabel: "29 | 10 | 2025"
 displayOrder: 2
+cardImage: "/assets/migrated/journal/735kg-reclaimed-card-0f459c1.webp"
 legacyPopupId: "4590"
 coverImage: "/assets/migrated/journal/735kg-reclaimed-cover-7832e95.webp"
 showInIndex: true

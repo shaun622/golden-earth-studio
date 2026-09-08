@@ -3,9 +3,10 @@ id: "piling-begins"
 slug: "piling-begins"
 title: "Piling Begins"
 articleTitle: "Piling Begins"
-indexDateLabel: "29 January 2022"
+indexDateLabel: "29 | 01 | 2022"
 articleDateLabel: "29 | 01 | 2022"
 displayOrder: 13
+cardImage: "/assets/migrated/journal/piling-begins-cover-99c2284.webp"
 legacyPopupId: "2164"
 coverImage: "/assets/migrated/journal/piling-begins-cover-99c2284.webp"
 showInIndex: true

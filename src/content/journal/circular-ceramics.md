@@ -3,9 +3,10 @@ id: "circular-ceramics"
 slug: "circular-ceramics"
 title: "Circular Ceramics"
 articleTitle: "Circular Ceramics"
-indexDateLabel: "1 April 2023"
+indexDateLabel: "01 | 04 | 2023"
 articleDateLabel: "01 | 04 | 2023"
 displayOrder: 11
+cardImage: "/assets/migrated/journal/circular-ceramics-cover-a55c951.webp"
 legacyPopupId: "2170"
 coverImage: "/assets/migrated/journal/circular-ceramics-cover-a55c951.webp"
 showInIndex: true

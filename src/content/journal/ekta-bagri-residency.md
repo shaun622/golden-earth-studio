@@ -3,9 +3,10 @@ id: "ekta-bagri-residency"
 slug: "ekta-bagri-residency"
 title: "Ekta Bagri Residency"
 articleTitle: "Ekta Bagri Residency"
-indexDateLabel: "5 October 2025"
+indexDateLabel: "05 | 10 | 2025"
 articleDateLabel: "05 | 10 | 2025"
 displayOrder: 3
+cardImage: "/assets/migrated/journal/ekta-bagri-residency-card-0b376f6.webp"
 legacyPopupId: "4580"
 coverImage: "/assets/migrated/journal/ekta-bagri-residency-cover-9290b73.webp"
 showInIndex: true

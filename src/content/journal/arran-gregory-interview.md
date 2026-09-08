@@ -3,9 +3,10 @@ id: "arran-gregory-interview"
 slug: "arran-gregory-interview"
 title: "Arran Gregory Interview"
 articleTitle: "Arran Gregory"
-indexDateLabel: "17 July 2025"
+indexDateLabel: "17 | 07 | 2025"
 articleDateLabel: "14 | 07 | 2025"
 displayOrder: 5
+cardImage: "/assets/migrated/journal/arran-gregory-interview-card-68629c9.webp"
 legacyPopupId: "3685"
 coverImage: "/assets/migrated/journal/arran-gregory-interview-cover-22801d0.webp"
 showInIndex: true

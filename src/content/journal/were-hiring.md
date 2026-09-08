@@ -3,9 +3,10 @@ id: "were-hiring"
 slug: "were-hiring"
 title: "We're Hiring"
 articleTitle: "We're Hiring"
-indexDateLabel: "14 January 2026"
+indexDateLabel: "14 | 01 | 2026"
 articleDateLabel: "14 | 01 | 20256"
 displayOrder: 0
+cardImage: "/assets/migrated/journal/were-hiring-card-5b84b57.webp"
 legacyPopupId: "4602"
 coverImage: "/assets/migrated/journal/were-hiring-cover-2bf5f93.webp"
 showInIndex: true

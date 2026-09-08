@@ -347,15 +347,31 @@ for (const [order, spec] of artistSpecs.entries()) {
   await fs.writeFile(path.join(contentRoot, "artists", `${spec.slug}.md`), `---\n${yamlFrontmatter(model)}\n---\n\n${body}\n`, "utf8");
 }
 
+const journalIndex = await readReference("content", 1947);
+const journalCards = new Map();
+for (const match of journalIndex.referenceHtml.matchAll(/<a class="elementor-cta" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
+  const fragment = decodeURIComponent(match[1]);
+  const settings = JSON.parse(Buffer.from(fragment.split("settings=")[1], "base64").toString());
+  const html = match[2];
+  journalCards.set(String(settings.id), {
+    title: cleanText(html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1]),
+    date: cleanText(html.match(/<div class="elementor-cta__description[^>]*>([\s\S]*?)<\/div>/)?.[1]),
+    image: html.match(/background-image:\s*url\(([^)]+)\)/)?.[1],
+  });
+}
+if (journalCards.size !== 16) throw new Error(`Expected 16 Journal cards, found ${journalCards.size}`);
 const journalModels = [];
 for (const [order, [popupId, slug, title, indexDateLabel]] of journalSpecs.entries()) {
+  const card = journalCards.get(String(popupId));
+  if (!card?.image || !card.title || !card.date) throw new Error(`Incomplete source Journal card ${popupId}`);
   const record = await readReference("popups", popupId);
   const body = journalBody(record);
   const coverImage = registerAsset(largestImage(record.images?.[0]), "journal", `${slug}-cover`, `${title}`);
   const articleTitle = record.headings?.[0] || title;
   const articleDateLabel = record.headings?.[1] || indexDateLabel;
   const model = {
-    id: slug, slug, title, articleTitle, indexDateLabel, articleDateLabel, displayOrder: order,
+    id: slug, slug, title: card.title, articleTitle, indexDateLabel: card.date, articleDateLabel, displayOrder: order,
+    cardImage: registerAsset(card.image, "journal", `${slug}-card`, card.title),
     legacyPopupId: String(popupId), coverImage, showInIndex: true, seoDescription: excerpt(body),
     externalLinks: (record.links || []).filter((link) => link.text && link.href), source: `popup ${popupId}`,
   };

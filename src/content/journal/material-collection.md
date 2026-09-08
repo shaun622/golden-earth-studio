@@ -3,9 +3,10 @@ id: "material-collection"
 slug: "material-collection"
 title: "Material Collection"
 articleTitle: "Material Collection"
-indexDateLabel: "17 February 2022"
+indexDateLabel: "17 | 02 | 2022"
 articleDateLabel: "17 | 02 | 2022"
 displayOrder: 15
+cardImage: "/assets/migrated/journal/material-collection-cover-cc6f6d9.webp"
 legacyPopupId: "2166"
 coverImage: "/assets/migrated/journal/material-collection-cover-cc6f6d9.webp"
 showInIndex: true
