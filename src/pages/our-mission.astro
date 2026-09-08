@@ -1,14 +1,23 @@
 ---
 import { getEntry, render } from "astro:content";
 import InteriorLayout from "../layouts/InteriorLayout.astro";
+import ImageGallery from "../components/ImageGallery.astro";
+import content from "../data/interior.generated.json";
+import "../styles/reference-pages.css";
 const page = await getEntry("pages", "our-mission");
 if (!page) throw new Error("Mission content missing");
 const { Content } = await render(page);
 ---
-<InteriorLayout title="Our Mission" description={page.data.description} image={page.data.images[0]}>
-  <main id="content" class="interior-main mission-page">
-    <header class="mission-statement"><p>“In the UK, 29 million tonnes of excavation waste is sent to landfill each year.”</p><cite>Environment Agency England</cite></header>
-    <section class="mission-body"><p class="page-kicker">Circulating construction waste into the hands of artists</p><h1>Our Mission</h1><div class="prose"><Content /></div></section>
-    <section id="about" class="founders-section"><div>{page.data.images[0] && <img src={page.data.images[0]} alt="Golden Earth Studio founders" width="1100" height="800" />}</div><div><p class="page-kicker">About</p><h2>Founders</h2><p>Golden Earth Studio was established by Sara Howard, a ceramicist and sustainable materials developer, and Gabriel Lau, founder of Golden Earth Developments. Their partnership formed a shared ambition to create systemic change and reduce the ecological impact of construction waste.</p></div></section>
+<InteriorLayout className="reference-interior" title="Our Mission" description={page.data.description} image={content.mission.background}>
+  <main id="content" class="interior-main mission-reference">
+    <header class="reference-intro"><div class="mission-quote" data-reveal><p>‘In the UK, 29 million tonnes of <em>excavation</em> waste <br />is sent to <em>landfill</em> each year'.</p><cite>Environment Agency England</cite></div></header>
+    <section class="mission-opening reference-photo" style={{ "--reference-background": `url(${content.mission.background})`, "--reference-mobile-background": `url(${content.mission.mobileBackground})` }} aria-labelledby="mission-heading">
+      <p class="mission-photo-caption" data-reveal><em>"Circulating</em> construction waste <br />into the hands of <em>artists"</em>.</p>
+      <div class="mission-opening-copy"><h1 id="mission-heading" data-reveal>Our Mission</h1><div data-reveal><Content /></div></div>
+    </section>
+    <section id="about" class="mission-founders" aria-labelledby="founders-heading">
+      <ImageGallery className="founder-portraits" label="Golden Earth Studio founders" images={page.data.images.map((src, i) => ({ src, alt: i === 0 ? "Sara Howard" : "Gabriel Lau" }))} />
+      <div class="mission-founders-copy"><h2 id="founders-heading" data-reveal>Founders</h2><p data-reveal>{content.mission.founders}</p></div>
+    </section>
   </main>
 </InteriorLayout>

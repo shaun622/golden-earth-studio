@@ -14,7 +14,7 @@ function initializeMotion() {
       entry.target.classList.add("is-visible");
       activeObserver.unobserve(entry.target);
     });
-  }, { rootMargin: "0px 0px -8%", threshold: 0.08 });
+  }, { rootMargin: document.querySelector(".reference-interior") ? "0px" : "0px 0px -8%", threshold: 0.08 });
   document.querySelectorAll("[data-reveal]").forEach((element) => observer?.observe(element));
 }
 

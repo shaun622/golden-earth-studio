@@ -1,14 +1,15 @@
 ---
-interface ImageItem { src: string; alt: string; caption?: string; }
-interface Props { images: ImageItem[]; label: string; className?: string; }
-const { images, label, className = "" } = Astro.props;
+interface ImageItem { src: string; alt: string; caption?: string; width?: number; height?: number; }
+interface Props { images: ImageItem[]; label: string; className?: string; masonry?: boolean; captions?: boolean; }
+const { images, label, className = "", masonry = false, captions = false } = Astro.props;
 const galleryId = `lightbox-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 ---
 <div class:list={["image-gallery", className]} data-lightbox>
-  <div class="image-gallery-grid">
+  <div class="image-gallery-grid" data-masonry={masonry || undefined}>
     {images.map((item, index) => (
       <a href={item.src} data-lightbox-open data-alt={item.alt} data-caption={item.caption || item.alt} aria-label={`Open ${label} image ${index + 1}`}>
-        <img src={item.src} alt={item.alt} width="900" height="900" loading={index === 0 ? "eager" : "lazy"} />
+        <img src={item.src} alt={item.alt} width={item.width || 900} height={item.height || 900} loading={index === 0 ? "eager" : "lazy"} />
+        {captions && <span class="image-gallery-caption" aria-hidden="true"><span>{item.caption?.split(" - ")[0]}<br />-</span><em>{item.caption?.split(" - ").slice(1).join(" - ")}</em></span>}
       </a>
     ))}
   </div>
@@ -20,3 +21,4 @@ const galleryId = `lightbox-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
   </dialog>
 </div>
 <script>import "../scripts/lightbox";</script>
+<script>import "../scripts/masonry";</script>

@@ -1,0 +1,233 @@
+{
+  "gallery": {
+    "artists": [
+      {
+        "href": "/gallery/louis-vincent/",
+        "label": "Louis Vincent | Wood",
+        "image": "/assets/migrated/artists/louis-vincent-portrait-9c2e8e0.webp",
+        "hoverImage": "/assets/migrated/gallery-index/1-hover-4880fed.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jihyun-kim/",
+        "label": "Jihyun Kim | Ceramic",
+        "image": "/assets/migrated/gallery-index/2-image-7d05675.webp",
+        "hoverImage": "/assets/migrated/gallery-index/2-hover-bdf2e37.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/",
+        "label": "Jacob Chan | Ceramic",
+        "image": "/assets/migrated/artists/jacob-chan-portrait-31361fa.webp",
+        "hoverImage": "/assets/migrated/gallery-index/3-hover-e0c1238.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/",
+        "label": "Alexandra Yan Wong | Painting",
+        "image": "/assets/migrated/artists/alexandra-yan-wong-portrait-434cdfe.webp",
+        "hoverImage": "/assets/migrated/gallery-index/4-hover-934a791.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/adam-weismann/",
+        "label": "Adam Weismann | Wall Art",
+        "image": "/assets/migrated/artists/adam-weismann-portrait-c8e6fd9.webp",
+        "hoverImage": "/assets/migrated/gallery-index/5-hover-4f8a319.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/",
+        "label": "Arran Gregory | Clay",
+        "image": "/assets/migrated/gallery-index/6-image-f38b317.webp",
+        "hoverImage": "/assets/migrated/gallery-index/6-hover-242b117.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/zahed-tajeddin/",
+        "label": "Zahed Tajeddin | Ceramic",
+        "image": "/assets/migrated/artists/zahed-tajeddin-portrait-3342aa6.webp",
+        "hoverImage": "/assets/migrated/gallery-index/7-hover-99092eb.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/rickie-cheuk/",
+        "label": "Rickie Cheuk | Metal",
+        "image": "/assets/migrated/artists/rickie-cheuk-portrait-6a418ff.webp",
+        "hoverImage": "/assets/migrated/gallery-index/8-hover-477eeb4.webp",
+        "objectPosition": "center"
+      }
+    ],
+    "artworks": [
+      {
+        "href": "/gallery/jacob-chan/chess-set/",
+        "label": "Chess Set by Jacob Chan",
+        "image": "/assets/migrated/gallery-index/9-image-e4c0812.webp",
+        "hoverImage": "/assets/migrated/gallery-index/9-hover-ef11596.webp",
+        "objectPosition": "right center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/untitled-2025/",
+        "label": "Untitled by Alexandra Yan Wong",
+        "image": "/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp",
+        "hoverImage": "/assets/migrated/gallery-index/10-hover-d3ac5d9.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/bowl/",
+        "label": "Bowl by Louis Vincent",
+        "image": "/assets/migrated/gallery-index/11-image-0b5b4a8.webp",
+        "hoverImage": "/assets/migrated/gallery-index/11-hover-3efa2f9.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/wall-panel-i/",
+        "label": "Wall Panel I by Louis Vincent",
+        "image": "/assets/migrated/gallery-index/12-image-f308329.webp",
+        "hoverImage": "/assets/migrated/gallery-index/12-hover-9647137.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jihyun-kim/teoju/",
+        "label": "Teoju by Jihyun Kim",
+        "image": "/assets/migrated/gallery-index/13-image-cf1090d.webp",
+        "hoverImage": "/assets/migrated/gallery-index/13-hover-3fc58f4.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/",
+        "label": "The Universe Was An Egg Which Cracked by Arran Gregory",
+        "image": "/assets/migrated/artworks/arran-gregory/the-universe-was-an-egg-which-cracked-main-48ae385.webp",
+        "hoverImage": "/assets/migrated/gallery-index/14-hover-c09bbb7.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/sake-set/",
+        "label": "Sake Set by Jacob Chan",
+        "image": "/assets/migrated/gallery-index/15-image-58fd9f0.webp",
+        "hoverImage": "/assets/migrated/gallery-index/15-hover-1cb5143.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/zahed-tajeddin/bowing-bull/",
+        "label": "Bowing Bull by Zahed Tajeddin",
+        "image": "/assets/migrated/gallery-index/16-image-0ac5517.webp",
+        "hoverImage": "/assets/migrated/gallery-index/16-hover-6855df4.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/adam-weismann/clay-2025/",
+        "label": "Clay 1666 by Adam Weismann",
+        "image": "/assets/migrated/artworks/adam-weismann/clay-2025-main-76729cf.webp",
+        "hoverImage": "/assets/migrated/gallery-index/17-hover-811d573.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/conical-bowl/",
+        "label": "Conical Bowl by Louis Vincent",
+        "image": "/assets/migrated/gallery-index/18-image-e213e9f.webp",
+        "hoverImage": "/assets/migrated/gallery-index/18-hover-83571a4.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/zahed-tajeddin/bulls-matter/",
+        "label": "Bull's Matter by Zahed Tejeddin",
+        "image": "/assets/migrated/gallery-index/19-image-8b48e74.webp",
+        "hoverImage": "/assets/migrated/gallery-index/19-hover-2b90fe2.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jihyun-kim/small-teoju/",
+        "label": "Small Teoju by Jihyun Kim",
+        "image": "/assets/migrated/artworks/jihyun-kim/small-teoju-main-9f1d8e8.webp",
+        "hoverImage": "/assets/migrated/gallery-index/20-hover-0cb7f93.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/ginger-jar-2/",
+        "label": "Ginger Jar by Jacob Chan",
+        "image": "/assets/migrated/gallery-index/21-image-377afcc.webp",
+        "hoverImage": "/assets/migrated/artworks/jacob-chan/ginger-jar-2-2-06e1986.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/rickie-cheuk/chopsticks/",
+        "label": "Chopsticks by Rickie Cheuk",
+        "image": "/assets/migrated/gallery-index/22-image-f9dbb57.webp",
+        "hoverImage": "/assets/migrated/artworks/rickie-cheuk/chopsticks-5-ddd859a.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/wall-panel-ii/",
+        "label": "Wall Panel II by Louis Vincent",
+        "image": "/assets/migrated/gallery-index/23-image-f28c30f.webp",
+        "hoverImage": "/assets/migrated/gallery-index/23-hover-76113e0.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/plate/",
+        "label": "Plate by Louis Vincent",
+        "image": "/assets/migrated/artworks/louis-vincent/plate-main-a9fb884.webp",
+        "hoverImage": "/assets/migrated/artworks/louis-vincent/plate-2-9f805c0.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/sake-bottle-2/",
+        "label": "Sake Bottle by Jacob Chan",
+        "image": "/assets/migrated/gallery-index/25-image-432ad2e.webp",
+        "hoverImage": "/assets/migrated/gallery-index/25-hover-656fe46.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/heart-of-matter/",
+        "label": "Heart of Matter by Arran Gregory",
+        "image": "/assets/migrated/artworks/arran-gregory/heart-of-matter-main-0ef6c25.webp",
+        "hoverImage": "/assets/migrated/gallery-index/26-hover-925694e.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/sake-bottle/",
+        "label": "Sake Bottle by Jacob Chan",
+        "image": "/assets/migrated/gallery-index/27-image-2edd135.webp",
+        "hoverImage": "/assets/migrated/gallery-index/27-hover-973fb14.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/zahed-tajeddin/elevation/",
+        "label": "Elevation by Zahed Tajeddin",
+        "image": "/assets/migrated/gallery-index/28-image-22b9f11.webp",
+        "hoverImage": "/assets/migrated/gallery-index/28-hover-fc59d4e.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/ginger-jar/",
+        "label": "Ginger Jar by Jacob Chan",
+        "image": "/assets/migrated/gallery-index/29-image-acd64bb.webp",
+        "hoverImage": "/assets/migrated/gallery-index/29-hover-9bfe751.webp",
+        "objectPosition": "center"
+      }
+    ],
+    "commission": [
+      "Golden Earth Studio offers a bespoke commission service that utilises the construction byproducts of our clients’ homes. To explore the possibilities of commissioning a unique piece of artwork to compliments your interior space, get in touch via our contact form or email.",
+      "info@goldenearthstudio.co.uk"
+    ]
+  },
+  "collective": {
+    "background": "/assets/migrated/pages/424-background-2445ec2.webp",
+    "mobileBackground": "/assets/migrated/pages/424-mobile-background-93a3f80.webp",
+    "paragraphs": [
+      "Local artists, ceramicists, students and communities, made their way to our construction site in Wimbledon to reclaim construction by -products and transform the material through their unique practices.",
+      "Emphasising the issue of displaced material through art to create a conversation. Our goal as a collective is to help facilitate artists and makers, both established and emerging, to work in more sustainable ways, continuing to fuel the conversation of the circular economy",
+      "From 3D printed ceramic lamps, to natural dies for fabrics,\nwe are in awe of how our waste has been reimagined.",
+      "With each new construction project, Golden Earth Studio invites creatives from all backgrounds to collect free clay, make, and sell their works through GES.",
+      "We understand there’s some uncertainty around using non-commercial clays. That’s why we are creating ‘The Clay Zine’. A compilation of knowledge on how creatives utilise the material in their practice. This zine aims to demystify the challenges and spark inspiration for others to take the first step. To submit a contribution to this publication, fill out this form:",
+      "https://forms.gle/ZJZKaECPYKiSs7bw8",
+      "Check our instagram bio for links to available clay collections, We share all opportunities via our instagram platform, so keep an eye on our page for any updates!"
+    ]
+  },
+  "mission": {
+    "background": "/assets/migrated/pages/600-background-2948cb8.webp",
+    "mobileBackground": "/assets/migrated/pages/424-mobile-background-93a3f80.webp",
+    "founders": "Golden Earth Studio was established by Sara Howard, a\nceramicist and sustainable materials developer, and Gabriel Lau,\nfounder of Golden Earth Developments. The partnership began\nat a London ceramic atelier, where shared challenges in working\nwith the others industry formed a mutual ambition for creating\nsystemic change and mitigate the ecological impact of waste."
+  }
+}

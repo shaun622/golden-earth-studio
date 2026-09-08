@@ -1,0 +1,3243 @@
+.elementor-333 .elementor-element.elementor-element-4fed3b6{--display:flex;--min-height:40vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;}.elementor-333 .elementor-element.elementor-element-1ae00cf{--display:flex;}.elementor-333 .elementor-element.elementor-element-ab496e8{--display:flex;--min-height:40vh;--flex-direction:row-reverse;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap-reverse;--gap:0px 0px;--row-gap:0px;--column-gap:0px;}.elementor-333 .elementor-element.elementor-element-a0c72a2{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:flex-end;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--padding-top:0%;--padding-bottom:3%;--padding-left:0%;--padding-right:0%;}.elementor-widget-heading .eael-protected-content-message{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .protected-content-error-msg{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-size:var( --e-global-typography-primary-font-size );font-weight:var( --e-global-typography-primary-font-weight );text-transform:var( --e-global-typography-primary-text-transform );font-style:var( --e-global-typography-primary-font-style );text-decoration:var( --e-global-typography-primary-text-decoration );line-height:var( --e-global-typography-primary-line-height );letter-spacing:var( --e-global-typography-primary-letter-spacing );word-spacing:var( --e-global-typography-primary-word-spacing );color:var( --e-global-color-primary );}.elementor-333 .elementor-element.elementor-element-a1eb9c3 > .elementor-widget-container{margin:0% 0% 0% 30%;}.elementor-333 .elementor-element.elementor-element-a1eb9c3{text-align:start;}.elementor-333 .elementor-element.elementor-element-a1eb9c3 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:22px;font-weight:300;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:0px;word-spacing:0px;color:var( --e-global-color-secondary );}.elementor-333 .elementor-element.elementor-element-1f5608b{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:flex-end;}.elementor-333 .elementor-element.elementor-element-52275c4{--display:flex;}.elementor-widget-nested-tabs.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs[data-touch-mode='false'] > .e-n-tabs-heading > .e-n-tab-title[aria-selected="false"]:hover{background:var( --e-global-color-accent );}.elementor-widget-nested-tabs.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > .e-n-tab-title[aria-selected="true"], .elementor-widget-nested-tabs.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs[data-touch-mode='true'] > .e-n-tabs-heading > .e-n-tab-title[aria-selected="false"]:hover{background:var( --e-global-color-accent );}.elementor-widget-nested-tabs .eael-protected-content-message{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs .protected-content-error-msg{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > :is( .e-n-tab-title > .e-n-tab-title-text, .e-n-tab-title ){font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );text-transform:var( --e-global-typography-accent-text-transform );font-style:var( --e-global-typography-accent-font-style );text-decoration:var( --e-global-typography-accent-text-decoration );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-nested-tabs{--n-tabs-title-font-size:var( --e-global-typography-accent-font-size );}.elementor-333 .elementor-element.elementor-element-c7502ba{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-333 .elementor-element.elementor-element-cc570ce{--display:flex;}.elementor-widget-divider{--divider-color:var( --e-global-color-secondary );}.elementor-widget-divider .eael-protected-content-message{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .protected-content-error-msg{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .elementor-divider__text{color:var( --e-global-color-secondary );font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-secondary );}.elementor-widget-divider.elementor-view-framed .elementor-icon, .elementor-widget-divider.elementor-view-default .elementor-icon{color:var( --e-global-color-secondary );border-color:var( --e-global-color-secondary );}.elementor-widget-divider.elementor-view-framed .elementor-icon, .elementor-widget-divider.elementor-view-default .elementor-icon svg{fill:var( --e-global-color-secondary );}.elementor-333 .elementor-element.elementor-element-876c5b0{--divider-border-style:solid;--divider-color:#000;--divider-border-width:1px;}.elementor-333 .elementor-element.elementor-element-876c5b0 > .elementor-widget-container{margin:-3% 0% 2% 0%;padding:0px 0px 0px 0px;}.elementor-333 .elementor-element.elementor-element-876c5b0 .elementor-divider-separator{width:96%;margin:0 auto;margin-center:0;}.elementor-333 .elementor-element.elementor-element-876c5b0 .elementor-divider{text-align:center;padding-block-start:15px;padding-block-end:15px;}.elementor-333 .elementor-element.elementor-element-2f19501{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-27d9211{--display:flex;}.elementor-333 .elementor-element.elementor-element-27d9211.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-widget-image .eael-protected-content-message{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .protected-content-error-msg{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );text-transform:var( --e-global-typography-text-text-transform );font-style:var( --e-global-typography-text-font-style );text-decoration:var( --e-global-typography-text-text-decoration );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-333 .elementor-element.elementor-element-d3470bb img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-7efcd91 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-b011b03{--display:flex;}.elementor-333 .elementor-element.elementor-element-b011b03.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-9f2fd8a img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-779a2eb .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-37fcd5b{--display:flex;}.elementor-333 .elementor-element.elementor-element-37fcd5b.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-97350ba img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-af1b7c1 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-f2768b6{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-9a8d290{--display:flex;}.elementor-333 .elementor-element.elementor-element-9a8d290.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-3efe04a img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-74bba1a .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-241499e{--display:flex;}.elementor-333 .elementor-element.elementor-element-241499e.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-347c244 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-554bda8 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-5547743{--display:flex;}.elementor-333 .elementor-element.elementor-element-5547743.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-561a9ce img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-e4188dc .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-9292229{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-14d31e1{--display:flex;}.elementor-333 .elementor-element.elementor-element-14d31e1.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-28d54d7 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-cfef1f4 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-17b704b{--display:flex;}.elementor-333 .elementor-element.elementor-element-17b704b.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-6035bf4 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-6701283 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-2cb252c{--display:flex;}.elementor-333 .elementor-element.elementor-element-2cb252c.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-e86175f{--display:flex;}.elementor-333 .elementor-element.elementor-element-24766e7{--display:flex;}.elementor-333 .elementor-element.elementor-element-1f282df{--divider-border-style:solid;--divider-color:#000;--divider-border-width:1px;}.elementor-333 .elementor-element.elementor-element-1f282df > .elementor-widget-container{margin:-3% 0% 2% 0%;padding:0px 0px 0px 0px;}.elementor-333 .elementor-element.elementor-element-1f282df .elementor-divider-separator{width:96%;margin:0 auto;margin-center:0;}.elementor-333 .elementor-element.elementor-element-1f282df .elementor-divider{text-align:center;padding-block-start:15px;padding-block-end:15px;}.elementor-333 .elementor-element.elementor-element-88e00a2{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-261cd85{--display:flex;}.elementor-333 .elementor-element.elementor-element-261cd85.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-394f212 img{width:100%;height:600px;object-fit:cover;object-position:center right;}.elementor-333 .elementor-element.elementor-element-7fe6d6c .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-c5a2e30{--display:flex;}.elementor-333 .elementor-element.elementor-element-c5a2e30.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-be84560 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-9338e7d .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-7a7922a{--display:flex;}.elementor-333 .elementor-element.elementor-element-7a7922a.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-6a9ccf0 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-a958377 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-8e8ee9a{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-00c7279{--display:flex;}.elementor-333 .elementor-element.elementor-element-00c7279.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-5e48b38 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-fd968ea .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-6d9ecd9{--display:flex;}.elementor-333 .elementor-element.elementor-element-6d9ecd9.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-c7f57a9 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-8944784 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-7adab66{--display:flex;}.elementor-333 .elementor-element.elementor-element-7adab66.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-474a176 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-135c385 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:21px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-e851d20{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-7c7b4d6{--display:flex;}.elementor-333 .elementor-element.elementor-element-7c7b4d6.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-b376d04 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-1b85e3a .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-41d3e1d{--display:flex;}.elementor-333 .elementor-element.elementor-element-41d3e1d.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-bcdc906 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-20edc9a .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-4eacf27{--display:flex;}.elementor-333 .elementor-element.elementor-element-4eacf27.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-adb2b38 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-7c70113 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-4b47571{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-d7203cc{--display:flex;}.elementor-333 .elementor-element.elementor-element-d7203cc.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-7ad5ace img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-1c007ad .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-64bddf9{--display:flex;}.elementor-333 .elementor-element.elementor-element-64bddf9.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-3d8da7e img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-859d6db .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-d0d51ad{--display:flex;}.elementor-333 .elementor-element.elementor-element-d0d51ad.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-e034356 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-fe93299 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-c36970a{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-e2bfa99{--display:flex;}.elementor-333 .elementor-element.elementor-element-e2bfa99.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-11ede06 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-d45d117 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-f4d933f{--display:flex;}.elementor-333 .elementor-element.elementor-element-f4d933f.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-dd83b4a img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-95c970a .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-1a84f1f{--display:flex;}.elementor-333 .elementor-element.elementor-element-1a84f1f.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-2cd35d9 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-84541b8 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-8c0b4e4{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-3149f87{--display:flex;}.elementor-333 .elementor-element.elementor-element-3149f87.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-a542dc3 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-f8ee8cd .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-a00cf9f{--display:flex;}.elementor-333 .elementor-element.elementor-element-a00cf9f.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-ae2f3de img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-66c98cd .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-c9ce5a0{--display:flex;}.elementor-333 .elementor-element.elementor-element-c9ce5a0.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-c9c2e0a img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-f054992 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-ea81e34{--display:flex;--min-height:50vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-around;--gap:4% 4%;--row-gap:4%;--column-gap:4%;--margin-top:0%;--margin-bottom:3%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-9992979{--display:flex;}.elementor-333 .elementor-element.elementor-element-9992979.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-4c5e058 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-641073d .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-a31dbcf{--display:flex;}.elementor-333 .elementor-element.elementor-element-a31dbcf.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-c8984cd img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-66a78a1 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-ef74ce8{--display:flex;}.elementor-333 .elementor-element.elementor-element-ef74ce8.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-df69c35 img{width:100%;height:600px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-05be328 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:4px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-d550208{--n-tabs-heading-justify-content:flex-start;--n-tabs-title-width:initial;--n-tabs-title-height:initial;--n-tabs-title-align-items:flex-start;--n-tabs-title-flex-grow:0;--n-tabs-heading-wrap:wrap;--n-tabs-heading-overflow-x:initial;--n-tabs-title-white-space:initial;--n-tabs-title-justify-content:flex-start;--n-tabs-title-text-align:start;--n-tabs-title-gap:0px;--n-tabs-gap:2em;--n-tabs-title-font-size:17px;--n-tabs-title-color:#595952;--n-tabs-title-color-active:var( --e-global-color-8b20943 );}.elementor-333 .elementor-element.elementor-element-d550208 > .elementor-widget-container{border-style:none;}.elementor-333 .elementor-element.elementor-element-d550208.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > .e-n-tab-title[aria-selected="false"]:not( :hover ){border-style:solid;border-width:0px 0px 0px 0px;border-color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-d550208.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs[data-touch-mode='false'] > .e-n-tabs-heading > .e-n-tab-title[aria-selected="false"]:hover{border-style:solid;border-width:0px 0px 0px 0px;border-color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-d550208.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > .e-n-tab-title[aria-selected="true"], .elementor-333 .elementor-element.elementor-element-d550208.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs[data-touch-mode='true'] > .e-n-tabs-heading > .e-n-tab-title[aria-selected="false"]:hover{border-style:solid;border-width:0px 0px 0px 0px;border-color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-d550208.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > :is( .e-n-tab-title > .e-n-tab-title-text, .e-n-tab-title ){font-family:"Baskervville", Sans-serif;font-weight:500;text-transform:capitalize;font-style:normal;text-decoration:none;line-height:1em;letter-spacing:1px;word-spacing:0px;}.elementor-333 .elementor-element.elementor-element-d550208 [data-touch-mode="false"] .e-n-tab-title[aria-selected="false"]:hover{--n-tabs-title-color-hover:var( --e-global-color-8b20943 );}.elementor-333 .elementor-element.elementor-element-fc26c6e{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--margin-top:15%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:0%;--padding-bottom:0%;--padding-left:0%;--padding-right:0%;}.elementor-333 .elementor-element.elementor-element-cf9caf3{--display:flex;}.elementor-333 .elementor-element.elementor-element-cf9caf3.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-274d138{--display:flex;}.elementor-333 .elementor-element.elementor-element-274d138.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-abb66d3{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;text-align:start;}.elementor-333 .elementor-element.elementor-element-abb66d3 > .elementor-widget-container{margin:0% 7% 0% 0%;padding:0px 0px 0px 0px;}.elementor-333 .elementor-element.elementor-element-abb66d3.elementor-element{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-abb66d3 .elementor-heading-title{font-family:"Baskervville", Sans-serif;font-size:22px;font-weight:400;text-transform:none;font-style:normal;text-decoration:none;line-height:44px;letter-spacing:0px;word-spacing:0px;color:var( --e-global-color-text );}.elementor-widget-text-editor .eael-protected-content-message{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor .protected-content-error-msg{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );text-transform:var( --e-global-typography-text-text-transform );font-style:var( --e-global-typography-text-font-style );text-decoration:var( --e-global-typography-text-text-decoration );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-333 .elementor-element.elementor-element-5a2fbb7 > .elementor-widget-container{margin:2% 0% 0% 0%;padding:0% 15% 0% 0%;}.elementor-333 .elementor-element.elementor-element-5a2fbb7{font-family:"Gills Sans MT Light", Sans-serif;font-size:14px;font-weight:300;text-transform:none;font-style:normal;text-decoration:none;line-height:1.6em;letter-spacing:1px;word-spacing:0px;}.elementor-333 .elementor-element.elementor-element-002bdfa{--display:flex;}.elementor-widget-form .eael-protected-content-message{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .protected-content-error-msg{font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );font-style:var( --e-global-typography-secondary-font-style );text-decoration:var( --e-global-typography-secondary-text-decoration );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .elementor-field-group > label, .elementor-widget-form .elementor-field-subgroup label{color:var( --e-global-color-text );}.elementor-widget-form .elementor-field-group > label{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );text-transform:var( --e-global-typography-text-text-transform );font-style:var( --e-global-typography-text-font-style );text-decoration:var( --e-global-typography-text-text-decoration );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-type-html{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );text-transform:var( --e-global-typography-text-text-transform );font-style:var( --e-global-typography-text-font-style );text-decoration:var( --e-global-typography-text-text-decoration );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-group .elementor-field{color:var( --e-global-color-text );}.elementor-widget-form .elementor-field-group .elementor-field, .elementor-widget-form .elementor-field-subgroup label{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );text-transform:var( --e-global-typography-text-text-transform );font-style:var( --e-global-typography-text-font-style );text-decoration:var( --e-global-typography-text-text-decoration );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-button{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-size:var( --e-global-typography-accent-font-size );font-weight:var( --e-global-typography-accent-font-weight );text-transform:var( --e-global-typography-accent-text-transform );font-style:var( --e-global-typography-accent-font-style );text-decoration:var( --e-global-typography-accent-text-decoration );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .e-form__buttons__wrapper__button-next{background-color:var( --e-global-color-accent );}.elementor-widget-form .elementor-button[type="submit"]{background-color:var( --e-global-color-accent );}.elementor-widget-form .e-form__buttons__wrapper__button-previous{background-color:var( --e-global-color-accent );}.elementor-widget-form .elementor-message{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );text-transform:var( --e-global-typography-text-text-transform );font-style:var( --e-global-typography-text-font-style );text-decoration:var( --e-global-typography-text-text-decoration );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .e-form__indicators__indicator, .elementor-widget-form .e-form__indicators__indicator__label{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-size:var( --e-global-typography-accent-font-size );font-weight:var( --e-global-typography-accent-font-weight );text-transform:var( --e-global-typography-accent-text-transform );font-style:var( --e-global-typography-accent-font-style );text-decoration:var( --e-global-typography-accent-text-decoration );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form{--e-form-steps-indicator-inactive-primary-color:var( --e-global-color-text );--e-form-steps-indicator-active-primary-color:var( --e-global-color-accent );--e-form-steps-indicator-completed-primary-color:var( --e-global-color-accent );--e-form-steps-indicator-progress-color:var( --e-global-color-accent );--e-form-steps-indicator-progress-background-color:var( --e-global-color-text );--e-form-steps-indicator-progress-meter-color:var( --e-global-color-text );}.elementor-widget-form .e-form__indicators__indicator__progress__meter{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-size:var( --e-global-typography-accent-font-size );font-weight:var( --e-global-typography-accent-font-weight );text-transform:var( --e-global-typography-accent-text-transform );font-style:var( --e-global-typography-accent-font-style );text-decoration:var( --e-global-typography-accent-text-decoration );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-333 .elementor-element.elementor-element-921ca55{width:var( --container-widget-width, 99.851% );max-width:99.851%;--container-widget-width:99.851%;--container-widget-flex-grow:0;--e-form-steps-indicators-spacing:20px;--e-form-steps-indicator-padding:30px;--e-form-steps-indicator-inactive-secondary-color:#ffffff;--e-form-steps-indicator-active-secondary-color:#ffffff;--e-form-steps-indicator-completed-secondary-color:#ffffff;--e-form-steps-divider-width:1px;--e-form-steps-divider-gap:10px;}.elementor-333 .elementor-element.elementor-element-921ca55.elementor-element{--flex-grow:0;--flex-shrink:0;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group{padding-right:calc( 20px/2 );padding-left:calc( 20px/2 );margin-bottom:30px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-form-fields-wrapper{margin-left:calc( -20px/2 );margin-right:calc( -20px/2 );margin-bottom:-30px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group.recaptcha_v3-bottomleft, .elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group.recaptcha_v3-bottomright{margin-bottom:0;}body.rtl .elementor-333 .elementor-element.elementor-element-921ca55 .elementor-labels-inline .elementor-field-group > label{padding-left:0px;}body:not(.rtl) .elementor-333 .elementor-element.elementor-element-921ca55 .elementor-labels-inline .elementor-field-group > label{padding-right:0px;}body .elementor-333 .elementor-element.elementor-element-921ca55 .elementor-labels-above .elementor-field-group > label{padding-bottom:0px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group > label{font-family:"Baskervville", Sans-serif;font-size:20px;font-weight:300;text-transform:none;font-style:normal;text-decoration:none;line-height:23px;letter-spacing:0px;word-spacing:0px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-type-html{padding-bottom:0px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group .elementor-field, .elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-subgroup label{font-family:"Baskervville", Sans-serif;font-size:14px;font-weight:300;text-transform:none;font-style:normal;text-decoration:none;line-height:23px;letter-spacing:0px;word-spacing:0px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group .elementor-field:not(.elementor-select-wrapper){background-color:var( --e-global-color-1abaa55 );border-color:#D3D3D3;border-width:0px 0px 1px 0px;border-radius:0px 0px 0px 0px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group .elementor-select-wrapper select{background-color:var( --e-global-color-1abaa55 );border-color:#D3D3D3;border-width:0px 0px 1px 0px;border-radius:0px 0px 0px 0px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group .elementor-select-wrapper::before{color:#D3D3D3;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-button{font-family:"Baskervville", Sans-serif;font-size:16px;font-weight:500;text-transform:capitalize;font-style:normal;text-decoration:none;word-spacing:0px;border-style:solid;border-width:0px 0px 0px 0px;border-radius:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-333 .elementor-element.elementor-element-921ca55 .e-form__buttons__wrapper__button-next{background-color:var( --e-global-color-bcfba95 );color:#8A8A8A;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-button[type="submit"]{background-color:var( --e-global-color-bcfba95 );color:#8A8A8A;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-button[type="submit"] svg *{fill:#8A8A8A;}.elementor-333 .elementor-element.elementor-element-921ca55 .e-form__buttons__wrapper__button-previous{color:#ffffff;}.elementor-333 .elementor-element.elementor-element-921ca55 .e-form__buttons__wrapper__button-next:hover{background-color:var( --e-global-color-bcfba95 );color:#898989C7;border-color:var( --e-global-color-1abaa55 );}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-button[type="submit"]:hover{background-color:var( --e-global-color-bcfba95 );color:#898989C7;border-color:var( --e-global-color-1abaa55 );}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-button[type="submit"]:hover svg *{fill:#898989C7;}.elementor-333 .elementor-element.elementor-element-921ca55 .e-form__buttons__wrapper__button-previous:hover{color:#ffffff;border-color:var( --e-global-color-1abaa55 );}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-message.elementor-message-success{color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-message.elementor-message-danger{color:var( --e-global-color-text );}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-message.elementor-help-inline{color:var( --e-global-color-text );}body.elementor-page-333{padding:0% 0% 0% 0%;}@media(max-width:1024px) and (min-width:768px){.elementor-333 .elementor-element.elementor-element-1f5608b{--width:100%;}}@media(max-width:1366px){.elementor-widget-heading .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );letter-spacing:var( --e-global-typography-primary-letter-spacing );word-spacing:var( --e-global-typography-primary-word-spacing );}.elementor-widget-nested-tabs .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs{--n-tabs-title-font-size:var( --e-global-typography-accent-font-size );}.elementor-widget-nested-tabs.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > :is( .e-n-tab-title > .e-n-tab-title-text, .e-n-tab-title ){line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-divider .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .elementor-divider__text{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-text-editor .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .elementor-field-group > label{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-type-html{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-group .elementor-field, .elementor-widget-form .elementor-field-subgroup label{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-button{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .elementor-message{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .e-form__indicators__indicator, .elementor-widget-form .e-form__indicators__indicator__label{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .e-form__indicators__indicator__progress__meter{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}}@media(max-width:1024px){.elementor-333 .elementor-element.elementor-element-4fed3b6{--flex-wrap:wrap;}.elementor-333 .elementor-element.elementor-element-ab496e8{--flex-wrap:wrap;}.elementor-widget-heading .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );letter-spacing:var( --e-global-typography-primary-letter-spacing );word-spacing:var( --e-global-typography-primary-word-spacing );}.elementor-333 .elementor-element.elementor-element-a1eb9c3 .elementor-heading-title{font-size:38px;line-height:1em;}.elementor-333 .elementor-element.elementor-element-1f5608b.e-con{--order:-99999 /* order start hack */;}.elementor-widget-nested-tabs .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs{--n-tabs-title-font-size:var( --e-global-typography-accent-font-size );}.elementor-widget-nested-tabs.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > :is( .e-n-tab-title > .e-n-tab-title-text, .e-n-tab-title ){line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-divider .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .elementor-divider__text{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-333 .elementor-element.elementor-element-7efcd91 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-779a2eb .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-af1b7c1 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-74bba1a .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-554bda8 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-e4188dc .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-cfef1f4 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-6701283 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-7fe6d6c .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-9338e7d .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-a958377 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-fd968ea .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-8944784 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-135c385 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-1b85e3a .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-20edc9a .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-7c70113 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-1c007ad .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-859d6db .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-fe93299 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-d45d117 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-95c970a .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-84541b8 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-f8ee8cd .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-66c98cd .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-f054992 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-641073d .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-66a78a1 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-05be328 .elementor-heading-title{font-size:19px;}.elementor-333 .elementor-element.elementor-element-d550208{--n-tabs-title-font-size:18px;}.elementor-333 .elementor-element.elementor-element-abb66d3 .elementor-heading-title{font-size:38px;line-height:1em;}.elementor-widget-text-editor .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-333 .elementor-element.elementor-element-5a2fbb7{font-size:19px;}.elementor-widget-form .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .elementor-field-group > label{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-type-html{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-group .elementor-field, .elementor-widget-form .elementor-field-subgroup label{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-button{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .elementor-message{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .e-form__indicators__indicator, .elementor-widget-form .e-form__indicators__indicator__label{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .e-form__indicators__indicator__progress__meter{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group > label{font-size:19px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group .elementor-field, .elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-subgroup label{font-size:19px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-button{font-size:18px;}}@media(max-width:767px){.elementor-333 .elementor-element.elementor-element-4fed3b6{--flex-direction:column-reverse;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--flex-wrap:wrap;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-4fed3b6.e-con{--align-self:center;}.elementor-333 .elementor-element.elementor-element-ab496e8{--flex-direction:column-reverse;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--flex-wrap:wrap;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-ab496e8.e-con{--align-self:center;}.elementor-widget-heading .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );letter-spacing:var( --e-global-typography-primary-letter-spacing );word-spacing:var( --e-global-typography-primary-word-spacing );}.elementor-333 .elementor-element.elementor-element-a1eb9c3{width:100%;max-width:100%;text-align:center;}.elementor-333 .elementor-element.elementor-element-a1eb9c3 > .elementor-widget-container{margin:32% 0% 0% 0%;padding:0% 7% 5% 7%;}.elementor-333 .elementor-element.elementor-element-a1eb9c3.elementor-element{--align-self:flex-start;}.elementor-333 .elementor-element.elementor-element-a1eb9c3 .elementor-heading-title{font-size:22px;line-height:1.4em;}.elementor-333 .elementor-element.elementor-element-1f5608b{--width:100%;--justify-content:flex-start;}.elementor-333 .elementor-element.elementor-element-52275c4{--content-width:90%;}.elementor-widget-nested-tabs .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs{--n-tabs-title-font-size:var( --e-global-typography-accent-font-size );}.elementor-widget-nested-tabs.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > :is( .e-n-tab-title > .e-n-tab-title-text, .e-n-tab-title ){line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-divider .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .elementor-divider__text{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-333 .elementor-element.elementor-element-2f19501{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-27d9211{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-widget-image .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-333 .elementor-element.elementor-element-7efcd91 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-b011b03{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-779a2eb .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-37fcd5b{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-af1b7c1 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-f2768b6{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-9a8d290{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-74bba1a .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-241499e{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-554bda8 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-5547743{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-e4188dc .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-9292229{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-14d31e1{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-cfef1f4 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-17b704b{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-6701283 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-2cb252c{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-88e00a2{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-261cd85{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-394f212 img{width:100%;height:400px;object-fit:cover;object-position:center center;}.elementor-333 .elementor-element.elementor-element-7fe6d6c .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-c5a2e30{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-be84560 img{height:400px;object-position:center center;}.elementor-333 .elementor-element.elementor-element-9338e7d .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-7a7922a{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-6a9ccf0 img{height:400px;}.elementor-333 .elementor-element.elementor-element-a958377 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-8e8ee9a{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-00c7279{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-5e48b38 img{height:400px;}.elementor-333 .elementor-element.elementor-element-fd968ea .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-6d9ecd9{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-c7f57a9 img{height:400px;object-position:center center;}.elementor-333 .elementor-element.elementor-element-8944784 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-7adab66{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-474a176 img{height:400px;}.elementor-333 .elementor-element.elementor-element-135c385 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-e851d20{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-7c7b4d6{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-b376d04 img{height:400px;}.elementor-333 .elementor-element.elementor-element-1b85e3a .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-41d3e1d{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-bcdc906 img{height:400px;}.elementor-333 .elementor-element.elementor-element-20edc9a .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-4eacf27{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-adb2b38 img{height:400px;}.elementor-333 .elementor-element.elementor-element-7c70113 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-4b47571{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-d7203cc{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-7ad5ace img{height:400px;}.elementor-333 .elementor-element.elementor-element-1c007ad .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-64bddf9{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-3d8da7e img{height:400px;}.elementor-333 .elementor-element.elementor-element-859d6db .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-d0d51ad{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-e034356 img{height:400px;}.elementor-333 .elementor-element.elementor-element-fe93299 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-c36970a{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-e2bfa99{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-11ede06 img{height:400px;}.elementor-333 .elementor-element.elementor-element-d45d117 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-f4d933f{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-dd83b4a img{height:400px;}.elementor-333 .elementor-element.elementor-element-95c970a .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-1a84f1f{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-2cd35d9 img{height:400px;}.elementor-333 .elementor-element.elementor-element-84541b8 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-8c0b4e4{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-3149f87{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-a542dc3 img{height:400px;}.elementor-333 .elementor-element.elementor-element-f8ee8cd .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-a00cf9f{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-ae2f3de img{height:400px;}.elementor-333 .elementor-element.elementor-element-66c98cd .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-c9ce5a0{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-c9c2e0a img{height:400px;}.elementor-333 .elementor-element.elementor-element-f054992 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-ea81e34{--gap:0% 4%;--row-gap:0%;--column-gap:4%;--margin-top:0%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;--padding-top:9%;--padding-bottom:0%;--padding-left:1%;--padding-right:1%;}.elementor-333 .elementor-element.elementor-element-9992979{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-4c5e058 img{height:400px;}.elementor-333 .elementor-element.elementor-element-641073d .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-a31dbcf{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-c8984cd img{height:400px;}.elementor-333 .elementor-element.elementor-element-66a78a1 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-ef74ce8{--margin-top:0%;--margin-bottom:5%;--margin-left:0%;--margin-right:0%;}.elementor-333 .elementor-element.elementor-element-df69c35 img{height:400px;}.elementor-333 .elementor-element.elementor-element-05be328 .elementor-heading-title{font-size:18px;}.elementor-333 .elementor-element.elementor-element-d550208{--n-tabs-title-font-size:16px;}.elementor-333 .elementor-element.elementor-element-fc26c6e{--padding-top:0%;--padding-bottom:0%;--padding-left:6%;--padding-right:2%;}.elementor-333 .elementor-element.elementor-element-abb66d3 > .elementor-widget-container{padding:0% 0% 10% 0%;}.elementor-333 .elementor-element.elementor-element-abb66d3{text-align:start;}.elementor-333 .elementor-element.elementor-element-abb66d3 .elementor-heading-title{font-size:22px;}.elementor-widget-text-editor .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-333 .elementor-element.elementor-element-5a2fbb7{font-size:14px;}.elementor-333 .elementor-element.elementor-element-002bdfa{--margin-top:10%;--margin-bottom:0%;--margin-left:0%;--margin-right:0%;}.elementor-widget-form .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .elementor-field-group > label{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-type-html{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-group .elementor-field, .elementor-widget-form .elementor-field-subgroup label{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-button{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .elementor-message{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .e-form__indicators__indicator, .elementor-widget-form .e-form__indicators__indicator__label{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .e-form__indicators__indicator__progress__meter{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-333 .elementor-element.elementor-element-921ca55{width:100%;max-width:100%;}.elementor-333 .elementor-element.elementor-element-921ca55.elementor-element{--align-self:center;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group > label{font-size:18px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-group .elementor-field, .elementor-333 .elementor-element.elementor-element-921ca55 .elementor-field-subgroup label{font-size:18px;}.elementor-333 .elementor-element.elementor-element-921ca55 .elementor-button{font-size:16px;}}@media(min-width:768px){.elementor-333 .elementor-element.elementor-element-1f5608b{--width:50%;}.elementor-333 .elementor-element.elementor-element-2f19501{--width:100%;}.elementor-333 .elementor-element.elementor-element-27d9211{--width:25%;}.elementor-333 .elementor-element.elementor-element-b011b03{--width:25%;}.elementor-333 .elementor-element.elementor-element-37fcd5b{--width:25%;}.elementor-333 .elementor-element.elementor-element-f2768b6{--width:100%;}.elementor-333 .elementor-element.elementor-element-9a8d290{--width:25%;}.elementor-333 .elementor-element.elementor-element-241499e{--width:25%;}.elementor-333 .elementor-element.elementor-element-5547743{--width:25%;}.elementor-333 .elementor-element.elementor-element-9292229{--width:100%;}.elementor-333 .elementor-element.elementor-element-14d31e1{--width:25%;}.elementor-333 .elementor-element.elementor-element-17b704b{--width:25%;}.elementor-333 .elementor-element.elementor-element-2cb252c{--width:25%;}.elementor-333 .elementor-element.elementor-element-88e00a2{--width:100%;}.elementor-333 .elementor-element.elementor-element-261cd85{--width:25%;}.elementor-333 .elementor-element.elementor-element-c5a2e30{--width:25%;}.elementor-333 .elementor-element.elementor-element-7a7922a{--width:25%;}.elementor-333 .elementor-element.elementor-element-8e8ee9a{--width:100%;}.elementor-333 .elementor-element.elementor-element-00c7279{--width:25%;}.elementor-333 .elementor-element.elementor-element-6d9ecd9{--width:25%;}.elementor-333 .elementor-element.elementor-element-7adab66{--width:25%;}.elementor-333 .elementor-element.elementor-element-e851d20{--width:100%;}.elementor-333 .elementor-element.elementor-element-7c7b4d6{--width:25%;}.elementor-333 .elementor-element.elementor-element-41d3e1d{--width:25%;}.elementor-333 .elementor-element.elementor-element-4eacf27{--width:25%;}.elementor-333 .elementor-element.elementor-element-4b47571{--width:100%;}.elementor-333 .elementor-element.elementor-element-d7203cc{--width:25%;}.elementor-333 .elementor-element.elementor-element-64bddf9{--width:25%;}.elementor-333 .elementor-element.elementor-element-d0d51ad{--width:25%;}.elementor-333 .elementor-element.elementor-element-c36970a{--width:100%;}.elementor-333 .elementor-element.elementor-element-e2bfa99{--width:25%;}.elementor-333 .elementor-element.elementor-element-f4d933f{--width:25%;}.elementor-333 .elementor-element.elementor-element-1a84f1f{--width:25%;}.elementor-333 .elementor-element.elementor-element-8c0b4e4{--width:100%;}.elementor-333 .elementor-element.elementor-element-3149f87{--width:25%;}.elementor-333 .elementor-element.elementor-element-a00cf9f{--width:25%;}.elementor-333 .elementor-element.elementor-element-c9ce5a0{--width:25%;}.elementor-333 .elementor-element.elementor-element-ea81e34{--width:100%;}.elementor-333 .elementor-element.elementor-element-9992979{--width:25%;}.elementor-333 .elementor-element.elementor-element-a31dbcf{--width:25%;}.elementor-333 .elementor-element.elementor-element-ef74ce8{--width:25%;}.elementor-333 .elementor-element.elementor-element-fc26c6e{--width:90%;}.elementor-333 .elementor-element.elementor-element-cf9caf3{--width:28.08%;}.elementor-333 .elementor-element.elementor-element-274d138{--width:35.975%;}}@media(min-width:2400px){.elementor-widget-heading .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );letter-spacing:var( --e-global-typography-primary-letter-spacing );word-spacing:var( --e-global-typography-primary-word-spacing );}.elementor-widget-nested-tabs .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-nested-tabs{--n-tabs-title-font-size:var( --e-global-typography-accent-font-size );}.elementor-widget-nested-tabs.elementor-widget-n-tabs > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading > :is( .e-n-tab-title > .e-n-tab-title-text, .e-n-tab-title ){line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-divider .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-divider .elementor-divider__text{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-text-editor .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .eael-protected-content-message{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .protected-content-error-msg{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );letter-spacing:var( --e-global-typography-secondary-letter-spacing );word-spacing:var( --e-global-typography-secondary-word-spacing );}.elementor-widget-form .elementor-field-group > label{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-type-html{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-field-group .elementor-field, .elementor-widget-form .elementor-field-subgroup label{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .elementor-button{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .elementor-message{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );letter-spacing:var( --e-global-typography-text-letter-spacing );word-spacing:var( --e-global-typography-text-word-spacing );}.elementor-widget-form .e-form__indicators__indicator, .elementor-widget-form .e-form__indicators__indicator__label{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}.elementor-widget-form .e-form__indicators__indicator__progress__meter{font-size:var( --e-global-typography-accent-font-size );line-height:var( --e-global-typography-accent-line-height );letter-spacing:var( --e-global-typography-accent-letter-spacing );word-spacing:var( --e-global-typography-accent-word-spacing );}}/* Start custom CSS for image, class: .elementor-element-d3470bb *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Louis-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#louis {
+  position: relative;
+  overflow: hidden;
+}
+
+#louis::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Louis-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#louis:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-9f2fd8a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jihyun-Arist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#JihyunKim {
+  position: relative;
+  overflow: hidden;
+}
+
+#JihyunKim::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jihyun-Arist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#JihyunKim:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-97350ba *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jacob-Chan-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Jacob {
+  position: relative;
+  overflow: hidden;
+}
+
+#Jacob::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jacob-Chan-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Jacob:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-3efe04a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.06.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#alexandra {
+  position: relative;
+  overflow: hidden;
+}
+
+#alexandra::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.06.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#alexandra:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-347c244 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-14.56.42.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#adam {
+  position: relative;
+  overflow: hidden;
+}
+
+#adam::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-14.56.42.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#adam:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-561a9ce *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.26-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#arran {
+  position: relative;
+  overflow: hidden;
+}
+
+#arran::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.26-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#arran:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-28d54d7 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Zahed-Tajeddin-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#zahed {
+  position: relative;
+  overflow: hidden;
+}
+
+#zahed::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Zahed-Tajeddin-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#zahed:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-6035bf4 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Rickie-Cheuk-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#rickie {
+  position: relative;
+  overflow: hidden;
+}
+
+#rickie::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Rickie-Cheuk-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#rickie:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-394f212 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url(https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chess-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#chess {
+  position: relative;
+  overflow: hidden;
+}
+
+#chess::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chess-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#chess:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-be84560 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/DSF1716-scaled.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Untitled {
+  position: relative;
+  overflow: hidden;
+}
+
+#Untitled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/DSF1716-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Untitled:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-6a9ccf0 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowl-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Bowl {
+  position: relative;
+  overflow: hidden;
+}
+
+#Bowl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowl-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Bowl:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-5e48b38 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-I-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#wall {
+  position: relative;
+  overflow: hidden;
+}
+
+#wall::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-I-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#wall:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c7f57a9 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Teoju-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Teoju {
+  position: relative;
+  overflow: hidden;
+}
+
+#Teoju::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Teoju-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Teoju:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-474a176 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.34.37.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#universe {
+  position: relative;
+  overflow: hidden;
+}
+
+#universe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.34.37.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#universe:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-b376d04 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-2.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#sakeset {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakeset::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakeset:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-bcdc906 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowing-Bull-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#bowingbull {
+  position: relative;
+  overflow: hidden;
+}
+
+#bowingbull::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowing-Bull-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#bowingbull:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-adb2b38 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Adam-Weissman-Golden-Earth-Studio-Clay-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#clay1666 {
+  position: relative;
+  overflow: hidden;
+}
+
+#clay1666::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Adam-Weissman-Golden-Earth-Studio-Clay-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#clay1666:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-7ad5ace *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Concial-Bowl-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#conicalbowl {
+  position: relative;
+  overflow: hidden;
+}
+
+#conicalbowl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Concial-Bowl-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#conicalbowl:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-3d8da7e *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bull_s-Matter-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#bulls {
+  position: relative;
+  overflow: hidden;
+}
+
+#bulls::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bull_s-Matter-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#bulls:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-e034356 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Small-Teoju-2.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#smallteoju {
+  position: relative;
+  overflow: hidden;
+}
+
+#smallteoju::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Small-Teoju-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#smallteoju:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-11ede06 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-4.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#ginger2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#ginger2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#ginger2:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-dd83b4a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chopstciks-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#chopsticks {
+  position: relative;
+  overflow: hidden;
+}
+
+#chopsticks::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chopstciks-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#chopsticks:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-2cd35d9 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-II-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#wallpanel {
+  position: relative;
+  overflow: hidden;
+}
+
+#wallpanel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-II-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#wallpanel:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-a542dc3 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Plate-2-e1749901957563.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#plate {
+  position: relative;
+  overflow: hidden;
+}
+
+#plate::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Plate-2-e1749901957563.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#plate:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-ae2f3de *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-7-e1757760215949.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#sakebottle2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakebottle2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-7-e1757760215949.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakebottle2:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c9c2e0a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.33.53.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#heart {
+  position: relative;
+  overflow: hidden;
+}
+
+#heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.33.53.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#heart:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-4c5e058 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-16.32.15-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#sakebottle {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakebottle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-16.32.15-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakebottle:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c8984cd *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Elevation-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#elevation {
+  position: relative;
+  overflow: hidden;
+}
+
+#elevation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Elevation-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#elevation:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-df69c35 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Ginger-Jar-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#ginger {
+  position: relative;
+  overflow: hidden;
+}
+
+#ginger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Ginger-Jar-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#ginger:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-d3470bb *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Louis-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#louis {
+  position: relative;
+  overflow: hidden;
+}
+
+#louis::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Louis-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#louis:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-9f2fd8a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jihyun-Arist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#JihyunKim {
+  position: relative;
+  overflow: hidden;
+}
+
+#JihyunKim::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jihyun-Arist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#JihyunKim:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-97350ba *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jacob-Chan-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Jacob {
+  position: relative;
+  overflow: hidden;
+}
+
+#Jacob::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jacob-Chan-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Jacob:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-3efe04a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.06.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#alexandra {
+  position: relative;
+  overflow: hidden;
+}
+
+#alexandra::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.06.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#alexandra:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-347c244 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-14.56.42.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#adam {
+  position: relative;
+  overflow: hidden;
+}
+
+#adam::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-14.56.42.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#adam:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-561a9ce *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.26-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#arran {
+  position: relative;
+  overflow: hidden;
+}
+
+#arran::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.26-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#arran:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-28d54d7 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Zahed-Tajeddin-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#zahed {
+  position: relative;
+  overflow: hidden;
+}
+
+#zahed::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Zahed-Tajeddin-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#zahed:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-6035bf4 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Rickie-Cheuk-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#rickie {
+  position: relative;
+  overflow: hidden;
+}
+
+#rickie::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Rickie-Cheuk-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#rickie:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-394f212 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url(https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chess-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#chess {
+  position: relative;
+  overflow: hidden;
+}
+
+#chess::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chess-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#chess:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-be84560 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/DSF1716-scaled.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Untitled {
+  position: relative;
+  overflow: hidden;
+}
+
+#Untitled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/DSF1716-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Untitled:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-6a9ccf0 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowl-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Bowl {
+  position: relative;
+  overflow: hidden;
+}
+
+#Bowl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowl-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Bowl:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-5e48b38 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-I-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#wall {
+  position: relative;
+  overflow: hidden;
+}
+
+#wall::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-I-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#wall:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c7f57a9 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Teoju-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Teoju {
+  position: relative;
+  overflow: hidden;
+}
+
+#Teoju::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Teoju-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Teoju:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-474a176 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.34.37.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#universe {
+  position: relative;
+  overflow: hidden;
+}
+
+#universe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.34.37.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#universe:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-b376d04 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-2.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#sakeset {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakeset::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakeset:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-bcdc906 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowing-Bull-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#bowingbull {
+  position: relative;
+  overflow: hidden;
+}
+
+#bowingbull::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowing-Bull-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#bowingbull:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-adb2b38 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Adam-Weissman-Golden-Earth-Studio-Clay-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#clay1666 {
+  position: relative;
+  overflow: hidden;
+}
+
+#clay1666::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Adam-Weissman-Golden-Earth-Studio-Clay-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#clay1666:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-7ad5ace *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Concial-Bowl-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#conicalbowl {
+  position: relative;
+  overflow: hidden;
+}
+
+#conicalbowl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Concial-Bowl-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#conicalbowl:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-3d8da7e *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bull_s-Matter-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#bulls {
+  position: relative;
+  overflow: hidden;
+}
+
+#bulls::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bull_s-Matter-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#bulls:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-e034356 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Small-Teoju-2.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#smallteoju {
+  position: relative;
+  overflow: hidden;
+}
+
+#smallteoju::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Small-Teoju-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#smallteoju:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-11ede06 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-4.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#ginger2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#ginger2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#ginger2:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-dd83b4a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chopstciks-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#chopsticks {
+  position: relative;
+  overflow: hidden;
+}
+
+#chopsticks::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chopstciks-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#chopsticks:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-2cd35d9 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-II-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#wallpanel {
+  position: relative;
+  overflow: hidden;
+}
+
+#wallpanel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-II-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#wallpanel:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-a542dc3 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Plate-2-e1749901957563.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#plate {
+  position: relative;
+  overflow: hidden;
+}
+
+#plate::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Plate-2-e1749901957563.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#plate:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-ae2f3de *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-7-e1757760215949.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#sakebottle2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakebottle2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-7-e1757760215949.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakebottle2:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c9c2e0a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.33.53.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#heart {
+  position: relative;
+  overflow: hidden;
+}
+
+#heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.33.53.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#heart:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-4c5e058 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-16.32.15-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#sakebottle {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakebottle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-16.32.15-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakebottle:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c8984cd *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Elevation-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#elevation {
+  position: relative;
+  overflow: hidden;
+}
+
+#elevation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Elevation-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#elevation:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-df69c35 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Ginger-Jar-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#ginger {
+  position: relative;
+  overflow: hidden;
+}
+
+#ginger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Ginger-Jar-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#ginger:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-d3470bb *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Louis-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#louis {
+  position: relative;
+  overflow: hidden;
+}
+
+#louis::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Louis-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#louis:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-9f2fd8a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jihyun-Arist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#JihyunKim {
+  position: relative;
+  overflow: hidden;
+}
+
+#JihyunKim::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jihyun-Arist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#JihyunKim:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-97350ba *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jacob-Chan-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Jacob {
+  position: relative;
+  overflow: hidden;
+}
+
+#Jacob::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jacob-Chan-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Jacob:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-3efe04a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.06.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#alexandra {
+  position: relative;
+  overflow: hidden;
+}
+
+#alexandra::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.06.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#alexandra:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-347c244 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-14.56.42.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#adam {
+  position: relative;
+  overflow: hidden;
+}
+
+#adam::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-14.56.42.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#adam:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-561a9ce *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.26-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#arran {
+  position: relative;
+  overflow: hidden;
+}
+
+#arran::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.26-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#arran:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-28d54d7 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Zahed-Tajeddin-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#zahed {
+  position: relative;
+  overflow: hidden;
+}
+
+#zahed::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Zahed-Tajeddin-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#zahed:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-6035bf4 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Rickie-Cheuk-Artist-Hover.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#rickie {
+  position: relative;
+  overflow: hidden;
+}
+
+#rickie::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Rickie-Cheuk-Artist-Hover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#rickie:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-394f212 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url(https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chess-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#chess {
+  position: relative;
+  overflow: hidden;
+}
+
+#chess::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chess-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#chess:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-be84560 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/DSF1716-scaled.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Untitled {
+  position: relative;
+  overflow: hidden;
+}
+
+#Untitled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/DSF1716-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Untitled:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-6a9ccf0 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowl-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Bowl {
+  position: relative;
+  overflow: hidden;
+}
+
+#Bowl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowl-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Bowl:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-5e48b38 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-I-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#wall {
+  position: relative;
+  overflow: hidden;
+}
+
+#wall::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-I-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#wall:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c7f57a9 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Teoju-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#Teoju {
+  position: relative;
+  overflow: hidden;
+}
+
+#Teoju::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Teoju-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#Teoju:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-474a176 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.34.37.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#universe {
+  position: relative;
+  overflow: hidden;
+}
+
+#universe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.34.37.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#universe:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-b376d04 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-2.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#sakeset {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakeset::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakeset:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-bcdc906 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowing-Bull-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#bowingbull {
+  position: relative;
+  overflow: hidden;
+}
+
+#bowingbull::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowing-Bull-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#bowingbull:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-adb2b38 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Adam-Weissman-Golden-Earth-Studio-Clay-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#clay1666 {
+  position: relative;
+  overflow: hidden;
+}
+
+#clay1666::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Adam-Weissman-Golden-Earth-Studio-Clay-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#clay1666:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-7ad5ace *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Concial-Bowl-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#conicalbowl {
+  position: relative;
+  overflow: hidden;
+}
+
+#conicalbowl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Concial-Bowl-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#conicalbowl:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-3d8da7e *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bull_s-Matter-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#bulls {
+  position: relative;
+  overflow: hidden;
+}
+
+#bulls::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bull_s-Matter-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#bulls:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-e034356 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Small-Teoju-2.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#smallteoju {
+  position: relative;
+  overflow: hidden;
+}
+
+#smallteoju::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Small-Teoju-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#smallteoju:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-11ede06 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-4.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#ginger2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#ginger2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#ginger2:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-dd83b4a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chopstciks-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#chopsticks {
+  position: relative;
+  overflow: hidden;
+}
+
+#chopsticks::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chopstciks-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#chopsticks:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-2cd35d9 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-II-Close-Up.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#wallpanel {
+  position: relative;
+  overflow: hidden;
+}
+
+#wallpanel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-II-Close-Up.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#wallpanel:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-a542dc3 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Plate-2-e1749901957563.jpg');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#plate {
+  position: relative;
+  overflow: hidden;
+}
+
+#plate::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Plate-2-e1749901957563.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#plate:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-ae2f3de *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-7-e1757760215949.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#sakebottle2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakebottle2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-7-e1757760215949.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakebottle2:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c9c2e0a *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.33.53.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#heart {
+  position: relative;
+  overflow: hidden;
+}
+
+#heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.33.53.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#heart:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-4c5e058 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-16.32.15-1.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#sakebottle {
+  position: relative;
+  overflow: hidden;
+}
+
+#sakebottle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-16.32.15-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#sakebottle:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-c8984cd *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Elevation-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #JihyunKim */
+#elevation {
+  position: relative;
+  overflow: hidden;
+}
+
+#elevation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Elevation-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#elevation:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-df69c35 *//* Preload hover image (hidden + greyscale) */
+body::before {
+  content: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Ginger-Jar-Close-Up.png');
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  filter: grayscale(100%);
+}
+
+/* Hover overlay effect on image with ID #louis */
+#ginger {
+  position: relative;
+  overflow: hidden;
+}
+
+#ginger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Ginger-Jar-Close-Up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#ginger:hover::after {
+  opacity: 0.85;
+}/* End custom CSS */
+/* Start custom CSS for nested-tabs, class: .elementor-element-d550208 *//* Add divider after the first tab */
+.elementor-element-d550208 .e-n-tab-title:first-of-type {
+  position: relative;
+  padding-right: 16px;
+}
+
+.elementor-element-d550208 .e-n-tab-title:first-of-type::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 16px;
+  background-color: #595952 !important;
+}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Gills Sans MT Light';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/Gill-Sans-MT-Light.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */

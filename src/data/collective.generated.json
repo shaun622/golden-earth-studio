@@ -6,7 +6,9 @@
     "creator": "Josef Stoger",
     "image": "/assets/migrated/collective/1-josef-stoger-3d-printed-ceramic-lamp-a181fc4.webp",
     "alt": "Josef Stoger - 3D printed ceramic lamp",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective.png"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective.png",
+    "width": 468,
+    "height": 676
   },
   {
     "id": "collective-2",
@@ -15,7 +17,9 @@
     "creator": "Ekta Bagria",
     "image": "/assets/migrated/collective/2-ekta-bagria-rammed-earth-sculpture-8db390e.webp",
     "alt": "Ekta Bagria - Rammed earth sculpture",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective-1.webp"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective-1.webp",
+    "width": 1920,
+    "height": 1440
   },
   {
     "id": "collective-3",
@@ -24,7 +28,9 @@
     "creator": "Isabel Fletcher",
     "image": "/assets/migrated/collective/3-isabel-fletcher-repositioned-clay-and-stone-285e680.webp",
     "alt": "Isabel Fletcher - Repositioned; Clay and Stone",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective-2.png"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective-2.png",
+    "width": 600,
+    "height": 750
   },
   {
     "id": "collective-4",
@@ -33,7 +39,9 @@
     "creator": "Rosie Williams",
     "image": "/assets/migrated/collective/4-rosie-williams-fossilised-curiosities-671b91d.webp",
     "alt": "Rosie Williams - Fossilised Curiosities",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/Collective-4.png"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/Collective-4.png",
+    "width": 500,
+    "height": 509
   },
   {
     "id": "collective-5",
@@ -42,7 +50,9 @@
     "creator": "Jeanne Francois",
     "image": "/assets/migrated/collective/5-jeanne-francois-alger-s-house-e2551e3.webp",
     "alt": "Jeanne Francois - Alger's house",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective-3.webp"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective-3.webp",
+    "width": 1920,
+    "height": 1276
   },
   {
     "id": "collective-6",
@@ -51,7 +61,9 @@
     "creator": "Victoria Coxall",
     "image": "/assets/migrated/collective/6-victoria-coxall-london-project-01-a3fbfb8.webp",
     "alt": "Victoria Coxall - London, project 01",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/10/IMG_4917-scaled.jpeg"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/10/IMG_4917-scaled.jpeg",
+    "width": 2560,
+    "height": 2560
   },
   {
     "id": "collective-7",
@@ -60,7 +72,9 @@
     "creator": "Shaoqi Tan",
     "image": "/assets/migrated/collective/7-shaoqi-tan-pangea-26ddaa3.webp",
     "alt": "Shaoqi Tan - Pangea",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2024/01/1.png"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2024/01/1.png",
+    "width": 536,
+    "height": 676
   },
   {
     "id": "collective-8",
@@ -69,7 +83,9 @@
     "creator": "Uiqi Atelier",
     "image": "/assets/migrated/collective/8-uiqi-atelier-collaborative-sculpture-4b219b0.webp",
     "alt": "Uiqi Atelier - Collaborative Sculpture",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2024/01/2.png"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2024/01/2.png",
+    "width": 536,
+    "height": 536
   },
   {
     "id": "collective-9",
@@ -78,6 +94,8 @@
     "creator": "Jacob Chan",
     "image": "/assets/migrated/collective/9-jacob-chan-clay-body-blends-1435a17.webp",
     "alt": "Jacob Chan - Clay Body Blends",
-    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2024/01/3.png"
+    "originalUrl": "https://goldenearthstudio.co.uk/wp-content/uploads/2024/01/3.png",
+    "width": 534,
+    "height": 530
   }
 ]

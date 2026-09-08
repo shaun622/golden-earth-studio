@@ -4,15 +4,16 @@ interface Props {
   variant?: "general" | "commission" | "artwork";
   artworkId?: string;
   artworkTitle?: string;
+  placeholderLabels?: boolean;
 }
 
-const { compact = false, variant = "general", artworkId, artworkTitle } = Astro.props;
+const { compact = false, variant = "general", artworkId, artworkTitle, placeholderLabels = false } = Astro.props;
 const formSuffix = artworkId?.replace(/[^a-z0-9]+/gi, "-") || (compact ? "compact" : "main");
 const formId = `contact-${variant}-${formSuffix}`;
 const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 ---
 
-<form id={formId} class:list={["contact-form", { compact }]} action="/api/contact" method="post" data-contact-form data-variant={variant}>
+<form id={formId} class:list={["contact-form", { compact, "placeholder-labels": placeholderLabels }]} action="/api/contact" method="post" data-contact-form data-variant={variant}>
   <input type="hidden" name="variant" value={compact ? "compact" : variant} />
   {artworkId && <input type="hidden" name="artworkId" value={artworkId} />}
   <input type="hidden" name="sourcePath" value={Astro.url.pathname} />
@@ -54,23 +55,23 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
     <>
       <label>
         <span>First Name*</span>
-        <input type="text" name="firstName" autocomplete="given-name" required maxlength="80" />
+        <input type="text" name="firstName" autocomplete="given-name" required maxlength="80" placeholder={placeholderLabels ? "First Name*" : undefined} />
       </label>
       <label>
         <span>Last Name*</span>
-        <input type="text" name="lastName" autocomplete="family-name" required maxlength="80" />
+        <input type="text" name="lastName" autocomplete="family-name" required maxlength="80" placeholder={placeholderLabels ? "Last Name*" : undefined} />
       </label>
       <label>
         <span>Email*</span>
-        <input type="email" name="email" autocomplete="email" required maxlength="254" />
+        <input type="email" name="email" autocomplete="email" required maxlength="254" placeholder={placeholderLabels ? "Email*" : undefined} />
       </label>
       <label>
         <span>Subject*</span>
-        <input type="text" name="subject" required maxlength="160" />
+        <input type="text" name="subject" required maxlength="160" placeholder={placeholderLabels ? "Subject*" : undefined} />
       </label>
       <label class="message-field">
         <span>Your Message</span>
-        <textarea name="message" rows="3" required maxlength="4000"></textarea>
+        <textarea name="message" rows="3" required maxlength="4000" placeholder={placeholderLabels ? "Your Message" : undefined}></textarea>
       </label>
     </>
   )}

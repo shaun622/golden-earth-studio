@@ -1,19 +1,30 @@
 ---
-import ContactSection from "../components/ContactSection.astro";
 import ImageGallery from "../components/ImageGallery.astro";
 import InteriorLayout from "../layouts/InteriorLayout.astro";
 import collective from "../data/collective.generated.json";
+import content from "../data/interior.generated.json";
+import "../styles/reference-pages.css";
+const { background, paragraphs } = content.collective;
 ---
-<InteriorLayout title="Collective" description="Explore the Golden Earth Studio Collective and work made from reclaimed construction materials." image={collective[0]?.image}>
-  <main id="content" class="interior-main collective-page">
-    <header class="page-intro page-intro--center"><h1>The Collective</h1><p>Bridging the gap between creatives and construction in pursuit of circularity.</p></header>
-    <section class="editorial-lead"><p>Local artists, ceramicists, students and communities made their way to our construction site in Wimbledon to reclaim construction by-products and transform the material through their unique practices. Emphasising displaced material through art creates a conversation.</p><p>Our goal is to help artists and makers, established and emerging, work in more sustainable ways while continuing the conversation around a circular economy.</p></section>
-    <section aria-labelledby="absent-boundaries"><div class="section-heading-row"><h2 id="absent-boundaries">Absent Boundaries</h2><span></span></div><p class="section-intro">From 3D-printed ceramic lamps to natural dyes for fabrics, we are in awe of how waste has been reimagined.</p><ImageGallery label="Golden Earth Studio Collective" images={collective.map((item) => ({ src: item.image, alt: item.alt, caption: item.caption }))} /></section>
-    <section class="split-editorial">
-      <article><h2>An extended invite</h2><p>With each new construction project, Golden Earth Studio invites creatives from all backgrounds to collect free clay, make, and sell their works through GES.</p></article>
-      <article><h2>A Clay Zine</h2><p>We understand there is uncertainty around using non-commercial clays. The Clay Zine compiles knowledge about how creatives use the material, aiming to demystify challenges and spark inspiration.</p><p><a class="text-link" href="https://forms.gle/ZJZKaECPYKiSs7bw8">Submit a contribution</a></p></article>
-      <article><h2>Collect Free Clay</h2><p>We share clay collection opportunities through our Instagram page.</p><p><a class="text-link" href="https://www.instagram.com/goldenearthstudio/">Check current collections</a></p></article>
+<InteriorLayout className="reference-interior" title="Collective" description="Bridging the gap between creatives and construction in pursuit of circularity" image={background}>
+  <main id="content" class="interior-main collective-reference">
+    <header class="reference-intro"><h1 data-reveal>Bridging the gap between <em>creatives</em> and construction in pursuit of <em>circularity</em></h1></header>
+    <section class="collective-opening reference-photo" style={{ "--reference-background": `url(${background})`, "--reference-mobile-background": `url(${content.collective.mobileBackground})` }}>
+      <div class="collective-opening-copy">
+        <h2 data-reveal>Explore the work of the Golden Earth Studio <em>Collective</em></h2>
+        <p data-reveal>{paragraphs[0]}</p><p data-reveal>{paragraphs[1]}</p>
+      </div>
     </section>
-    <ContactSection />
+    <section class="collective-boundaries" aria-labelledby="absent-boundaries">
+      <div class="collective-boundaries-intro"><h2 id="absent-boundaries" data-reveal>Absent Boundaries</h2><p data-reveal>{paragraphs[2]}</p></div>
+      <ImageGallery label="Golden Earth Studio Collective" masonry captions images={collective.map((item) => ({ src: item.image, alt: item.alt, caption: item.caption, width: item.width, height: item.height }))} />
+    </section>
+    <section class="collective-invitation" aria-labelledby="extended-invite">
+      <div class="collective-invitation-intro"><h2 id="extended-invite" data-reveal>An extended invite</h2><p data-reveal>{paragraphs[3]}</p></div>
+      <div class="collective-opportunities">
+        <article data-reveal><h2>/ Collect Free Clay</h2><p>Check our <a href="https://www.instagram.com/goldenearthstudio/">instagram bio</a> for links to available clay collections, We share all opportunities via our instagram platform, so keep an eye on our page for any updates!</p></article>
+        <article data-reveal><h2>/ A Clay Zine</h2><p>{paragraphs[4]}</p><p><a href={paragraphs[5]}>{paragraphs[5]}</a></p></article>
+      </div>
+    </section>
   </main>
 </InteriorLayout>

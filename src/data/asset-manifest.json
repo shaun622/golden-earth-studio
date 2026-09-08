@@ -533,12 +533,7 @@
     "alt": "We're Hiring",
     "passthrough": false,
     "bytes": 132676,
-    "sourceWidth": 1486,
-    "sourceHeight": 1232,
-    "width": 1486,
-    "height": 1232,
-    "format": "webp",
-    "status": "downloaded"
+    "status": "existing"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Copy-of-_DSC4157-2-scaled.jpg",
@@ -554,12 +549,7 @@
     "alt": "Reframing Waste",
     "passthrough": false,
     "bytes": 123006,
-    "sourceWidth": 1600,
-    "sourceHeight": 1062,
-    "width": 1600,
-    "height": 1062,
-    "format": "webp",
-    "status": "downloaded"
+    "status": "existing"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.19.35.png",
@@ -575,12 +565,7 @@
     "alt": "735kg Reclaimed",
     "passthrough": false,
     "bytes": 68510,
-    "sourceWidth": 1600,
-    "sourceHeight": 1101,
-    "width": 1600,
-    "height": 1101,
-    "format": "webp",
-    "status": "downloaded"
+    "status": "existing"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.19.04.png",
@@ -596,12 +581,7 @@
     "alt": "Ekta Bagri Residency",
     "passthrough": false,
     "bytes": 103010,
-    "sourceWidth": 1600,
-    "sourceHeight": 1063,
-    "width": 1600,
-    "height": 1063,
-    "format": "webp",
-    "status": "downloaded"
+    "status": "existing"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-16.00.01.png",
@@ -625,12 +605,7 @@
     "alt": "Arran Gregory Interview",
     "passthrough": false,
     "bytes": 68566,
-    "sourceWidth": 606,
-    "sourceHeight": 848,
-    "width": 606,
-    "height": 848,
-    "format": "webp",
-    "status": "downloaded"
+    "status": "existing"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/07/Screenshot-2025-07-17-at-14.54.28.png",
@@ -654,12 +629,7 @@
     "alt": "London Craft Week",
     "passthrough": false,
     "bytes": 45656,
-    "sourceWidth": 556,
-    "sourceHeight": 742,
-    "width": 556,
-    "height": 742,
-    "format": "webp",
-    "status": "downloaded"
+    "status": "existing"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/04/Screenshot-2025-04-28-at-19.49.57.png",
@@ -683,12 +653,7 @@
     "alt": "Meet Olla Ceramics",
     "passthrough": false,
     "bytes": 36584,
-    "sourceWidth": 980,
-    "sourceHeight": 1224,
-    "width": 980,
-    "height": 1224,
-    "format": "webp",
-    "status": "downloaded"
+    "status": "existing"
   },
   {
     "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-15-at-11.01.34.jpeg",
@@ -816,6 +781,379 @@
     "alt": "Jacob Chan - Clay Body Blends",
     "passthrough": false,
     "bytes": 17300,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Louis-Artist-Hover.png",
+    "localPath": "/assets/migrated/gallery-index/1-hover-4880fed.webp",
+    "alt": "Louis Vincent | Wood",
+    "passthrough": false,
+    "bytes": 23054,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-11.41.09.png",
+    "localPath": "/assets/migrated/gallery-index/2-image-7d05675.webp",
+    "alt": "Jihyun Kim | Ceramic",
+    "passthrough": false,
+    "bytes": 44198,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jihyun-Arist-Hover.png",
+    "localPath": "/assets/migrated/gallery-index/2-hover-bdf2e37.webp",
+    "alt": "Jihyun Kim | Ceramic",
+    "passthrough": false,
+    "bytes": 50774,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Jacob-Chan-Artist-Hover.png",
+    "localPath": "/assets/migrated/gallery-index/3-hover-e0c1238.webp",
+    "alt": "Jacob Chan | Ceramic",
+    "passthrough": false,
+    "bytes": 56634,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.06.png",
+    "localPath": "/assets/migrated/gallery-index/4-hover-934a791.webp",
+    "alt": "Alexandra Yan Wong | Painting",
+    "passthrough": false,
+    "bytes": 36786,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-14.56.42.png",
+    "localPath": "/assets/migrated/gallery-index/5-hover-4f8a319.webp",
+    "alt": "Adam Weismann | Wall Art",
+    "passthrough": false,
+    "bytes": 202686,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-14.06.35.png",
+    "localPath": "/assets/migrated/gallery-index/6-image-f38b317.webp",
+    "alt": "Arran Gregory | Clay",
+    "passthrough": false,
+    "bytes": 269950,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-08-at-15.51.26-1.png",
+    "localPath": "/assets/migrated/gallery-index/6-hover-242b117.webp",
+    "alt": "Arran Gregory | Clay",
+    "passthrough": false,
+    "bytes": 41390,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Zahed-Tajeddin-Artist-Hover.png",
+    "localPath": "/assets/migrated/gallery-index/7-hover-99092eb.webp",
+    "alt": "Zahed Tajeddin | Ceramic",
+    "passthrough": false,
+    "bytes": 107524,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Rickie-Cheuk-Artist-Hover.png",
+    "localPath": "/assets/migrated/gallery-index/8-hover-477eeb4.webp",
+    "alt": "Rickie Cheuk | Metal",
+    "passthrough": false,
+    "bytes": 18250,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chess-Set.png",
+    "localPath": "/assets/migrated/gallery-index/9-image-e4c0812.webp",
+    "alt": "Chess Set by Jacob Chan",
+    "passthrough": false,
+    "bytes": 36212,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chess-Close-Up.png",
+    "localPath": "/assets/migrated/gallery-index/9-hover-ef11596.webp",
+    "alt": "Chess Set by Jacob Chan",
+    "passthrough": false,
+    "bytes": 18708,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/DSF1716-scaled.jpg",
+    "localPath": "/assets/migrated/gallery-index/10-hover-d3ac5d9.webp",
+    "alt": "Untitled by Alexandra Yan Wong",
+    "passthrough": false,
+    "bytes": 79042,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowl.jpg",
+    "localPath": "/assets/migrated/gallery-index/11-image-0b5b4a8.webp",
+    "alt": "Bowl by Louis Vincent",
+    "passthrough": false,
+    "bytes": 12656,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowl-Close-Up.jpg",
+    "localPath": "/assets/migrated/gallery-index/11-hover-3efa2f9.webp",
+    "alt": "Bowl by Louis Vincent",
+    "passthrough": false,
+    "bytes": 28856,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-I.jpg",
+    "localPath": "/assets/migrated/gallery-index/12-image-f308329.webp",
+    "alt": "Wall Panel I by Louis Vincent",
+    "passthrough": false,
+    "bytes": 19720,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-I-Close-Up.jpg",
+    "localPath": "/assets/migrated/gallery-index/12-hover-9647137.webp",
+    "alt": "Wall Panel I by Louis Vincent",
+    "passthrough": false,
+    "bytes": 31944,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Teoju.png",
+    "localPath": "/assets/migrated/gallery-index/13-image-cf1090d.webp",
+    "alt": "Teoju by Jihyun Kim",
+    "passthrough": false,
+    "bytes": 17530,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Teoju-Close-Up.png",
+    "localPath": "/assets/migrated/gallery-index/13-hover-3fc58f4.webp",
+    "alt": "Teoju by Jihyun Kim",
+    "passthrough": false,
+    "bytes": 14616,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.34.37.png",
+    "localPath": "/assets/migrated/gallery-index/14-hover-c09bbb7.webp",
+    "alt": "The Universe Was An Egg Which Cracked by Arran Gregory",
+    "passthrough": false,
+    "bytes": 71758,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-16.28.05.png",
+    "localPath": "/assets/migrated/gallery-index/15-image-58fd9f0.webp",
+    "alt": "Sake Set by Jacob Chan",
+    "passthrough": false,
+    "bytes": 72924,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-2.png",
+    "localPath": "/assets/migrated/gallery-index/15-hover-1cb5143.webp",
+    "alt": "Sake Set by Jacob Chan",
+    "passthrough": false,
+    "bytes": 89456,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowing-Bull.png",
+    "localPath": "/assets/migrated/gallery-index/16-image-0ac5517.webp",
+    "alt": "Bowing Bull by Zahed Tajeddin",
+    "passthrough": false,
+    "bytes": 23816,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bowing-Bull-Close-Up.png",
+    "localPath": "/assets/migrated/gallery-index/16-hover-6855df4.webp",
+    "alt": "Bowing Bull by Zahed Tajeddin",
+    "passthrough": false,
+    "bytes": 22162,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Adam-Weissman-Golden-Earth-Studio-Clay-1.png",
+    "localPath": "/assets/migrated/gallery-index/17-hover-811d573.webp",
+    "alt": "Clay 1666 by Adam Weismann",
+    "passthrough": false,
+    "bytes": 326318,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Concial-Bowl-e1757915514292.jpg",
+    "localPath": "/assets/migrated/gallery-index/18-image-e213e9f.webp",
+    "alt": "Conical Bowl by Louis Vincent",
+    "passthrough": false,
+    "bytes": 7626,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Concial-Bowl-Close-Up.jpg",
+    "localPath": "/assets/migrated/gallery-index/18-hover-83571a4.webp",
+    "alt": "Conical Bowl by Louis Vincent",
+    "passthrough": false,
+    "bytes": 19460,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bull_s-Matter.png",
+    "localPath": "/assets/migrated/gallery-index/19-image-8b48e74.webp",
+    "alt": "Bull's Matter by Zahed Tejeddin",
+    "passthrough": false,
+    "bytes": 23742,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Bull_s-Matter-Close-Up.png",
+    "localPath": "/assets/migrated/gallery-index/19-hover-2b90fe2.webp",
+    "alt": "Bull's Matter by Zahed Tejeddin",
+    "passthrough": false,
+    "bytes": 25612,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Small-Teoju-2.png",
+    "localPath": "/assets/migrated/gallery-index/20-hover-0cb7f93.webp",
+    "alt": "Small Teoju by Jihyun Kim",
+    "passthrough": false,
+    "bytes": 41470,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-3.png",
+    "localPath": "/assets/migrated/gallery-index/21-image-377afcc.webp",
+    "alt": "Ginger Jar by Jacob Chan",
+    "passthrough": false,
+    "bytes": 101852,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Chopsticks.png",
+    "localPath": "/assets/migrated/gallery-index/22-image-f9dbb57.webp",
+    "alt": "Chopsticks by Rickie Cheuk",
+    "passthrough": false,
+    "bytes": 7152,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-II.jpg",
+    "localPath": "/assets/migrated/gallery-index/23-image-f28c30f.webp",
+    "alt": "Wall Panel II by Louis Vincent",
+    "passthrough": false,
+    "bytes": 11094,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Wall-Panel-II-Close-Up.jpg",
+    "localPath": "/assets/migrated/gallery-index/23-hover-76113e0.webp",
+    "alt": "Wall Panel II by Louis Vincent",
+    "passthrough": false,
+    "bytes": 26324,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-6.png",
+    "localPath": "/assets/migrated/gallery-index/25-image-432ad2e.webp",
+    "alt": "Sake Bottle by Jacob Chan",
+    "passthrough": false,
+    "bytes": 66130,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-7-e1757760215949.png",
+    "localPath": "/assets/migrated/gallery-index/25-hover-656fe46.webp",
+    "alt": "Sake Bottle by Jacob Chan",
+    "passthrough": false,
+    "bytes": 56712,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-07-at-19.33.53.png",
+    "localPath": "/assets/migrated/gallery-index/26-hover-925694e.webp",
+    "alt": "Heart of Matter by Arran Gregory",
+    "passthrough": false,
+    "bytes": 41976,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Jacob-Chen-Golden-Earth-Studio-8.png",
+    "localPath": "/assets/migrated/gallery-index/27-image-2edd135.webp",
+    "alt": "Sake Bottle by Jacob Chan",
+    "passthrough": false,
+    "bytes": 89716,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/09/Screenshot-2025-09-10-at-16.32.15-1.png",
+    "localPath": "/assets/migrated/gallery-index/27-hover-973fb14.webp",
+    "alt": "Sake Bottle by Jacob Chan",
+    "passthrough": false,
+    "bytes": 59138,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Elevation.png",
+    "localPath": "/assets/migrated/gallery-index/28-image-22b9f11.webp",
+    "alt": "Elevation by Zahed Tajeddin",
+    "passthrough": false,
+    "bytes": 12288,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Elevation-Close-Up.png",
+    "localPath": "/assets/migrated/gallery-index/28-hover-fc59d4e.webp",
+    "alt": "Elevation by Zahed Tajeddin",
+    "passthrough": false,
+    "bytes": 17796,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Ginger-Jar.png",
+    "localPath": "/assets/migrated/gallery-index/29-image-acd64bb.webp",
+    "alt": "Ginger Jar by Jacob Chan",
+    "passthrough": false,
+    "bytes": 17696,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2025/06/Ginger-Jar-Close-Up.png",
+    "localPath": "/assets/migrated/gallery-index/29-hover-9bfe751.webp",
+    "alt": "Ginger Jar by Jacob Chan",
+    "passthrough": false,
+    "bytes": 21060,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/The-Collective-Page.png",
+    "localPath": "/assets/migrated/pages/424-background-2445ec2.webp",
+    "alt": "",
+    "passthrough": false,
+    "bytes": 175662,
+    "status": "existing"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/09/Home-Main-Image.png",
+    "localPath": "/assets/migrated/pages/424-mobile-background-93a3f80.webp",
+    "alt": "",
+    "passthrough": false,
+    "bytes": 224368,
+    "sourceWidth": 1600,
+    "sourceHeight": 883,
+    "width": 1600,
+    "height": 883,
+    "format": "webp",
+    "status": "downloaded"
+  },
+  {
+    "remote": "https://goldenearthstudio.co.uk/wp-content/uploads/2023/10/Picture-1.jpg",
+    "localPath": "/assets/migrated/pages/600-background-2948cb8.webp",
+    "alt": "",
+    "passthrough": false,
+    "bytes": 194286,
     "status": "existing"
   },
   {

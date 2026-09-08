@@ -1,0 +1,155 @@
+/* Measurements from WordPress pages 333, 424 and 600. Page-scoped so
+   production stylesheet order cannot affect Journal or detail pages. */
+.interior-page.reference-interior { margin: 0; }
+.reference-interior .site-header { position: absolute; min-height: 140px; padding-inline: 5%; }
+.reference-interior .brand { font-size: 22px; letter-spacing: 4px; }
+.reference-interior .desktop-nav { gap: 3vw; }
+.reference-intro { min-height: 40vh; display: flex; align-items: flex-end; padding: 140px 3.5% 2%; }
+.reference-intro > * { margin: 0 0 0 53.5%; }
+.reference-intro h1, .mission-quote p { font: 400 22px/44px var(--serif); letter-spacing: 0; }
+.mission-quote p { margin: 0; }
+.mission-quote cite { font: italic 300 16px/28px var(--body); }
+.reference-photo { width: 93%; min-height: 90vh; margin: 18px auto 0; background-image: var(--reference-background); background-size: cover; background-repeat: no-repeat; color: var(--white); }
+.reference-interior [data-reveal] { transition-duration: 1.5s; }
+
+.collective-opening { display: flex; position: relative; }
+.collective-opening::before { content: ""; position: absolute; inset: 0; background: rgb(0 0 0 / 31.6%); }
+.collective-opening-copy { position: relative; width: 50%; align-self: center; }
+.collective-opening-copy h2 { margin: 0 0 0 5%; font: 400 22px/52px var(--serif); }
+.collective-opening-copy p { margin: 5% 0 0 5%; font: 300 16px/26px var(--body); letter-spacing: 1.5px; }
+.collective-boundaries-intro { display: grid; grid-template-columns: 18.768% 1fr; align-items: center; margin-block: 7%; }
+.collective-boundaries-intro h2 { margin: 0 0 0 28%; font: 400 22px/44px var(--serif); }
+.collective-boundaries-intro p { margin: 1% 0 0 8%; white-space: pre-line; font: 300 16px/23px var(--body); letter-spacing: 1px; }
+.collective-boundaries > .image-gallery { width: 90%; margin: 0 auto; }
+.collective-reference .image-gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 50px; align-items: start; }
+.collective-reference [data-masonry-ready] { grid-auto-rows: 1px; row-gap: 0; }
+.collective-reference .image-gallery-grid > a { position: relative; background: transparent; opacity: 1; box-shadow: -10px 10px 15px rgb(0 0 0 / 10%); }
+.collective-reference .image-gallery-grid img { display: block; height: auto; aspect-ratio: auto; transition: none; }
+.collective-reference .image-gallery-grid a:hover img, .collective-reference .image-gallery-grid a:focus-visible img { transform: none; filter: none; }
+.collective-reference .image-gallery-caption { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 20px; background: rgb(0 0 0 / 50%); color: var(--white); opacity: 0; transition: opacity 800ms; }
+.collective-reference .image-gallery-caption > span { font: 400 16px/44px var(--serif); letter-spacing: 4px; }
+.collective-reference .image-gallery-caption em { font: italic 300 14px/23px var(--body); letter-spacing: 1px; }
+.collective-reference .image-gallery-grid a:hover .image-gallery-caption, .collective-reference .image-gallery-grid a:focus-visible .image-gallery-caption { opacity: 1; }
+.collective-invitation { margin: 5% auto 7%; padding-top: calc(5% + 30px); position: relative; }
+.collective-invitation::before { content: ""; position: absolute; top: 0; left: 5%; width: 90%; height: 1px; background: #b3b3b3; }
+.collective-invitation-intro { display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 5%; }
+.collective-invitation-intro h2 { margin: 0; padding-right: 3%; text-align: right; font: 400 22px/44px var(--serif); }
+.collective-invitation-intro p { margin: 1% 9% 0 4%; font: 300 14px/29px var(--body); letter-spacing: 1px; }
+.collective-opportunities { width: 60%; margin: auto; display: grid; grid-template-columns: 1fr 1fr; }
+.collective-opportunities article { padding: 0 9% 0 10%; }
+.collective-opportunities article + article { border-left: 1px solid #c5c5c5; padding-left: 14%; }
+.collective-opportunities h2 { font: 400 22px/44px var(--serif); margin: 0 0 5%; }
+.collective-opportunities p { font: italic 300 14px/19px var(--body); letter-spacing: 1px; overflow-wrap: anywhere; }
+.collective-opportunities a { text-decoration: underline; text-underline-offset: 3px; }
+
+.gallery-reference .gallery-tabs { width: 78%; max-width: none; margin: auto; padding: 33px 0 0; }
+.gallery-reference .gallery-tab-list { margin: 0 2% 47px; padding-bottom: 12px; border-bottom: 1px solid #595952; gap: 16px; align-items: center; }
+.gallery-reference .gallery-tab-list a { padding: 0; font: 400 17px/17px var(--serif); letter-spacing: 1px; }
+.gallery-reference .gallery-tab-list a[aria-selected="true"] { color: #b3b3b3; }
+.gallery-reference .gallery-tab-list a[aria-selected="true"]::after { display: none; }
+.gallery-tab-separator { margin-right: 16px; font: 300 17px/17px var(--body); }
+.reference-catalogue { display: grid; grid-template-columns: repeat(3, 25%); justify-content: space-around; column-gap: 4%; row-gap: 3vw; }
+.reference-catalogue-card { min-width: 0; }
+.reference-catalogue-image { position: relative; display: block; height: 600px; overflow: hidden; opacity: 1; }
+.reference-catalogue-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.reference-catalogue-hover { position: absolute; inset: 0; opacity: 0; transition: opacity 2s ease; }
+.reference-catalogue-image:hover .reference-catalogue-hover, .reference-catalogue-image:focus-visible .reference-catalogue-hover { opacity: .85; }
+.reference-catalogue-card h2 { margin: 20px 0 0; font: 400 16px/44px var(--serif); letter-spacing: 4px; }
+.gallery-commission { position: relative; width: 90%; padding-left: 25.272%; margin: 15% 0 5%; display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
+.gallery-commission > div { padding-right: 15%; }
+.gallery-commission h2 { margin: 0; font: 400 22px/44px var(--serif); }
+.gallery-commission p { margin: 2% 0 0; font: 300 14px/22.4px var(--body); letter-spacing: 1px; }
+.gallery-commission > div > a { display: inline-block; margin-top: 28px; font-size: 14px; }
+.commission-anchor { position: absolute; top: 0; }
+.gallery-commission .contact-form { gap: 30px 20px; }
+.gallery-commission .contact-form label { gap: 0; font: 400 14px/23px var(--serif); }
+.gallery-commission .placeholder-labels label > span { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.gallery-commission .contact-form input { height: 39px; padding: 5px 0; }
+.gallery-commission .contact-form textarea { height: 100px; padding: 5px 0; }
+
+.mission-opening { display: grid; grid-template-columns: 1fr 1fr; }
+.mission-photo-caption { margin: 20% 0 0 13%; font: 400 16px/44px var(--serif); letter-spacing: 4px; }
+.mission-photo-caption em { font-size: 24px; }
+.mission-opening-copy { align-self: center; padding-right: 4%; }
+.mission-opening-copy h1 { margin: 15% 0 5% 10%; font: 400 22px/44px var(--serif); }
+.mission-opening-copy > div { margin-left: 10%; }
+.mission-opening-copy p { font: 300 16px/28px var(--body); margin: 0 0 28px; }
+.mission-founders { display: grid; grid-template-columns: 1fr 1fr; min-height: 50vh; margin: 2% 0 5%; align-items: center; }
+.mission-founders .founder-portraits { margin-left: 40%; margin-right: 10%; }
+.mission-founders .image-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 27px; }
+.mission-founders .image-gallery-grid img { display: block; aspect-ratio: 9 / 16; filter: grayscale(1); }
+.mission-founders-copy { padding-right: 36%; }
+.mission-founders-copy h2 { margin: 0 0 2% 10%; font: 400 22px/44px var(--serif); }
+.mission-founders-copy p { margin: 0 0 0 10%; font: 300 16px/28px var(--body); }
+
+@media (min-width: 1367px) { .reference-photo { background-attachment: fixed; } }
+@media (max-width: 1366px) {
+  .collective-reference .image-gallery-grid { column-gap: 10px; }
+  .reference-catalogue-image { height: 450px; }
+}
+@media (max-width: 1024px) {
+  .reference-intro > * { margin-left: 30%; }
+  .collective-opening-copy { width: 85%; padding-block: 12%; }
+  .collective-reference .image-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .collective-opportunities { width: 85%; }
+  .gallery-reference .gallery-tabs { width: 92%; }
+  .reference-catalogue { grid-template-columns: repeat(3, 29%); column-gap: 2%; }
+  .reference-catalogue-image { height: 350px; }
+  .mission-opening-copy { padding-right: 8%; }
+  .mission-founders-copy { padding-right: 12%; }
+  .mission-founders .founder-portraits { margin-left: 12%; }
+}
+@media (max-width: 767px) {
+  .reference-interior .site-header { position: relative; min-height: 72px; padding-inline: 5%; }
+  .reference-interior .brand { font-size: 22px; letter-spacing: 4px; max-width: 220px; line-height: 1; }
+  .reference-interior .brand em { display: block; }
+  .reference-intro { padding: 32vw 7% 5%; align-items: flex-end; justify-content: center; }
+  .reference-intro > * { margin: 0; text-align: center; }
+  .reference-intro h1, .mission-quote p { font-size: 22px; line-height: 1.4; }
+  .reference-intro br { display: none; }
+  .mission-quote cite { display: block; margin-top: 12px; font-size: 14px; }
+  .reference-photo { width: 100%; margin-top: 0; min-height: 90vh; background-image: var(--reference-mobile-background); background-position: -654px 0; }
+  .collective-opening-copy { width: 100%; padding: 28% 5% 8%; align-self: flex-start; }
+  .collective-opening-copy h2, .collective-opening-copy p { margin-left: 0; }
+  .collective-opening-copy h2 { line-height: 1.7; }
+  .collective-opening-copy p { font-size: 14px; line-height: 21px; margin-top: 8%; }
+  .collective-boundaries-intro { grid-template-columns: 1fr; gap: 20px; margin: 10% 8% 7%; }
+  .collective-boundaries-intro h2, .collective-boundaries-intro p { margin: 0; }
+  .collective-boundaries-intro p { font-size: 14px; }
+  .collective-boundaries-intro h2 { text-align: center; }
+  .collective-boundaries > .image-gallery { width: 100%; }
+  .collective-reference .image-gallery-grid { grid-template-columns: 1fr; }
+  .collective-invitation { padding-top: 12%; margin-top: 12%; margin-bottom: 18%; }
+  .collective-invitation-intro { display: block; margin: 0 7% 12%; }
+  .collective-invitation-intro h2 { text-align: center; padding: 0; }
+  .collective-invitation-intro p { margin: 20px 0 0; }
+  .collective-opportunities { width: 86%; grid-template-columns: 1fr; gap: 40px; }
+  .collective-opportunities article, .collective-opportunities article + article { padding: 0; border: 0; }
+  .collective-opportunities h2 { text-align: center; }
+  .gallery-reference .gallery-tabs { width: 93%; padding-top: 30px; }
+  .gallery-reference .gallery-tab-list { margin-bottom: 32px; }
+  .reference-catalogue { grid-template-columns: 1fr; gap: 40px; padding-inline: 4%; }
+  .reference-catalogue-image { height: auto; aspect-ratio: 2 / 3; }
+  .reference-catalogue-card h2 { font-size: 15px; line-height: 28px; letter-spacing: 2px; }
+  .gallery-commission { width: 86%; padding: 0; grid-template-columns: 1fr; gap: 40px; margin: 20% auto; }
+  .gallery-commission > div { padding: 0; }
+  .mission-reference .reference-intro { display: block; padding-bottom: 20%; }
+  .mission-quote br { display: initial; }
+  .mission-reference .mission-quote cite { margin-top: 10vw; }
+  .mission-opening { display: flex; flex-direction: column; min-height: 100vh; padding: 38% 9% 12%; gap: 40px; }
+  .mission-photo-caption { margin: 0 -7%; letter-spacing: 4px; text-align: center; }
+  .mission-opening-copy { padding: 0; }
+  .mission-opening-copy h1 { margin: 0 0 24px; }
+  .mission-opening-copy > div { margin: 0; }
+  .mission-opening-copy p { font-size: 14px; line-height: 26px; }
+  .mission-founders { grid-template-columns: 1fr; margin: 12% 7% 18%; gap: 40px; }
+  .mission-founders .founder-portraits { margin: 0; }
+  .mission-founders .image-gallery-grid { gap: 10px; }
+  .mission-founders-copy { padding: 0; }
+  .mission-founders-copy h2, .mission-founders-copy p { margin-left: 0; }
+  .mission-founders-copy p { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reference-photo { background-attachment: scroll; }
+  .reference-catalogue-hover, .collective-reference .image-gallery-caption, .reference-interior [data-reveal] { transition: none; }
+}

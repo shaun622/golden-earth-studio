@@ -1,12 +1,12 @@
 # Editing Golden Earth Studio through Git
 
-All public catalogue and Journal content lives in Markdown under `src/content`. Edit a branch, run the checks, review the Cloudflare preview, then merge.
+Artist, artwork and Journal detail content lives in Markdown under `src/content`. Gallery index cards and Collective/Mission presentation copy live in `src/data/interior.generated.json`; these retain WordPress labels and image choices that differ from the detail pages. Edit a branch, run the checks, review the Cloudflare preview, then merge.
 
 ## Add an artist
 
 1. Add a Markdown file at `src/content/artists/<slug>.md` using an existing file as the field example.
 2. Store portrait/hover images below `public/assets/migrated/artists/` and use root-relative paths such as `/assets/migrated/artists/name-portrait.webp`.
-3. Set `listedInGallery: true` and add the slug to `artistOrder` in `src/data/gallery.generated.json` when the artist belongs in the public gallery.
+3. Set `listedInGallery: true`, add the slug to `artistOrder` in `src/data/gallery.generated.json`, and add an entry to `gallery.artists` in `src/data/interior.generated.json` with its detail `href`, exact `label`, `image`, `hoverImage` and `objectPosition`.
 4. Add artwork IDs as `artist-slug/artwork-slug`; every referenced ID must have a matching artwork file.
 
 ## Add an artwork
@@ -14,7 +14,7 @@ All public catalogue and Journal content lives in Markdown under `src/content`. 
 1. Add `src/content/artworks/<artist-slug>/<artwork-slug>.md`.
 2. Keep `id`, `artistSlug`, and `slug` aligned with the folder and URL. Use optional `price: null` when none is stated.
 3. Put the main and detail images in `public/assets/migrated/artworks/<artist-slug>/`, then list them in `gallery` in display order.
-4. Add the stable ID to the artist's `artworkIds`, and to `artworkOrder` only if it should appear in the Gallery Artwork tab.
+4. Add the stable ID to the artist's `artworkIds`. For a Gallery Artwork tab card, also add it to `artworkOrder` and `gallery.artworks` in `src/data/interior.generated.json`, preserving the desired index label and image pair separately from the detail page.
 
 ## Add a Journal story
 

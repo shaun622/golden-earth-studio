@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
+import { prepareInterior } from "./prepare-interior.mjs";
 
 const root = process.cwd();
 const referenceRoot = path.join(root, "docs", "reference");
@@ -395,19 +396,18 @@ await fs.writeFile(path.join(contentRoot, "journal", "the-circular-economy-podca
 
 const collectiveRecord = await readReference("content", 424);
 const collectiveMediaLinks = (collectiveRecord.links || []).filter((link) => isMediaUrl(link.href)).slice(0, 9);
+const collectiveDimensions = [...collectiveRecord.referenceHtml.matchAll(/data-width="(\d+)" data-height="(\d+)"/g)];
+if (collectiveDimensions.length !== 9) throw new Error("Collective source dimensions changed");
 const collective = collectiveMediaLinks.map((link, index) => ({
   id: `collective-${index + 1}`, order: index, caption: cleanText(link.text), creator: cleanText(link.text).split(/\s+-\s+/)[0],
   image: registerAsset(link.href, "collective", `${index + 1}-${cleanText(link.text)}`, cleanText(link.text)), alt: cleanText(link.text), originalUrl: link.href,
+  width: Number(collectiveDimensions[index][1]), height: Number(collectiveDimensions[index][2]),
 }));
 
 const pageSpecs = [
   ["our-mission", 600, "Our Mission"], ["terms", 1528, "Terms"], ["privacy-policy", 1823, "Privacy Policy"], ["journal2", 478, "Journal Archive"],
 ];
-const missionBody = `Currently, only half of all excavation waste produced in the UK is recovered for secondary uses. At Golden Earth Studio, we see an opportunity to change that.
-
-Our focus is to make by-products from construction sites accessible, replacing typical commercial clay bodies that may be made from quarried or mined minerals and imported from various locations.
-
-Our actions can drastically reduce the CO2 associated with the transportation of waste and virgin raw materials, preserve our natural resources and reduce the volume of waste contributing to landfills.`;
+const { missionBody } = await prepareInterior({ readReference, registerAsset, cleanText, blocksFromHtml });
 const pageModels = [];
 for (const [slug, id, title] of pageSpecs) {
   const record = await readReference("content", id);

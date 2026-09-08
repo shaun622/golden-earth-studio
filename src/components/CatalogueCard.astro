@@ -1,0 +1,11 @@
+---
+interface Props { href: string; label: string; image: string; hoverImage: string; objectPosition: string; }
+const { href, label, image, hoverImage, objectPosition } = Astro.props;
+---
+<article class="reference-catalogue-card">
+  <a href={href} class="reference-catalogue-image" aria-label={label}>
+    <img src={image} alt={label} width="600" height="900" loading="lazy" style={{ objectPosition }} />
+    <img class="reference-catalogue-hover" src={hoverImage} alt="" width="600" height="900" loading="lazy" />
+  </a>
+  <h2><a href={href}>{label}</a></h2>
+</article>
