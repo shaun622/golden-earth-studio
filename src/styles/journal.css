@@ -1,5 +1,5 @@
 /* Journal measurements from WordPress page 1947; intentionally page-scoped. */
-.journal-interior { margin: 0; }
+.interior-page.journal-interior { margin: 0; }
 .journal-interior .site-header { position: absolute; min-height: 140px; padding-inline: 5%; }
 .journal-interior .brand { font-size: 22px; letter-spacing: 4px; }
 .journal-interior .desktop-nav { gap: 3vw; }
@@ -16,17 +16,17 @@
 .journal-card-copy { padding: 35px; }
 .journal-card h2 { margin: 0 0 15px; font: 400 16px/44px var(--serif); letter-spacing: 4px; }
 .journal-card p { margin: 0; font: 300 16px/23px var(--body); letter-spacing: 1px; }
-.journal-dialog { width: 50vw; height: 80vh; max-height: 80vh; min-height: 0; padding: 24px; }
-.journal-dialog .dialog-close { font: 300 28px/1 var(--body); width: 44px; height: 44px; margin: -12px -12px 0 auto; }
-.journal-dialog-article { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 5%; padding-top: 7%; }
-.journal-dialog-article .prose { font: 300 16px/28px var(--body); letter-spacing: 1px; }
-.journal-dialog-article .journal-article-title { margin: 0 0 20px; font: 400 22px/44px var(--body); letter-spacing: 1px; }
-.journal-dialog-article .article-date { margin-bottom: 30px; font: 400 16px/1.4 var(--body); letter-spacing: 1px; text-transform: none; }
+.journal-page .journal-dialog { width: 50vw; height: 80vh; max-height: 80vh; min-height: 0; padding: 24px; }
+.journal-page .journal-dialog .dialog-close { font: 300 28px/1 var(--body); width: 44px; height: 44px; margin: -12px -12px 0 auto; }
+.journal-page .journal-dialog-article { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 5%; padding-top: 7%; }
+.journal-page .journal-dialog-article .prose { font: 300 16px/28px var(--body); letter-spacing: 1px; }
+.journal-page .journal-dialog-article .journal-article-title { margin: 0 0 20px; font: 400 22px/44px var(--body); letter-spacing: 1px; }
+.journal-page .journal-dialog-article .article-date { margin-bottom: 30px; font: 400 16px/1.4 var(--body); letter-spacing: 1px; text-transform: none; }
 
 @media (max-width: 1024px) {
   .journal-intro h1 { margin-left: 30%; }
   .journal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .journal-dialog { width: 90vw; }
+  .journal-page .journal-dialog { width: 90vw; }
 }
 @media (max-width: 767px) {
   .journal-interior .site-header { min-height: 72px; padding-inline: 5%; }
@@ -37,10 +37,10 @@
   .journal-card { min-height: 0; margin-bottom: 8vh; }
   .journal-card h2 { font-size: 17px; line-height: 1.4; }
   .journal-card p { font-size: 14px; }
-  .journal-dialog { width: 100vw; height: 90dvh; max-height: 90dvh; margin: auto; padding: 20px; }
-  .journal-dialog-article { grid-template-columns: 1fr; gap: 24px; }
-  .journal-dialog-article > img { max-height: 40vh; }
-  .journal-dialog-article .prose { font-size: 14px; }
+  .journal-page .journal-dialog { width: 100vw; height: 90dvh; max-height: 90dvh; margin: auto; padding: 20px; }
+  .journal-page .journal-dialog-article { grid-template-columns: 1fr; gap: 24px; }
+  .journal-page .journal-dialog-article > img { max-height: 40vh; }
+  .journal-page .journal-dialog-article .prose { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .journal-card img, .journal-card-image::after { transition: none; }
