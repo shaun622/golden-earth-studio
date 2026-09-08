@@ -104,6 +104,10 @@ video {
   max-width: 100%;
 }
 
+/* Let responsive widths scale intrinsic heights; explicit image-frame heights
+   (portraits, crossfades and journal cards) still take precedence. */
+img { height: auto; }
+
 .page-frame {
   margin: var(--edge);
   overflow: clip;
@@ -420,7 +424,7 @@ video {
 
 .contact-form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.8rem 2.5rem;
 }
 
@@ -456,6 +460,7 @@ video {
 
 .form-actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
@@ -518,6 +523,10 @@ video {
 }
 
 .legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
   margin: 0;
   font-size: 0.85rem;
 }
@@ -610,6 +619,29 @@ video {
 }
 
 @media (max-width: 1050px) {
+  .contact-section {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+    gap: 3rem;
+  }
+
+  .site-footer { gap: 2rem; }
+
+  .contact-form input,
+  .contact-form textarea {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .contact-form button,
+  .form-mailto {
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-mailto { display: inline-flex; }
+  .js .contact-form button { display: inline-flex; }
+
   .artwork-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -623,7 +655,7 @@ video {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
   :root {
     --edge: 0;
   }
@@ -658,9 +690,10 @@ video {
     position: relative;
     z-index: 6;
     display: grid;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.45rem 0.2rem;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0.8rem 0.7rem;
     border: 0;
     background: transparent;
     color: var(--white);
@@ -688,12 +721,14 @@ video {
   .mobile-nav {
     position: absolute;
     z-index: 5;
-    inset: 3.3rem 0 auto;
+    inset: 100% 0 auto;
     display: flex;
     flex-direction: column;
     padding: 0.45rem 1rem 0.7rem;
     background: var(--paper);
     color: var(--ink);
+    max-height: calc(100dvh - 5rem);
+    overflow-y: auto;
   }
 
   .mobile-nav[hidden] {
@@ -701,6 +736,7 @@ video {
   }
 
   .mobile-nav a {
+    min-height: 44px;
     padding: 0.65rem 0;
     font-family: var(--serif);
     font-size: 1rem;
@@ -825,6 +861,16 @@ video {
   .footer-nav {
     gap: 0.5rem;
   }
+
+  .footer-nav a,
+  .legal-links a,
+  .social-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .social-links a { min-width: 44px; }
 
   .footer-contact {
     align-items: stretch;

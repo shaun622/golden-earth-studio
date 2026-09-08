@@ -165,11 +165,11 @@
   overflow: auto;
 }
 .lightbox-dialog::backdrop, .journal-dialog::backdrop { background: rgba(18, 18, 16, 0.82); }
-.dialog-close { position: sticky; z-index: 3; top: 0; display: block; margin-left: auto; padding: 0.5rem; border: 0; background: var(--paper); color: inherit; cursor: pointer; }
+.dialog-close { position: sticky; z-index: 3; top: 0; display: block; min-width: 44px; min-height: 44px; margin-left: auto; padding: 0.5rem; border: 0; background: var(--paper); color: inherit; cursor: pointer; }
 .lightbox-dialog figure { margin: 0; display: grid; place-items: center; gap: 1rem; }
 .lightbox-dialog figure img { max-width: 82vw; max-height: 76vh; object-fit: contain; }
 .lightbox-dialog figcaption { font-size: 0.85rem; }
-.lightbox-step { position: fixed; top: 50%; border: 0; background: transparent; color: inherit; font-size: 1.5rem; cursor: pointer; }
+.lightbox-step { position: fixed; top: 50%; min-width: 44px; min-height: 44px; border: 0; background: var(--paper); color: inherit; font-size: 1.5rem; cursor: pointer; }
 .lightbox-step--previous { left: 4vw; } .lightbox-step--next { right: 4vw; }
 
 .editorial-lead {
@@ -218,7 +218,7 @@
   .artist-profile, .artwork-detail, .article-shell, .founders-section { grid-template-columns: 1fr 1.25fr; gap: 3rem; }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
   .interior-page { margin: 0; }
   .page-eyebrow { padding-inline: 1rem; }
   .page-intro { padding: 4.5rem 1rem; }
@@ -238,9 +238,14 @@
   .collective-page > section:not(.contact-section, .editorial-lead) { padding-inline: 0.75rem; }
   .editorial-lead { padding: 0 1rem 5rem; }
   .section-intro { margin-top: -1rem; }
-  .lightbox-dialog, .journal-dialog { width: 100vw; max-height: 100vh; min-height: 100vh; margin: 0; padding: 1rem; }
+  .lightbox-dialog, .journal-dialog { width: 100vw; max-height: 100dvh; min-height: 100dvh; margin: 0; padding: 1rem; }
   .journal-dialog-article > img, .article-cover { position: static; max-height: 65vh; }
   .lightbox-step--previous { left: 0.5rem; } .lightbox-step--next { right: 0.5rem; }
   .legal-page .page-intro { padding-inline: 1rem; }
   .legal-prose { padding-inline: 1rem; }
+}
+
+@media (max-height: 500px) {
+  .lightbox-dialog { padding: 1rem; }
+  .lightbox-dialog figure img { max-height: calc(100dvh - 12rem); }
 }

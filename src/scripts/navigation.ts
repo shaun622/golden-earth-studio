@@ -20,6 +20,18 @@ if (menuButton && mobileMenu) {
     if (opening) mobileMenu.querySelector<HTMLAnchorElement>("a")?.focus();
   });
   mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => closeMenu()));
-  window.addEventListener("resize", () => { if (window.innerWidth > 760) closeMenu(); });
-  document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !mobileMenu.hidden) closeMenu({ restoreFocus: true }); });
+  window.addEventListener("resize", () => { if (window.innerWidth > 767) closeMenu(); });
+  document.addEventListener("keydown", (event) => {
+    if (mobileMenu.hidden) return;
+    if (event.key === "Escape") closeMenu({ restoreFocus: true });
+    if (event.key !== "Tab") return;
+    const lastLink = mobileMenu.querySelector<HTMLAnchorElement>("a:last-child");
+    if (event.shiftKey && document.activeElement === menuButton) {
+      event.preventDefault();
+      lastLink?.focus();
+    } else if (!event.shiftKey && document.activeElement === lastLink) {
+      event.preventDefault();
+      menuButton.focus();
+    }
+  });
 }
