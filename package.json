@@ -1,0 +1,26 @@
+{
+  "name": "golden-earth-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "build": "npm run check && astro build",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "astro": "7.3.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@types/node": "^26.5.0",
+    "typescript": "6.0.3",
+    "wrangler": "4.129.1"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

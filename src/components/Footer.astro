@@ -1,0 +1,27 @@
+---
+import ContactForm from "./ContactForm.astro";
+import { navigation } from "../data/home";
+---
+
+<footer class="site-footer">
+  <div class="footer-identity">
+    <p class="footer-brand">Golden Earth <em>Studio</em></p>
+    <p><em>Established 2022</em> ©</p>
+    <p class="legal-links">
+      <a href="https://goldenearthstudio.co.uk/terms/">Terms</a>
+      <span aria-hidden="true">|</span>
+      <a href="https://goldenearthstudio.co.uk/privacy-policy/">Privacy Policy</a>
+    </p>
+  </div>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    {navigation.map((item) => <a href={item.href}>{item.label}</a>)}
+  </nav>
+  <div class="footer-contact">
+    <ContactForm compact />
+    <a class="footer-email" href="mailto:info@goldenearthstudio.co.uk">info@goldenearthstudio.co.uk</a>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/golden-earth-studio/" aria-label="Golden Earth Studio on LinkedIn">in</a>
+      <a href="https://www.instagram.com/goldenearthstudio/" aria-label="Golden Earth Studio on Instagram">ig</a>
+    </div>
+  </div>
+</footer>

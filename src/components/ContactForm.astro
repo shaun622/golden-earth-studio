@@ -1,0 +1,53 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<form class:list={["contact-form", { compact }]} action="/api/contact" method="post" data-preview-form>
+  {compact ? (
+    <>
+      <label>
+        <span>Email address</span>
+        <input type="email" name="email" autocomplete="email" required />
+      </label>
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" autocomplete="name" required />
+      </label>
+      <label>
+        <span>Message</span>
+        <input type="text" name="message" required />
+      </label>
+    </>
+  ) : (
+    <>
+      <label>
+        <span>First Name*</span>
+        <input type="text" name="firstName" autocomplete="given-name" required />
+      </label>
+      <label>
+        <span>Last Name*</span>
+        <input type="text" name="lastName" autocomplete="family-name" required />
+      </label>
+      <label>
+        <span>Email*</span>
+        <input type="email" name="email" autocomplete="email" required />
+      </label>
+      <label>
+        <span>Subject*</span>
+        <input type="text" name="subject" required />
+      </label>
+      <label class="message-field">
+        <span>Your Message</span>
+        <textarea name="message" rows="3"></textarea>
+      </label>
+    </>
+  )}
+  <div class="form-actions">
+    <p class="form-status" aria-live="polite" data-form-status></p>
+    <button type="submit">{compact ? "Contact Us" : "Send"}</button>
+  </div>
+</form>

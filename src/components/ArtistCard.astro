@@ -1,0 +1,18 @@
+---
+interface Props {
+  name: string;
+  portrait: string;
+  artwork: string;
+  href: string;
+}
+
+const { name, portrait, artwork, href } = Astro.props;
+---
+
+<article class="artist-card">
+  <a href={href} class="artist-image" aria-label={`Explore work by ${name}`}>
+    <img class="artist-portrait" src={portrait} alt={`${name}, featured artist`} width="600" height="900" loading="lazy" />
+    <img class="artist-artwork" src={artwork} alt="" width="800" height="1000" loading="lazy" />
+  </a>
+  <h3><a href={href}>{name}</a></h3>
+</article>

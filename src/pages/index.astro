@@ -1,0 +1,96 @@
+---
+import ArtistCard from "../components/ArtistCard.astro";
+import ArtworkCard from "../components/ArtworkCard.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { artworks, featuredArtists, liveSite } from "../data/home";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Golden Earth Studio – Art for the Anthropocene"
+  description="Golden Earth Studio is a platform for creatives and landscape developers to embrace circularity."
+>
+  <main id="content" class="page-frame">
+    <section class="hero" aria-label="Subsurface by Hal Strode">
+      <video autoplay muted loop playsinline preload="metadata" poster="/assets/images/hero-fallback.webp">
+        <source src="/assets/video/homepage.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-shade"></div>
+      <Header />
+      <p class="hero-credit">Subsurface by Hal Strode</p>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="intro-inner">
+        <h1 data-reveal>Art for the Anthropocene</h1>
+        <span class="small-rule" aria-hidden="true"></span>
+        <p data-reveal style="--reveal-delay: 140ms">
+          Golden Earth Studio is a platform for creatives<br />
+          and landscape developers to embrace <em>circularity.</em>
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" aria-labelledby="gallery-heading">
+      <div class="section-heading-row">
+        <h2 id="gallery-heading" data-reveal>Gallery</h2>
+        <span aria-hidden="true"></span>
+      </div>
+      <div class="artwork-grid">
+        {artworks.map((artwork) => <ArtworkCard {...artwork} />)}
+      </div>
+    </section>
+
+    <section class="artists-section section-pad" aria-labelledby="artists-heading">
+      <div class="artists-intro">
+        <h2 id="artists-heading" data-reveal>Explore Our Featured Artists</h2>
+        <p data-reveal style="--reveal-delay: 140ms">
+          We work with established artists whose practice is deeply rooted in material exploration, skillfully translating their knowledge and research into fine art and functional ware.
+        </p>
+      </div>
+      <div class="artists-grid">
+        {featuredArtists.map((artist) => <ArtistCard {...artist} />)}
+      </div>
+    </section>
+
+    <section class="collective-section section-pad" aria-labelledby="collective-heading">
+      <img src="/assets/images/collective.webp" alt="Hands testing reclaimed construction materials in the studio" width="1024" height="824" loading="lazy" />
+      <div class="collective-copy">
+        <h2 id="collective-heading" data-reveal>The Collective</h2>
+        <p data-reveal style="--reveal-delay: 100ms">
+          Extending an invitation to all who are intrigued by the possibilities within the construction industry’s abundance of discarded resources, Golden Earth Studio engages with creatives from a wide range of disciplines.
+        </p>
+        <p data-reveal style="--reveal-delay: 180ms">
+          <a href={`${liveSite}/collective/`}><em>Explore</em></a> the many ways circularity has been embraced across multiple mediums through our collective.
+        </p>
+      </div>
+    </section>
+
+    <section class="journal-section" aria-labelledby="journal-heading" data-parallax>
+      <div class="journal-overlay"></div>
+      <div class="journal-copy">
+        <h2 id="journal-heading" data-reveal>The Journal</h2>
+        <p data-reveal style="--reveal-delay: 100ms">
+          Golden Earth Studio is an ever-evolving initiative, seizing new opportunities to collaborate, innovate and make an impact wherever and however we can.
+        </p>
+        <p data-reveal style="--reveal-delay: 180ms">
+          Our <a href={`${liveSite}/journal/`}>Journal</a> is a documentation of past &amp; future events, where we extend invitations to engage actively, broadcast the availability of waste materials and unveil new art works.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" aria-labelledby="contact-heading">
+      <div class="contact-copy">
+        <h2 id="contact-heading" data-reveal>Contact Us</h2>
+        <p data-reveal style="--reveal-delay: 100ms">
+          As an art collector looking to acquire their next bespoke piece or an artist seeking low impact materials to incorporate into their practice, we await your message to plan your next steps.
+        </p>
+      </div>
+      <ContactForm />
+    </section>
+
+    <Footer />
+  </main>
+</BaseLayout>
