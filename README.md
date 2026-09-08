@@ -20,14 +20,14 @@ Run `npm run check` for Astro and TypeScript validation, and `npm run build` to 
 
 Cloudflare Builds is connected to `shaun622/golden-earth-studio`. Production pushes run `npm run build` followed by `npx wrangler deploy`; other branches receive preview builds.
 
-The current homepage uses absolute links back to the live WordPress site for pages that have not been rebuilt yet. Replace these with local routes as each destination is migrated.
-
-Search indexing is disabled while this is a preview. Remove the `noindex` directive in `BaseLayout.astro` when the custom domain moves from WordPress to this build.
+The complete public site is generated from local Markdown and typed data. Search indexing remains disabled during review; follow `docs/LAUNCH-CHECKLIST.md` when the custom domain moves from WordPress.
 
 ## Forms
 
-The homepage contains the finished form layout, but email delivery is intentionally disabled during the visual build. The next integration phase will add a Worker endpoint backed by Resend and Cloudflare Turnstile. Store API keys with Wrangler secrets; never commit them.
+The Worker endpoint supports general, footer, commission, and artwork enquiries through Resend and Cloudflare Turnstile. Delivery defaults to disabled until the sender, recipient, site key, and secrets are configured. Visitors always have a direct email fallback.
 
 ## Assets
 
 The visual assets in `public/assets/` were captured from the existing Golden Earth Studio site for this authorized rebuild. Keep filenames stable unless every reference is updated.
+
+See `docs/CONTENT-EDITING.md` for the Git editing workflow and run `npm run audit` after every production build.

@@ -9,7 +9,10 @@
     "build": "npm run check && astro build",
     "preview": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types --env-file .dev.vars.example",
+    "test:worker": "node --experimental-strip-types --test worker/contact.test.ts",
+    "audit": "node scripts/check-site.mjs",
+    "check:runtime": "node scripts/check-runtime.mjs"
   },
   "dependencies": {
     "astro": "7.3.1"
