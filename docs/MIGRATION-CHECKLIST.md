@@ -1,6 +1,6 @@
 # Golden Earth Studio — execution checklist
 
-Status: website rebuild complete locally; Cloudflare branch-preview verification pending. This document is the progress record for the approved plan in `IMPLEMENTATION-PLAN.md`.
+Status: website rebuild complete and verified on the Cloudflare version preview. This document is the progress record for the approved plan in `IMPLEMENTATION-PLAN.md`.
 
 ## Planning evidence complete
 
@@ -19,7 +19,7 @@ Status: website rebuild complete locally; Cloudflare branch-preview verification
 - [x] Phase 4: Collective, Mission, Terms and Privacy complete.
 - [x] Phase 5: 16 Journal cards/overlays, 17 article pages, archive and legacy route handling complete.
 - [x] Phase 6: forms implemented and mock-tested; API routing/type checks pass.
-- [ ] Phase 7: all-route/content/media/interaction audits pass; branch preview verified; handover docs complete.
+- [x] Phase 7: all-route/content/media/interaction audits pass; branch preview verified; handover docs complete.
 - [ ] Rebuilt preview accepted by user.
 - [ ] Phase 8: provider activation and domain cutover completed only with the required configuration/authorization.
 
@@ -59,14 +59,14 @@ Record actual routes individually in the implementation route ledger; do not use
 | 2026-09-08 | Planning | See Git history | Source capture and implementation specification | Awaiting build approval |
 | 2026-09-08 | 1 | `199b111` | 10 artists, 22 artworks, 17 Journal records, 9 Collective entries, 93 local media files | Arran source portrait unavailable |
 | 2026-09-08 | 2–5 | `f97a4cb` | 58-page Astro build; all catalogue and Journal routes opened in Edge | Owner content decisions remain |
-| 2026-09-08 | 6–7 local | `de11725` | 7 Worker test groups; static audit and 57-route runtime audit pass; Wrangler dry run passes | Cloudflare branch preview pending |
+| 2026-09-08 | 6–7 | `de11725`, `5e2a4bb` | 7 Worker test groups; static and 57-route runtime audits pass locally and remotely; Cloudflare build `f725a884` and preview version `d5798811` pass | Provider activation and owner acceptance pending |
 
 ## Final handover evidence to fill in
 
-- Branch and commit: `codex/full-site-rebuild` at `de11725` before this checklist update.
-- Cloudflare branch preview URL and successful build: pending branch push.
+- Branch and commit: `codex/full-site-rebuild` at website commit `5e2a4bb` (plus this checklist update).
+- Cloudflare branch preview URL and successful build: `https://d5798811-golden-earth-studio.shaun-02d.workers.dev/`; Workers Build `f725a884-e8ff-41f5-84f1-3486005bdc40` passed.
 - Build/type/route/media checks: Astro reports 0 errors/warnings/hints and builds 58 pages; static audit reports 57 content routes, 5 redirects, 5 explicit not-found paths and 93 local migrated assets (8,918,944 bytes).
-- Desktop/mobile reference comparisons: desktop gallery, varied artist pages, artwork details, Mission, and long Journal overlay checked in Edge; responsive rules and no-JS fallbacks verified in shipped HTML/CSS.
+- Desktop/mobile reference comparisons: desktop gallery, varied artist pages, artwork details, Mission, and long Journal overlay checked in Edge. Responsive rules and no-JS fallbacks were verified in shipped HTML/CSS; the Edge extension did not expose viewport emulation for a separate narrow-screen screenshot.
 - Gallery/lightbox/Journal history checks: all 10 artist, 22 artwork and 17 Journal article pages opened in Edge; current and legacy Journal fragment paths resolve to the correct dialog content.
 - Mock form tests: 7 test groups pass across disabled/config/error/success/idempotency/privacy cases; local disabled endpoint returns the documented 503 and email fallback message.
 - Real email test (only if authorized/configured): not run; recipient, Resend and Turnstile are intentionally unconfigured.
