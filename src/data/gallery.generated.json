@@ -1,0 +1,49 @@
+{
+  "artistOrder": [
+    "louis-vincent",
+    "jihyun-kim",
+    "jacob-chan",
+    "alexandra-yan-wong",
+    "adam-weismann",
+    "arran-gregory",
+    "zahed-tajeddin",
+    "rickie-cheuk"
+  ],
+  "artworkOrder": [
+    "jacob-chan/chess-set",
+    "alexandra-yan-wong/untitled-2025",
+    "louis-vincent/bowl",
+    "louis-vincent/wall-panel-i",
+    "jihyun-kim/teoju",
+    "arran-gregory/the-universe-was-an-egg-which-cracked",
+    "jacob-chan/sake-set",
+    "zahed-tajeddin/bowing-bull",
+    "adam-weismann/clay-2025",
+    "louis-vincent/conical-bowl",
+    "zahed-tajeddin/bulls-matter",
+    "jihyun-kim/small-teoju",
+    "jacob-chan/ginger-jar-2",
+    "rickie-cheuk/chopsticks",
+    "louis-vincent/wall-panel-ii",
+    "louis-vincent/plate",
+    "jacob-chan/sake-bottle-2",
+    "arran-gregory/heart-of-matter",
+    "jacob-chan/sake-bottle",
+    "zahed-tajeddin/elevation",
+    "jacob-chan/ginger-jar"
+  ],
+  "displayOnlyWorks": [
+    {
+      "id": "jacob-chan/sake-cups",
+      "artistSlug": "jacob-chan",
+      "title": "Sake Cups",
+      "source": "visible artist-profile entry; no detail URL"
+    },
+    {
+      "id": "jacob-chan/teapot",
+      "artistSlug": "jacob-chan",
+      "title": "Teapot",
+      "source": "visible artist-profile entry; no detail URL"
+    }
+  ]
+}

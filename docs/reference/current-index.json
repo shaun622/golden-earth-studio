@@ -1,0 +1,551 @@
+{
+  "checkedAt": "2026-09-08T04:33:22.609Z",
+  "source": "live WordPress REST index",
+  "pages": [
+    {
+      "id": 4475,
+      "date": "2025-09-13T10:43:03",
+      "modified": "2025-09-13T10:43:51",
+      "slug": "sake-bottle-2",
+      "link": "https://goldenearthstudio.co.uk/gallery/jacob-chan/sake-bottle-2/",
+      "title": {
+        "rendered": "Sake Bottle 2"
+      },
+      "parent": 1439
+    },
+    {
+      "id": 4470,
+      "date": "2025-09-13T10:42:11",
+      "modified": "2025-09-13T10:44:03",
+      "slug": "sake-bottle",
+      "link": "https://goldenearthstudio.co.uk/gallery/jacob-chan/sake-bottle/",
+      "title": {
+        "rendered": "Sake Bottle"
+      },
+      "parent": 1439
+    },
+    {
+      "id": 4453,
+      "date": "2025-09-13T10:40:13",
+      "modified": "2025-09-13T10:41:45",
+      "slug": "sake-set",
+      "link": "https://goldenearthstudio.co.uk/gallery/jacob-chan/sake-set/",
+      "title": {
+        "rendered": "Sake Set"
+      },
+      "parent": 1439
+    },
+    {
+      "id": 4433,
+      "date": "2025-09-13T10:27:56",
+      "modified": "2025-09-13T10:31:43",
+      "slug": "ginger-jar-2",
+      "link": "https://goldenearthstudio.co.uk/gallery/jacob-chan/ginger-jar-2/",
+      "title": {
+        "rendered": "Ginger Jar 2"
+      },
+      "parent": 1439
+    },
+    {
+      "id": 4387,
+      "date": "2025-09-12T02:24:36",
+      "modified": "2025-09-12T02:27:05",
+      "slug": "small-teoju",
+      "link": "https://goldenearthstudio.co.uk/gallery/jihyun-kim/small-teoju/",
+      "title": {
+        "rendered": "Small Teoju"
+      },
+      "parent": 2837
+    },
+    {
+      "id": 4351,
+      "date": "2025-09-12T00:53:52",
+      "modified": "2025-09-17T00:54:41",
+      "slug": "clay-2025",
+      "link": "https://goldenearthstudio.co.uk/gallery/adam-weismann/clay-2025/",
+      "title": {
+        "rendered": "Clay, 2025"
+      },
+      "parent": 4332
+    },
+    {
+      "id": 4332,
+      "date": "2025-09-11T02:22:42",
+      "modified": "2025-09-17T00:53:24",
+      "slug": "adam-weismann",
+      "link": "https://goldenearthstudio.co.uk/gallery/adam-weismann/",
+      "title": {
+        "rendered": "Adam Weismann"
+      },
+      "parent": 333
+    },
+    {
+      "id": 4270,
+      "date": "2025-09-10T04:50:29",
+      "modified": "2025-09-12T00:47:58",
+      "slug": "untitled-2025",
+      "link": "https://goldenearthstudio.co.uk/gallery/alexandra-yan-wong/untitled-2025/",
+      "title": {
+        "rendered": "Untitled, 2025"
+      },
+      "parent": 4262
+    },
+    {
+      "id": 4262,
+      "date": "2025-09-10T04:13:54",
+      "modified": "2025-09-13T09:44:17",
+      "slug": "alexandra-yan-wong",
+      "link": "https://goldenearthstudio.co.uk/gallery/alexandra-yan-wong/",
+      "title": {
+        "rendered": "Alexandra Yan Wong"
+      },
+      "parent": 333
+    },
+    {
+      "id": 4257,
+      "date": "2025-09-10T03:36:36",
+      "modified": "2026-07-27T05:08:49",
+      "slug": "the-universe-was-an-egg-which-cracked",
+      "link": "https://goldenearthstudio.co.uk/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/",
+      "title": {
+        "rendered": "The Universe Was An Egg Which Cracked"
+      },
+      "parent": 4235
+    },
+    {
+      "id": 4249,
+      "date": "2025-09-10T03:16:23",
+      "modified": "2026-07-27T05:07:53",
+      "slug": "heart-of-matter",
+      "link": "https://goldenearthstudio.co.uk/gallery/arran-gregory/heart-of-matter/",
+      "title": {
+        "rendered": "Heart of Matter"
+      },
+      "parent": 4235
+    },
+    {
+      "id": 4235,
+      "date": "2025-09-10T02:46:55",
+      "modified": "2025-09-15T07:27:24",
+      "slug": "arran-gregory",
+      "link": "https://goldenearthstudio.co.uk/gallery/arran-gregory/",
+      "title": {
+        "rendered": "Arran Gregory"
+      },
+      "parent": 333
+    },
+    {
+      "id": 3155,
+      "date": "2025-06-14T02:20:15",
+      "modified": "2025-07-18T10:04:21",
+      "slug": "stillness",
+      "link": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/stillness/",
+      "title": {
+        "rendered": "Stillness"
+      },
+      "parent": 3072
+    },
+    {
+      "id": 3144,
+      "date": "2025-06-14T02:17:07",
+      "modified": "2025-07-18T10:04:27",
+      "slug": "elevation",
+      "link": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/elevation/",
+      "title": {
+        "rendered": "Elevation"
+      },
+      "parent": 3072
+    },
+    {
+      "id": 3133,
+      "date": "2025-06-14T02:12:51",
+      "modified": "2025-07-18T10:04:01",
+      "slug": "bulls-matter",
+      "link": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/bulls-matter/",
+      "title": {
+        "rendered": "Bull&#8217;s Matter"
+      },
+      "parent": 3072
+    },
+    {
+      "id": 3107,
+      "date": "2025-06-12T06:09:02",
+      "modified": "2025-07-18T10:04:49",
+      "slug": "bowing-bull",
+      "link": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/bowing-bull/",
+      "title": {
+        "rendered": "Bowing Bull"
+      },
+      "parent": 3072
+    },
+    {
+      "id": 3072,
+      "date": "2025-06-12T03:08:32",
+      "modified": "2025-07-18T07:56:32",
+      "slug": "zahed-tajeddin",
+      "link": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/",
+      "title": {
+        "rendered": "Zahed Tajeddin"
+      },
+      "parent": 333
+    },
+    {
+      "id": 3057,
+      "date": "2025-06-12T02:22:05",
+      "modified": "2025-07-18T10:01:16",
+      "slug": "wall-panel-ii",
+      "link": "https://goldenearthstudio.co.uk/gallery/louis-vincent/wall-panel-ii/",
+      "title": {
+        "rendered": "Wall Panel II"
+      },
+      "parent": 2952
+    },
+    {
+      "id": 3039,
+      "date": "2025-06-11T22:56:07",
+      "modified": "2025-07-18T10:02:45",
+      "slug": "plate",
+      "link": "https://goldenearthstudio.co.uk/gallery/louis-vincent/plate/",
+      "title": {
+        "rendered": "Plate"
+      },
+      "parent": 2952
+    },
+    {
+      "id": 3017,
+      "date": "2025-06-11T22:46:59",
+      "modified": "2025-09-12T01:55:56",
+      "slug": "conical-bowl",
+      "link": "https://goldenearthstudio.co.uk/gallery/louis-vincent/conical-bowl/",
+      "title": {
+        "rendered": "Conical Bowl"
+      },
+      "parent": 2952
+    },
+    {
+      "id": 3007,
+      "date": "2025-06-11T22:43:39",
+      "modified": "2025-07-18T10:01:21",
+      "slug": "wall-panel-i",
+      "link": "https://goldenearthstudio.co.uk/gallery/louis-vincent/wall-panel-i/",
+      "title": {
+        "rendered": "Wall Panel I"
+      },
+      "parent": 2952
+    },
+    {
+      "id": 2974,
+      "date": "2025-06-11T22:28:45",
+      "modified": "2025-07-18T10:03:12",
+      "slug": "bowl",
+      "link": "https://goldenearthstudio.co.uk/gallery/louis-vincent/bowl/",
+      "title": {
+        "rendered": "Bowl"
+      },
+      "parent": 2952
+    },
+    {
+      "id": 2952,
+      "date": "2025-06-11T10:21:39",
+      "modified": "2025-07-18T07:56:26",
+      "slug": "louis-vincent",
+      "link": "https://goldenearthstudio.co.uk/gallery/louis-vincent/",
+      "title": {
+        "rendered": "Louis Vincent"
+      },
+      "parent": 333
+    },
+    {
+      "id": 2878,
+      "date": "2025-06-11T01:49:44",
+      "modified": "2025-07-18T10:03:41",
+      "slug": "chopsticks",
+      "link": "https://goldenearthstudio.co.uk/gallery/rickie-cheuk/chopsticks/",
+      "title": {
+        "rendered": "Chopsticks"
+      },
+      "parent": 2872
+    },
+    {
+      "id": 2872,
+      "date": "2025-06-11T01:46:35",
+      "modified": "2025-07-18T07:56:54",
+      "slug": "rickie-cheuk",
+      "link": "https://goldenearthstudio.co.uk/gallery/rickie-cheuk/",
+      "title": {
+        "rendered": "Rickie Cheuk"
+      },
+      "parent": 333
+    },
+    {
+      "id": 2861,
+      "date": "2025-06-11T01:24:52",
+      "modified": "2025-09-15T03:06:52",
+      "slug": "teoju",
+      "link": "https://goldenearthstudio.co.uk/gallery/jihyun-kim/teoju/",
+      "title": {
+        "rendered": "Teoju"
+      },
+      "parent": 2837
+    },
+    {
+      "id": 2837,
+      "date": "2025-06-11T01:19:24",
+      "modified": "2025-09-13T09:45:19",
+      "slug": "jihyun-kim",
+      "link": "https://goldenearthstudio.co.uk/gallery/jihyun-kim/",
+      "title": {
+        "rendered": "Jihyun Kim"
+      },
+      "parent": 333
+    },
+    {
+      "id": 2826,
+      "date": "2025-06-11T01:12:27",
+      "modified": "2025-07-18T10:01:24",
+      "slug": "ginger-jar",
+      "link": "https://goldenearthstudio.co.uk/gallery/jacob-chan/ginger-jar/",
+      "title": {
+        "rendered": "Ginger Jar"
+      },
+      "parent": 1439
+    },
+    {
+      "id": 2753,
+      "date": "2025-06-08T12:16:22",
+      "modified": "2025-07-18T08:06:15",
+      "slug": "chess-set",
+      "link": "https://goldenearthstudio.co.uk/gallery/jacob-chan/chess-set/",
+      "title": {
+        "rendered": "Chess Set"
+      },
+      "parent": 1439
+    },
+    {
+      "id": 2464,
+      "date": "2025-03-31T13:27:39",
+      "modified": "2025-03-31T13:27:39",
+      "slug": "newsletter",
+      "link": "https://goldenearthstudio.co.uk/newsletter/",
+      "title": {
+        "rendered": "Newsletter"
+      },
+      "parent": 0
+    },
+    {
+      "id": 2398,
+      "date": "2024-08-22T08:54:00",
+      "modified": "2024-08-22T12:28:11",
+      "slug": "directory",
+      "link": "https://goldenearthstudio.co.uk/directory/",
+      "title": {
+        "rendered": "Directory"
+      },
+      "parent": 0
+    },
+    {
+      "id": 1947,
+      "date": "2024-01-25T08:36:15",
+      "modified": "2026-04-14T08:47:20",
+      "slug": "journal",
+      "link": "https://goldenearthstudio.co.uk/journal/",
+      "title": {
+        "rendered": "Journal"
+      },
+      "parent": 0
+    },
+    {
+      "id": 1823,
+      "date": "2023-11-12T13:36:25",
+      "modified": "2023-11-12T13:44:34",
+      "slug": "privacy-policy",
+      "link": "https://goldenearthstudio.co.uk/privacy-policy/",
+      "title": {
+        "rendered": "Privacy Policy"
+      },
+      "parent": 0
+    },
+    {
+      "id": 1528,
+      "date": "2023-10-14T07:54:20",
+      "modified": "2023-10-14T07:58:59",
+      "slug": "terms",
+      "link": "https://goldenearthstudio.co.uk/terms/",
+      "title": {
+        "rendered": "terms"
+      },
+      "parent": 0
+    },
+    {
+      "id": 1454,
+      "date": "2023-10-14T01:50:42",
+      "modified": "2024-02-26T06:27:26",
+      "slug": "celia-dowson",
+      "link": "https://goldenearthstudio.co.uk/gallery/celia-dowson/",
+      "title": {
+        "rendered": "Celia Dowson"
+      },
+      "parent": 333
+    },
+    {
+      "id": 1439,
+      "date": "2023-10-13T22:58:24",
+      "modified": "2025-09-13T10:52:40",
+      "slug": "jacob-chan",
+      "link": "https://goldenearthstudio.co.uk/gallery/jacob-chan/",
+      "title": {
+        "rendered": "Jacob Chan"
+      },
+      "parent": 333
+    },
+    {
+      "id": 600,
+      "date": "2023-09-09T03:36:06",
+      "modified": "2024-04-03T00:42:02",
+      "slug": "our-mission",
+      "link": "https://goldenearthstudio.co.uk/our-mission/",
+      "title": {
+        "rendered": "Our Mission"
+      },
+      "parent": 0
+    },
+    {
+      "id": 478,
+      "date": "2023-09-07T05:24:38",
+      "modified": "2024-01-25T08:35:57",
+      "slug": "journal2",
+      "link": "https://goldenearthstudio.co.uk/journal2/",
+      "title": {
+        "rendered": "Journal2"
+      },
+      "parent": 0
+    },
+    {
+      "id": 424,
+      "date": "2023-09-06T08:40:10",
+      "modified": "2025-11-18T15:43:51",
+      "slug": "collective",
+      "link": "https://goldenearthstudio.co.uk/collective/",
+      "title": {
+        "rendered": "Collective"
+      },
+      "parent": 0
+    },
+    {
+      "id": 362,
+      "date": "2023-09-05T13:16:44",
+      "modified": "2024-02-26T06:27:30",
+      "slug": "eleanor-herbosch",
+      "link": "https://goldenearthstudio.co.uk/gallery/eleanor-herbosch/",
+      "title": {
+        "rendered": "Eleanor Herbosch"
+      },
+      "parent": 333
+    },
+    {
+      "id": 333,
+      "date": "2023-09-05T10:12:33",
+      "modified": "2026-04-14T08:48:23",
+      "slug": "gallery",
+      "link": "https://goldenearthstudio.co.uk/gallery/",
+      "title": {
+        "rendered": "Gallery"
+      },
+      "parent": 0
+    },
+    {
+      "id": 56,
+      "date": "2023-07-31T16:02:59",
+      "modified": "2026-04-14T08:44:43",
+      "slug": "home-2",
+      "link": "https://goldenearthstudio.co.uk/",
+      "title": {
+        "rendered": "Home"
+      },
+      "parent": 0
+    },
+    {
+      "id": 50,
+      "date": "2023-07-31T16:02:56",
+      "modified": "2023-07-31T16:03:15",
+      "slug": "global-styles",
+      "link": "https://goldenearthstudio.co.uk/global-styles/",
+      "title": {
+        "rendered": "Global Styles"
+      },
+      "parent": 0
+    }
+  ],
+  "posts": [
+    {
+      "id": 955,
+      "date": "2023-10-09T04:03:43",
+      "modified": "2023-10-09T04:03:45",
+      "slug": "circular-ceramics-book",
+      "link": "https://goldenearthstudio.co.uk/circular-ceramics-book/",
+      "title": {
+        "rendered": "Circular Ceramics Book"
+      }
+    },
+    {
+      "id": 135,
+      "date": "2023-08-02T04:52:17",
+      "modified": "2023-09-04T08:08:14",
+      "slug": "grand-designs-live",
+      "link": "https://goldenearthstudio.co.uk/grand-designs-live/",
+      "title": {
+        "rendered": "Grand Designs Live"
+      }
+    },
+    {
+      "id": 133,
+      "date": "2023-08-02T04:51:54",
+      "modified": "2023-10-09T06:00:24",
+      "slug": "the-circular-economy-podcast",
+      "link": "https://goldenearthstudio.co.uk/the-circular-economy-podcast/",
+      "title": {
+        "rendered": "The Circular Economy Podcast"
+      }
+    },
+    {
+      "id": 131,
+      "date": "2023-08-02T04:51:30",
+      "modified": "2023-08-02T04:51:30",
+      "slug": "glas-allt-shielf",
+      "link": "https://goldenearthstudio.co.uk/glas-allt-shielf/",
+      "title": {
+        "rendered": "Glas-allt-Shielf"
+      }
+    },
+    {
+      "id": 129,
+      "date": "2023-08-02T04:51:10",
+      "modified": "2023-08-02T04:51:10",
+      "slug": "the-art-relief-series",
+      "link": "https://goldenearthstudio.co.uk/the-art-relief-series/",
+      "title": {
+        "rendered": "The Art Relief Series"
+      }
+    },
+    {
+      "id": 122,
+      "date": "2023-08-02T04:50:55",
+      "modified": "2023-08-02T04:50:55",
+      "slug": "bear",
+      "link": "https://goldenearthstudio.co.uk/bear/",
+      "title": {
+        "rendered": "BEAR"
+      }
+    },
+    {
+      "id": 1,
+      "date": "2023-07-31T08:59:51",
+      "modified": "2023-07-31T09:00:24",
+      "slug": "hello-world",
+      "link": "https://goldenearthstudio.co.uk/hello-world/",
+      "title": {
+        "rendered": "Hello world!"
+      }
+    }
+  ]
+}
