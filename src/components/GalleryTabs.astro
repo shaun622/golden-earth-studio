@@ -1,0 +1,13 @@
+<section class="gallery-tabs" data-gallery-tabs>
+  <nav class="gallery-tab-list" aria-label="Gallery views">
+    <a href="#artists" role="tab" aria-controls="artists-panel" aria-selected="true" data-gallery-tab="artists">Artists</a>
+    <a href="#artwork" role="tab" aria-controls="artwork-panel" aria-selected="false" data-gallery-tab="artwork" tabindex="-1">Artwork</a>
+  </nav>
+  <section id="artists" class="gallery-panel" data-gallery-panel="artists" aria-labelledby="artists-tab">
+    <slot name="artists" />
+  </section>
+  <section id="artwork" class="gallery-panel" data-gallery-panel="artwork" aria-labelledby="artwork-tab">
+    <slot name="artwork" />
+  </section>
+</section>
+<script>import "../scripts/gallery-tabs";</script>

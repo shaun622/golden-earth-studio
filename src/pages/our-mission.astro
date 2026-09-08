@@ -1,0 +1,14 @@
+---
+import { getEntry, render } from "astro:content";
+import InteriorLayout from "../layouts/InteriorLayout.astro";
+const page = await getEntry("pages", "our-mission");
+if (!page) throw new Error("Mission content missing");
+const { Content } = await render(page);
+---
+<InteriorLayout title="Our Mission" description={page.data.description} image={page.data.images[0]}>
+  <main id="content" class="interior-main mission-page">
+    <header class="mission-statement"><p>“In the UK, 29 million tonnes of excavation waste is sent to landfill each year.”</p><cite>Environment Agency England</cite></header>
+    <section class="mission-body"><p class="page-kicker">Circulating construction waste into the hands of artists</p><h1>Our Mission</h1><div class="prose"><Content /></div></section>
+    <section id="about" class="founders-section"><div>{page.data.images[0] && <img src={page.data.images[0]} alt="Golden Earth Studio founders" width="1100" height="800" />}</div><div><p class="page-kicker">About</p><h2>Founders</h2><p>Golden Earth Studio was established by Sara Howard, a ceramicist and sustainable materials developer, and Gabriel Lau, founder of Golden Earth Developments. Their partnership formed a shared ambition to create systemic change and reduce the ecological impact of construction waste.</p></div></section>
+  </main>
+</InteriorLayout>

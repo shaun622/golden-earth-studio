@@ -1,12 +1,21 @@
 ---
 interface Props {
   compact?: boolean;
+  variant?: "general" | "commission" | "artwork";
+  artworkId?: string;
+  artworkTitle?: string;
 }
 
-const { compact = false } = Astro.props;
+const { compact = false, variant = "general", artworkId, artworkTitle } = Astro.props;
+const formSuffix = artworkId?.replace(/[^a-z0-9]+/gi, "-") || (compact ? "compact" : "main");
+const formId = `contact-${variant}-${formSuffix}`;
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 ---
 
-<form class:list={["contact-form", { compact }]} action="/api/contact" method="post" data-preview-form>
+<form id={formId} class:list={["contact-form", { compact }]} action="/api/contact" method="post" data-contact-form data-variant={variant}>
+  <input type="hidden" name="variant" value={compact ? "compact" : variant} />
+  {artworkId && <input type="hidden" name="artworkId" value={artworkId} />}
+  <input type="hidden" name="sourcePath" value={Astro.url.pathname} />
   {compact ? (
     <>
       <label>
@@ -22,32 +31,53 @@ const { compact = false } = Astro.props;
         <input type="text" name="message" required />
       </label>
     </>
+  ) : variant === "artwork" ? (
+    <>
+      <label>
+        <span>First &amp; Last Name*</span>
+        <input type="text" name="name" autocomplete="name" required maxlength="120" />
+      </label>
+      <label>
+        <span>Email*</span>
+        <input type="email" name="email" autocomplete="email" required maxlength="254" />
+      </label>
+      <label>
+        <span>Phone</span>
+        <input type="tel" name="phone" autocomplete="tel" maxlength="40" />
+      </label>
+      <label class="message-field">
+        <span>Message*</span>
+        <textarea name="message" rows="4" required maxlength="4000" placeholder={artworkTitle ? `Enquiry about ${artworkTitle}` : undefined}></textarea>
+      </label>
+    </>
   ) : (
     <>
       <label>
         <span>First Name*</span>
-        <input type="text" name="firstName" autocomplete="given-name" required />
+        <input type="text" name="firstName" autocomplete="given-name" required maxlength="80" />
       </label>
       <label>
         <span>Last Name*</span>
-        <input type="text" name="lastName" autocomplete="family-name" required />
+        <input type="text" name="lastName" autocomplete="family-name" required maxlength="80" />
       </label>
       <label>
         <span>Email*</span>
-        <input type="email" name="email" autocomplete="email" required />
+        <input type="email" name="email" autocomplete="email" required maxlength="254" />
       </label>
       <label>
         <span>Subject*</span>
-        <input type="text" name="subject" required />
+        <input type="text" name="subject" required maxlength="160" />
       </label>
       <label class="message-field">
         <span>Your Message</span>
-        <textarea name="message" rows="3"></textarea>
+        <textarea name="message" rows="3" required maxlength="4000"></textarea>
       </label>
     </>
   )}
+  {turnstileSiteKey && <div class="cf-turnstile message-field" data-sitekey={turnstileSiteKey} data-action="contact" data-response-field-name="cf-turnstile-response"></div>}
   <div class="form-actions">
     <p class="form-status" aria-live="polite" data-form-status></p>
-    <button type="submit">{compact ? "Contact Us" : "Send"}</button>
+    <a class="form-mailto" href="mailto:info@goldenearthstudio.co.uk">Email instead</a>
+    <button type="submit" data-submit data-idle-label={compact ? "Contact Us" : "Send"}>{compact ? "Contact Us" : "Send"}</button>
   </div>
 </form>

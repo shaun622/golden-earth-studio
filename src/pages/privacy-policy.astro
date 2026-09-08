@@ -1,0 +1,8 @@
+---
+import { getEntry, render } from "astro:content";
+import InteriorLayout from "../layouts/InteriorLayout.astro";
+const page = await getEntry("pages", "privacy-policy");
+if (!page) throw new Error("Privacy content missing");
+const { Content } = await render(page);
+---
+<InteriorLayout title="Privacy Policy" description={page.data.description}><main id="content" class="interior-main legal-page"><header class="page-intro"><h1>Privacy Policy</h1></header><article class="prose legal-prose"><Content /></article></main></InteriorLayout>

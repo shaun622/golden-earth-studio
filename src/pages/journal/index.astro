@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+import ContactSection from "../../components/ContactSection.astro";
+import JournalCard from "../../components/JournalCard.astro";
+import JournalDialog from "../../components/JournalDialog.astro";
+import InteriorLayout from "../../layouts/InteriorLayout.astro";
+
+const entries = (await getCollection("journal")).filter((entry) => entry.data.showInIndex).sort((a, b) => a.data.displayOrder - b.data.displayOrder);
+const dialogArticles = entries.map((entry) => ({
+  slug: entry.data.slug, title: entry.data.articleTitle, date: entry.data.articleDateLabel,
+  image: entry.data.coverImage, legacyPopupId: entry.data.legacyPopupId, entry,
+}));
+---
+<InteriorLayout title="Journal" description="Events, collaborations, material stories and new artworks from Golden Earth Studio." image={entries[0]?.data.coverImage || undefined}>
+  <main id="content" class="interior-main journal-page">
+    <header class="page-intro page-intro--center"><h1>The Journal</h1><p>Past and future events, active invitations, waste material availability and new artworks.</p></header>
+    <div class="journal-grid">
+      {entries.map((entry) => <JournalCard slug={entry.data.slug} title={entry.data.title} date={entry.data.indexDateLabel} image={entry.data.coverImage} />)}
+    </div>
+    <JournalDialog articles={dialogArticles} />
+    <ContactSection />
+  </main>
+</InteriorLayout>
