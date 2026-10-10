@@ -1,0 +1,43 @@
+{
+  "configuredOn": "2026-10-10",
+  "widgetName": "Golden Earth Studio Contact",
+  "siteKey": "0x4AAAAAAFTLSUxNqow1L6eD",
+  "mode": "managed",
+  "preClearance": false,
+  "hostnames": [
+    "goldenearthstudio.co.uk",
+    "golden-earth-studio.shaun-02d.workers.dev"
+  ],
+  "subdomainBehavior": "Turnstile also authorizes subdomains of each configured hostname; the apex covers www.",
+  "publicBuildVariable": "PUBLIC_TURNSTILE_SITE_KEY",
+  "runtimeSecretName": "TURNSTILE_SECRET_KEY",
+  "runtimeSecretInstalled": true,
+  "resendRuntimeSecretInstalledByOwner": true,
+  "formAction": "contact",
+  "widgetSize": "compact",
+  "widgetAppearance": "interaction-only",
+  "allowedFormOrigins": [
+    "https://goldenearthstudio.co.uk",
+    "https://www.goldenearthstudio.co.uk",
+    "https://golden-earth-studio.shaun-02d.workers.dev"
+  ],
+  "contactEnabled": false,
+  "nameserverSwitchPerformed": false,
+  "emailTestSent": false,
+  "localValidation": {
+    "build": "passed",
+    "astroErrors": 0,
+    "astroWarnings": 0,
+    "workerTestsPassed": 11,
+    "siteAudit": "passed",
+    "figmaAudit": "passed",
+    "edgeDesktopOverflow": false,
+    "edge320pxOverflow": false,
+    "missingVerificationError": "passed"
+  },
+  "remainingDeliveryDependencies": [
+    "confirm sender and recipient",
+    "verify Resend domain after separately approved DNS cutover",
+    "enable delivery and run an authorized inbox test"
+  ]
+}

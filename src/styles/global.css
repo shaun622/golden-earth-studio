@@ -564,6 +564,10 @@ img { height: auto; }
   justify-content: flex-end;
 }
 
+.contact-form.compact .cf-turnstile {
+  justify-self: end;
+}
+
 .contact-form.compact button {
   padding: 0.55rem 1.3rem;
   border: 1px solid var(--white);

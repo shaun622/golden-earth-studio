@@ -83,7 +83,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
       </label>
     </>
   )}
-  {turnstileSiteKey && <div class="cf-turnstile message-field" data-sitekey={turnstileSiteKey} data-action="contact" data-response-field-name="cf-turnstile-response"></div>}
+  {turnstileSiteKey && <div id={`${formId}-verification`} class="cf-turnstile message-field" data-sitekey={turnstileSiteKey} data-action="contact" data-size="compact" data-appearance="interaction-only" data-response-field-name="cf-turnstile-response"></div>}
   <div class="form-actions">
     <p class="form-status" aria-live="polite" data-form-status></p>
     <a class="form-mailto" href="mailto:info@goldenearthstudio.co.uk">Email instead</a>

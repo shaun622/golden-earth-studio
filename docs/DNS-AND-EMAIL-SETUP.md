@@ -45,7 +45,15 @@ The exact three required records shown by this account's dashboard were added, p
 
 Sending is selected. Receiving remains disabled. No Resend receiving MX was added, and Titan remains the mail provider. The root SPF was not replaced or duplicated.
 
-**The Resend API key has not been installed.** It was not read, printed, copied into this repository or added as a build variable.
+The owner installed `RESEND_API_KEY` directly in the Worker's production runtime secrets. Its encrypted binding was confirmed in Cloudflare Settings. The value was not read, printed, copied into this repository or added as a build variable.
+
+## Turnstile
+
+A managed widget named **Golden Earth Studio Contact** was created on 10 October 2026. Its configured hostnames are `goldenearthstudio.co.uk` (which also covers `www` under Turnstile's subdomain rules) and the exact stable review hostname `golden-earth-studio.shaun-02d.workers.dev`. Pre-clearance is disabled. Other Workers projects and arbitrary version-preview hostnames were not added.
+
+The widget's public site key is saved as the Cloudflare **build variable** `PUBLIC_TURNSTILE_SITE_KEY`, so Git builds embed it in the static forms. Its private verification key is installed only as the production **runtime Secret** `TURNSTILE_SECRET_KEY`. The private value was kept out of chat, files and source control. Both runtime secret bindings display **Value encrypted**.
+
+Each form uses its own verification container and refreshes that container after success or error. Managed verification appears only when interaction is needed, using the compact size to fit narrow forms. Submitting before verification finishes gives an accessible error and keeps the email link available. The Worker validates tokens with Cloudflare Siteverify, checks the submitting hostname and requires the `contact` action before calling Resend. Eleven Worker tests pass, including rejection of missing/wrong actions without an email request. See `reference/dns-2026-10-10/turnstile.json` for the public setup metadata. A live email test remains pending; delivery stays disabled until the remaining dependencies below are complete.
 
 ## Contact form dependency
 
@@ -54,10 +62,9 @@ The contact-capable Worker is now deployed through GitHub and the existing Cloud
 To complete form activation:
 
 1. Confirm the actual receiving inbox and choose a sender on the verified domain. A proposed sender is `Golden Earth Studio <website@goldenearthstudio.co.uk>`; this is not yet approved/configured.
-2. Configure a Turnstile widget, its allowed production/test hostnames, the public build variable `PUBLIC_TURNSTILE_SITE_KEY`, and the runtime secret `TURNSTILE_SECRET_KEY`.
-3. Have the owner enter the existing Resend key directly into the Worker's **runtime Secret** named `RESEND_API_KEY` (or use the interactive `wrangler secret put RESEND_API_KEY` prompt). Do not put it in chat, Git, a public-prefixed variable or build configuration.
-4. Keep `CONTACT_ENABLED=false` until the domain verifies and the production setup is ready. Configure `CONTACT_FROM`, `CONTACT_TO` and `ALLOWED_ORIGINS` through the repository's deployment configuration so a future Git deployment will retain them. If www redirects to apex, the existing apex origin is sufficient.
-5. When explicitly authorized, enable delivery and send one test to the confirmed inbox; check receipt, Reply-To, artwork context and a rejected/expired Turnstile response. No email test was sent during DNS preparation or deployment verification.
+2. Complete Resend domain verification after the separately approved DNS cutover. The required DNS records are already staged in Cloudflare.
+3. Keep `CONTACT_ENABLED=false` until the domain verifies and the production setup is ready. Configure `CONTACT_FROM` and `CONTACT_TO` through the repository's deployment configuration so a future Git deployment retains them. `ALLOWED_ORIGINS` already contains the apex, www and exact stable Workers review origins; do not add arbitrary preview origins or enable their delivery without an approved recipient test.
+4. When explicitly authorized, enable delivery and send one test to the confirmed inbox; check receipt, Reply-To, artwork context and a rejected/expired Turnstile response. No email test was sent during DNS preparation, deployment verification or Turnstile setup.
 
 Both custom domain bindings are recorded in the deployed `wrangler.jsonc`, with `workers_dev` and `preview_urls` explicitly enabled, so future Git deployments retain the bindings and review URLs. The stable review URL remains `https://golden-earth-studio.shaun-02d.workers.dev`. The custom hostnames still await the separately approved DNS cutover.
 
@@ -99,3 +106,5 @@ The files under `docs/reference/dns-2026-10-10/` contain public DNS data only:
 - Screenshots: `cloudflare-dns.jpg`, `cloudflare-domains.jpg`, `hostinger-unchanged.jpg`, `resend-pending.jpg`, `runtime-secret-blocker.jpg`, `www-redirect-prepared.jpg`, `www-redirect-draft.jpg`.
 
 Sources: [Cloudflare custom domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/), [Wrangler route management](https://developers.cloudflare.com/workers/wrangler/configuration/), [Cloudflare pending zones](https://developers.cloudflare.com/dns/zone-setups/reference/domain-status/), [Resend with Cloudflare DNS](https://resend.com/docs/guides/dns/cloudflare).
+
+Turnstile references: [Hostname management](https://developers.cloudflare.com/turnstile/additional-configuration/hostname-management/), [Widget configurations](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/widget-configurations/), [Server-side validation](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/).

@@ -65,6 +65,19 @@ test("handles failed, expired and hostname-mismatched verification", async () =>
   assert.equal((await responseBody(await handleContact(request(), enabledEnv, mismatch))).code, "verification_mismatch");
 });
 
+test("verification for another action or without an action never sends an email", async () => {
+  for (const action of ["login", undefined]) {
+    let calls = 0;
+    const verify = async () => {
+      calls++;
+      return Response.json({ success: true, hostname: "goldenearthstudio.co.uk", action });
+    };
+    const response = await handleContact(request(), enabledEnv, verify);
+    assert.equal((await responseBody(response)).code, "verification_mismatch");
+    assert.equal(calls, 1);
+  }
+});
+
 test("returns no success when Resend rejects or an upstream request throws", async () => {
   let call = 0;
   const rejected = async () => ++call === 1 ? Response.json({ success: true, hostname: "goldenearthstudio.co.uk", action: "contact" }) : Response.json({ error: "no" }, { status: 500 });

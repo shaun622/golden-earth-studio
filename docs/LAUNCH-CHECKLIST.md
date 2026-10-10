@@ -9,9 +9,9 @@ The visual rebuild and form code are deployed at the stable Workers review URL w
 - [ ] Verify an approved sender on `goldenearthstudio.co.uk`; add only the Resend records required for sending and preserve all existing MX/mail records.
 - [x] Deploy the contact-capable Worker through Git; Cloudflare's main build succeeded and runtime variables/secrets are available.
 - [ ] Confirm `CONTACT_FROM` and the actual `CONTACT_TO` inbox.
-- [ ] Create a Cloudflare Turnstile widget for the production hostname and review/preview hosts used for testing.
-- [ ] Set build variable `PUBLIC_TURNSTILE_SITE_KEY`.
-- [ ] Set Worker secrets with `wrangler secret put RESEND_API_KEY` and `wrangler secret put TURNSTILE_SECRET_KEY`.
+- [x] Create a managed Cloudflare Turnstile widget for the production domain and exact stable Workers review hostname, with pre-clearance disabled.
+- [x] Set Cloudflare build variable `PUBLIC_TURNSTILE_SITE_KEY` so Git builds embed verification in the forms.
+- [x] Set production runtime secrets `RESEND_API_KEY` (owner entry) and `TURNSTILE_SECRET_KEY`; confirm encrypted bindings in Cloudflare.
 - [ ] Set `ALLOWED_ORIGINS`, `CONTACT_FROM`, `CONTACT_TO`, and `CONTACT_ENABLED=true` in the production Worker configuration. Keep preview delivery disabled unless a specific recipient test is authorized.
 - [ ] Submit one authorized test, confirm inbox receipt and Reply-To, then test an artwork enquiry and a failed/expired Turnstile path.
 

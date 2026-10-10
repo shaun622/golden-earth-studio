@@ -43,7 +43,7 @@ async function verifyTurnstile(payload: ContactPayload, env: Env, origin: string
     throw new ContactError(400, expired ? "verification_expired" : "verification_failed", expired ? "Verification expired. Please try again." : "Verification failed. Please try again.");
   }
   const expectedHostname = new URL(origin).hostname;
-  if (result.hostname !== expectedHostname || (result.action && result.action !== "contact")) throw new ContactError(400, "verification_mismatch", "Verification did not match this website.");
+  if (result.hostname !== expectedHostname || result.action !== "contact") throw new ContactError(400, "verification_mismatch", "Verification did not match this website.");
 }
 
 async function sendEmail(payload: ContactPayload, env: Env, origin: string, fetcher: Fetcher) {
