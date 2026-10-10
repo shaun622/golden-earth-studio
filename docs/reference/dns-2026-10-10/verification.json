@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-10-10T14:58:28.853Z",
+  "sourceRecordCount": 9,
+  "stagedOrdinaryRecordCount": 13,
+  "workerBindings": [
+    "goldenearthstudio.co.uk",
+    "www.goldenearthstudio.co.uk"
+  ],
+  "totalDashboardRows": 15,
+  "recordChecks": [
+    {
+      "name": "litesrv._domainkey",
+      "type": "CNAME",
+      "contentMatch": true
+    },
+    {
+      "name": "titan1._domainkey",
+      "type": "TXT",
+      "contentMatch": true
+    },
+    {
+      "name": "wordpress-www",
+      "type": "CNAME",
+      "contentMatch": true
+    },
+    {
+      "name": "ftp",
+      "type": "A",
+      "contentMatch": true
+    },
+    {
+      "name": "wordpress-origin",
+      "type": "CNAME",
+      "contentMatch": true
+    },
+    {
+      "name": "@",
+      "type": "TXT",
+      "contentMatch": true
+    },
+    {
+      "name": "@",
+      "type": "TXT",
+      "contentMatch": true
+    },
+    {
+      "name": "@",
+      "type": "MX",
+      "contentMatch": true
+    },
+    {
+      "name": "@",
+      "type": "MX",
+      "contentMatch": true
+    },
+    {
+      "name": "resend._domainkey",
+      "type": "TXT",
+      "contentMatch": true
+    },
+    {
+      "name": "rsend",
+      "type": "CNAME",
+      "contentMatch": true
+    },
+    {
+      "name": "send",
+      "type": "CNAME",
+      "contentMatch": true
+    },
+    {
+      "name": "_dmarc",
+      "type": "TXT",
+      "contentMatch": true
+    }
+  ],
+  "mailAndServiceRecordsDnsOnly": true,
+  "nameserverSwitchPerformed": false,
+  "currentNameservers": [
+    "ns1.dns-parking.com",
+    "ns2.dns-parking.com"
+  ],
+  "assignedNameservers": [
+    "christian.ns.cloudflare.com",
+    "eve.ns.cloudflare.com"
+  ],
+  "resendStatus": "pending",
+  "resendReceiving": false,
+  "resendApiKeyInstalled": false,
+  "hostingerRecordsUnchanged": true,
+  "publicNameserversConfirmed": [
+    "ns1.dns-parking.com",
+    "ns2.dns-parking.com"
+  ],
+  "redirect": {
+    "id": "3d2b0b3d264947b0996410df80ecce48",
+    "name": "Golden Earth Studio: www to apex",
+    "enabled": false,
+    "expression": "(http.host eq \"www.goldenearthstudio.co.uk\")",
+    "targetExpression": "concat(\"https://goldenearthstudio.co.uk\", http.request.uri.path)",
+    "statusCode": 301,
+    "preserveQueryString": true,
+    "approvalRequired": true
+  },
+  "validation": {
+    "build": "passed",
+    "astroErrors": 0,
+    "astroWarnings": 0,
+    "wranglerDryRun": "passed",
+    "deploymentPerformed": false
+  }
+}

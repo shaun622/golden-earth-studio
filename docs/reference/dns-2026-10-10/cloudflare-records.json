@@ -1,0 +1,126 @@
+{
+  "domain": "goldenearthstudio.co.uk",
+  "zoneStatus": "pending",
+  "records": [
+    {
+      "name": "ftp",
+      "type": "A",
+      "content": "178.16.135.99",
+      "priority": 0,
+      "ttl": 1800,
+      "proxied": false
+    },
+    {
+      "name": "litesrv._domainkey",
+      "type": "CNAME",
+      "content": "litesrv._domainkey.mlsend.com",
+      "priority": 0,
+      "ttl": 3600,
+      "proxied": false
+    },
+    {
+      "name": "rsend",
+      "type": "CNAME",
+      "content": "rsend-apne1.forge.rmta.net",
+      "priority": 0,
+      "ttl": 3600,
+      "proxied": false
+    },
+    {
+      "name": "send",
+      "type": "CNAME",
+      "content": "send.forge.rmta.net",
+      "priority": 0,
+      "ttl": 3600,
+      "proxied": false
+    },
+    {
+      "name": "wordpress-origin",
+      "type": "CNAME",
+      "content": "goldenearthstudio.co.uk.cdn.hstgr.net",
+      "priority": 0,
+      "ttl": 300,
+      "proxied": false
+    },
+    {
+      "name": "wordpress-www",
+      "type": "CNAME",
+      "content": "www.goldenearthstudio.co.uk.cdn.hstgr.net",
+      "priority": 0,
+      "ttl": 300,
+      "proxied": false
+    },
+    {
+      "name": "@",
+      "type": "MX",
+      "content": "mx2.titan.email",
+      "priority": 20,
+      "ttl": 3600,
+      "proxied": false
+    },
+    {
+      "name": "@",
+      "type": "MX",
+      "content": "mx1.titan.email",
+      "priority": 10,
+      "ttl": 3600,
+      "proxied": false
+    },
+    {
+      "name": "_dmarc",
+      "type": "TXT",
+      "content": "v=DMARC1; p=none;",
+      "priority": 0,
+      "ttl": 300,
+      "proxied": false
+    },
+    {
+      "name": "@",
+      "type": "TXT",
+      "content": "v=spf1 include:_spf.mlsend.com include:spf.titan.email ~all",
+      "priority": 0,
+      "ttl": 14400,
+      "proxied": false
+    },
+    {
+      "name": "@",
+      "type": "TXT",
+      "content": "google-site-verification=ne_9iE_iIaEUCKtXY6NW0d3QLCAy0L1kph-jHPGmfH4",
+      "priority": 0,
+      "ttl": 14400,
+      "proxied": false
+    },
+    {
+      "name": "resend._domainkey",
+      "type": "TXT",
+      "content": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKjiJ9imWkq8JkjLk771OovciIcTDjXXv7a5PUWpMgC59tUKjCXF+0ze6XoHUos6BoLXNHsO6KJ0j+DDG7Qq1KjY9ewxo4OcIfZgiBsWWg6y6obmx96xZ+R1YBZpgCwQ9a1/AdywEJiiLJyRWK+7LRaFsAIL0eJ3cY0rAzV44m4QIDAQAB",
+      "priority": 0,
+      "ttl": 300,
+      "proxied": false
+    },
+    {
+      "name": "titan1._domainkey",
+      "type": "TXT",
+      "content": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp29Usu7BzVfkMRZaV/UHsqvFqpdKhMY9gpDDTYuEgzl0FhF17WVd4u4CpFWwoN7xBqeJ/YYvAvvQQsRYrLLxkU98oDRdIKTmV0Z2rrbE3xDSJX9K+Td4YIa/juDEugYvR0V9mYuq8wgzM6cjtBSOI5zRDS49OngRVPpmGwzZUjQIDAQAB",
+      "priority": 0,
+      "ttl": 300,
+      "proxied": false
+    },
+    {
+      "name": "@",
+      "type": "Worker",
+      "content": "golden-earth-studio",
+      "priority": 0,
+      "ttl": 1,
+      "proxied": true
+    },
+    {
+      "name": "www",
+      "type": "Worker",
+      "content": "golden-earth-studio",
+      "priority": 0,
+      "ttl": 1,
+      "proxied": true
+    }
+  ]
+}
