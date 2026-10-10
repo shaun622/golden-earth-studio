@@ -5,15 +5,17 @@ interface Props {
   artworkId?: string;
   artworkTitle?: string;
   placeholderLabels?: boolean;
+  presentation?: "legacy" | "figma-2026";
 }
 
-const { compact = false, variant = "general", artworkId, artworkTitle, placeholderLabels = false } = Astro.props;
+const { compact = false, variant = "general", artworkId, artworkTitle, placeholderLabels = false, presentation = "legacy" } = Astro.props;
+const figma = presentation === "figma-2026";
 const formSuffix = artworkId?.replace(/[^a-z0-9]+/gi, "-") || (compact ? "compact" : "main");
 const formId = `contact-${variant}-${formSuffix}`;
 const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
 ---
 
-<form id={formId} class:list={["contact-form", { compact, "placeholder-labels": placeholderLabels }]} action="/api/contact" method="post" data-contact-form data-variant={variant}>
+<form id={formId} class:list={["contact-form", { compact, "placeholder-labels": placeholderLabels, "contact-form--figma": figma }]} action="/api/contact" method="post" data-contact-form data-variant={variant}>
   <input type="hidden" name="variant" value={compact ? "compact" : variant} />
   {artworkId && <input type="hidden" name="artworkId" value={artworkId} />}
   <input type="hidden" name="sourcePath" value={Astro.url.pathname} />
@@ -36,20 +38,26 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
     <>
       <label>
         <span>First &amp; Last Name*</span>
-        <input type="text" name="name" autocomplete="name" required maxlength="120" />
+        <input type="text" name="name" autocomplete="name" required maxlength="120" placeholder={figma ? "First and Last Name" : undefined} />
       </label>
       <label>
         <span>Email*</span>
-        <input type="email" name="email" autocomplete="email" required maxlength="254" />
+        <input type="email" name="email" autocomplete="email" required maxlength="254" placeholder={figma ? "Email Address" : undefined} />
       </label>
       <label>
         <span>Phone</span>
-        <input type="tel" name="phone" autocomplete="tel" maxlength="40" />
+        <input type="tel" name="phone" autocomplete="tel" maxlength="40" placeholder={figma ? "Phone Number" : undefined} />
       </label>
       <label class="message-field">
         <span>Message*</span>
-        <textarea name="message" rows="4" required maxlength="4000" placeholder={artworkTitle ? `Enquiry about ${artworkTitle}` : undefined}></textarea>
+        <textarea name="message" rows="4" required maxlength="4000" placeholder={figma ? "Message" : artworkTitle ? `Enquiry about ${artworkTitle}` : undefined}></textarea>
       </label>
+    </>
+  ) : variant === "commission" && figma ? (
+    <>
+      <label><span>Email Address*</span><input type="email" name="email" autocomplete="email" required maxlength="254" placeholder="Email Address" /></label>
+      <label><span>Subject*</span><input type="text" name="subject" required maxlength="160" placeholder="Subject" /></label>
+      <label class="message-field"><span>Message*</span><textarea name="message" rows="4" required maxlength="4000" placeholder="Message"></textarea></label>
     </>
   ) : (
     <>

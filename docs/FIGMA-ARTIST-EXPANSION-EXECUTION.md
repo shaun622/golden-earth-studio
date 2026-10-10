@@ -1,0 +1,50 @@
+# Figma artist expansion execution ledger
+
+Authoritative plan: `docs/FIGMA-ARTIST-EXPANSION-PLAN.md`, prepared 2026-10-10.
+User amendment: build the available work now while the user requests Figma edit access/photos. All missing media remains blank.
+Branch: `codex/figma-artist-expansion`; base `7835d3b12f57c05a80ffdea5815c4d8f75cf28d4`.
+Starting tree: only the untracked plan from the previous turn. No existing user source edits.
+
+| Task | Dependencies | Acceptance | Status |
+| --- | --- | --- | --- |
+| T01 media/content contracts | — | AC05, AC11 | verified |
+| T02 scoped layouts | T01 | AC06, AC09, AC10 | verified |
+| T03 enquiry forms | T02 | AC07, AC10 | verified |
+| T04 James | T01–03 | AC02, AC03, AC05, AC06 | verified |
+| T05 Edie | T01–03 | AC02, AC03, AC05, AC06 | verified |
+| T06 Lucia | T01–03 | AC02, AC03, AC05, AC06 | verified |
+| T07 Eleanor | T01–02 | AC04, AC05, AC06, AC08 | verified |
+| T08 Gallery | T04–07 | AC01, AC05, AC06, AC09 | verified |
+| T09 routes/audits/docs | T03–08 | AC01–05, AC07, AC08, AC10, AC11 | verified |
+| T10 build/Edge QA | T01–09 | all | verified; limitations below |
+
+Defaults: individual product measurements take precedence; Tiled Screen gets the matching template with no price. These remain documented editorial assumptions. No extra photo retrieval is needed to build this phase.
+
+Checks: prior planning baseline `npm run check` passed under host execution. Final implementation results are recorded below.
+First implementation build: type-check passed (60 files); build exposed a duplicate `bowl` collection entry and omitted James's Bowl route. Routine correction: the artwork glob loader now uses its existing full `data.id`, rather than Astro's default short `data.slug`, preserving both artist/product URLs. No public route contract changes.
+Worker tests: 10/10 pass, including all twelve new allowlist entries, name-free commissions, continued name requirements elsewhere and HTML escaping.
+Implemented: media schema/registry/component; scoped Figma components/styles and route dispatch; Figma forms and commission validation; 3 artist files + 12 product files; Eleanor refreshed with original archived under `docs/reference/figma-2026/`; 12-card Gallery and order metadata; 72-route ledger and 34-item Worker catalogue.
+Build diagnostics were resolved; focused audits, editing documentation and production-preview Edge review are complete.
+Visual adaptation: the Gallery's migrated Jihyun image showed a standing portrait, while Figma uses her seated striped-shirt portrait. That exact photo already exists at `/assets/images/jihyun-kim.webp`; the Gallery now reuses it. Her hover and all other retained assets remain as before. The source-parity audit has this explicit single-photo override.
+Desktop refinements from the reference: added the small Artworks label above the profile rule, increased biography spacing, aligned portrait product images beside the title, matched the larger enquiry gap and moved commission copy/form to the observed columns. These refine the plan's approximate measurements without changing scope.
+
+## Final verification — 10 October 2026
+
+- `npm run build`: 61 checked files, zero errors/warnings/hints; 73 generated pages. Host execution was used because of the sandbox's Astro sync limitation.
+- `npm run audit`: 72 ledger routes, five redirects, five exclusions, 73 HTML files and all 146 migrated assets.
+- `npm run audit:journal`, `audit:interior`, `audit:figma`: pass. Exact biographies/product facts, 12+21 Gallery cards, 17 null media slots, related links, contact metadata and sitemap checked. Existing Collective/Mission/Journal parity assertions retained.
+- `npm run test:worker`: 10/10 pass, including the 12 new catalogue IDs, commission name exception, unchanged security/error behaviour and escaped email output.
+- `npm run check:runtime -- http://127.0.0.1:8791/`: pass for all 72 routes, redirects, exclusions and missing API route. Host execution was required to reach the host preview.
+- Edge extension: 17 affected routes at 360, 390, 768, 820, 1024, 1280 and 1440px; 119 final checks, no overflow or out-of-viewport headings/forms/media/cards. Commission copy and form are aligned in columns on desktop and stacked without overlap on phones.
+- Visual desktop comparisons covered Gallery, all four profiles, James/Lucia portrait products, Edie landscape products and inferred Tiled Screen. Phone checks covered long names, fifth Lucia work, two-line Earth Memory dimensions, forms, blank slots and Eleanor's empty work section. Full-page review caught the empty `bespoke` anchor occupying a grid cell; absolute positioning fixes the commission columns.
+- Keyboard: Gallery Artwork/Artists selection and hash destinations; profile caption reveals with focus (opacity 1) and visible outline; mobile menu opens and Escape restores button focus.
+- JavaScript disabled using a temporary local CSP preview: both Gallery panels/links visible, profile biography and product facts intact, email links available, blanks have no image-viewer controls. The temporary server/script was removed after QA.
+- Browser form validation identifies required fields. A synthetic submission to the disabled local Worker shows the delivery-disabled message, email fallback and enabled retry button; no live email was sent.
+- Photo replacement demonstrated by temporarily setting Cup I to a known local asset and rebuilding: Gallery hover, profile card, product image and social metadata changed together. The existing viewer opened, and Escape restored focus. The entry was restored to null, the final site rebuilt, and `audit:figma` confirmed all 17 blanks.
+- Regression smoke review of Home, Collective, Mission, Journal, Louis profile and Jacob Sake Bottle at 390/1280px: no horizontal overflow or failed sourced images. Uninitialised image-viewer images inside closed dialogs are intentionally excluded.
+
+Evidence: `docs/reference/figma-2026/qa/` contains final responsive/regression JSON and representative desktop/mobile screenshots. Editing instructions and the outstanding photo/editorial checklist are in `docs/CONTENT-EDITING.md` and `docs/CONTENT-QUESTIONS.md`.
+
+Limits: Edge viewport checks do not substitute for physical iOS/Android devices. Reduced-motion and coarse-pointer fallbacks were reviewed in source; this extension exposes viewport controls but no OS preference emulation. Live Resend delivery is still disabled and was not tested. Photos, the repeated width label on Round Bud Vase and the inferred Tiled Screen layout remain the documented editorial follow-up items.
+
+All T01–T10 work is complete for review. No Cloudflare account/domain/secret changes or deployment were performed.

@@ -65,7 +65,7 @@ export function validatePayload(input: Record<string, unknown>, catalogue: Reado
   const firstName = stringField(input, "firstName", 80, false);
   const lastName = stringField(input, "lastName", 80, false);
   const name = stringField(input, "name", 120, false) || `${firstName} ${lastName}`.trim();
-  if (!name) throw new ContactError(400, "invalid_name", "Please provide your name.");
+  if (!name && variant !== "commission") throw new ContactError(400, "invalid_name", "Please provide your name.");
   const email = stringField(input, "email", 254);
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new ContactError(400, "invalid_email", "Please provide a valid email address.");
   const phone = stringField(input, "phone", 40, false) || undefined;

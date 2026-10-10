@@ -1,0 +1,46 @@
+---
+import type { CollectionEntry } from "astro:content";
+import InteriorLayout from "../layouts/InteriorLayout.astro";
+import MediaSlot from "./MediaSlot.astro";
+import ImageGallery from "./ImageGallery.astro";
+import ContactForm from "./ContactForm.astro";
+import FigmaCommission from "./FigmaCommission.astro";
+import { mediaSource, resolveMedia } from "../data/media";
+import { artworks as relatedWorks } from "../data/home";
+import "../styles/gallery-2026.css";
+interface Props { artwork: CollectionEntry<"artworks">["data"]; }
+const { artwork } = Astro.props;
+const displayTitle = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
+const asset = resolveMedia(artwork.mainImage, `${artwork.title} by ${artwork.artistName}`);
+const landscape = artwork.artistSlug === "edie-evans";
+---
+<InteriorLayout className="figma-interior" title={`${displayTitle} | ${artwork.artistName}`} description={artwork.seoDescription} image={mediaSource(artwork.mainImage)}>
+  <main id="content" class:list={["figma-product", { "figma-product--landscape": landscape }]}>
+    <section class="figma-product-detail" aria-labelledby="artwork-heading">
+      <h1 id="artwork-heading" class="figma-product-heading"><span>{displayTitle}</span><span class="figma-product-heading-separator" aria-hidden="true">|</span><a href={`/gallery/${artwork.artistSlug}/`}>{artwork.artistName}</a></h1>
+      <div class="figma-product-columns">
+        <div class="figma-product-copy">
+          <dl class="figma-product-facts">
+            <div><dt class="visually-hidden">Dimensions</dt><dd>{artwork.dimensions}</dd></div>
+            <div><dt class="visually-hidden">Materials</dt><dd>{artwork.materials}</dd></div>
+            {artwork.price && <div><dt class="visually-hidden">Price</dt><dd>{artwork.price}</dd></div>}
+          </dl>
+          <section class="figma-enquiry" aria-labelledby="enquire-heading">
+            <h2 id="enquire-heading">Enquire now</h2>
+            <ContactForm variant="artwork" artworkId={artwork.id} artworkTitle={artwork.title} presentation="figma-2026" />
+          </section>
+        </div>
+        <div class="figma-product-media">
+          {asset.src ? <ImageGallery label={`${artwork.title} by ${artwork.artistName}`} images={[{ src: asset.src, alt: asset.alt, width: asset.width, height: asset.height }]} /> : <MediaSlot media={artwork.mainImage} loading="eager" />}
+        </div>
+      </div>
+    </section>
+    <section class="figma-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Related Artworks</h2>
+      <div class="figma-related-grid">
+        {relatedWorks.map((item) => <article class="figma-related-card"><a href={item.href}><img src={item.image} alt={`${item.title} by ${item.artist}`} width="600" height="450" loading="lazy" /><h3>{item.title} <span>by {item.artist}</span></h3></a></article>)}
+      </div>
+    </section>
+    <FigmaCommission />
+  </main>
+</InteriorLayout>

@@ -18,7 +18,7 @@ function configuredOrigins(value: string) {
 function emailBody(payload: ContactPayload, origin: string) {
   const artwork = payload.artworkId ? catalogue[payload.artworkId as keyof typeof catalogue] : null;
   const lines = [
-    `Name: ${payload.name}`, `Email: ${payload.email}`, payload.phone ? `Phone: ${payload.phone}` : null,
+    payload.name ? `Name: ${payload.name}` : null, `Email: ${payload.email}`, payload.phone ? `Phone: ${payload.phone}` : null,
     artwork ? `Artwork: ${artwork.title} by ${artwork.artist}` : null,
     `Source: ${origin}${payload.sourcePath}`, "", payload.message,
   ].filter((line): line is string => line !== null);

@@ -11,7 +11,7 @@
       {
         "href": "/gallery/jihyun-kim/",
         "label": "Jihyun Kim | Ceramic",
-        "image": "/assets/migrated/gallery-index/2-image-7d05675.webp",
+        "image": "/assets/images/jihyun-kim.webp",
         "hoverImage": "/assets/migrated/gallery-index/2-hover-bdf2e37.webp",
         "objectPosition": "center"
       },
@@ -31,7 +31,7 @@
       },
       {
         "href": "/gallery/adam-weismann/",
-        "label": "Adam Weismann | Wall Art",
+        "label": "Adam Weismann | Clay",
         "image": "/assets/migrated/artists/adam-weismann-portrait-c8e6fd9.webp",
         "hoverImage": "/assets/migrated/gallery-index/5-hover-4f8a319.webp",
         "objectPosition": "center"
@@ -55,6 +55,50 @@
         "label": "Rickie Cheuk | Metal",
         "image": "/assets/migrated/artists/rickie-cheuk-portrait-6a418ff.webp",
         "hoverImage": "/assets/migrated/gallery-index/8-hover-477eeb4.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/lucia-ocejo/",
+        "label": "Lucia Ocejo | Ceramic",
+        "image": {
+          "slot": "lucia-ocejo-portrait"
+        },
+        "hoverImage": {
+          "slot": "lucia-ocejo-round-bud-vase"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/james-galbraith-kirkpatrick/",
+        "label": "James Galbraith Kirkpatrick | Ceramic",
+        "image": {
+          "slot": "james-galbraith-kirkpatrick-portrait"
+        },
+        "hoverImage": {
+          "slot": "james-galbraith-kirkpatrick-cup-i"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/edie-evans/",
+        "label": "Edie Evans | Ceramic",
+        "image": {
+          "slot": "edie-evans-portrait"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-bedrock"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/eleanor-herbosch/",
+        "label": "Eleanor Herbosch | Painting",
+        "image": {
+          "slot": "eleanor-herbosch-portrait"
+        },
+        "hoverImage": {
+          "slot": "eleanor-herbosch-painting-hover"
+        },
         "objectPosition": "center"
       }
     ],

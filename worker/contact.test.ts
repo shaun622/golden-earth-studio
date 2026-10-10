@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { handleContact } from "./contact.ts";
+import catalogue from "./catalogue.generated.ts";
 
 const submissionId = "123e4567-e89b-42d3-a456-426614174000";
 const enabledEnv = {
@@ -92,4 +93,40 @@ test("structured error logs do not include submitted private content", async () 
   try { await handleContact(request(payload({ email: "private@example.com", message: "secret words", turnstileToken: "" })), enabledEnv); }
   finally { console.error = original; }
   assert.equal(messages.length, 1); assert.doesNotMatch(messages[0], /private@example|secret words/);
+});
+
+test("three-field commissions work without a name and escape submitted HTML", async () => {
+  const calls: Array<{ url: string; init?: RequestInit }> = [];
+  const body = payload({ variant: "commission", firstName: "", lastName: "", message: "<script>private</script>", subject: "" });
+  assert.equal((await handleContact(request(body), enabledEnv, successfulFetch(calls))).status, 200);
+  const email = JSON.parse(String(calls.find((call) => call.url.includes("resend"))?.init?.body));
+  assert.equal(email.subject, "Bespoke commission enquiry");
+  assert.doesNotMatch(email.text, /Name:/);
+  assert.match(email.html, /&lt;script&gt;private&lt;\/script&gt;/);
+  assert.doesNotMatch(email.html, /<script>/);
+  for (const overrides of [{ email: "" }, { email: "invalid" }, { message: "" }]) {
+    const response = await handleContact(request({ ...body, ...overrides }), enabledEnv);
+    assert.equal(response.status, 400);
+  }
+});
+
+test("general, compact and artwork forms still require a name", async () => {
+  for (const variant of ["general", "compact", "artwork"]) {
+    const response = await handleContact(request(payload({ variant, firstName: "", lastName: "", artworkId: "jacob-chan/chess-set" })), enabledEnv);
+    assert.equal(response.status, 400);
+    assert.equal((await responseBody(response)).code, "invalid_name");
+  }
+});
+
+test("new artist catalogue IDs route enquiries to their authoritative titles", async () => {
+  const entries = Object.entries(catalogue).filter(([id]) => /^(james-galbraith-kirkpatrick|edie-evans|lucia-ocejo)\//.test(id));
+  assert.equal(entries.length, 12);
+  for (const [artworkId, artwork] of entries) {
+    const calls: Array<{ url: string; init?: RequestInit }> = [];
+    const response = await handleContact(request(payload({ variant: "artwork", artworkId, subject: "untrusted title" })), enabledEnv, successfulFetch(calls));
+    assert.equal(response.status, 200, artworkId);
+    const email = JSON.parse(String(calls.find((call) => call.url.includes("resend"))?.init?.body));
+    assert.equal(email.subject, `Artwork enquiry: ${artwork.title} by ${artwork.artist}`);
+    assert.ok(email.text.includes(`Artwork: ${artwork.title} by ${artwork.artist}`));
+  }
 });

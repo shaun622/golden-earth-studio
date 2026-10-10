@@ -3,6 +3,8 @@ import { getCollection, render } from "astro:content";
 import ArtworkCard from "../../../components/ArtworkCard.astro";
 import ImageGallery from "../../../components/ImageGallery.astro";
 import ArtistLayout from "../../../layouts/ArtistLayout.astro";
+import FigmaArtistProfile from "../../../components/FigmaArtistProfile.astro";
+import { mediaSource } from "../../../data/media";
 
 export async function getStaticPaths() {
   const artists = await getCollection("artists");
@@ -13,12 +15,15 @@ const { artist } = Astro.props;
 const { Content } = await render(artist);
 const artworks = await getCollection("artworks");
 const artworkById = new Map(artworks.map((entry) => [entry.data.id, entry.data]));
-const artistArtworks = artist.data.artworkIds.map((id) => artworkById.get(id)).filter(Boolean);
+const artistArtworks = artist.data.artworkIds.map((id) => artworkById.get(id)).filter((work): work is NonNullable<typeof work> => Boolean(work));
 ---
-<ArtistLayout name={artist.data.name} description={artist.data.seoDescription} image={artist.data.portrait}>
+{artist.data.profileVariant === "figma-2026" ? (
+  <FigmaArtistProfile artist={artist.data} works={artistArtworks}><Content /></FigmaArtistProfile>
+) : (
+<ArtistLayout name={artist.data.name} description={artist.data.seoDescription} image={mediaSource(artist.data.portrait)}>
   <main id="content" class:list={["interior-main", "artist-page", `artist-page--${artist.data.profileVariant}`]}>
     <section class="artist-profile">
-      <img class="artist-profile-portrait" src={artist.data.portrait} alt={`${artist.data.name} portrait`} width="900" height="1200" />
+      <img class="artist-profile-portrait" src={mediaSource(artist.data.portrait)} alt={`${artist.data.name} portrait`} width="900" height="1200" />
       <div class="artist-profile-copy prose">
         <p class="page-kicker">{artist.data.discipline}</p>
         <h1>{artist.data.name}</h1>
@@ -36,10 +41,11 @@ const artistArtworks = artist.data.artworkIds.map((id) => artworkById.get(id)).f
       <section class="artist-artworks" aria-labelledby="artist-artworks-heading">
         <div class="section-heading-row"><h2 id="artist-artworks-heading">Artworks</h2><span></span></div>
         <div class="catalogue-grid artwork-catalogue-grid">
-          {artistArtworks.map((artwork) => <ArtworkCard title={artwork!.title} artist={artwork!.artistName} image={artwork!.mainImage} href={`/gallery/${artwork!.id}/`} />)}
+          {artistArtworks.map((artwork) => <ArtworkCard title={artwork.title} artist={artwork.artistName} image={mediaSource(artwork.mainImage)!} href={`/gallery/${artwork.id}/`} />)}
         </div>
       </section>
     )}
     <p class="back-link"><a href="/gallery/#artists">← Back to Artists</a></p>
   </main>
 </ArtistLayout>
+)}

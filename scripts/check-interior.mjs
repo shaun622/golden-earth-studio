@@ -29,18 +29,36 @@ const sourceCards = [...source(333).referenceHtml.matchAll(/<a href="([^"]+)">\s
 assert.ok(normalize(pages.gallery).includes(normalize(source(333).headings[0])));
 const cards = [...data.gallery.artists, ...data.gallery.artworks];
 const renderedCards = [...pages.gallery.matchAll(/<article class="reference-catalogue-card">([\s\S]*?)<\/article>/g)];
-assert.equal(cards.length, 29);
-assert.equal(renderedCards.length, 29);
+assert.equal(data.gallery.artists.length, 12);
+assert.equal(data.gallery.artworks.length, 21);
+assert.equal(cards.length, 33);
+assert.equal(renderedCards.length, 33);
 const expectedHovers = [...new Map([...read("docs/reference/styles/post-333.css").matchAll(/\/\* Start custom CSS for image, class: \.elementor-element-([^ ]+)[\s\S]*?background-image:\s*url\('([^']+)'\)/g)].map((m) => [m[1], m[2]])).values()];
-for (const [index, card] of cards.entries()) {
-  assert.equal(normalize(card.label), normalize(sourceCards[index][3]));
-  assert.equal(card.href, new URL(sourceCards[index][1]).pathname);
-  assert.equal(remote(card.image), sourceCards[index][2]);
+// The Figma change deliberately appends four artists and changes Adam's medium.
+// All original URLs/hovers remain covered, matched by stable destination.
+// Jihyun's seated portrait from the existing home assets matches the Figma frame.
+for (const [index, original] of sourceCards.entries()) {
+  const href = new URL(original[1]).pathname;
+  const card = cards.find((item) => item.href === href);
+  assert.ok(card, `Missing original card ${href}`);
+  const expectedLabel = href === "/gallery/adam-weismann/" ? "Adam Weismann | Clay" : original[3];
+  assert.equal(normalize(card.label), normalize(expectedLabel));
+  if (href === "/gallery/jihyun-kim/") {
+    assert.equal(card.image, "/assets/images/jihyun-kim.webp");
+    assert.ok(fs.existsSync(`dist${card.image}`));
+  } else assert.equal(remote(card.image), original[2]);
   assert.equal(remote(card.hoverImage), expectedHovers[index]);
-  const rendered = renderedCards[index][1];
+  const rendered = renderedCards.find((item) => item[1].includes(`href="${href}"`))?.[1];
+  assert.ok(rendered, `Original card not rendered ${href}`);
   assert.ok(normalize(rendered).includes(normalize(card.label)));
   assert.ok(rendered.includes(`href="${card.href}"`) && rendered.includes(`src="${card.image}"`) && rendered.includes(`src="${card.hoverImage}"`));
   assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken catalogue route ${card.href}`);
+}
+for (const card of data.gallery.artists.slice(8)) {
+  const rendered = renderedCards.find((item) => item[1].includes(`href="${card.href}"`))?.[1];
+  assert.ok(rendered && normalize(rendered).includes(normalize(card.label)));
+  assert.ok(rendered.includes(`data-media-slot="${card.image.slot}"`) && rendered.includes(`data-media-slot="${card.hoverImage.slot}"`));
+  assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken new artist route ${card.href}`);
 }
 for (const copy of data.gallery.commission) assert.ok(normalize(pages.gallery).includes(normalize(copy)));
 for (const [slug, forbidden] of [["collective", "<h1>The Collective</h1>"], ["collective", "contact-general-main"], ["gallery", "<h1>Gallery</h1>"], ["our-mission", "page-kicker"], ["our-mission", "mission-statement"]]) assert.ok(!pages[slug].includes(forbidden));
@@ -49,4 +67,4 @@ for (const portrait of portraits) {
   const asset = manifest.find((a) => a.remote === portrait[1]);
   assert.ok(asset && pages["our-mission"].includes(`src="${asset.localPath}"`), "Missing founder portrait");
 }
-console.log("Interior parity passed: original Collective/Mission copy, 9 Collective images, 29 Gallery labels and image/hover pairs, 2 founder portraits, original backgrounds and commission copy.");
+console.log("Interior parity passed: original Collective/Mission copy, 9 Collective images, retained Gallery URLs/hovers with explicit Jihyun Figma portrait override, 4 added artist cards, 2 founder portraits, original backgrounds and commission copy.");

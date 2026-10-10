@@ -1,0 +1,29 @@
+---
+import type { CollectionEntry } from "astro:content";
+import InteriorLayout from "../layouts/InteriorLayout.astro";
+import { mediaSource } from "../data/media";
+import MediaSlot from "./MediaSlot.astro";
+import FigmaArtworkCard from "./FigmaArtworkCard.astro";
+import FigmaCommission from "./FigmaCommission.astro";
+import "../styles/gallery-2026.css";
+interface Props { artist: CollectionEntry<"artists">["data"]; works: CollectionEntry<"artworks">["data"][]; }
+const { artist, works } = Astro.props;
+const contactName = artist.name.split(" ")[0];
+---
+<InteriorLayout className="figma-interior" title={artist.name} description={artist.seoDescription} image={mediaSource(artist.portrait)}>
+  <main id="content" class:list={["figma-artist", `figma-artist--${artist.slug}`, { "figma-artist--without-works": !works.length }]}>
+    <section class="figma-profile" aria-labelledby="artist-heading">
+      <MediaSlot media={artist.portrait} className="figma-profile-portrait" alt={`${artist.name} portrait`} loading="eager" />
+      <div class="figma-profile-copy">
+        <h1 id="artist-heading">{artist.name}</h1>
+        <slot />
+        <p class="figma-profile-contact">For further information on pricing and availability for {contactName}’s work, please contact <a href="mailto:info@goldenearthstudio.co.uk">info@goldenearthstudio.co.uk</a></p>
+      </div>
+    </section>
+    <section class="figma-profile-works" aria-label={`${artist.name} artworks`}>
+      {works.length > 0 && <h2>Artworks</h2>}
+      {works.length > 0 && <div class="figma-work-grid">{works.map((work) => <FigmaArtworkCard artwork={work} />)}</div>}
+    </section>
+    <FigmaCommission />
+  </main>
+</InteriorLayout>

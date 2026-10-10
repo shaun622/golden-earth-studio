@@ -35,3 +35,15 @@ Reviewed the built static site through the Edge extension using responsive viewp
 `npm run build`, `npm run audit`, `npm run audit:journal`, `npm run audit:interior` and `git diff --check` pass.
 
 These are Edge responsive-viewport checks, not physical iOS/Safari or Android device tests. On-screen keyboard behavior and browser chrome resizing on real devices remain device-specific checks. Contact email delivery is outside this layout review.
+
+## Figma gallery expansion — 10 October 2026
+
+Reviewed the final built Worker preview in the Edge extension. Gallery, James, Edie, Lucia and Eleanor profiles plus all twelve new product pages were checked at 360, 390, 768, 820, 1024, 1280 and 1440px: 119 checks, no overflow or out-of-viewport headings, forms, inputs, media or cards. Desktop commission columns and phone stacking were also asserted. Six retained pages were smoke-tested at 390/1280px: Home, Collective, Mission, Journal, Louis Vincent and Jacob Chan's Sake Bottle.
+
+Visual comparison covered the four profile compositions, portrait/landscape products, Tiled Screen, related cards, commission section and footer. Desktop whitespace follows Figma; phone layouts reduce empty space and expose artwork captions permanently. A full-page screenshot revealed an empty section anchor taking up a grid cell; removing it from grid flow restored the intended left copy/right form columns.
+
+Gallery tab keyboard/hash changes, profile focus captions, mobile menu Escape/focus restoration, required-field validation and disabled local contact feedback pass. A temporary local CSP server blocking all scripts confirmed readable biographies/specifications, ordinary page/email links and both Gallery panels. It was stopped and removed. Reduced-motion CSS disables caption transitions; OS preference emulation was unavailable through this extension.
+
+One temporary Cup I source demonstrated replacement in Gallery hover/profile/product and social metadata, with the existing lightbox working. It was restored to null before the final build. All 17 sources are null in the final content and render real neutral blanks with Photo pending labels.
+
+Final build, site/Journal/interior/Figma audits, runtime audit and 10 Worker tests pass. Evidence is saved in `docs/reference/figma-2026/qa/`; the implementation ledger records details and editorial assumptions. These remain Edge viewport checks rather than physical-device tests, and live email delivery remains outside this review.

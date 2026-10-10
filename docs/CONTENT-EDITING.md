@@ -8,6 +8,7 @@ Artist, artwork and Journal detail content lives in Markdown under `src/content`
 2. Store portrait/hover images below `public/assets/migrated/artists/` and use root-relative paths such as `/assets/migrated/artists/name-portrait.webp`.
 3. Set `listedInGallery: true`, add the slug to `artistOrder` in `src/data/gallery.generated.json`, and add an entry to `gallery.artists` in `src/data/interior.generated.json` with its detail `href`, exact `label`, `image`, `hoverImage` and `objectPosition`.
 4. Add artwork IDs as `artist-slug/artwork-slug`; every referenced ID must have a matching artwork file.
+5. Add the profile URL to `generated` in `src/data/route-ledger.json`, which also supplies the sitemap. Use `sourceWpId: null` for a new artist; do not invent a WordPress ID.
 
 ## Add an artwork
 
@@ -15,6 +16,22 @@ Artist, artwork and Journal detail content lives in Markdown under `src/content`
 2. Keep `id`, `artistSlug`, and `slug` aligned with the folder and URL. Use optional `price: null` when none is stated.
 3. Put the main and detail images in `public/assets/migrated/artworks/<artist-slug>/`, then list them in `gallery` in display order.
 4. Add the stable ID to the artist's `artworkIds`. For a Gallery Artwork tab card, also add it to `artworkOrder` and `gallery.artworks` in `src/data/interior.generated.json`, preserving the desired index label and image pair separately from the detail page.
+5. Add the detail URL to `src/data/route-ledger.json` and the matching ID/title/artist/path entry to `worker/catalogue.generated.ts`. The Worker rejects enquiries for unknown IDs.
+
+## 2026 Figma profiles and pending photographs
+
+James Galbraith Kirkpatrick, Edie Evans, Lucia Ocejo and Eleanor Herbosch use `profileVariant: "figma-2026"`. The twelve new products use `detailVariant: "figma-2026"`, `year: 2026` and a separate `tileMedium` for the profile hover. Keep the base title free of the year. Their Gallery order is explicit; their works are reached from artist profiles and are not appended to the original 21-item Artwork tab.
+
+The 17 pending photo entries live in `src/data/media.ts`. Content refers to a photo as `{ "slot": "lucia-ocejo-mug" }`, rather than an empty image path. A null source renders a blank with “Photo pending”; do not substitute another photograph.
+
+To supply a photo:
+
+1. Add an optimised image under `public/assets/artists/` or `public/assets/artworks/`, with a descriptive filename.
+2. Set that slot's `src` to its root-relative path and update accurate alt text and intrinsic width/height in the same registry entry.
+3. Review all repeated uses: artist portraits also appear in Gallery, and Cup I, Bedrock and Round Bud Vase also appear in the artist hover cards. Product images become lightbox links only once a real source exists.
+4. Run the build and audits. During the pending-photo phase, `audit:figma` requires the 17 sources to be null; when actual photos are approved, change that assertion to check supplied paths exist and that only remaining null entries render blanks. Keep the content, links, forms and reference-copy checks.
+
+Eleanor's old biography/studies are archived at `docs/reference/figma-2026/eleanor-before.md`; old media assets remain available. The new profile deliberately does not display those studies.
 
 ## Add a Journal story
 
@@ -28,6 +45,9 @@ Artist, artwork and Journal detail content lives in Markdown under `src/content`
 npm run build
 npm run test:worker
 npm run audit
+npm run audit:journal
+npm run audit:interior
+npm run audit:figma
 npx wrangler deploy --dry-run
 ```
 

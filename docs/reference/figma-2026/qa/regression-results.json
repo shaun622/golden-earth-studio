@@ -1,0 +1,98 @@
+[
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/",
+    "title": "Golden Earth Studio – Art for the Anthropocene",
+    "width": 390
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/collective/",
+    "title": "Collective – Golden Earth Studio",
+    "width": 390
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/our-mission/",
+    "title": "Our Mission – Golden Earth Studio",
+    "width": 390
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/journal/",
+    "title": "Journal – Golden Earth Studio",
+    "width": 390
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/gallery/louis-vincent/",
+    "title": "Louis Vincent – Golden Earth Studio",
+    "width": 390
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/gallery/jacob-chan/sake-bottle/",
+    "title": "Sake Bottle | Jacob Chan – Golden Earth Studio",
+    "width": 390
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/",
+    "title": "Golden Earth Studio – Art for the Anthropocene",
+    "width": 1280
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/collective/",
+    "title": "Collective – Golden Earth Studio",
+    "width": 1280
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/our-mission/",
+    "title": "Our Mission – Golden Earth Studio",
+    "width": 1280
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/journal/",
+    "title": "Journal – Golden Earth Studio",
+    "width": 1280
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/gallery/louis-vincent/",
+    "title": "Louis Vincent – Golden Earth Studio",
+    "width": 1280
+  },
+  {
+    "failedImages": [],
+    "main": true,
+    "overflow": -15,
+    "route": "/gallery/jacob-chan/sake-bottle/",
+    "title": "Sake Bottle | Jacob Chan – Golden Earth Studio",
+    "width": 1280
+  }
+]

@@ -4,6 +4,8 @@ import ArtworkCard from "../../../components/ArtworkCard.astro";
 import ContactForm from "../../../components/ContactForm.astro";
 import ImageGallery from "../../../components/ImageGallery.astro";
 import ArtworkLayout from "../../../layouts/ArtworkLayout.astro";
+import FigmaArtworkDetail from "../../../components/FigmaArtworkDetail.astro";
+import { mediaSource } from "../../../data/media";
 
 export async function getStaticPaths() {
   const artworks = await getCollection("artworks");
@@ -15,8 +17,15 @@ const { Content } = await render(artwork);
 const allArtworks = await getCollection("artworks");
 const artworkById = new Map(allArtworks.map((entry) => [entry.data.id, entry.data]));
 const related = artwork.data.relatedIds.map((id) => artworkById.get(id)).filter(Boolean);
+const realImages = artwork.data.gallery.flatMap((item) => {
+  const src = mediaSource(item.src);
+  return src ? [{ ...item, src }] : [];
+});
 ---
-<ArtworkLayout title={artwork.data.title} artist={artwork.data.artistName} description={artwork.data.seoDescription} image={artwork.data.mainImage}>
+{artwork.data.detailVariant === "figma-2026" ? (
+  <FigmaArtworkDetail artwork={artwork.data} />
+) : (
+<ArtworkLayout title={artwork.data.title} artist={artwork.data.artistName} description={artwork.data.seoDescription} image={mediaSource(artwork.data.mainImage)}>
   <main id="content" class="interior-main artwork-page">
     <section class="artwork-detail">
       <div class="artwork-detail-copy">
@@ -33,15 +42,16 @@ const related = artwork.data.relatedIds.map((id) => artworkById.get(id)).filter(
           <ContactForm variant="artwork" artworkId={artwork.data.id} artworkTitle={artwork.data.title} />
         </section>
       </div>
-      <ImageGallery className="artwork-image-gallery" label={`${artwork.data.title} by ${artwork.data.artistName}`} images={artwork.data.gallery} />
+      <ImageGallery className="artwork-image-gallery" label={`${artwork.data.title} by ${artwork.data.artistName}`} images={realImages} />
     </section>
     {related.length > 0 && (
       <section class="related-artworks" aria-labelledby="related-heading">
         <div class="section-heading-row"><h2 id="related-heading">Related Artworks</h2><span></span></div>
         <div class="catalogue-grid artwork-catalogue-grid">
-          {related.map((item) => <ArtworkCard title={item!.title} artist={item!.artistName} image={item!.mainImage} href={`/gallery/${item!.id}/`} />)}
+          {related.map((item) => <ArtworkCard title={item!.title} artist={item!.artistName} image={mediaSource(item!.mainImage)!} href={`/gallery/${item!.id}/`} />)}
         </div>
       </section>
     )}
   </main>
 </ArtworkLayout>
+)}

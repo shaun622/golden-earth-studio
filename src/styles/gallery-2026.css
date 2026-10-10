@@ -1,0 +1,141 @@
+/* The 2026 Figma frames are 1280px wide. All rules are local to this edition. */
+.interior-page.figma-interior { margin: 0; }
+.figma-interior .site-header { min-height: 140px; padding-inline: 5%; }
+.figma-interior .brand { font-size: 22px; letter-spacing: 4px; }
+.figma-interior .desktop-nav { gap: 3vw; }
+.figma-interior .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.figma-artist, .figma-product { width: calc(100% - 120px); max-width: 1360px; margin: 0 auto; padding-top: 110px; }
+.figma-profile { display: grid; grid-template-columns: 410px minmax(0, 1fr); gap: 37px; align-items: start; }
+.figma-artist--edie-evans .figma-profile { grid-template-columns: 334px minmax(0, 1fr); gap: 167px; }
+.figma-profile-portrait { width: 100%; height: auto; object-fit: cover; filter: grayscale(1); }
+.figma-profile-copy { min-width: 0; }
+.figma-profile-copy { padding-top: 20px; color: #808080; }
+.figma-profile-copy h1 { margin: 0 0 35px; font: 400 24px/1.5 var(--serif); }
+.figma-profile-copy p { margin: 0 0 30px; font: 300 16px/30px var(--body); letter-spacing: .2px; }
+.figma-profile-copy .figma-profile-contact { margin: 48px 0 0; }
+.figma-profile-contact a { display: block; margin-top: 5px; font-weight: 600; }
+.figma-profile-works { margin-top: 44px; }
+.figma-profile-works h2 { margin: 0 0 38px; padding-bottom: 14px; border-bottom: 1px solid #a7a79f; font: 300 14px/1.5 var(--body); }
+.figma-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 45px; padding-inline: 9px; }
+.figma-work-card { min-width: 0; }
+.figma-work-link { display: block; position: relative; aspect-ratio: .59; overflow: hidden; }
+.figma-interior .figma-work-link:hover, .figma-interior .figma-work-link:focus-visible { opacity: 1; }
+.figma-work-link > .media-slot { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; }
+.figma-work-caption { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; gap: 22px; padding: 20px; background: rgb(0 0 0 / 55%); color: #f2f2f2; text-align: center; opacity: 0; transition: opacity 700ms ease; }
+.figma-work-title { font: italic 400 21px/1.5 var(--serif); letter-spacing: 1px; }
+.figma-work-dimensions, .figma-work-medium { font: 300 14px/1.6 var(--body); letter-spacing: 1px; white-space: pre-line; }
+.figma-work-link:hover .figma-work-caption, .figma-work-link:focus-visible .figma-work-caption { opacity: 1; }
+.figma-artist--without-works .figma-profile-works { min-height: 1480px; border-top: 1px solid #a7a79f; }
+.figma-commission { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 335px); gap: 180px; border-top: 1px solid #a7a79f; padding: 55px 100px 0 80px; margin: 115px 0 90px; }
+.figma-commission .commission-anchor { position: absolute; top: 0; left: 0; }
+.figma-commission h2 { margin: 0 0 17px; font: 400 22px/1.6 var(--serif); }
+.figma-commission-copy p { margin: 0; font: 300 14px/24px var(--body); letter-spacing: .7px; }
+.figma-commission-copy > a { display: inline-block; margin-top: 25px; font: 300 14px/1.6 var(--body); overflow-wrap: anywhere; }
+.figma-product-detail { min-height: 1490px; }
+.figma-product-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 22px; margin: 12px 0 45px; font: 300 36px/1.35 var(--body); color: #808080; }
+.figma-product-heading a { font: 400 32px/1.35 var(--serif); }
+.figma-product-heading-separator { font: 300 34px/1 var(--body); }
+.figma-product-columns { display: grid; grid-template-columns: minmax(0, 335px) minmax(0, 1fr); gap: 115px; align-items: start; }
+.figma-product-facts { margin: 0 0 170px; font: 300 16px/22px var(--body); color: #808080; }
+.figma-product-facts dd { margin: 0; white-space: pre-line; }
+.figma-product-facts > div + div::before { display: block; content: "–"; margin-block: 4px; line-height: 10px; }
+.figma-enquiry h2 { margin: 0 0 55px; padding-bottom: 100px; border-bottom: 1px solid #aaa99f; font: 300 16px/1.5 var(--body); }
+.figma-product-media { width: 350px; max-width: 100%; justify-self: end; margin-top: -106px; }
+.figma-product--landscape .figma-product-media { width: 550px; margin-right: 0; }
+.figma-product-media > .media-slot { aspect-ratio: 350 / 600; }
+.figma-product--landscape .figma-product-media > .media-slot { aspect-ratio: 550 / 370; }
+.figma-product-media .image-gallery-grid { grid-template-columns: 1fr; }
+.figma-product-media .image-gallery-grid img { aspect-ratio: 350 / 600; height: auto; }
+.figma-product--landscape .figma-product-media .image-gallery-grid img { aspect-ratio: 550 / 370; }
+.figma-related h2 { margin: 0 0 28px; font: 400 22px/1.6 var(--serif); }
+.figma-related-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 38px; }
+.figma-related-card { min-width: 0; }
+.figma-related-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.figma-related-card h3 { margin: 12px 0 0; font: 300 14px/1.5 var(--body); }
+.figma-related-card h3 span { white-space: normal; }
+.figma-interior .contact-form--figma { grid-template-columns: 1fr; gap: 18px; }
+.figma-interior .contact-form--figma label { position: relative; font: 300 14px/1.5 var(--body); }
+.figma-interior .contact-form--figma label > span { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.figma-interior .contact-form--figma input, .figma-interior .contact-form--figma textarea { min-height: 44px; padding: 11px 14px; background: #e7e7e7; border: 0; border-radius: 8px; font: 400 14px/1.5 var(--serif); }
+.figma-interior .contact-form--figma textarea { min-height: 136px; }
+.figma-enquiry .contact-form--figma textarea { min-height: 100px; }
+.figma-interior .contact-form--figma .form-actions { gap: 12px; }
+.figma-interior .contact-form--figma button { font: 300 16px/1.5 var(--body); min-height: 44px; padding: 7px 14px; border-radius: 6px; background: #e7e7e7; }
+.figma-interior .contact-form--figma .form-status:not(:empty) { flex-basis: 100%; }
+.figma-interior .contact-form--figma ::placeholder { color: #74746d; opacity: 1; }
+.figma-interior .site-footer { min-height: 370px; }
+
+/* The Gallery reference has a wider grid and much shorter cards than WordPress. */
+.figma-interior .gallery-reference .reference-intro { min-height: 400px; padding-top: 140px; padding-bottom: 35px; }
+.figma-interior .gallery-reference .gallery-tabs { width: calc(100% - 100px); max-width: 1360px; padding: 33px 0 0; }
+.figma-interior .gallery-reference .gallery-tab-list { margin: 0 0 20px; }
+.figma-interior .gallery-reference .gallery-tab-list a { font: 400 14px/1.5 var(--serif); letter-spacing: 0; }
+.figma-interior .gallery-tab-separator { margin: 0; font-size: 14px; }
+.figma-interior .reference-catalogue { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 95px; row-gap: 40px; }
+.figma-interior .reference-catalogue-image { height: auto; aspect-ratio: 330 / 395; }
+.figma-interior .reference-catalogue-image > .media-slot { width: 100%; height: 100%; aspect-ratio: auto; }
+.figma-interior .reference-catalogue-image > .reference-catalogue-hover { position: absolute; inset: 0; }
+.figma-interior .reference-catalogue-card h2 { margin: 12px 0 0; font: 300 14px/1.6 var(--body); letter-spacing: 0; }
+.figma-interior .gallery-reference > .figma-commission { width: calc(100% - 120px); max-width: 1360px; margin-inline: auto; }
+
+@media (max-width: 1100px) {
+  .figma-profile { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 45px; }
+  .figma-artist--edie-evans .figma-profile { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 65px; }
+  .figma-product-columns { gap: 65px; }
+  .figma-product-media { margin-top: 0; }
+  .figma-commission { padding-inline: 30px; gap: 65px; }
+  .figma-interior .reference-catalogue { column-gap: 45px; }
+}
+@media (max-width: 900px) {
+  .figma-artist, .figma-product { width: calc(100% - 64px); padding-top: 70px; }
+  .figma-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+  .figma-product-heading { font-size: 30px; }
+  .figma-product-heading a { font-size: 28px; }
+  .figma-product-media { margin-top: 0; }
+  .figma-product-columns { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
+  .figma-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .figma-interior .reference-catalogue { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .figma-artist--without-works .figma-profile-works { min-height: 650px; }
+}
+@media (max-width: 767px) {
+  .figma-interior .site-header { min-height: 82px; padding-inline: 5%; }
+  .figma-interior .brand { max-width: 225px; line-height: 1.1; }
+  .figma-interior .brand em { display: block; }
+  .figma-artist, .figma-product { width: 88%; padding-top: 65px; }
+  .figma-profile, .figma-artist--edie-evans .figma-profile { grid-template-columns: 1fr; gap: 35px; }
+  .figma-profile-portrait { width: min(100%, 410px); }
+  .figma-profile-copy p { font-size: 16px; line-height: 28px; }
+  .figma-profile-copy h1 { margin-bottom: 25px; }
+  .figma-profile-copy { padding-top: 0; }
+  .figma-profile-copy .figma-profile-contact { margin-top: 30px; }
+  .figma-profile-works { margin-top: 45px; }
+  .figma-profile-works h2 { margin-bottom: 30px; }
+  .figma-work-grid { grid-template-columns: 1fr; padding: 0; gap: 32px; }
+  .figma-artist--without-works .figma-profile-works { min-height: 140px; }
+  .figma-commission { grid-template-columns: 1fr; padding: 35px 0 0; gap: 32px; margin: 65px 0; }
+  .figma-commission-copy p { font-size: 16px; line-height: 26px; }
+  .figma-product-detail { min-height: 0; }
+  .figma-product-heading { display: block; font-size: 30px; margin-bottom: 32px; overflow-wrap: anywhere; }
+  .figma-product-heading-separator { display: none; }
+  .figma-product-heading a { display: block; margin-top: 10px; font-size: 25px; }
+  .figma-product-columns { grid-template-columns: 1fr; gap: 40px; }
+  .figma-product-facts { margin-bottom: 35px; }
+  .figma-enquiry h2 { padding-bottom: 14px; margin-bottom: 20px; }
+  .figma-product-media, .figma-product--landscape .figma-product-media { width: 100%; max-width: 410px; justify-self: start; margin-top: 0; }
+  .figma-product--landscape .figma-product-media { max-width: 550px; }
+  .figma-related { margin-top: 75px; }
+  .figma-related-grid { gap: 30px 20px; }
+  .figma-interior .contact-form--figma input, .figma-interior .contact-form--figma textarea { font-size: 16px; }
+  .figma-interior .gallery-reference .reference-intro { min-height: 220px; padding: 65px 7% 35px; }
+  .figma-interior .gallery-reference .gallery-tabs { width: 88%; padding-top: 25px; }
+  .figma-interior .reference-catalogue { grid-template-columns: 1fr; gap: 32px; padding: 0; }
+  .figma-interior .reference-catalogue-card h2 { font-size: 16px; }
+  .figma-interior .gallery-reference > .figma-commission { width: 88%; }
+}
+@media (max-width: 400px) { .figma-related-grid { grid-template-columns: 1fr; } }
+@media (max-width: 767px), (hover: none), (pointer: coarse) {
+  .figma-work-link { aspect-ratio: auto; overflow: visible; }
+  .figma-work-link > .media-slot { height: auto; aspect-ratio: .59; }
+  .figma-work-caption { position: static; opacity: 1; padding: 20px 8px; gap: 8px; background: transparent; color: var(--ink); }
+}
+@media (prefers-reduced-motion: reduce) { .figma-work-caption { transition: none; } }
