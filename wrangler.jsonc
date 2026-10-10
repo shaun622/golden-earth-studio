@@ -19,7 +19,7 @@
     "CONTACT_ENABLED": "false",
     "CONTACT_FROM": "",
     "CONTACT_TO": "",
-    "ALLOWED_ORIGINS": "https://goldenearthstudio.co.uk"
+    "ALLOWED_ORIGINS": "https://goldenearthstudio.co.uk,https://www.goldenearthstudio.co.uk,https://golden-earth-studio.shaun-02d.workers.dev"
   },
   "observability": {
     "enabled": true,
