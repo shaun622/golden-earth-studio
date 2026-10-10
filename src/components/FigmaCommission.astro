@@ -1,0 +1,13 @@
+---
+import ContactForm from "./ContactForm.astro";
+import content from "../data/interior.generated.json";
+---
+<section id="contact" class="figma-commission" aria-labelledby="commission-heading">
+  <span id="bespoke" class="commission-anchor" aria-hidden="true"></span>
+  <div class="figma-commission-copy">
+    <h2 id="commission-heading">Bespoke Commissions</h2>
+    <p>{content.gallery.commission[0]}</p>
+    <a href="mailto:info@goldenearthstudio.co.uk">info@goldenearthstudio.co.uk</a>
+  </div>
+  <ContactForm variant="commission" presentation="figma-2026" />
+</section>

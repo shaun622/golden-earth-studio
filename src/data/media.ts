@@ -1,0 +1,44 @@
+export type MediaReference = string | { slot: string };
+export interface MediaAsset {
+  src: string | null;
+  alt: string;
+  width: number;
+  height: number;
+}
+
+// Supplied Drive photos use their real pixel dimensions. Null marks a missing crop.
+export const mediaSlots: Record<string, MediaAsset> = {
+  "james-galbraith-kirkpatrick-portrait": { src: "/assets/artists/james-galbraith-kirkpatrick-portrait.webp", alt: "James Galbraith Kirkpatrick working at a pottery wheel", width: 862, height: 1034 },
+  "edie-evans-portrait": { src: "/assets/artists/edie-evans-portrait.webp", alt: "Edie Evans working with clay in her studio", width: 864, height: 1026 },
+  "lucia-ocejo-portrait": { src: "/assets/artists/lucia-ocejo-portrait.webp", alt: "Lucia Ocejo wearing an apron in a doorway", width: 866, height: 1050 },
+  "eleanor-herbosch-portrait": { src: "/assets/artists/eleanor-herbosch-portrait.webp", alt: "Portrait of Eleanor Herbosch in a light shirt", width: 860, height: 1032 },
+  "james-galbraith-kirkpatrick-square-plate": { src: "/assets/artworks/james-galbraith-kirkpatrick/square-plate.webp", alt: "Stack of Square Plates by James Galbraith Kirkpatrick", width: 682, height: 1180 },
+  "james-galbraith-kirkpatrick-cup-i": { src: "/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp", alt: "Cup I by James Galbraith Kirkpatrick", width: 684, height: 1178 },
+  "james-galbraith-kirkpatrick-bowl": { src: "/assets/artworks/james-galbraith-kirkpatrick/bowl.webp", alt: "Stack of Bowls by James Galbraith Kirkpatrick", width: 682, height: 1178 },
+  "james-galbraith-kirkpatrick-cup-ii": { src: "/assets/artworks/james-galbraith-kirkpatrick/cup-ii.webp", alt: "Cup II by James Galbraith Kirkpatrick", width: 684, height: 1170 },
+  // Drive supplied the narrow profile crops, not the wide Edie product photos.
+  "edie-evans-earth-memory": { src: null, alt: "Earth Memory by Edie Evans", width: 550, height: 370 },
+  "edie-evans-bedrock": { src: null, alt: "Bedrock by Edie Evans", width: 550, height: 370 },
+  "edie-evans-fragmentation-1": { src: null, alt: "Fragmentation 1 by Edie Evans", width: 550, height: 370 },
+  "edie-evans-earth-memory-card": { src: "/assets/artworks/edie-evans/earth-memory-card.webp", alt: "Portrait crop of the rock and sphere in Earth Memory by Edie Evans", width: 682, height: 1174 },
+  "edie-evans-bedrock-card": { src: "/assets/artworks/edie-evans/bedrock-card.webp", alt: "Close-up of Bedrock by Edie Evans", width: 682, height: 1170 },
+  "edie-evans-fragmentation-1-card": { src: "/assets/artworks/edie-evans/fragmentation-1-card.webp", alt: "Close-up of Fragmentation 1 by Edie Evans", width: 680, height: 1176 },
+  "lucia-ocejo-round-bud-vase": { src: "/assets/artworks/lucia-ocejo/round-bud-vase.webp", alt: "Round Bud Vase by Lucia Ocejo with an incised wave pattern", width: 664, height: 1194 },
+  "lucia-ocejo-tea-bowl": { src: "/assets/artworks/lucia-ocejo/tea-bowl.webp", alt: "Pale blue Tea Bowl by Lucia Ocejo", width: 666, height: 1188 },
+  "lucia-ocejo-mug": { src: "/assets/artworks/lucia-ocejo/mug.webp", alt: "A hand holding the handle of Lucia Ocejo's Mug", width: 664, height: 1184 },
+  "lucia-ocejo-jug": { src: "/assets/artworks/lucia-ocejo/jug.webp", alt: "Jug by Lucia Ocejo with a pale glazed upper half", width: 682, height: 1192 },
+  "lucia-ocejo-tiled-screen": { src: "/assets/artworks/lucia-ocejo/tiled-screen.webp", alt: "Three-panel Tiled Screen by Lucia Ocejo", width: 1076, height: 1050 },
+  "lucia-ocejo-tiled-screen-card": { src: "/assets/artworks/lucia-ocejo/tiled-screen-card.webp", alt: "Portrait crop of Lucia Ocejo's Tiled Screen", width: 666, height: 1180 },
+  // The supplied painting hover has a faded portrait baked into the screenshot.
+  "eleanor-herbosch-painting-hover": { src: null, alt: "Painting detail by Eleanor Herbosch", width: 330, height: 395 },
+};
+
+export function resolveMedia(reference: MediaReference, fallbackAlt = ""): MediaAsset & { slot?: string } {
+  if (typeof reference === "string") return { src: reference, alt: fallbackAlt, width: 900, height: 1200 };
+  if (!Object.hasOwn(mediaSlots, reference.slot)) throw new Error(`Unknown photo slot: ${reference.slot}`);
+  return { ...mediaSlots[reference.slot], slot: reference.slot };
+}
+
+export function mediaSource(reference: MediaReference): string | undefined {
+  return resolveMedia(reference).src || undefined;
+}

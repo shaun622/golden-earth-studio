@@ -1,0 +1,31 @@
+{
+  "domain": "goldenearthstudio.co.uk",
+  "region": "ap-northeast-1",
+  "receiving": false,
+  "records": [
+    {
+      "content": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKjiJ9imWkq8JkjLk771OovciIcTDjXXv7a5PUWpMgC59tUKjCXF+0ze6XoHUos6BoLXNHsO6KJ0j+DDG7Qq1KjY9ewxo4OcIfZgiBsWWg6y6obmx96xZ+R1YBZpgCwQ9a1/AdywEJiiLJyRWK+7LRaFsAIL0eJ3cY0rAzV44m4QIDAQAB",
+      "name": "resend._domainkey",
+      "ttl": "Auto",
+      "type": "TXT"
+    },
+    {
+      "content": "rsend-apne1.forge.rmta.net",
+      "name": "rsend",
+      "ttl": "3600",
+      "type": "CNAME"
+    },
+    {
+      "content": "send.forge.rmta.net",
+      "name": "send",
+      "ttl": "3600",
+      "type": "CNAME"
+    },
+    {
+      "content": "v=DMARC1; p=none;",
+      "name": "_dmarc",
+      "ttl": "Auto",
+      "type": "TXT"
+    }
+  ]
+}

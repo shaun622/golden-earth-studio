@@ -1,0 +1,528 @@
+{
+  "capturedAt": "2026-09-08T04:14:10.967386+00:00",
+  "source": "https://goldenearthstudio.co.uk/",
+  "pageCount": 43,
+  "postCount": 7,
+  "records": [
+    {
+      "id": 4475,
+      "kind": "page",
+      "title": "Sake Bottle 2",
+      "url": "https://goldenearthstudio.co.uk/gallery/jacob-chan/sake-bottle-2/",
+      "slug": "sake-bottle-2",
+      "parent": 1439,
+      "date": null,
+      "referenceFile": "content/4475.json"
+    },
+    {
+      "id": 4470,
+      "kind": "page",
+      "title": "Sake Bottle",
+      "url": "https://goldenearthstudio.co.uk/gallery/jacob-chan/sake-bottle/",
+      "slug": "sake-bottle",
+      "parent": 1439,
+      "date": null,
+      "referenceFile": "content/4470.json"
+    },
+    {
+      "id": 4453,
+      "kind": "page",
+      "title": "Sake Set",
+      "url": "https://goldenearthstudio.co.uk/gallery/jacob-chan/sake-set/",
+      "slug": "sake-set",
+      "parent": 1439,
+      "date": null,
+      "referenceFile": "content/4453.json"
+    },
+    {
+      "id": 4433,
+      "kind": "page",
+      "title": "Ginger Jar 2",
+      "url": "https://goldenearthstudio.co.uk/gallery/jacob-chan/ginger-jar-2/",
+      "slug": "ginger-jar-2",
+      "parent": 1439,
+      "date": null,
+      "referenceFile": "content/4433.json"
+    },
+    {
+      "id": 4387,
+      "kind": "page",
+      "title": "Small Teoju",
+      "url": "https://goldenearthstudio.co.uk/gallery/jihyun-kim/small-teoju/",
+      "slug": "small-teoju",
+      "parent": 2837,
+      "date": null,
+      "referenceFile": "content/4387.json"
+    },
+    {
+      "id": 4351,
+      "kind": "page",
+      "title": "Clay, 2025",
+      "url": "https://goldenearthstudio.co.uk/gallery/adam-weismann/clay-2025/",
+      "slug": "clay-2025",
+      "parent": 4332,
+      "date": null,
+      "referenceFile": "content/4351.json"
+    },
+    {
+      "id": 4332,
+      "kind": "page",
+      "title": "Adam Weismann",
+      "url": "https://goldenearthstudio.co.uk/gallery/adam-weismann/",
+      "slug": "adam-weismann",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/4332.json"
+    },
+    {
+      "id": 4270,
+      "kind": "page",
+      "title": "Untitled, 2025",
+      "url": "https://goldenearthstudio.co.uk/gallery/alexandra-yan-wong/untitled-2025/",
+      "slug": "untitled-2025",
+      "parent": 4262,
+      "date": null,
+      "referenceFile": "content/4270.json"
+    },
+    {
+      "id": 4262,
+      "kind": "page",
+      "title": "Alexandra Yan Wong",
+      "url": "https://goldenearthstudio.co.uk/gallery/alexandra-yan-wong/",
+      "slug": "alexandra-yan-wong",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/4262.json"
+    },
+    {
+      "id": 4257,
+      "kind": "page",
+      "title": "The Universe Was An Egg Which Cracked",
+      "url": "https://goldenearthstudio.co.uk/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/",
+      "slug": "the-universe-was-an-egg-which-cracked",
+      "parent": 4235,
+      "date": null,
+      "referenceFile": "content/4257.json"
+    },
+    {
+      "id": 4249,
+      "kind": "page",
+      "title": "Heart of Matter",
+      "url": "https://goldenearthstudio.co.uk/gallery/arran-gregory/heart-of-matter/",
+      "slug": "heart-of-matter",
+      "parent": 4235,
+      "date": null,
+      "referenceFile": "content/4249.json"
+    },
+    {
+      "id": 4235,
+      "kind": "page",
+      "title": "Arran Gregory",
+      "url": "https://goldenearthstudio.co.uk/gallery/arran-gregory/",
+      "slug": "arran-gregory",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/4235.json"
+    },
+    {
+      "id": 3155,
+      "kind": "page",
+      "title": "Stillness",
+      "url": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/stillness/",
+      "slug": "stillness",
+      "parent": 3072,
+      "date": null,
+      "referenceFile": "content/3155.json"
+    },
+    {
+      "id": 3144,
+      "kind": "page",
+      "title": "Elevation",
+      "url": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/elevation/",
+      "slug": "elevation",
+      "parent": 3072,
+      "date": null,
+      "referenceFile": "content/3144.json"
+    },
+    {
+      "id": 3133,
+      "kind": "page",
+      "title": "Bull’s Matter",
+      "url": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/bulls-matter/",
+      "slug": "bulls-matter",
+      "parent": 3072,
+      "date": null,
+      "referenceFile": "content/3133.json"
+    },
+    {
+      "id": 3107,
+      "kind": "page",
+      "title": "Bowing Bull",
+      "url": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/bowing-bull/",
+      "slug": "bowing-bull",
+      "parent": 3072,
+      "date": null,
+      "referenceFile": "content/3107.json"
+    },
+    {
+      "id": 3072,
+      "kind": "page",
+      "title": "Zahed Tajeddin",
+      "url": "https://goldenearthstudio.co.uk/gallery/zahed-tajeddin/",
+      "slug": "zahed-tajeddin",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/3072.json"
+    },
+    {
+      "id": 3057,
+      "kind": "page",
+      "title": "Wall Panel II",
+      "url": "https://goldenearthstudio.co.uk/gallery/louis-vincent/wall-panel-ii/",
+      "slug": "wall-panel-ii",
+      "parent": 2952,
+      "date": null,
+      "referenceFile": "content/3057.json"
+    },
+    {
+      "id": 3039,
+      "kind": "page",
+      "title": "Plate",
+      "url": "https://goldenearthstudio.co.uk/gallery/louis-vincent/plate/",
+      "slug": "plate",
+      "parent": 2952,
+      "date": null,
+      "referenceFile": "content/3039.json"
+    },
+    {
+      "id": 3017,
+      "kind": "page",
+      "title": "Conical Bowl",
+      "url": "https://goldenearthstudio.co.uk/gallery/louis-vincent/conical-bowl/",
+      "slug": "conical-bowl",
+      "parent": 2952,
+      "date": null,
+      "referenceFile": "content/3017.json"
+    },
+    {
+      "id": 3007,
+      "kind": "page",
+      "title": "Wall Panel I",
+      "url": "https://goldenearthstudio.co.uk/gallery/louis-vincent/wall-panel-i/",
+      "slug": "wall-panel-i",
+      "parent": 2952,
+      "date": null,
+      "referenceFile": "content/3007.json"
+    },
+    {
+      "id": 2974,
+      "kind": "page",
+      "title": "Bowl",
+      "url": "https://goldenearthstudio.co.uk/gallery/louis-vincent/bowl/",
+      "slug": "bowl",
+      "parent": 2952,
+      "date": null,
+      "referenceFile": "content/2974.json"
+    },
+    {
+      "id": 2952,
+      "kind": "page",
+      "title": "Louis Vincent",
+      "url": "https://goldenearthstudio.co.uk/gallery/louis-vincent/",
+      "slug": "louis-vincent",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/2952.json"
+    },
+    {
+      "id": 2878,
+      "kind": "page",
+      "title": "Chopsticks",
+      "url": "https://goldenearthstudio.co.uk/gallery/rickie-cheuk/chopsticks/",
+      "slug": "chopsticks",
+      "parent": 2872,
+      "date": null,
+      "referenceFile": "content/2878.json"
+    },
+    {
+      "id": 2872,
+      "kind": "page",
+      "title": "Rickie Cheuk",
+      "url": "https://goldenearthstudio.co.uk/gallery/rickie-cheuk/",
+      "slug": "rickie-cheuk",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/2872.json"
+    },
+    {
+      "id": 2861,
+      "kind": "page",
+      "title": "Teoju",
+      "url": "https://goldenearthstudio.co.uk/gallery/jihyun-kim/teoju/",
+      "slug": "teoju",
+      "parent": 2837,
+      "date": null,
+      "referenceFile": "content/2861.json"
+    },
+    {
+      "id": 2837,
+      "kind": "page",
+      "title": "Jihyun Kim",
+      "url": "https://goldenearthstudio.co.uk/gallery/jihyun-kim/",
+      "slug": "jihyun-kim",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/2837.json"
+    },
+    {
+      "id": 2826,
+      "kind": "page",
+      "title": "Ginger Jar",
+      "url": "https://goldenearthstudio.co.uk/gallery/jacob-chan/ginger-jar/",
+      "slug": "ginger-jar",
+      "parent": 1439,
+      "date": null,
+      "referenceFile": "content/2826.json"
+    },
+    {
+      "id": 2753,
+      "kind": "page",
+      "title": "Chess Set",
+      "url": "https://goldenearthstudio.co.uk/gallery/jacob-chan/chess-set/",
+      "slug": "chess-set",
+      "parent": 1439,
+      "date": null,
+      "referenceFile": "content/2753.json"
+    },
+    {
+      "id": 2464,
+      "kind": "page",
+      "title": "Newsletter",
+      "url": "https://goldenearthstudio.co.uk/newsletter/",
+      "slug": "newsletter",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/2464.json"
+    },
+    {
+      "id": 2398,
+      "kind": "page",
+      "title": "Directory",
+      "url": "https://goldenearthstudio.co.uk/directory/",
+      "slug": "directory",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/2398.json"
+    },
+    {
+      "id": 1947,
+      "kind": "page",
+      "title": "Journal",
+      "url": "https://goldenearthstudio.co.uk/journal/",
+      "slug": "journal",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/1947.json"
+    },
+    {
+      "id": 1823,
+      "kind": "page",
+      "title": "Privacy Policy",
+      "url": "https://goldenearthstudio.co.uk/privacy-policy/",
+      "slug": "privacy-policy",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/1823.json"
+    },
+    {
+      "id": 1528,
+      "kind": "page",
+      "title": "terms",
+      "url": "https://goldenearthstudio.co.uk/terms/",
+      "slug": "terms",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/1528.json"
+    },
+    {
+      "id": 1454,
+      "kind": "page",
+      "title": "Celia Dowson",
+      "url": "https://goldenearthstudio.co.uk/gallery/celia-dowson/",
+      "slug": "celia-dowson",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/1454.json"
+    },
+    {
+      "id": 1439,
+      "kind": "page",
+      "title": "Jacob Chan",
+      "url": "https://goldenearthstudio.co.uk/gallery/jacob-chan/",
+      "slug": "jacob-chan",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/1439.json"
+    },
+    {
+      "id": 600,
+      "kind": "page",
+      "title": "Our Mission",
+      "url": "https://goldenearthstudio.co.uk/our-mission/",
+      "slug": "our-mission",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/600.json"
+    },
+    {
+      "id": 478,
+      "kind": "page",
+      "title": "Journal2",
+      "url": "https://goldenearthstudio.co.uk/journal2/",
+      "slug": "journal2",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/478.json"
+    },
+    {
+      "id": 424,
+      "kind": "page",
+      "title": "Collective",
+      "url": "https://goldenearthstudio.co.uk/collective/",
+      "slug": "collective",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/424.json"
+    },
+    {
+      "id": 362,
+      "kind": "page",
+      "title": "Eleanor Herbosch",
+      "url": "https://goldenearthstudio.co.uk/gallery/eleanor-herbosch/",
+      "slug": "eleanor-herbosch",
+      "parent": 333,
+      "date": null,
+      "referenceFile": "content/362.json"
+    },
+    {
+      "id": 333,
+      "kind": "page",
+      "title": "Gallery",
+      "url": "https://goldenearthstudio.co.uk/gallery/",
+      "slug": "gallery",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/333.json"
+    },
+    {
+      "id": 56,
+      "kind": "page",
+      "title": "Home",
+      "url": "https://goldenearthstudio.co.uk/",
+      "slug": "home-2",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/56.json"
+    },
+    {
+      "id": 50,
+      "kind": "page",
+      "title": "Global Styles",
+      "url": "https://goldenearthstudio.co.uk/global-styles/",
+      "slug": "global-styles",
+      "parent": 0,
+      "date": null,
+      "referenceFile": "content/50.json"
+    },
+    {
+      "id": 955,
+      "kind": "post",
+      "title": "Circular Ceramics Book",
+      "url": "https://goldenearthstudio.co.uk/circular-ceramics-book/",
+      "slug": "circular-ceramics-book",
+      "parent": 0,
+      "date": "2023-10-09T04:03:43",
+      "referenceFile": "content/955.json"
+    },
+    {
+      "id": 135,
+      "kind": "post",
+      "title": "Grand Designs Live",
+      "url": "https://goldenearthstudio.co.uk/grand-designs-live/",
+      "slug": "grand-designs-live",
+      "parent": 0,
+      "date": "2023-08-02T04:52:17",
+      "referenceFile": "content/135.json"
+    },
+    {
+      "id": 133,
+      "kind": "post",
+      "title": "The Circular Economy Podcast",
+      "url": "https://goldenearthstudio.co.uk/the-circular-economy-podcast/",
+      "slug": "the-circular-economy-podcast",
+      "parent": 0,
+      "date": "2023-08-02T04:51:54",
+      "referenceFile": "content/133.json"
+    },
+    {
+      "id": 131,
+      "kind": "post",
+      "title": "Glas-allt-Shielf",
+      "url": "https://goldenearthstudio.co.uk/glas-allt-shielf/",
+      "slug": "glas-allt-shielf",
+      "parent": 0,
+      "date": "2023-08-02T04:51:30",
+      "referenceFile": "content/131.json"
+    },
+    {
+      "id": 129,
+      "kind": "post",
+      "title": "The Art Relief Series",
+      "url": "https://goldenearthstudio.co.uk/the-art-relief-series/",
+      "slug": "the-art-relief-series",
+      "parent": 0,
+      "date": "2023-08-02T04:51:10",
+      "referenceFile": "content/129.json"
+    },
+    {
+      "id": 122,
+      "kind": "post",
+      "title": "BEAR",
+      "url": "https://goldenearthstudio.co.uk/bear/",
+      "slug": "bear",
+      "parent": 0,
+      "date": "2023-08-02T04:50:55",
+      "referenceFile": "content/122.json"
+    },
+    {
+      "id": 1,
+      "kind": "post",
+      "title": "Hello world!",
+      "url": "https://goldenearthstudio.co.uk/hello-world/",
+      "slug": "hello-world",
+      "parent": 0,
+      "date": "2023-07-31T08:59:51",
+      "referenceFile": "content/1.json"
+    }
+  ],
+  "popupIds": [
+    "4602",
+    "4586",
+    "4590",
+    "4580",
+    "4573",
+    "3685",
+    "3700",
+    "3708",
+    "2503",
+    "2452",
+    "2430",
+    "2170",
+    "2168",
+    "2164",
+    "2096",
+    "2166",
+    "28"
+  ],
+  "note": "Read-only public content snapshot for migration. Reference HTML is evidence, not production markup. Scripts/styles/input values omitted; layout-specific CSS and generated global templates may be absent."
+}

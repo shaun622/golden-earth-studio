@@ -1,0 +1,17 @@
+$ORIGIN goldenearthstudio.co.uk.
+$TTL 300
+; Captured 2026-10-10. DNS-only records; Worker custom domain bindings must be recreated separately.
+; Root and www belong to golden-earth-studio Worker; do not re-add Hostinger website records at these names.
+ftp 1800 IN A 178.16.135.99
+litesrv._domainkey 3600 IN CNAME litesrv._domainkey.mlsend.com.
+rsend 3600 IN CNAME rsend-apne1.forge.rmta.net.
+send 3600 IN CNAME send.forge.rmta.net.
+wordpress-origin 300 IN CNAME goldenearthstudio.co.uk.cdn.hstgr.net.
+wordpress-www 300 IN CNAME www.goldenearthstudio.co.uk.cdn.hstgr.net.
+@ 3600 IN MX 20 mx2.titan.email.
+@ 3600 IN MX 10 mx1.titan.email.
+_dmarc 300 IN TXT "v=DMARC1; p=none;"
+@ 14400 IN TXT "v=spf1 include:_spf.mlsend.com include:spf.titan.email ~all"
+@ 14400 IN TXT "google-site-verification=ne_9iE_iIaEUCKtXY6NW0d3QLCAy0L1kph-jHPGmfH4"
+resend._domainkey 300 IN TXT "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKjiJ9imWkq8JkjLk771OovciIcTDjXXv7a5PUWpMgC59tUKjCXF+0ze6XoHUos6BoLXNHsO6KJ0j+DDG7Qq1KjY9ewxo4OcIfZgiBsWWg6y6obmx96xZ+R1YBZpgCwQ9a1/AdywEJiiLJyRWK+7LRaFsAIL0eJ3cY0rAzV44m4QIDAQAB"
+titan1._domainkey 300 IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp29Usu7BzVfkMRZaV/UHsqvFqpdKhMY9gpDDTYuEgzl0FhF17WVd4u4CpFWwoN7xBqeJ/YYvAvvQQsRYrLLxkU98oDRdIKTmV0Z2rrbE3xDSJX9K+Td4YIa/juDEugYvR0V9mYuq8wgzM6cjtBSOI5zRDS49OngRVPpmGwzZUjQIDAQAB"

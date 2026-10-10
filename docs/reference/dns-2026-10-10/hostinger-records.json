@@ -1,0 +1,72 @@
+{
+  "domain": "goldenearthstudio.co.uk",
+  "nameservers": [
+    "ns1.dns-parking.com",
+    "ns2.dns-parking.com"
+  ],
+  "records": [
+    {
+      "content": "litesrv._domainkey.mlsend.com",
+      "name": "litesrv._domainkey",
+      "priority": 0,
+      "ttl": 3600,
+      "type": "CNAME"
+    },
+    {
+      "content": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp29Usu7BzVfkMRZaV/UHsqvFqpdKhMY9gpDDTYuEgzl0FhF17WVd4u4CpFWwoN7xBqeJ/YYvAvvQQsRYrLLxkU98oDRdIKTmV0Z2rrbE3xDSJX9K+Td4YIa/juDEugYvR0V9mYuq8wgzM6cjtBSOI5zRDS49OngRVPpmGwzZUjQIDAQAB",
+      "name": "titan1._domainkey",
+      "priority": 0,
+      "ttl": 300,
+      "type": "TXT"
+    },
+    {
+      "content": "www.goldenearthstudio.co.uk.cdn.hstgr.net",
+      "name": "www",
+      "priority": 0,
+      "ttl": 300,
+      "type": "CNAME"
+    },
+    {
+      "content": "178.16.135.99",
+      "name": "ftp",
+      "priority": 0,
+      "ttl": 1800,
+      "type": "A"
+    },
+    {
+      "content": "goldenearthstudio.co.uk.cdn.hstgr.net",
+      "name": "@",
+      "priority": 0,
+      "ttl": 300,
+      "type": "ALIAS"
+    },
+    {
+      "content": "google-site-verification=ne_9iE_iIaEUCKtXY6NW0d3QLCAy0L1kph-jHPGmfH4",
+      "name": "@",
+      "priority": 0,
+      "ttl": 14400,
+      "type": "TXT"
+    },
+    {
+      "content": "v=spf1 include:_spf.mlsend.com include:spf.titan.email ~all",
+      "name": "@",
+      "priority": 0,
+      "ttl": 14400,
+      "type": "TXT"
+    },
+    {
+      "content": "mx1.titan.email",
+      "name": "@",
+      "priority": 10,
+      "ttl": 3600,
+      "type": "MX"
+    },
+    {
+      "content": "mx2.titan.email",
+      "name": "@",
+      "priority": 20,
+      "ttl": 3600,
+      "type": "MX"
+    }
+  ]
+}

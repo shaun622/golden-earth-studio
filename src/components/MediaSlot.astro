@@ -1,0 +1,26 @@
+---
+import { resolveMedia, type MediaReference } from "../data/media";
+interface Props {
+  media: MediaReference;
+  alt?: string;
+  className?: string;
+  decorative?: boolean;
+  loading?: "eager" | "lazy";
+  objectPosition?: string;
+}
+const { media, alt, className, decorative = false, loading = "lazy", objectPosition } = Astro.props;
+const asset = resolveMedia(media, alt);
+const description = alt || asset.alt;
+---
+{asset.src ? (
+  <img class:list={["media-slot", className]} src={asset.src} alt={decorative ? "" : description} width={asset.width} height={asset.height} loading={loading} data-media-slot={asset.slot} style={{ objectPosition }} />
+) : (
+  <span class:list={["media-slot", "media-slot--pending", className]} role={decorative ? undefined : "img"} aria-label={decorative ? undefined : `Photo pending: ${description}`} aria-hidden={decorative || undefined} data-media-slot={asset.slot} style={{ "--media-ratio": `${asset.width} / ${asset.height}` }}>
+    <span class="media-slot-label">Photo pending</span>
+  </span>
+)}
+<style>
+  .media-slot { display: block; width: 100%; height: auto; object-fit: cover; }
+  .media-slot--pending { position: relative; aspect-ratio: var(--media-ratio); background: #e9e9e6; border: 1px solid #deded9; }
+  .media-slot-label { position: absolute; left: 14px; bottom: 12px; color: #72726a; font: 300 12px/1.5 var(--body); letter-spacing: .035em; }
+</style>

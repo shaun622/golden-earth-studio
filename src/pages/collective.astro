@@ -1,0 +1,30 @@
+---
+import ImageGallery from "../components/ImageGallery.astro";
+import InteriorLayout from "../layouts/InteriorLayout.astro";
+import collective from "../data/collective.generated.json";
+import content from "../data/interior.generated.json";
+import "../styles/reference-pages.css";
+const { background, paragraphs } = content.collective;
+---
+<InteriorLayout className="reference-interior" title="Collective" description="Bridging the gap between creatives and construction in pursuit of circularity" image={background}>
+  <main id="content" class="interior-main collective-reference">
+    <header class="reference-intro"><h1 data-reveal>Bridging the gap between <em>creatives</em> and construction in pursuit of <em>circularity</em></h1></header>
+    <section class="collective-opening reference-photo" style={{ "--reference-background": `url(${background})`, "--reference-mobile-background": `url(${content.collective.mobileBackground})` }}>
+      <div class="collective-opening-copy">
+        <h2 data-reveal>Explore the work of the Golden Earth Studio <em>Collective</em></h2>
+        <p data-reveal>{paragraphs[0]}</p><p data-reveal>{paragraphs[1]}</p>
+      </div>
+    </section>
+    <section class="collective-boundaries" aria-labelledby="absent-boundaries">
+      <div class="collective-boundaries-intro"><h2 id="absent-boundaries" data-reveal>Absent Boundaries</h2><p data-reveal>{paragraphs[2]}</p></div>
+      <ImageGallery label="Golden Earth Studio Collective" masonry captions images={collective.map((item) => ({ src: item.image, alt: item.alt, caption: item.caption, width: item.width, height: item.height }))} />
+    </section>
+    <section class="collective-invitation" aria-labelledby="extended-invite">
+      <div class="collective-invitation-intro"><h2 id="extended-invite" data-reveal>An extended invite</h2><p data-reveal>{paragraphs[3]}</p></div>
+      <div class="collective-opportunities">
+        <article data-reveal><h2>/ Collect Free Clay</h2><p>Check our <a href="https://www.instagram.com/goldenearthstudio/">instagram bio</a> for links to available clay collections, We share all opportunities via our instagram platform, so keep an eye on our page for any updates!</p></article>
+        <article data-reveal><h2>/ A Clay Zine</h2><p>{paragraphs[4]}</p><p><a href={paragraphs[5]}>{paragraphs[5]}</a></p></article>
+      </div>
+    </section>
+  </main>
+</InteriorLayout>

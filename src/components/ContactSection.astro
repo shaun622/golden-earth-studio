@@ -1,0 +1,16 @@
+---
+import ContactForm from "./ContactForm.astro";
+interface Props { variant?: "general" | "commission"; title?: string; }
+const { variant = "general", title = variant === "commission" ? "Bespoke Commissions" : "Contact Us" } = Astro.props;
+---
+<section id="contact" class="contact-section section-pad" aria-labelledby={`contact-heading-${variant}`}>
+  <div class="contact-copy">
+    <h2 id={`contact-heading-${variant}`} data-reveal>{title}</h2>
+    <p data-reveal style="--reveal-delay: 100ms">
+      {variant === "commission"
+        ? "Golden Earth Studio offers a bespoke commission service that utilises the construction by-products of our clients’ homes. Share your idea and we will explore how reclaimed material can complement your interior space."
+        : "As an art collector looking to acquire a bespoke piece, or an artist seeking low-impact materials for your practice, we await your message to plan your next steps."}
+    </p>
+  </div>
+  <ContactForm variant={variant} />
+</section>

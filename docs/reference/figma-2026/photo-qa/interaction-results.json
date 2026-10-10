@@ -1,0 +1,67 @@
+[
+  {
+    "check": "desktop Cup I viewer",
+    "image": "http://127.0.0.1:8791/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp",
+    "loaded": true,
+    "open": true
+  },
+  {
+    "check": "desktop Escape",
+    "closed": true,
+    "restoredFocus": true
+  },
+  {
+    "bounds": [
+      {
+        "r": {
+          "bottom": 60,
+          "left": 323.90625,
+          "right": 374,
+          "top": 16
+        },
+        "tag": "BUTTON"
+      },
+      {
+        "r": {
+          "bottom": 610.75,
+          "left": 35.109375,
+          "right": 354.890625,
+          "top": 60
+        },
+        "tag": "IMG"
+      },
+      {
+        "r": {
+          "bottom": 647.8125,
+          "left": 98.578125,
+          "right": 291.421875,
+          "top": 626.75
+        },
+        "tag": "FIGCAPTION"
+      }
+    ],
+    "check": "phone Cup I viewer",
+    "height": 844,
+    "loaded": true,
+    "open": true,
+    "width": 390
+  },
+  {
+    "check": "phone Escape",
+    "closed": true,
+    "restoredFocus": true
+  },
+  {
+    "check": "Gallery keyboard crossfade",
+    "focus": "James Galbraith Kirkpatrick | Ceramic",
+    "loaded": true,
+    "opacity": "0.85"
+  },
+  {
+    "check": "phone complete Tiled Screen viewer",
+    "height": 844,
+    "loaded": true,
+    "src": "http://127.0.0.1:8791/assets/artworks/lucia-ocejo/tiled-screen.webp",
+    "width": 390
+  }
+]

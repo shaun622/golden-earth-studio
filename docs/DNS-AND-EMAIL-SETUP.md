@@ -1,0 +1,97 @@
+# Golden Earth Studio DNS and email setup
+
+Prepared on 10 October 2026. **The nameserver switch has not been performed.** Hostinger still serves the live WordPress website and authoritative DNS.
+
+## Staged in Cloudflare
+
+- Free zone: `goldenearthstudio.co.uk`, status **pending**.
+- Worker: `golden-earth-studio` in Shaun's existing Cloudflare account.
+- Production custom domain bindings: `goldenearthstudio.co.uk` and `www.goldenearthstudio.co.uk`.
+- Thirteen ordinary DNS records plus two Cloudflare-managed Worker entries are present. All ordinary records are DNS-only; the two Worker entries are proxied and managed by Cloudflare.
+- Existing Titan mailbox routing, MailerLite authentication, Google verification and FTP were preserved, including their TTLs and MX priorities.
+- Hostinger's nine original records and nameservers were read again and checked unchanged.
+
+The copied Hostinger apex ALIAS initially became a Cloudflare apex CNAME. That CNAME and the copied `www` CNAME prevented Worker custom domain registration. Their names were changed to `wordpress-origin` and `wordpress-www`, preserving the original targets and TTLs for rollback, then both Worker custom domains were successfully added. This only changes the pending Cloudflare zone; Hostinger was not edited.
+
+Cloudflare's dashboard accepted both bindings while the zone was pending. This is preparation, not evidence that the public domain serves the Worker or that its TLS certificate is ready. A read-only public NS lookup also confirmed the two Hostinger nameservers are still authoritative.
+
+| Name | Type | Target/value | TTL | Purpose |
+| --- | --- | --- | --- | --- |
+| `@` | Worker | `golden-earth-studio` | Auto | New website, Cloudflare-managed |
+| `www` | Worker | `golden-earth-studio` | Auto | New website, Cloudflare-managed |
+| `wordpress-origin` | CNAME | `goldenearthstudio.co.uk.cdn.hstgr.net` | 300 | Preserved WordPress apex target |
+| `wordpress-www` | CNAME | `www.goldenearthstudio.co.uk.cdn.hstgr.net` | 300 | Preserved WordPress www target |
+| `ftp` | A | `178.16.135.99` | 1800 | Existing FTP |
+| `@` | MX | `mx1.titan.email`, priority 10 | 3600 | Existing incoming email |
+| `@` | MX | `mx2.titan.email`, priority 20 | 3600 | Existing incoming email |
+| `@` | TXT | `v=spf1 include:_spf.mlsend.com include:spf.titan.email ~all` | 14400 | Existing Titan/MailerLite SPF |
+| `@` | TXT | Existing Google verification, full value in backup | 14400 | Existing Google ownership |
+| `titan1._domainkey` | TXT | Existing Titan DKIM, full public key in backup | 300 | Existing Titan email signing |
+| `litesrv._domainkey` | CNAME | `litesrv._domainkey.mlsend.com` | 3600 | Existing MailerLite signing |
+| `resend._domainkey` | TXT | Resend public DKIM key, full value in backup | 300 | New Resend verification |
+| `rsend` | CNAME | `rsend-apne1.forge.rmta.net` | 3600 | New Resend sending |
+| `send` | CNAME | `send.forge.rmta.net` | 3600 | New Resend sending |
+| `_dmarc` | TXT | `v=DMARC1; p=none;` | 300 | Resend's optional monitoring policy |
+
+## Resend
+
+The existing `goldenearthstudio` Resend account already contained this domain. Its selected region is Tokyo (`ap-northeast-1`); it was retained. Domain ID: `bf4035ba-096d-495f-954d-03323ec00269`.
+
+The exact three required records shown by this account's dashboard were added, plus its optional DMARC record. The two sending records are CNAMEs. Do not substitute older examples using `send` MX/TXT records.
+
+**Verify DNS Records** was clicked once. Resend now shows **pending** / **Looking for DNS records**, as expected while Hostinger remains authoritative and does not have these new records. Check verification again after the approved nameserver switch; a long delay may require restarting verification.
+
+Sending is selected. Receiving remains disabled. No Resend receiving MX was added, and Titan remains the mail provider. The root SPF was not replaced or duplicated.
+
+**The Resend API key has not been installed.** It was not read, printed, copied into this repository or added as a build variable.
+
+## Contact form dependency
+
+The current Cloudflare production deployment is the older static-only build. Settings explicitly says: "Variables cannot be added to a Worker that only has static assets." The newer branch includes `worker/index.ts` and the contact handler, but that code is not deployed to production yet.
+
+To complete form activation:
+
+1. Deploy the accepted contact-capable site through GitHub and the existing Cloudflare build (`npm run build`, `npx wrangler deploy`). Do not bypass the Git workflow with dashboard code edits. Keep delivery disabled during preparation.
+2. Confirm the actual receiving inbox and choose a sender on the verified domain. A proposed sender is `Golden Earth Studio <website@goldenearthstudio.co.uk>`; this is not yet approved/configured.
+3. Configure a Turnstile widget, its allowed production/test hostnames, the public build variable `PUBLIC_TURNSTILE_SITE_KEY`, and the runtime secret `TURNSTILE_SECRET_KEY`.
+4. Have the owner enter the existing Resend key directly into the Worker's **runtime Secret** named `RESEND_API_KEY` (or use the interactive `wrangler secret put RESEND_API_KEY` prompt). Do not put it in chat, Git, a public-prefixed variable or build configuration.
+5. Keep `CONTACT_ENABLED=false` until the domain verifies and the production setup is ready. Configure `CONTACT_FROM`, `CONTACT_TO` and `ALLOWED_ORIGINS` through the repository's deployment configuration so a future Git deployment will retain them. If www redirects to apex, the existing apex origin is sufficient.
+6. When explicitly authorized, enable delivery and send one test to the confirmed inbox; check receipt, Reply-To, artwork context and a rejected/expired Turnstile response. No email test was sent during DNS preparation.
+
+Both custom domain bindings are now recorded in `wrangler.jsonc`, with `workers_dev` and `preview_urls` explicitly enabled, so the next Git deployment will retain the bindings and review URLs. This local configuration change has not been deployed. The stable review URL remains `https://golden-earth-studio.shaun-02d.workers.dev`.
+
+## Prepared www redirect
+
+A Single Redirect named `Golden Earth Studio: www to apex` is saved as an inactive draft (ID `3d2b0b3d264947b0996410df80ecce48`). Its exact condition is `(http.host eq "www.goldenearthstudio.co.uk")`; its dynamic target is `concat("https://goldenearthstudio.co.uk", http.request.uri.path)`. Status: 301. Preserve query string: checked. For example, `https://www.goldenearthstudio.co.uk/gallery/?artist=edie` should redirect to `https://goldenearthstudio.co.uk/gallery/?artist=edie`. Both HTTP and HTTPS match the hostname condition; the apex and other subdomains do not.
+
+Automatic approval review blocked activation of the earlier wildcard version because the persistent redirect was not clearly authorized beyond domain staging and its pattern had not been clearly validated. The rule was then simplified to the exact hostname condition above. Cloudflare's form reported **Rule validation passed**, and the saved list showed **Disabled / 0 active**. Do not activate it without explicit owner approval. The draft has no effect on current traffic. After activation/cutover, verify representative HTTP/HTTPS paths and query strings; form submissions should originate from the canonical apex host.
+
+## Validation completed
+
+All thirteen ordinary records matched expected values, TTLs and MX priorities; both managed Worker bindings were present. Hostinger's nine records and nameservers were unchanged, and a public DNS lookup confirmed the original nameservers. `npm run build` passed with zero Astro errors/warnings; `npx wrangler deploy --dry-run` passed with delivery disabled. No site-code deployment, secret installation, live email test or nameserver switch was performed.
+
+## Nameservers and eventual cutover
+
+| State | Nameserver 1 | Nameserver 2 |
+| --- | --- | --- |
+| Current, unchanged | `ns1.dns-parking.com` | `ns2.dns-parking.com` |
+| Assigned by Cloudflare | `christian.ns.cloudflare.com` | `eve.ns.cloudflare.com` |
+
+Do not switch yet. When launch is approved, re-read Hostinger DNS first and copy any changes made since this snapshot. Export the WordPress website/media, confirm the accepted Git version is deployed, complete the contact dependencies, check DNSSEC/registrar DS compatibility, and verify Cloudflare's assigned nameservers have not changed. Free pending zones can be removed after 28 days, so re-check if launch is delayed.
+
+At the approved switch, change only the registrar nameservers to the two assigned Cloudflare servers. Keep the registrar and Titan mail service. After propagation, check Cloudflare active status, both hostnames, HTTPS certificates, www canonical behavior, preserved email records and mailbox sending/receiving. Verify Resend, then enable and test the form. Complete the separate indexing/content checks in `LAUNCH-CHECKLIST.md`.
+
+Do not cancel Hostinger hosting until WordPress backup and the new production site are confirmed. A rollback can restore the original nameservers, or restore the two Hostinger website targets within Cloudflare while retaining the copied email records. Renamed rollback records preserve values; they do not make WordPress serve those alternative hostnames automatically.
+
+## Backups and evidence
+
+The files under `docs/reference/dns-2026-10-10/` contain public DNS data only:
+
+- `hostinger-records.json`: original nine records and unchanged original nameservers.
+- `resend-records.json`: exact three required records and optional DMARC, with the full public DKIM key.
+- `cloudflare-records.json`: final thirteen ordinary records and two managed Worker entries.
+- `cloudflare-staged.zone`: portable ordinary records in BIND format. **Worker bindings are not included in the import format and must be recreated through Workers Domains.**
+- `verification.json`: value, TTL, priority and DNS-only comparisons; nameserver and Resend status.
+- Screenshots: `cloudflare-dns.jpg`, `cloudflare-domains.jpg`, `hostinger-unchanged.jpg`, `resend-pending.jpg`, `runtime-secret-blocker.jpg`, `www-redirect-prepared.jpg`, `www-redirect-draft.jpg`.
+
+Sources: [Cloudflare custom domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/), [Wrangler route management](https://developers.cloudflare.com/workers/wrangler/configuration/), [Cloudflare pending zones](https://developers.cloudflare.com/dns/zone-setups/reference/domain-status/), [Resend with Cloudflare DNS](https://resend.com/docs/guides/dns/cloudflare).

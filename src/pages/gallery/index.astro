@@ -1,0 +1,19 @@
+---
+import CatalogueCard from "../../components/CatalogueCard.astro";
+import FigmaCommission from "../../components/FigmaCommission.astro";
+import GalleryTabs from "../../components/GalleryTabs.astro";
+import InteriorLayout from "../../layouts/InteriorLayout.astro";
+import content from "../../data/interior.generated.json";
+import "../../styles/reference-pages.css";
+import "../../styles/gallery-2026.css";
+---
+<InteriorLayout className="reference-interior figma-interior" title="Gallery" description="Explore the artists who transform construction by-products into fine art and functional ware.">
+  <main id="content" class="interior-main gallery-reference">
+    <header class="reference-intro"><h1 data-reveal>Explore the artists who <em>transform</em> construction <br />by-products into fine art and functional ware</h1></header>
+    <GalleryTabs>
+      <div slot="artists" class="reference-catalogue">{content.gallery.artists.map((card) => <CatalogueCard {...card} />)}</div>
+      <div slot="artwork" class="reference-catalogue">{content.gallery.artworks.map((card) => <CatalogueCard {...card} />)}</div>
+    </GalleryTabs>
+    <FigmaCommission />
+  </main>
+</InteriorLayout>

@@ -1,7 +1,8 @@
-/assets/*
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+https://:version.:subdomain.workers.dev/*
+  X-Robots-Tag: noindex
 
 /*
-  X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
   Permissions-Policy: camera=(), microphone=(), geolocation=()
