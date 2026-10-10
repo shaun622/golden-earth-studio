@@ -1,0 +1,47 @@
+{
+  "checkedOn": "2026-10-10",
+  "hosting": "Cloudflare Workers with static assets",
+  "worker": "golden-earth-studio",
+  "reviewUrl": "https://golden-earth-studio.shaun-02d.workers.dev/",
+  "pullRequest": "https://github.com/shaun622/golden-earth-studio/pull/3",
+  "applicationCommit": "1fa98319ca8f0477f7848e349337d750a40f1978",
+  "workerVersionPrefix": "958907dd",
+  "trafficPercent": 100,
+  "buildId": "d7ffcdac-6e6d-4591-8ecf-95ffbbfa4d22",
+  "buildResult": "success",
+  "buildCommand": "npm run build",
+  "deployCommand": "npx wrangler deploy",
+  "validation": {
+    "astroErrors": 0,
+    "astroWarnings": 0,
+    "workerTestsPassed": 10,
+    "siteAudit": "passed",
+    "journalAudit": "passed",
+    "interiorAudit": "passed",
+    "figmaAudit": "passed",
+    "edgeDesktopAndMobile": "passed",
+    "publicGeneratedPageRoutes": 72,
+    "publicRedirects": 5,
+    "publicNotFoundRoutes": 5,
+    "missingApiStatus": 404,
+    "contactGetStatus": 503,
+    "contactGetCode": "contact_disabled",
+    "runtimeSecretsUiAvailable": true
+  },
+  "contactEnabled": false,
+  "resendApiKeyInstalled": false,
+  "emailTestSent": false,
+  "nameserverSwitchPerformed": false,
+  "currentNameservers": [
+    "ns1.dns-parking.com",
+    "ns2.dns-parking.com"
+  ],
+  "remainingContactDependencies": [
+    "confirm sender and recipient",
+    "configure Turnstile public build key and runtime secret",
+    "owner enters existing Resend key as runtime RESEND_API_KEY secret",
+    "verify Resend domain after separately approved DNS cutover",
+    "enable delivery and run an authorized inbox test"
+  ],
+  "note": "This records the first successful application deployment. Subsequent documentation-only Git builds may have a different Worker version while retaining the same application code."
+}

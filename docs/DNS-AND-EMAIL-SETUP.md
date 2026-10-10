@@ -2,6 +2,8 @@
 
 Prepared on 10 October 2026. **The nameserver switch has not been performed.** Hostinger still serves the live WordPress website and authoritative DNS.
 
+The owner subsequently authorized deploying the newer Worker. [PR #3](https://github.com/shaun622/golden-earth-studio/pull/3) was merged into `main`, and Cloudflare successfully deployed commit `1fa98319ca8f0477f7848e349337d750a40f1978` as Worker version `958907dd` (100% traffic). The rebuilt site is available at [the stable Workers review URL](https://golden-earth-studio.shaun-02d.workers.dev/). Contact delivery remains disabled; this deployment does not switch public-domain traffic or nameservers.
+
 ## Staged in Cloudflare
 
 - Free zone: `goldenearthstudio.co.uk`, status **pending**.
@@ -47,18 +49,17 @@ Sending is selected. Receiving remains disabled. No Resend receiving MX was adde
 
 ## Contact form dependency
 
-The current Cloudflare production deployment is the older static-only build. Settings explicitly says: "Variables cannot be added to a Worker that only has static assets." The newer branch includes `worker/index.ts` and the contact handler, but that code is not deployed to production yet.
+The contact-capable Worker is now deployed through GitHub and the existing Cloudflare build (`npm run build`, `npx wrangler deploy`). The former static-only runtime-secret blocker is resolved: Settings now displays **Runtime variables and secrets** with **Add variable** available. A public GET to `/api/contact` returns the expected disabled-delivery response (`503`, JSON code `contact_disabled`), and `/api/missing` returns a genuine JSON `404`. No email was sent.
 
 To complete form activation:
 
-1. Deploy the accepted contact-capable site through GitHub and the existing Cloudflare build (`npm run build`, `npx wrangler deploy`). Do not bypass the Git workflow with dashboard code edits. Keep delivery disabled during preparation.
-2. Confirm the actual receiving inbox and choose a sender on the verified domain. A proposed sender is `Golden Earth Studio <website@goldenearthstudio.co.uk>`; this is not yet approved/configured.
-3. Configure a Turnstile widget, its allowed production/test hostnames, the public build variable `PUBLIC_TURNSTILE_SITE_KEY`, and the runtime secret `TURNSTILE_SECRET_KEY`.
-4. Have the owner enter the existing Resend key directly into the Worker's **runtime Secret** named `RESEND_API_KEY` (or use the interactive `wrangler secret put RESEND_API_KEY` prompt). Do not put it in chat, Git, a public-prefixed variable or build configuration.
-5. Keep `CONTACT_ENABLED=false` until the domain verifies and the production setup is ready. Configure `CONTACT_FROM`, `CONTACT_TO` and `ALLOWED_ORIGINS` through the repository's deployment configuration so a future Git deployment will retain them. If www redirects to apex, the existing apex origin is sufficient.
-6. When explicitly authorized, enable delivery and send one test to the confirmed inbox; check receipt, Reply-To, artwork context and a rejected/expired Turnstile response. No email test was sent during DNS preparation.
+1. Confirm the actual receiving inbox and choose a sender on the verified domain. A proposed sender is `Golden Earth Studio <website@goldenearthstudio.co.uk>`; this is not yet approved/configured.
+2. Configure a Turnstile widget, its allowed production/test hostnames, the public build variable `PUBLIC_TURNSTILE_SITE_KEY`, and the runtime secret `TURNSTILE_SECRET_KEY`.
+3. Have the owner enter the existing Resend key directly into the Worker's **runtime Secret** named `RESEND_API_KEY` (or use the interactive `wrangler secret put RESEND_API_KEY` prompt). Do not put it in chat, Git, a public-prefixed variable or build configuration.
+4. Keep `CONTACT_ENABLED=false` until the domain verifies and the production setup is ready. Configure `CONTACT_FROM`, `CONTACT_TO` and `ALLOWED_ORIGINS` through the repository's deployment configuration so a future Git deployment will retain them. If www redirects to apex, the existing apex origin is sufficient.
+5. When explicitly authorized, enable delivery and send one test to the confirmed inbox; check receipt, Reply-To, artwork context and a rejected/expired Turnstile response. No email test was sent during DNS preparation or deployment verification.
 
-Both custom domain bindings are now recorded in `wrangler.jsonc`, with `workers_dev` and `preview_urls` explicitly enabled, so the next Git deployment will retain the bindings and review URLs. This local configuration change has not been deployed. The stable review URL remains `https://golden-earth-studio.shaun-02d.workers.dev`.
+Both custom domain bindings are recorded in the deployed `wrangler.jsonc`, with `workers_dev` and `preview_urls` explicitly enabled, so future Git deployments retain the bindings and review URLs. The stable review URL remains `https://golden-earth-studio.shaun-02d.workers.dev`. The custom hostnames still await the separately approved DNS cutover.
 
 ## Prepared www redirect
 
@@ -68,7 +69,9 @@ Automatic approval review blocked activation of the earlier wildcard version bec
 
 ## Validation completed
 
-All thirteen ordinary records matched expected values, TTLs and MX priorities; both managed Worker bindings were present. Hostinger's nine records and nameservers were unchanged, and a public DNS lookup confirmed the original nameservers. `npm run build` passed with zero Astro errors/warnings; `npx wrangler deploy --dry-run` passed with delivery disabled. No site-code deployment, secret installation, live email test or nameserver switch was performed.
+During DNS preparation, all thirteen ordinary records matched expected values, TTLs and MX priorities; both managed Worker bindings were present. Hostinger's nine records and nameservers were unchanged, and a public DNS lookup confirmed the original nameservers. `npm run build` passed with zero Astro errors/warnings; `npx wrangler deploy --dry-run` passed with delivery disabled. `verification.json` records that earlier preparation snapshot.
+
+During the subsequently authorized deployment, the merged site passed the build, ten Worker tests, route/content audits, and Edge desktop/mobile checks. Cloudflare's preview and production builds succeeded. The stable public Workers URL passed all 72 generated page routes, five redirects and five not-found checks, plus the missing API check. Production Settings confirmed that runtime variables/secrets are now supported. `deployment.json` records the application commit, build and Worker version. No secret installation, live email test or nameserver switch was performed.
 
 ## Nameservers and eventual cutover
 
@@ -92,6 +95,7 @@ The files under `docs/reference/dns-2026-10-10/` contain public DNS data only:
 - `cloudflare-records.json`: final thirteen ordinary records and two managed Worker entries.
 - `cloudflare-staged.zone`: portable ordinary records in BIND format. **Worker bindings are not included in the import format and must be recreated through Workers Domains.**
 - `verification.json`: value, TTL, priority and DNS-only comparisons; nameserver and Resend status.
+- `deployment.json`: subsequent successful contact-capable Worker deployment and public-runtime verification.
 - Screenshots: `cloudflare-dns.jpg`, `cloudflare-domains.jpg`, `hostinger-unchanged.jpg`, `resend-pending.jpg`, `runtime-secret-blocker.jpg`, `www-redirect-prepared.jpg`, `www-redirect-draft.jpg`.
 
 Sources: [Cloudflare custom domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/), [Wrangler route management](https://developers.cloudflare.com/workers/wrangler/configuration/), [Cloudflare pending zones](https://developers.cloudflare.com/dns/zone-setups/reference/domain-status/), [Resend with Cloudflare DNS](https://resend.com/docs/guides/dns/cloudflare).
