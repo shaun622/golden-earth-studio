@@ -47,3 +47,13 @@ Gallery tab keyboard/hash changes, profile focus captions, mobile menu Escape/fo
 One temporary Cup I source demonstrated replacement in Gallery hover/profile/product and social metadata, with the existing lightbox working. It was restored to null before the final build. All 17 sources are null in the final content and render real neutral blanks with Photo pending labels.
 
 Final build, site/Journal/interior/Figma audits, runtime audit and 10 Worker tests pass. Evidence is saved in `docs/reference/figma-2026/qa/`; the implementation ledger records details and editorial assumptions. These remain Edge viewport checks rather than physical-device tests, and live email delivery remains outside this review.
+
+## Supplied Drive photographs — 10 October 2026
+
+The subsequent photo import replaces 17 image slots, adds separate card crops for Edie and Tiled Screen, and leaves four actual blanks. The earlier all-null result above records the initial build only. See `reference/figma-2026/PHOTO-MATCH-REPORT.md` for the exact missing images.
+
+All 17 affected routes were checked again in the Edge extension at 390, 768 and 1280px: 51 layout checks, no horizontal overflow or clipped headings, portraits, product media, cards or form fields. Full-page visual review covered Edie and Lucia profiles; Gallery review confirmed the supplied portraits and keyboard crossfade. Off-screen lazy images were loaded by navigating through card links before the final phone capture. The initial JSON observation of an unloaded legacy Gallery hover is its hidden lazy state, not a missing supplied file.
+
+Cup I's real image viewer opens on desktop and phone; Escape closes it and restores focus to the image link. Phone image/caption/close bounds fit the 390 × 844 viewport. Tiled Screen's full three-panel source is preserved on its product page and phone viewer. Edie's missing product image remains a labelled blank with no viewer link. The build, all four audits, 10 Worker tests and the 72-route runtime check pass.
+
+Evidence: `reference/figma-2026/photo-qa/` contains the responsive JSON, interaction results and representative screenshots. These are Edge viewport checks, with the same physical-device and live-email limits as the original review.

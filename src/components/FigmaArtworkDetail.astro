@@ -15,7 +15,7 @@ const asset = resolveMedia(artwork.mainImage, `${artwork.title} by ${artwork.art
 const landscape = artwork.artistSlug === "edie-evans";
 ---
 <InteriorLayout className="figma-interior" title={`${displayTitle} | ${artwork.artistName}`} description={artwork.seoDescription} image={mediaSource(artwork.mainImage)}>
-  <main id="content" class:list={["figma-product", { "figma-product--landscape": landscape }]}>
+  <main id="content" class:list={["figma-product", { "figma-product--landscape": landscape, "figma-product--screen": artwork.slug === "tiled-screen" }]}>
     <section class="figma-product-detail" aria-labelledby="artwork-heading">
       <h1 id="artwork-heading" class="figma-product-heading"><span>{displayTitle}</span><span class="figma-product-heading-separator" aria-hidden="true">|</span><a href={`/gallery/${artwork.artistSlug}/`}>{artwork.artistName}</a></h1>
       <div class="figma-product-columns">
@@ -30,7 +30,7 @@ const landscape = artwork.artistSlug === "edie-evans";
             <ContactForm variant="artwork" artworkId={artwork.id} artworkTitle={artwork.title} presentation="figma-2026" />
           </section>
         </div>
-        <div class="figma-product-media">
+        <div class="figma-product-media" data-media-slot={asset.src ? asset.slot : undefined}>
           {asset.src ? <ImageGallery label={`${artwork.title} by ${artwork.artistName}`} images={[{ src: asset.src, alt: asset.alt, width: asset.width, height: asset.height }]} /> : <MediaSlot media={artwork.mainImage} loading="eager" />}
         </div>
       </div>

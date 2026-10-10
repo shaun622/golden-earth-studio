@@ -7,7 +7,7 @@ const title = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
 ---
 <article class="figma-work-card">
   <a href={`/gallery/${artwork.id}/`} class="figma-work-link" aria-label={`${title} by ${artwork.artistName}`}>
-    <MediaSlot media={artwork.mainImage} alt={`${artwork.title} by ${artwork.artistName}`} />
+    <MediaSlot media={artwork.cardImage || artwork.mainImage} />
     <span class="figma-work-caption">
       <span class="figma-work-title">{title}</span>
       <span class="figma-work-dimensions">{artwork.dimensions}</span>

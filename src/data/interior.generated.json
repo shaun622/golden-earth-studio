@@ -86,7 +86,7 @@
           "slot": "edie-evans-portrait"
         },
         "hoverImage": {
-          "slot": "edie-evans-bedrock"
+          "slot": "edie-evans-bedrock-card"
         },
         "objectPosition": "center"
       },

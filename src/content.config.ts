@@ -19,7 +19,7 @@ const artworks = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/artworks", generateId: ({ data }) => String(data.id) }),
   schema: z.object({
     id: z.string(), artistSlug: z.string(), slug: z.string(), title: z.string(), artistName: z.string(),
-    dimensions: z.string(), materials: z.string(), price: z.string().nullable(), mainImage: mediaReference, gallery: z.array(mediaItem),
+    dimensions: z.string(), materials: z.string(), price: z.string().nullable(), mainImage: mediaReference, cardImage: mediaReference.optional(), gallery: z.array(mediaItem),
     detailVariant: z.enum(["legacy", "figma-2026"]).default("legacy"), year: z.number().int().optional(), tileMedium: z.string().optional(),
     relatedIds: z.array(z.string()), seoDescription: z.string(), sourceWpId: z.number().nullable(),
   }),

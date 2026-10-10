@@ -8,6 +8,7 @@ dimensions: "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)"
 materials: "London Clay"
 price: "£275"
 mainImage: {"slot":"edie-evans-earth-memory"}
+cardImage: {"slot":"edie-evans-earth-memory-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026

@@ -8,6 +8,7 @@ dimensions: "10cm(l) x 9.5cm(w) x 8cm(h)"
 materials: "London Clay"
 price: "£175"
 mainImage: {"slot":"edie-evans-fragmentation-1"}
+cardImage: {"slot":"edie-evans-fragmentation-1-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026

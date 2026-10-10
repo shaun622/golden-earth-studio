@@ -1,0 +1,664 @@
+[
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/migrated/artists/louis-vincent-portrait-9c2e8e0.webp"
+      },
+      {
+        "loaded": false,
+        "src": "/assets/migrated/gallery-index/1-hover-4880fed.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [
+      "eleanor-herbosch-painting-hover"
+    ],
+    "route": "/gallery/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/james-galbraith-kirkpatrick-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/edie-evans-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/edie-evans/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/lucia-ocejo-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/eleanor-herbosch-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/eleanor-herbosch/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/square-plate/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/cup-i/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/bowl/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/cup-ii/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-earth-memory"
+    ],
+    "route": "/gallery/edie-evans/earth-memory/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-bedrock"
+    ],
+    "route": "/gallery/edie-evans/bedrock/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-fragmentation-1"
+    ],
+    "route": "/gallery/edie-evans/fragmentation-1/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/round-bud-vase/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/tea-bowl/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/mug/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/jug/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/tiled-screen.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/tiled-screen/",
+    "width": 390
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/migrated/artists/louis-vincent-portrait-9c2e8e0.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/migrated/gallery-index/1-hover-4880fed.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/images/jihyun-kim.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/migrated/gallery-index/2-hover-bdf2e37.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [
+      "eleanor-herbosch-painting-hover"
+    ],
+    "route": "/gallery/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/james-galbraith-kirkpatrick-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/edie-evans-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/edie-evans/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/lucia-ocejo-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/eleanor-herbosch-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/eleanor-herbosch/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/square-plate.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/square-plate/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/cup-i/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/bowl.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/bowl/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/cup-ii.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/cup-ii/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-earth-memory"
+    ],
+    "route": "/gallery/edie-evans/earth-memory/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-bedrock"
+    ],
+    "route": "/gallery/edie-evans/bedrock/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-fragmentation-1"
+    ],
+    "route": "/gallery/edie-evans/fragmentation-1/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/round-bud-vase.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/round-bud-vase/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/tea-bowl.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/tea-bowl/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/mug.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/mug/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/jug.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/jug/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/tiled-screen.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/tiled-screen/",
+    "width": 768
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/migrated/artists/louis-vincent-portrait-9c2e8e0.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/migrated/gallery-index/1-hover-4880fed.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/images/jihyun-kim.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/migrated/gallery-index/2-hover-bdf2e37.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/migrated/artists/jacob-chan-portrait-31361fa.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/migrated/gallery-index/3-hover-e0c1238.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [
+      "eleanor-herbosch-painting-hover"
+    ],
+    "route": "/gallery/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/james-galbraith-kirkpatrick-portrait.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/square-plate.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/bowl.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/edie-evans-portrait.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/artworks/edie-evans/earth-memory-card.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/artworks/edie-evans/bedrock-card.webp"
+      },
+      {
+        "loaded": true,
+        "src": "/assets/artworks/edie-evans/fragmentation-1-card.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/edie-evans/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/lucia-ocejo-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artists/eleanor-herbosch-portrait.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/eleanor-herbosch/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/square-plate.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/square-plate/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/cup-i/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/bowl.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/bowl/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/james-galbraith-kirkpatrick/cup-ii.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/james-galbraith-kirkpatrick/cup-ii/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-earth-memory"
+    ],
+    "route": "/gallery/edie-evans/earth-memory/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-bedrock"
+    ],
+    "route": "/gallery/edie-evans/bedrock/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [],
+    "overflow": false,
+    "pending": [
+      "edie-evans-fragmentation-1"
+    ],
+    "route": "/gallery/edie-evans/fragmentation-1/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/round-bud-vase.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/round-bud-vase/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/tea-bowl.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/tea-bowl/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/mug.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/mug/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/jug.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/jug/",
+    "width": 1280
+  },
+  {
+    "clipped": [],
+    "images": [
+      {
+        "loaded": true,
+        "src": "/assets/artworks/lucia-ocejo/tiled-screen.webp"
+      }
+    ],
+    "overflow": false,
+    "pending": [],
+    "route": "/gallery/lucia-ocejo/tiled-screen/",
+    "width": 1280
+  }
+]

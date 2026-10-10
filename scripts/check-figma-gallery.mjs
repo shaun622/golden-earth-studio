@@ -33,7 +33,7 @@ assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)]
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
 assert.equal(ledger.generated.length, 72);
 assert.equal(Object.keys(catalogue).length, 34);
-assert.equal(Object.keys(mediaSlots).length, 17);
+assert.equal(Object.keys(mediaSlots).length, 21);
 assert.throws(() => resolveMedia({ slot: "not-a-photo-slot" }), /Unknown photo slot/);
 const oldPhoto = resolveMedia("/assets/images/bowl.webp", "Bowl");
 assert.equal(oldPhoto.src, "/assets/images/bowl.webp");
@@ -81,7 +81,17 @@ for (const slug of [...Object.keys(expectedWorks), "eleanor-herbosch"]) {
     else assert.ok(!detail.includes('>Price</dt>'), `${id}: invented price`);
     assert.ok(detail.includes(`name="artworkId" value="${id}"`));
     assert.equal([...detail.matchAll(new RegExp(`data-media-slot="${slug}-${work}"`, "g"))].length, 1);
-    assert.ok(!detail.includes("data-lightbox-open"), `${id}: blank is a lightbox target`);
+    const image = resolveMedia(data.mainImage);
+    if (image.src) {
+      assert.ok(detail.includes(`src="${image.src}"`), `${id}: supplied product photo not rendered`);
+      assert.ok(detail.includes(`href="${image.src}" data-lightbox-open`), `${id}: photo viewer missing`);
+      assert.ok(detail.includes(`content="https://goldenearthstudio.co.uk${image.src}"`), `${id}: social image mismatch`);
+    } else {
+      assert.ok(!detail.includes("data-lightbox-open"), `${id}: blank is a lightbox target`);
+    }
+    const card = resolveMedia(data.cardImage || data.mainImage);
+    assert.ok(page.includes(`data-media-slot="${card.slot}"`), `${id}: profile crop missing`);
+    if (card.src) assert.ok(page.includes(`src="${card.src}"`), `${id}: profile photo missing`);
     const related = detail.match(/<div class="figma-related-grid">([\s\S]*?)<\/div>/)?.[1];
     const links = [...related.matchAll(/href="([^"]+)"/g)].map(item => item[1]);
     assert.deepEqual(links, ["/gallery/jihyun-kim/teoju/", "/gallery/zahed-tajeddin/bulls-matter/", "/gallery/louis-vincent/bowl/", "/gallery/rickie-cheuk/chopsticks/"]);
@@ -90,10 +100,17 @@ for (const slug of [...Object.keys(expectedWorks), "eleanor-herbosch"]) {
   }
 }
 for (const [slot, asset] of Object.entries(mediaSlots)) {
-  assert.equal(asset.src, null, `${slot}: photo must remain blank until supplied`);
   assert.ok(allUpdatedHtml.includes(`data-media-slot="${slot}"`), `${slot}: unused/missing slot`);
   const blanks = [...allUpdatedHtml.matchAll(new RegExp(`<span[^>]*data-media-slot="${slot}"[^>]*>`, "g"))];
-  assert.ok(blanks.length, `${slot}: actual blank not rendered`);
+  if (asset.src === null) {
+    assert.ok(blanks.length, `${slot}: actual blank not rendered`);
+  } else {
+    assert.ok(asset.src.startsWith("/assets/"), `${slot}: supplied photo must be local`);
+    assert.ok(fs.existsSync(path.join("public", asset.src.slice(1))), `${slot}: photo file missing`);
+    assert.ok(asset.width > 0 && asset.height > 0, `${slot}: invalid intrinsic dimensions`);
+    assert.equal(blanks.length, 0, `${slot}: supplied photo still renders a blank`);
+    assert.ok(allUpdatedHtml.includes(`src="${asset.src}"`), `${slot}: photo not rendered`);
+  }
 }
 assert.ok(!allUpdatedHtml.includes("Side Plate"));
 const sitemap = read("dist/sitemap.xml");
@@ -102,4 +119,5 @@ const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
 assert.equal(artworkCount, 34);
-console.log("Figma content audit passed: 12 artists, 21 retained Gallery works, 12 new products, exact biographies/facts, 17 actual blanks, forms, related links and sitemap.");
+const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
+console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 12 new products, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, photo viewers, forms, related links and sitemap.`);

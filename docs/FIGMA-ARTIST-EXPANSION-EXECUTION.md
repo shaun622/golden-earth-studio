@@ -48,3 +48,17 @@ Evidence: `docs/reference/figma-2026/qa/` contains final responsive/regression J
 Limits: Edge viewport checks do not substitute for physical iOS/Android devices. Reduced-motion and coarse-pointer fallbacks were reviewed in source; this extension exposes viewport controls but no OS preference emulation. Live Resend delivery is still disabled and was not tested. Photos, the repeated width label on Round Bud Vase and the inferred Tiled Screen layout remain the documented editorial follow-up items.
 
 All T01–T10 work is complete for review. No Cloudflare account/domain/secret changes or deployment were performed.
+
+## Photo import amendment — 10 October 2026
+
+User instruction: use the files in Updated Gallery Images and identify missing or wrong photos against Figma. Starting tree was clean at `36ee325`; work continues on the same review branch.
+
+Reviewed all 33 supplied PNGs through the connected Drive workflow and visually matched them with the Figma references. Imported 17 clean photos, encoded at their original dimensions to WebP (1,303,282 bytes total). Excluded 16 screenshots containing baked captions, darkening or portrait blends; the site supplies those effects itself. No different artist/artwork was found among the selected images.
+
+The media registry now contains 21 entries: 17 supplied photos and four null sources. Optional `cardImage` separates Edie's available portrait crops from her missing wide product images, and separates Tiled Screen's portrait card crop from the supplied complete screen. Profile frames retain the intended Figma aspect ratios. The full screen keeps its natural aspect ratio on the detail page. The updated Figma audit checks real paths, card crops, product viewers, social metadata and remaining labelled blanks.
+
+Still required: full wide Earth Memory, Bedrock and Fragmentation 1 images for Edie; a clean painting image for Eleanor's Gallery hover. Eleanor's portrait is installed from the shared artists folder. Source IDs, file hashes, output dimensions and decisions are recorded in `docs/reference/figma-2026/photo-import.json` and `PHOTO-MATCH-REPORT.md`.
+
+Verification: `npm run build` passes with 61 checked files, zero diagnostics and 73 generated pages. Site/Journal/interior/Figma audits pass; the focused audit confirms 17 supplied photos and four actual blanks. Worker tests remain 10/10. Runtime audit passes for 72 routes, five redirects and five expected exclusions. Edge checks cover the 17 affected routes at 390/768/1280px (51 checks without layout failures), visible photo matching, Gallery keyboard crossfade, phone captions, actual image viewer opening, Escape/focus restoration and the complete Tiled Screen. Evidence is in `docs/reference/figma-2026/photo-qa/`.
+
+No push, merge, deployment or contact-service configuration was performed in this amendment. Live delivery remains outside photo verification.

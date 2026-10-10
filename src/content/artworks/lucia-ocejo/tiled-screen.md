@@ -8,6 +8,7 @@ dimensions: "156cm(w) x 130cm(h)"
 materials: "Ceramic & Wood"
 price: null
 mainImage: {"slot":"lucia-ocejo-tiled-screen"}
+cardImage: {"slot":"lucia-ocejo-tiled-screen-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026

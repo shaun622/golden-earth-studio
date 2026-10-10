@@ -4,7 +4,7 @@ slug: "edie-evans"
 name: "Edie Evans"
 discipline: "Ceramic"
 portrait: {"slot":"edie-evans-portrait"}
-hoverImage: {"slot":"edie-evans-bedrock"}
+hoverImage: {"slot":"edie-evans-bedrock-card"}
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 10

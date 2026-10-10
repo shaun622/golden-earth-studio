@@ -2,7 +2,7 @@
 
 These source issues do not block the rebuilt preview. They need an owner decision before production launch.
 
-- **2026 Figma photographs:** 17 named photo slots are blank in `src/data/media.ts`: four portraits, twelve products and Eleanor's painting hover. Supply the original photos; Figma screenshot crops are not production assets.
+- **2026 Figma photographs:** four slots remain blank: Edie's full landscape product photos for Earth Memory, Bedrock and Fragmentation 1, plus Eleanor's clean painting hover. All four artist portraits and the other supplied artwork photos are installed. Edie's supplied portrait crops are used for profile cards; they cut off parts of the objects needed on the wide product pages. Eleanor's folder is empty and the shared painting screenshot has a faded portrait baked into it. See `docs/reference/figma-2026/PHOTO-MATCH-REPORT.md`. The user authorised the supplied screenshot files; clean original exports would improve future image quality.
 - **2026 dimensions:** individual product measurements take precedence over conflicting profile hovers for Earth Memory, Bedrock, Fragmentation 1 and Mug. Round Bud Vase repeats `(w)` in its third measurement; confirm whether this should indicate depth.
 - **Tiled Screen:** Lucia's profile includes the work but the red area has no separate detail design or price. The new page uses the matching Lucia template, supplied dimensions/materials and no price. Confirm or supply additional details.
 

@@ -8,6 +8,7 @@ dimensions: "8cm(l) x 12cm(w) x 6.5cm(h)"
 materials: "London Clay"
 price: "£375"
 mainImage: {"slot":"edie-evans-bedrock"}
+cardImage: {"slot":"edie-evans-bedrock-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026
