@@ -28,6 +28,8 @@ These PNGs were encoded to WebP at quality 92, preserving their original dimensi
 
 Following the owner's clarification on 14 October, Eleanor's clean painting also appears under Artworks on her artist profile, with a full-image viewer. Her portrait remains alongside the biography; both profile and Gallery hover reuse the same painting asset.
 
+On 15 October the owner withdrew James's straight-sided Cup I. Its photo, product page and enquiry catalogue entry were removed; James's Gallery hover now uses the retained, tapered Cup II. The active photo registry therefore has 20 filled slots and no blanks. The initial source table and manifests below remain historical provenance for the original import.
+
 ## Selected source files
 
 Every name below is `Screenshot 2026-10-10 at <time>.png`. The full file IDs, Drive links, dimensions, hashes and output paths are in `photo-import.json` beside this report.

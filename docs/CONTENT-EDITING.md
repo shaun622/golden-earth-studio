@@ -20,9 +20,9 @@ Artist, artwork and Journal detail content lives in Markdown under `src/content`
 
 ## 2026 Figma profiles and pending photographs
 
-James Galbraith Kirkpatrick, Edie Evans, Lucia Ocejo and Eleanor Herbosch use `profileVariant: "figma-2026"`. The twelve new products use `detailVariant: "figma-2026"`, `year: 2026` and a separate `tileMedium` for the profile hover. Keep the base title free of the year. Their Gallery order is explicit; their works are reached from artist profiles and are not appended to the original 21-item Artwork tab.
+James Galbraith Kirkpatrick, Edie Evans, Lucia Ocejo and Eleanor Herbosch use `profileVariant: "figma-2026"`. The eleven active new products use `detailVariant: "figma-2026"`, `year: 2026` and a separate `tileMedium` for the profile hover. James's straight-sided Cup I was removed on 15 October 2026; its former URL redirects to his profile. Keep the base title free of the year. Their Gallery order is explicit; their works are reached from artist profiles and are not appended to the original 21-item Artwork tab.
 
-The 21 photo entries live in `src/data/media.ts`: all are filled by supplied photos (17 from Drive and four attachments received on 14 October 2026). Content refers to a photo as `{ "slot": "lucia-ocejo-mug" }`, rather than an empty image path. A null source renders a blank with “Photo pending”; do not substitute another photograph. The source mapping and resolved missing images are recorded in `docs/reference/figma-2026/PHOTO-MATCH-REPORT.md`.
+The 20 active photo entries live in `src/data/media.ts`: all are filled by supplied photos (16 retained from Drive and four attachments received on 14 October 2026). The retired Cup I photo is no longer public. Content refers to a photo as `{ "slot": "lucia-ocejo-mug" }`, rather than an empty image path. A null source renders a blank with “Photo pending”; do not substitute another photograph. The source mapping and resolved missing images are recorded in `docs/reference/figma-2026/PHOTO-MATCH-REPORT.md`.
 
 An optional artwork `cardImage` selects a different profile crop from `mainImage`. Edie's three portrait crops remain on her profile cards; the complete wide photos fill her product pages and image viewers. Tiled Screen uses its portrait crop on the profile and the complete three-panel image on its product page. Update the corresponding slot independently; do not stretch a card crop to imitate a missing wide photo.
 
@@ -30,7 +30,7 @@ To supply a photo:
 
 1. Add an optimised image under `public/assets/artists/` or `public/assets/artworks/`, with a descriptive filename.
 2. Set that slot's `src` to its root-relative path and update accurate alt text and intrinsic width/height in the same registry entry.
-3. Review all repeated uses: artist portraits also appear in Gallery, and Cup I, Bedrock and Round Bud Vase also appear in the artist hover cards. Product images become lightbox links only once a real source exists.
+3. Review all repeated uses: artist portraits also appear in Gallery, and Cup II, Bedrock and Round Bud Vase also appear in the artist hover cards. Product images become lightbox links only once a real source exists.
 4. Run the build and audits. `audit:figma` checks that supplied paths exist, supplied photos render with viewer/social references on product pages, profile crops render, and only remaining null entries show blanks. Keep the content, links, forms and reference-copy checks.
 
 Eleanor's old biography/studies are archived at `docs/reference/figma-2026/eleanor-before.md`; old media assets remain available. Her profile displays the supplied painting below the biography using `profileArtworkImage`, added following the owner's 14 October clarification. This optional media reference is separate from catalogue product records and uses the existing image viewer. The Gallery hover reuses the same media slot. The archived studies are not displayed.

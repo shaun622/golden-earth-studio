@@ -17,7 +17,7 @@ function record(file) {
 }
 const expectedArtists = ["louis-vincent", "jihyun-kim", "jacob-chan", "alexandra-yan-wong", "adam-weismann", "arran-gregory", "zahed-tajeddin", "rickie-cheuk", "lucia-ocejo", "james-galbraith-kirkpatrick", "edie-evans", "eleanor-herbosch"];
 const expectedWorks = {
-  "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"], ["cup-ii", "Cup II", "7cm(w) x 7.5cm(h)", "£70"]],
+  "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"], ["cup-ii", "Cup II", "7cm(w) x 7.5cm(h)", "£70"]],
   "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "8cm(l) x 12cm(w) x 6.5cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"]],
   "lucia-ocejo": [["round-bud-vase", "Round Bud Vase", "18cm(w) x 20cm(h) x 7cm(w)", "£220"], ["tea-bowl", "Tea Bowl", "8cm(w) x 9cm(h)", "£50"], ["mug", "Mug", "9cm(w) x 8.5cm(h)", "£40"], ["jug", "Jug", "17cm(w) x 26cm(h)", "£160"], ["tiled-screen", "Tiled Screen", "156cm(w) x 130cm(h)", null]],
 };
@@ -31,9 +31,16 @@ assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), 
 assert.equal(interior.gallery.artworks.length, 21);
 assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 33);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 72);
-assert.equal(Object.keys(catalogue).length, 34);
-assert.equal(Object.keys(mediaSlots).length, 21);
+assert.equal(ledger.generated.length, 71);
+assert.equal(Object.keys(catalogue).length, 33);
+assert.equal(Object.keys(mediaSlots).length, 20);
+const retiredId = "james-galbraith-kirkpatrick/cup-i";
+const retiredRoute = `/gallery/${retiredId}/`;
+assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup I remains available for enquiries");
+assert.ok(!ledger.generated.includes(retiredRoute), "Retired Cup I remains a generated route");
+assert.deepEqual(ledger.redirects.find(item => item.from === retiredRoute), { from: retiredRoute, to: "/gallery/james-galbraith-kirkpatrick/", status: 301 });
+assert.ok(!fs.existsSync("dist/gallery/james-galbraith-kirkpatrick/cup-i/index.html"), "Retired Cup I page remains in the build");
+assert.ok(!fs.existsSync("public/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"), "Retired Cup I photo remains public");
 assert.throws(() => resolveMedia({ slot: "not-a-photo-slot" }), /Unknown photo slot/);
 const oldPhoto = resolveMedia("/assets/images/bowl.webp", "Bowl");
 assert.equal(oldPhoto.src, "/assets/images/bowl.webp");
@@ -123,6 +130,9 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 34);
+assert.equal(artworkCount, 33);
+assert.ok(!allUpdatedHtml.includes("Cup I, 2026") && !allUpdatedHtml.includes("/cup-i/"), "Retired cup remains in rendered content");
+assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
+assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-ii.webp"'), "James Gallery hover must use retained Cup II");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 12 new products, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, photo viewers, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 11 new products, retired Cup I absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, photo viewers, forms, related links and sitemap.`);

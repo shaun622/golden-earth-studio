@@ -76,3 +76,11 @@ Validation: `npm run build` passes (61 checked files, zero diagnostics, 73 gener
 The owner clarified that Eleanor's supplied painting should also appear on her profile. The optional typed `profileArtworkImage` reference renders it below the biography under Artworks, reusing the existing asset and full-image viewer. The empty-profile spacing is replaced by the actual image section; catalogue records and artwork metadata remain unchanged.
 
 Build, site audit and Figma audit pass. Edge checks at 390px, 768px and 1280px confirm the portrait remains present, the complete painting retains its aspect ratio and fits without overflow, and the obsolete empty spacing is absent. The viewer opens and Escape closes it with focus restored to the image link. Viewport overrides were reset.
+
+## James Cup I withdrawal — 15 October 2026
+
+The owner authorized removing James's straight-sided cup and deploying the change. Visual comparison identifies it as Cup I; Cup II is the retained tapered cup. The Cup I content record, public photo, media slot, profile card, generated route and Worker enquiry entry are removed. Both James Gallery hover references now use Cup II. The former Cup I product URL redirects to James's profile with an exact 301 rule, and the sitemap excludes it.
+
+Validation: build passes with zero Astro diagnostics; site, Figma and interior audits pass with 71 generated routes, 33 product records, 20 active photos and no blanks. Eleven mocked Worker tests pass. Runtime checks pass for 71 routes, six redirects and five existing not-found paths. Edge checks at 390px and 1280px confirm exactly three James profile cards, the retained cup in both views, no withdrawn photo/links and no overflow. Viewport overrides were reset.
+
+Form status was checked using GET only on the public domain and stable Workers URL: both return HTTP 503, `contact_disabled`. Deployment configuration still has `CONTACT_ENABLED=false` and empty `CONTACT_FROM`/`CONTACT_TO`. No live form submission or email test was performed; contact delivery was not activated.

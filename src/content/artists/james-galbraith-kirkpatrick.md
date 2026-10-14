@@ -4,11 +4,11 @@ slug: "james-galbraith-kirkpatrick"
 name: "James Galbraith Kirkpatrick"
 discipline: "Ceramic"
 portrait: {"slot":"james-galbraith-kirkpatrick-portrait"}
-hoverImage: {"slot":"james-galbraith-kirkpatrick-cup-i"}
+hoverImage: {"slot":"james-galbraith-kirkpatrick-cup-ii"}
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 9
-artworkIds: ["james-galbraith-kirkpatrick/square-plate","james-galbraith-kirkpatrick/cup-i","james-galbraith-kirkpatrick/bowl","james-galbraith-kirkpatrick/cup-ii"]
+artworkIds: ["james-galbraith-kirkpatrick/square-plate","james-galbraith-kirkpatrick/bowl","james-galbraith-kirkpatrick/cup-ii"]
 studies: []
 relatedProfiles: []
 seoDescription: "Ceramic artist James Galbraith Kirkpatrick transforms London construction clay and waste wood-ash into wheel-thrown tableware."

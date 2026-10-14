@@ -116,11 +116,6 @@ export default {
     "artist": "James Galbraith Kirkpatrick",
     "path": "/gallery/james-galbraith-kirkpatrick/square-plate/"
   },
-  "james-galbraith-kirkpatrick/cup-i": {
-    "title": "Cup I",
-    "artist": "James Galbraith Kirkpatrick",
-    "path": "/gallery/james-galbraith-kirkpatrick/cup-i/"
-  },
   "james-galbraith-kirkpatrick/bowl": {
     "title": "Bowl",
     "artist": "James Galbraith Kirkpatrick",
