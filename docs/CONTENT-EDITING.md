@@ -22,9 +22,9 @@ Artist, artwork and Journal detail content lives in Markdown under `src/content`
 
 James Galbraith Kirkpatrick, Edie Evans, Lucia Ocejo and Eleanor Herbosch use `profileVariant: "figma-2026"`. The twelve new products use `detailVariant: "figma-2026"`, `year: 2026` and a separate `tileMedium` for the profile hover. Keep the base title free of the year. Their Gallery order is explicit; their works are reached from artist profiles and are not appended to the original 21-item Artwork tab.
 
-The 21 photo entries live in `src/data/media.ts`: 17 have supplied Drive photos and four remain pending. Content refers to a photo as `{ "slot": "lucia-ocejo-mug" }`, rather than an empty image path. A null source renders a blank with “Photo pending”; do not substitute another photograph. The missing images and source mapping are recorded in `docs/reference/figma-2026/PHOTO-MATCH-REPORT.md`.
+The 21 photo entries live in `src/data/media.ts`: all are filled by supplied photos (17 from Drive and four attachments received on 14 October 2026). Content refers to a photo as `{ "slot": "lucia-ocejo-mug" }`, rather than an empty image path. A null source renders a blank with “Photo pending”; do not substitute another photograph. The source mapping and resolved missing images are recorded in `docs/reference/figma-2026/PHOTO-MATCH-REPORT.md`.
 
-An optional artwork `cardImage` selects a different profile crop from `mainImage`. Edie's three portrait card crops are available, but their wide product photos remain blank. Tiled Screen uses its portrait crop on the profile and the complete three-panel image on its product page. Update the corresponding slot independently; do not stretch a card crop to imitate a missing wide photo.
+An optional artwork `cardImage` selects a different profile crop from `mainImage`. Edie's three portrait crops remain on her profile cards; the complete wide photos fill her product pages and image viewers. Tiled Screen uses its portrait crop on the profile and the complete three-panel image on its product page. Update the corresponding slot independently; do not stretch a card crop to imitate a missing wide photo.
 
 To supply a photo:
 

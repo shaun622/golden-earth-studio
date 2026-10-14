@@ -6,7 +6,7 @@ export interface MediaAsset {
   height: number;
 }
 
-// Supplied Drive photos use their real pixel dimensions. Null marks a missing crop.
+// Supplied photos use their real pixel dimensions. Null marks a missing crop.
 export const mediaSlots: Record<string, MediaAsset> = {
   "james-galbraith-kirkpatrick-portrait": { src: "/assets/artists/james-galbraith-kirkpatrick-portrait.webp", alt: "James Galbraith Kirkpatrick working at a pottery wheel", width: 862, height: 1034 },
   "edie-evans-portrait": { src: "/assets/artists/edie-evans-portrait.webp", alt: "Edie Evans working with clay in her studio", width: 864, height: 1026 },
@@ -16,10 +16,10 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "james-galbraith-kirkpatrick-cup-i": { src: "/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp", alt: "Cup I by James Galbraith Kirkpatrick", width: 684, height: 1178 },
   "james-galbraith-kirkpatrick-bowl": { src: "/assets/artworks/james-galbraith-kirkpatrick/bowl.webp", alt: "Stack of Bowls by James Galbraith Kirkpatrick", width: 682, height: 1178 },
   "james-galbraith-kirkpatrick-cup-ii": { src: "/assets/artworks/james-galbraith-kirkpatrick/cup-ii.webp", alt: "Cup II by James Galbraith Kirkpatrick", width: 684, height: 1170 },
-  // Drive supplied the narrow profile crops, not the wide Edie product photos.
-  "edie-evans-earth-memory": { src: null, alt: "Earth Memory by Edie Evans", width: 550, height: 370 },
-  "edie-evans-bedrock": { src: null, alt: "Bedrock by Edie Evans", width: 550, height: 370 },
-  "edie-evans-fragmentation-1": { src: null, alt: "Fragmentation 1 by Edie Evans", width: 550, height: 370 },
+  // Full product photos and the original portrait card crops have separate slots.
+  "edie-evans-earth-memory": { src: "/assets/artworks/edie-evans/earth-memory.webp", alt: "A rough rock beside a burnished clay sphere in Earth Memory by Edie Evans", width: 1418, height: 936 },
+  "edie-evans-bedrock": { src: "/assets/artworks/edie-evans/bedrock.webp", alt: "Bedrock by Edie Evans, a burnished clay bowl with an uneven rim", width: 1166, height: 770 },
+  "edie-evans-fragmentation-1": { src: "/assets/artworks/edie-evans/fragmentation-1.webp", alt: "Fragmentation 1 by Edie Evans, a reddish clay sphere with a cracked surface", width: 1482, height: 934 },
   "edie-evans-earth-memory-card": { src: "/assets/artworks/edie-evans/earth-memory-card.webp", alt: "Portrait crop of the rock and sphere in Earth Memory by Edie Evans", width: 682, height: 1174 },
   "edie-evans-bedrock-card": { src: "/assets/artworks/edie-evans/bedrock-card.webp", alt: "Close-up of Bedrock by Edie Evans", width: 682, height: 1170 },
   "edie-evans-fragmentation-1-card": { src: "/assets/artworks/edie-evans/fragmentation-1-card.webp", alt: "Close-up of Fragmentation 1 by Edie Evans", width: 680, height: 1176 },
@@ -29,8 +29,7 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "lucia-ocejo-jug": { src: "/assets/artworks/lucia-ocejo/jug.webp", alt: "Jug by Lucia Ocejo with a pale glazed upper half", width: 682, height: 1192 },
   "lucia-ocejo-tiled-screen": { src: "/assets/artworks/lucia-ocejo/tiled-screen.webp", alt: "Three-panel Tiled Screen by Lucia Ocejo", width: 1076, height: 1050 },
   "lucia-ocejo-tiled-screen-card": { src: "/assets/artworks/lucia-ocejo/tiled-screen-card.webp", alt: "Portrait crop of Lucia Ocejo's Tiled Screen", width: 666, height: 1180 },
-  // The supplied painting hover has a faded portrait baked into the screenshot.
-  "eleanor-herbosch-painting-hover": { src: null, alt: "Painting detail by Eleanor Herbosch", width: 330, height: 395 },
+  "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
 export function resolveMedia(reference: MediaReference, fallbackAlt = ""): MediaAsset & { slot?: string } {

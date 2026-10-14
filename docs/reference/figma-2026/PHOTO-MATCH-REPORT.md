@@ -2,11 +2,11 @@
 
 Imported on 10 October 2026 from the owner's [Updated Gallery Images folder](https://drive.google.com/drive/folders/1SsbjhCxPYUGBu3lEB3tYaQTB8HuDDe6q), following the request to use these files and compare them with the red area in [GES Figma](https://www.figma.com/design/AEQdADBXl4tl09FtBeNxlx/GES?node-id=5061-156).
 
-Reviewed all 33 PNG files across five folders. Selected 17 clean images; excluded 16 screenshots with baked captions, darkening or portrait crossfades. The selected subjects match the intended artists/artworks. The remaining problem is missing clean images or the wrong crop, rather than a different artist's work.
+Reviewed all 33 PNG files across five folders. Selected 17 clean images; excluded 16 screenshots with baked captions, darkening or portrait crossfades. The selected subjects match the intended artists/artworks. At the initial import, four clean images or full crops were missing, rather than a different artist's work being supplied.
 
-## Images still required
+## Formerly missing images — resolved 14 October 2026
 
-These four slots deliberately remain blank and display “Photo pending”.
+The owner supplied all four images as attachments on 14 October 2026 and authorized upload/deployment. All 21 media slots now contain supplied photos; none remains blank. The table records why the earlier Drive files were insufficient. Edie's original profile-card crops remain separate from the newly installed full product photos.
 
 | Required image | Available file and why it cannot fill this slot | Figma reference |
 | --- | --- | --- |
@@ -15,7 +15,16 @@ These four slots deliberately remain blank and display “Photo pending”.
 | Edie — Fragmentation 1, full wide product photo | The portrait card crop cuts off the sphere. Need the complete object. | Product node `5060-109` |
 | Eleanor — clean painting image for Gallery hover | Eleanor's dedicated folder is empty. Shared screenshot at 14.48.18 has her faded portrait baked over the painting. | Gallery hover node `5060-46` |
 
-Eleanor's portrait is present in the shared New Artists folder and is installed. Edie's profile cards are also filled; only her three product-page image areas are missing.
+Eleanor's portrait from the shared New Artists folder and Edie's profile-card crops were already installed. The following four attachments complete the outstanding image areas:
+
+| Attachment | Installed slot | Output |
+| --- | --- | --- |
+| Screenshot 2026-10-14 at 15.41.07.png | Edie — Earth Memory, complete rock and sphere | `public/assets/artworks/edie-evans/earth-memory.webp` |
+| Screenshot 2026-10-14 at 15.41.14.png | Edie — Bedrock, complete bowl | `public/assets/artworks/edie-evans/bedrock.webp` |
+| Screenshot 2026-10-14 at 15.41.22.png | Edie — Fragmentation 1, complete object | `public/assets/artworks/edie-evans/fragmentation-1.webp` |
+| Screenshot 2026-10-14 at 15.42.49.png | Eleanor — clean painting Gallery hover | `public/assets/artworks/eleanor-herbosch/painting-hover.webp` |
+
+These PNGs were encoded to WebP at quality 92, preserving their original dimensions and complete content: 4,902,581 source bytes become 460,968 bytes. Filenames, dimensions, hashes and output paths are recorded in `photo-import-2026-10-14.json`. Prices, dimensions and biography copy are unchanged.
 
 ## Selected source files
 
@@ -45,7 +54,7 @@ The James folder spelling is copied here solely to identify the source folder; t
 
 ## Excluded screenshots
 
-- New Artists: 14.47.33, 14.47.49, 14.47.58 and 14.48.18 already contain faded portraits over artwork. The clean portraits and clean artworks let CSS create the Gallery transition without applying it twice. Eleanor still needs a clean painting.
+- New Artists: 14.47.33, 14.47.49, 14.47.58 and 14.48.18 already contain faded portraits over artwork. The clean portraits and clean artworks let CSS create the Gallery transition without applying it twice. Eleanor's clean painting was subsequently supplied on 14 October.
 - James: 15.15.06, 15.15.12, 15.15.21 and 15.15.30 contain dark hover overlays and text.
 - Edie: 15.11.47, 15.11.55 and 15.12.03 contain hover overlays/text, including measurements that conflict with individual product frames.
 - Lucia: 15.07.08, 15.07.15, 15.07.24, 15.07.33 and 15.07.39 contain hover overlays/text. The Mug hover measurement also conflicts with its product frame.
