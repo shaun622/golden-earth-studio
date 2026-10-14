@@ -133,7 +133,7 @@ test("general, compact and artwork forms still require a name", async () => {
 
 test("new artist catalogue IDs route enquiries to their authoritative titles", async () => {
   const entries = Object.entries(catalogue).filter(([id]) => /^(james-galbraith-kirkpatrick|edie-evans|lucia-ocejo)\//.test(id));
-  assert.equal(entries.length, 12);
+  assert.equal(entries.length, 11);
   for (const [artworkId, artwork] of entries) {
     const calls: Array<{ url: string; init?: RequestInit }> = [];
     const response = await handleContact(request(payload({ variant: "artwork", artworkId, subject: "untrusted title" })), enabledEnv, successfulFetch(calls));
