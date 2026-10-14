@@ -70,3 +70,9 @@ The owner supplied four attachments and authorized upload/deployment. Branch: `c
 The four images were encoded to WebP at quality 92 with their original dimensions: 4,902,581 source bytes become 460,968 bytes. Provenance is recorded in `reference/figma-2026/photo-import-2026-10-14.json`. All 21 media slots are now filled; there are no remaining Figma photo blanks.
 
 Validation: `npm run build` passes (61 checked files, zero diagnostics, 73 generated pages); site and Figma audits pass with all 72 routes and 21 supplied photos. Eight Edge checks cover the three changed product pages and Eleanor's Gallery card at 390px and 1280px. All images load, fit their columns and have no horizontal overflow or pending labels. Earth Memory's full-image viewer opens and closes correctly; keyboard focus reveals Eleanor's painting. Viewport overrides were reset after review.
+
+## Eleanor profile artwork clarification — 14 October 2026
+
+The owner clarified that Eleanor's supplied painting should also appear on her profile. The optional typed `profileArtworkImage` reference renders it below the biography under Artworks, reusing the existing asset and full-image viewer. The empty-profile spacing is replaced by the actual image section; catalogue records and artwork metadata remain unchanged.
+
+Build, site audit and Figma audit pass. Edge checks at 390px, 768px and 1280px confirm the portrait remains present, the complete painting retains its aspect ratio and fits without overflow, and the obsolete empty spacing is absent. The viewer opens and Escape closes it with focus restored to the image link. Viewport overrides were reset.

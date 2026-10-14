@@ -5,6 +5,7 @@ name: "Eleanor Herbosch"
 discipline: "Painting"
 portrait: {"slot":"eleanor-herbosch-portrait"}
 hoverImage: {"slot":"eleanor-herbosch-painting-hover"}
+profileArtworkImage: {"slot":"eleanor-herbosch-painting-hover"}
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 11

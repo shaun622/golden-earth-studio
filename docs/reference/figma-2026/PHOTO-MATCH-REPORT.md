@@ -26,6 +26,8 @@ Eleanor's portrait from the shared New Artists folder and Edie's profile-card cr
 
 These PNGs were encoded to WebP at quality 92, preserving their original dimensions and complete content: 4,902,581 source bytes become 460,968 bytes. Filenames, dimensions, hashes and output paths are recorded in `photo-import-2026-10-14.json`. Prices, dimensions and biography copy are unchanged.
 
+Following the owner's clarification on 14 October, Eleanor's clean painting also appears under Artworks on her artist profile, with a full-image viewer. Her portrait remains alongside the biography; both profile and Gallery hover reuse the same painting asset.
+
 ## Selected source files
 
 Every name below is `Screenshot 2026-10-10 at <time>.png`. The full file IDs, Drive links, dimensions, hashes and output paths are in `photo-import.json` beside this report.

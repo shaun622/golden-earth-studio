@@ -11,6 +11,7 @@ const artists = defineCollection({
     id: z.string(), slug: z.string(), name: z.string(), discipline: z.string(), portrait: mediaReference, hoverImage: mediaReference,
     profileVariant: z.enum(["catalogue", "editorial", "figma-2026"]), listedInGallery: z.boolean(), order: z.number(),
     artworkIds: z.array(z.string()), studies: z.array(z.object({ image: z.string(), caption: z.string() })),
+    profileArtworkImage: mediaReference.optional(),
     relatedProfiles: z.array(z.string()), seoDescription: z.string(), sourceWpId: z.number().nullable(),
   }),
 });
