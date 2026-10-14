@@ -1,17 +1,20 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import InteriorLayout from "../layouts/InteriorLayout.astro";
-import { mediaSource } from "../data/media";
+import { mediaSource, resolveMedia } from "../data/media";
 import MediaSlot from "./MediaSlot.astro";
+import ImageGallery from "./ImageGallery.astro";
 import FigmaArtworkCard from "./FigmaArtworkCard.astro";
 import FigmaCommission from "./FigmaCommission.astro";
 import "../styles/gallery-2026.css";
 interface Props { artist: CollectionEntry<"artists">["data"]; works: CollectionEntry<"artworks">["data"][]; }
 const { artist, works } = Astro.props;
 const contactName = artist.name.split(" ")[0];
+const profileArtwork = artist.profileArtworkImage ? resolveMedia(artist.profileArtworkImage) : undefined;
+const hasArtwork = works.length > 0 || Boolean(profileArtwork);
 ---
 <InteriorLayout className="figma-interior" title={artist.name} description={artist.seoDescription} image={mediaSource(artist.portrait)}>
-  <main id="content" class:list={["figma-artist", `figma-artist--${artist.slug}`, { "figma-artist--without-works": !works.length }]}>
+  <main id="content" class:list={["figma-artist", `figma-artist--${artist.slug}`, { "figma-artist--without-works": !hasArtwork }]}>
     <section class="figma-profile" aria-labelledby="artist-heading">
       <MediaSlot media={artist.portrait} className="figma-profile-portrait" alt={`${artist.name} portrait`} loading="eager" />
       <div class="figma-profile-copy">
@@ -21,8 +24,11 @@ const contactName = artist.name.split(" ")[0];
       </div>
     </section>
     <section class="figma-profile-works" aria-label={`${artist.name} artworks`}>
-      {works.length > 0 && <h2>Artworks</h2>}
+      {hasArtwork && <h2>Artworks</h2>}
       {works.length > 0 && <div class="figma-work-grid">{works.map((work) => <FigmaArtworkCard artwork={work} />)}</div>}
+      {profileArtwork && artist.profileArtworkImage && <div class="figma-profile-artwork" data-media-slot={profileArtwork.slot}>
+        {profileArtwork.src ? <ImageGallery label={`${artist.name} artwork`} images={[{ src: profileArtwork.src, alt: profileArtwork.alt, width: profileArtwork.width, height: profileArtwork.height }]} /> : <MediaSlot media={artist.profileArtworkImage} />}
+      </div>}
     </section>
     <FigmaCommission />
   </main>

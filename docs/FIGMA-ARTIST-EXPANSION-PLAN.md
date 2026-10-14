@@ -145,6 +145,8 @@ Use two columns on intermediate widths where three become cramped; one column fo
 
 Eleanor's frame has a large empty middle section and no work cards. Preserve that restrained desktop composition with a scoped minimum content space; reduce it responsively. Do not fill it with her old material studies or invented paintings.
 
+Owner clarification, 14 October 2026: the newly supplied painting image must also appear on Eleanor's profile below the biography. Display it under Artworks with the existing full-image viewer, preserve its complete aspect ratio and replace the empty middle spacing. Reuse the Gallery hover asset without inventing a catalogue title, price or product page.
+
 Use the existing commission paragraph in `interior.generated.json` rather than rewriting marketing copy. Use the per-profile contact sentence: “For further information on pricing and availability for James’ work, please contact info@goldenearthstudio.co.uk”, with Edie’s, Lucia’s or Eleanor’s as appropriate. The email must be a mailto link.
 
 ## 6. Product content and routes

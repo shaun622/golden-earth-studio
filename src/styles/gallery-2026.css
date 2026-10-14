@@ -20,6 +20,9 @@
 .figma-profile-contact a { display: block; margin-top: 5px; font-weight: 600; }
 .figma-profile-works { margin-top: 44px; }
 .figma-profile-works h2 { margin: 0 0 38px; padding-bottom: 14px; border-bottom: 1px solid #a7a79f; font: 300 14px/1.5 var(--body); }
+.figma-profile-artwork { width: min(100%, 410px); }
+.figma-profile-artwork .image-gallery-grid { grid-template-columns: 1fr; }
+.figma-profile-artwork .image-gallery-grid img { display: block; aspect-ratio: auto; height: auto; }
 .figma-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 45px; padding-inline: 9px; }
 .figma-work-card { min-width: 0; }
 .figma-work-link { display: block; position: relative; aspect-ratio: .59; overflow: hidden; }
