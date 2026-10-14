@@ -62,3 +62,11 @@ Still required: full wide Earth Memory, Bedrock and Fragmentation 1 images for E
 Verification: `npm run build` passes with 61 checked files, zero diagnostics and 73 generated pages. Site/Journal/interior/Figma audits pass; the focused audit confirms 17 supplied photos and four actual blanks. Worker tests remain 10/10. Runtime audit passes for 72 routes, five redirects and five expected exclusions. Edge checks cover the 17 affected routes at 390/768/1280px (51 checks without layout failures), visible photo matching, Gallery keyboard crossfade, phone captions, actual image viewer opening, Escape/focus restoration and the complete Tiled Screen. Evidence is in `docs/reference/figma-2026/photo-qa/`.
 
 No push, merge, deployment or contact-service configuration was performed in this amendment. Live delivery remains outside photo verification.
+
+## Final photo handover — 14 October 2026
+
+The owner supplied four attachments and authorized upload/deployment. Branch: `codex/complete-figma-photos`, based on deployed `main` commit `1d4cefe`. The complete Earth Memory, Bedrock and Fragmentation 1 photos fill Edie's product images and viewers; the clean Eleanor painting fills her Gallery hover. Existing portrait/card crops and all product facts are retained.
+
+The four images were encoded to WebP at quality 92 with their original dimensions: 4,902,581 source bytes become 460,968 bytes. Provenance is recorded in `reference/figma-2026/photo-import-2026-10-14.json`. All 21 media slots are now filled; there are no remaining Figma photo blanks.
+
+Validation: `npm run build` passes (61 checked files, zero diagnostics, 73 generated pages); site and Figma audits pass with all 72 routes and 21 supplied photos. Eight Edge checks cover the three changed product pages and Eleanor's Gallery card at 390px and 1280px. All images load, fit their columns and have no horizontal overflow or pending labels. Earth Memory's full-image viewer opens and closes correctly; keyboard focus reveals Eleanor's painting. Viewport overrides were reset after review.

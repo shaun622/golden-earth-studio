@@ -1,0 +1,46 @@
+[
+  {
+    "originalName": "Screenshot 2026-10-14 at 15.41.07.png",
+    "source": "User-provided attachment, 14 October 2026",
+    "slot": "edie-evans-earth-memory",
+    "output": "public/assets/artworks/edie-evans/earth-memory.webp",
+    "width": 1418,
+    "height": 936,
+    "sourceBytes": 1604937,
+    "outputBytes": 110292,
+    "sourceSha256": "b39fedd4a72af309ff09d08a1b03a8c0f4566683285b4e1cfcd9525b419a7498"
+  },
+  {
+    "originalName": "Screenshot 2026-10-14 at 15.41.14.png",
+    "source": "User-provided attachment, 14 October 2026",
+    "slot": "edie-evans-bedrock",
+    "output": "public/assets/artworks/edie-evans/bedrock.webp",
+    "width": 1166,
+    "height": 770,
+    "sourceBytes": 1074388,
+    "outputBytes": 89432,
+    "sourceSha256": "a24ca30b884e728bdae07d5b8948316132d8facda42f24a2975620cc24956b28"
+  },
+  {
+    "originalName": "Screenshot 2026-10-14 at 15.41.22.png",
+    "source": "User-provided attachment, 14 October 2026",
+    "slot": "edie-evans-fragmentation-1",
+    "output": "public/assets/artworks/edie-evans/fragmentation-1.webp",
+    "width": 1482,
+    "height": 934,
+    "sourceBytes": 1394198,
+    "outputBytes": 93982,
+    "sourceSha256": "225085b828ddf10e510330ca4cfdb09fd5ec6cfcd6fc882bb3ce94c683acc282"
+  },
+  {
+    "originalName": "Screenshot 2026-10-14 at 15.42.49.png",
+    "source": "User-provided attachment, 14 October 2026",
+    "slot": "eleanor-herbosch-painting-hover",
+    "output": "public/assets/artworks/eleanor-herbosch/painting-hover.webp",
+    "width": 758,
+    "height": 954,
+    "sourceBytes": 829058,
+    "outputBytes": 167262,
+    "sourceSha256": "43d87002795c77207a540368a863704a359a2cb8f37c0a757f9f1f56739ca103"
+  }
+]
