@@ -17,7 +17,7 @@
   },
   "vars": {
     "CONTACT_ENABLED": "false",
-    "CONTACT_FROM": "",
+    "CONTACT_FROM": "Golden Earth Studio <info@goldenearthstudio.co.uk>",
     "CONTACT_TO": "",
     "ALLOWED_ORIGINS": "https://goldenearthstudio.co.uk,https://www.goldenearthstudio.co.uk,https://golden-earth-studio.shaun-02d.workers.dev"
   },

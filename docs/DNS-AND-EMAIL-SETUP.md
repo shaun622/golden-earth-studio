@@ -1,6 +1,16 @@
 # Golden Earth Studio DNS and email setup
 
-Prepared on 10 October 2026. **The nameserver switch has not been performed.** Hostinger still serves the live WordPress website and authoritative DNS.
+Originally prepared on 10 October 2026. The DNS and deployment snapshots below record that preparation; later status takes precedence.
+
+## Current status — 15 October 2026
+
+The owner authorized the nameserver switch on 14 October. Cloudflare is active with `christian.ns.cloudflare.com` and `eve.ns.cloudflare.com`, and apex/www serve the rebuilt Worker over HTTPS. Titan remains the mailbox provider: its MX priorities, SPF and DKIM are intact. The three original Resend sending records are published and match the 10 October snapshot.
+
+The owner has now approved `Golden Earth Studio <info@goldenearthstudio.co.uk>` as the form sender. It is prepared in `wrangler.jsonc`; delivery remains disabled until the receiving inbox and Resend account are resolved. No live form submission or email test is authorized in this setup request.
+
+The currently authenticated Resend account is `poolmatehq` (Pro), signed in as `notifications@poolmatehq.com`. It does not list `goldenearthstudio.co.uk` and cannot load the original domain ID `bf4035ba-096d-495f-954d-03323ec00269`. The original setup used a separate Golden Earth account. Before changing Resend verification records or enabling delivery, resolve the account choice and ensure the Worker's encrypted `RESEND_API_KEY` belongs to that account. The key value has not been read or exposed. The receiving inbox is also awaiting confirmation; the public email fallback is `info@goldenearthstudio.co.uk`.
+
+## Original preparation snapshot — 10 October 2026
 
 The owner subsequently authorized deploying the newer Worker. [PR #3](https://github.com/shaun622/golden-earth-studio/pull/3) was merged into `main`, and Cloudflare successfully deployed commit `1fa98319ca8f0477f7848e349337d750a40f1978` as Worker version `958907dd` (100% traffic). The rebuilt site is available at [the stable Workers review URL](https://golden-earth-studio.shaun-02d.workers.dev/). Contact delivery remains disabled; this deployment does not switch public-domain traffic or nameservers.
 
