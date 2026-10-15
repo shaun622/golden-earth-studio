@@ -14,7 +14,7 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "eleanor-herbosch-portrait": { src: "/assets/artists/eleanor-herbosch-portrait.webp", alt: "Portrait of Eleanor Herbosch in a light shirt", width: 860, height: 1032 },
   "james-galbraith-kirkpatrick-square-plate": { src: "/assets/artworks/james-galbraith-kirkpatrick/square-plate.webp", alt: "Stack of Square Plates by James Galbraith Kirkpatrick", width: 682, height: 1180 },
   "james-galbraith-kirkpatrick-bowl": { src: "/assets/artworks/james-galbraith-kirkpatrick/bowl.webp", alt: "Stack of Bowls by James Galbraith Kirkpatrick", width: 682, height: 1178 },
-  "james-galbraith-kirkpatrick-cup-ii": { src: "/assets/artworks/james-galbraith-kirkpatrick/cup-ii.webp", alt: "Cup II by James Galbraith Kirkpatrick", width: 684, height: 1170 },
+  "james-galbraith-kirkpatrick-cup-i": { src: "/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp", alt: "Cup I by James Galbraith Kirkpatrick, a short cup with a dark rim, patterned glaze and small foot", width: 684, height: 1178 },
   // Full product photos and the original portrait card crops have separate slots.
   "edie-evans-earth-memory": { src: "/assets/artworks/edie-evans/earth-memory.webp", alt: "A rough rock beside a burnished clay sphere in Earth Memory by Edie Evans", width: 1418, height: 936 },
   "edie-evans-bedrock": { src: "/assets/artworks/edie-evans/bedrock.webp", alt: "Bedrock by Edie Evans, a burnished clay bowl with an uneven rim", width: 1166, height: 770 },

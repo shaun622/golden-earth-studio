@@ -2,7 +2,7 @@
 
 ## 2026 Figma update
 
-The original WordPress snapshot below remains historical evidence. The October 2026 update adds James Galbraith Kirkpatrick (Square Plate, Bowl, Cup II), Edie Evans (Earth Memory, Bedrock, Fragmentation 1), and Lucia Ocejo (Round Bud Vase, Tea Bowl, Mug, Jug, Tiled Screen), and refreshes Eleanor Herbosch as Painting. James's straight-sided Cup I was withdrawn on 15 October at the owner's request; its former product URL redirects to his profile, and the public photo and enquiry catalogue entry are removed.
+The original WordPress snapshot below remains historical evidence. The October 2026 update adds James Galbraith Kirkpatrick (Square Plate, Cup I, Bowl), Edie Evans (Earth Memory, Bedrock, Fragmentation 1), and Lucia Ocejo (Round Bud Vase, Tea Bowl, Mug, Jug, Tiled Screen), and refreshes Eleanor Herbosch as Painting. The owner's photo clarification on 15 October corrects the earlier cup identification: retain the shorter patterned Cup I and withdraw the taller plain-sided Cup II. Cup I's product page and photo are restored; Cup II's former URL redirects to James's profile, and its public photo and enquiry catalogue entry are removed.
 
 Current totals: 13 profile records, 33 product records, 71 generated ledger routes and six redirects; Gallery displays 12 artists and the retained 21-piece Artwork index. The eleven active added product URLs use `/gallery/<artist-slug>/<product-slug>/`. New records have null WordPress IDs. The photo registry has 20 active supplied photos, including separate card/product crops, and no remaining blanks. See `reference/figma-2026/PHOTO-MATCH-REPORT.md` for image provenance, `FIGMA-ARTIST-EXPANSION-PLAN.md` for content/reference details and `CONTENT-EDITING.md` for replacements.
 

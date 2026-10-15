@@ -151,7 +151,7 @@ Use the existing commission paragraph in `interior.generated.json` rather than r
 
 ## 6. Product content and routes
 
-Owner amendment, 15 October 2026: withdraw James's straight-sided Cup I (the cylindrical cup on a small foot). Remove its profile card, product page, public photo and enquiry catalogue entry. Use the retained, tapered Cup II for James's Gallery hover; redirect the former Cup I product URL to his profile. The original table below is historical source transcription; the active additions now contain eleven products.
+Owner amendment, clarified by photos on 15 October 2026: the earlier cup identification was reversed. Retain Cup I, the shorter cup with patterned glaze, dark rim and small foot. Withdraw Cup II, the taller plain-sided brown cup: remove its profile card, product page, public photo and enquiry catalogue entry. Restore Cup I's original content, photo and product URL; use it for James's Gallery hover. Redirect the former Cup II product URL to his profile. The original table below is historical source transcription; the active additions contain eleven products.
 
 All works have year **2026**. Store the base title without the year, and render the year once. Artist ID plus product slug is the artwork ID, e.g. `edie-evans/bedrock`. Source WordPress ID is `null` for new records. New product bodies are empty because no descriptive prose was supplied. Each new detail page displays one main media slot; do not invent extra photographs or repeat the same slot as a thumbnail strip.
 
