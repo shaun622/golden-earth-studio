@@ -1,4 +1,5 @@
 import catalogue from "./catalogue.generated.ts";
+import { createEnquiryEmails } from "./email-templates.ts";
 import { ContactError, readJsonBody, validatePayload, type ContactPayload } from "./validation.ts";
 
 type Fetcher = (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>;
@@ -7,25 +8,8 @@ type TurnstileResult = { success?: boolean; hostname?: string; action?: string; 
 const jsonHeaders = { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" };
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status, headers: jsonHeaders });
 
-function escapeHtml(value: string) {
-  return value.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character] || character);
-}
-
 function configuredOrigins(value: string) {
   return new Set(value.split(",").map((origin) => origin.trim()).filter(Boolean));
-}
-
-function emailBody(payload: ContactPayload, origin: string) {
-  const artwork = payload.artworkId ? catalogue[payload.artworkId as keyof typeof catalogue] : null;
-  const lines = [
-    payload.name ? `Name: ${payload.name}` : null, `Email: ${payload.email}`, payload.phone ? `Phone: ${payload.phone}` : null,
-    artwork ? `Artwork: ${artwork.title} by ${artwork.artist}` : null,
-    `Source: ${origin}${payload.sourcePath}`, "", payload.message,
-  ].filter((line): line is string => line !== null);
-  return {
-    text: lines.join("\n"),
-    html: lines.map((line) => line ? `<p>${escapeHtml(line)}</p>` : "<br>").join(""),
-  };
 }
 
 async function verifyTurnstile(payload: ContactPayload, env: Env, origin: string, fetcher: Fetcher, request: Request) {
@@ -47,13 +31,13 @@ async function verifyTurnstile(payload: ContactPayload, env: Env, origin: string
 }
 
 async function sendEmail(payload: ContactPayload, env: Env, origin: string, fetcher: Fetcher) {
-  const body = emailBody(payload, origin);
+  const emails = createEnquiryEmails(payload, origin, { from: env.CONTACT_FROM, to: env.CONTACT_TO });
   let response: Response;
   try {
-    response = await fetcher("https://api.resend.com/emails", {
+    response = await fetcher("https://api.resend.com/emails/batch", {
       method: "POST", signal: AbortSignal.timeout(8000),
-      headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, "content-type": "application/json", "Idempotency-Key": `ges-contact/${payload.submissionId}` },
-      body: JSON.stringify({ from: env.CONTACT_FROM, to: [env.CONTACT_TO], reply_to: payload.email, subject: payload.subject, text: body.text, html: body.html }),
+      headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, "content-type": "application/json", "Idempotency-Key": `ges-contact-pair/${payload.submissionId}` },
+      body: JSON.stringify(emails),
     });
   } catch { throw new ContactError(502, "email_uncertain", "Delivery could not be confirmed. Please wait before retrying or use the email link."); }
   if (!response.ok) {
@@ -67,6 +51,10 @@ async function sendEmail(payload: ContactPayload, env: Env, origin: string, fetc
     } catch { /* Provider error bodies are optional; never log their raw content. */ }
     console.error(JSON.stringify({ event: "contact_email_rejected", providerStatus: response.status, reason }));
     throw new ContactError(502, "email_rejected", "Email delivery is temporarily unavailable. Please use the email link.");
+  }
+  const result = await response.json().catch(() => null) as { data?: Array<{ id?: unknown }> } | null;
+  if (!Array.isArray(result?.data) || result.data.length !== emails.length || result.data.some(email => !email || typeof email.id !== "string" || !email.id)) {
+    throw new ContactError(502, "email_uncertain", "Delivery could not be confirmed. Please wait before retrying or use the email link.");
   }
 }
 
