@@ -1,19 +1,19 @@
 # Golden Earth Studio launch checklist
 
-The rebuilt site is live on the public domain and stable Workers URL following the owner-authorized nameserver switch on 14 October 2026. Cloudflare is active and Titan still hosts incoming email. Form delivery stays disabled pending verification in the original Golden Earth Resend account. See `DNS-AND-EMAIL-SETUP.md` for current status and the dated preparation snapshot.
+The rebuilt site is live on the public domain and stable Workers URL following the owner-authorized nameserver switch on 14 October 2026. Cloudflare is active and Titan still hosts incoming email. Contact delivery is enabled using the owner-approved temporary Poolmate Resend setup. A live form test to Shaun was delivered. See `DNS-AND-EMAIL-SETUP.md` for current status and the dated preparation snapshot.
 
 ## Contact delivery activation
 
-- [x] Select the owner's existing `goldenearthstudio` Resend account and domain.
-- [x] Publish the three exact Resend sending/verification records and optional DMARC in Cloudflare; retain Titan mail routing and MailerLite authentication. Original verification started before cutover; its current status needs checking in the original account.
-- [ ] Verify an approved sender on `goldenearthstudio.co.uk`; add only the Resend records required for sending and preserve all existing MX/mail records.
+- [x] With explicit owner approval, transfer the domain to the existing `poolmatehq` Resend team as a temporary setup.
+- [x] Publish the exact Resend ownership/signing records in Cloudflare; retain Titan mail routing and MailerLite authentication. Resend confirms the domain and all sending records are verified.
+- [x] Verify the approved sender `Golden Earth Studio <info@goldenearthstudio.co.uk>` and preserve all existing MX/mail records.
 - [x] Deploy the contact-capable Worker through Git; Cloudflare's main build succeeded and runtime variables/secrets are available.
 - [x] Confirm `CONTACT_FROM` and the actual `CONTACT_TO` inbox: the owner approved `Golden Earth Studio <info@goldenearthstudio.co.uk>` and delivery to `info@goldenearthstudio.co.uk` on 15 October.
 - [x] Create a managed Cloudflare Turnstile widget for the production domain and exact stable Workers review hostname, with pre-clearance disabled.
 - [x] Set Cloudflare build variable `PUBLIC_TURNSTILE_SITE_KEY` so Git builds embed verification in the forms.
-- [x] Set production runtime secrets `RESEND_API_KEY` (owner entry) and `TURNSTILE_SECRET_KEY`; confirm encrypted bindings in Cloudflare.
-- [ ] Set `ALLOWED_ORIGINS`, `CONTACT_FROM`, `CONTACT_TO`, and `CONTACT_ENABLED=true` in the production Worker configuration. Keep preview delivery disabled unless a specific recipient test is authorized.
-- [ ] The owner authorized a live test to `shaun@3md.com.au` on 15 October, superseding the earlier no-test instruction. The form reached Resend but the provider rejected the request; successful delivery and inbox receipt remain unconfirmed. Existing Worker tests use mocked providers.
+- [x] Replace production `RESEND_API_KEY` with a dedicated Poolmate sending-only key restricted to Golden Earth; retain `TURNSTILE_SECRET_KEY` and confirm encrypted bindings. No key value is stored in the repository.
+- [x] Set `ALLOWED_ORIGINS`, `CONTACT_FROM`, `CONTACT_TO`, and `CONTACT_ENABLED=true` in the production Worker configuration. The temporary test recipient was restored to the approved info inbox. Arbitrary version-preview hosts remain outside the origin/Turnstile allowlists.
+- [x] The owner-authorized live homepage form test to `shaun@3md.com.au` succeeded and Resend reports Delivered. Sender: info; form email/Reply-To: `shaun@elitewalls.com.au`. No separate Titan-inbox test was sent; artwork context and verification failures are covered by mocked Worker tests.
 
 ## Content and domain launch
 
