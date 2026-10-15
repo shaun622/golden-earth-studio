@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-15",
+  "team": "poolmatehq",
+  "temporarySetup": true,
+  "domain": "goldenearthstudio.co.uk",
+  "domainId": "1a8ec67c-c07d-4da1-9d58-715f9e813a8e",
+  "previousDomainId": "bf4035ba-096d-495f-954d-03323ec00269",
+  "region": "ap-northeast-1",
+  "status": "verified",
+  "receivingEnabled": false,
+  "claimTxt": "resend-domain-verification=ff942a2293a3721327cee7d040448a2b",
+  "dkim": {
+    "name": "resend._domainkey",
+    "type": "TXT",
+    "value": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEdBjf4Zh033NkZWlhWVzjH8HuHTfURgucTHKBzSph4nG1faagBDJdvEA4XQHEArnsJfKcf7uwpMPMCLTBiQYtsKlY+DY0oBm46zOxgifCHD6EZmcZezzFCj+3Qjdqshfq79y731DRTnCTZXETeUvEMrGROVtxgpmkXvX+U2ukNwIDAQAB",
+    "ttl": 300
+  },
+  "sendingCnames": {
+    "rsend": "rsend-apne1.forge.rmta.net",
+    "send": "send.forge.rmta.net"
+  },
+  "key": {
+    "name": "Golden Earth Studio - Website",
+    "id": "dd4c5336-ad0b-49bb-8e99-a161ade3f37a",
+    "permission": "sending_access",
+    "domainRestriction": "goldenearthstudio.co.uk",
+    "storage": "Cloudflare Worker production runtime secret RESEND_API_KEY"
+  },
+  "test": {
+    "emailId": "01a13d48-fde6-7b35-9f36-f3967e1a44f5",
+    "sender": "Golden Earth Studio <info@goldenearthstudio.co.uk>",
+    "recipient": "shaun@3md.com.au",
+    "replyTo": "shaun@elitewalls.com.au",
+    "subject": "Golden Earth Studio - contact form test",
+    "result": "delivered"
+  },
+  "productionRecipient": "info@goldenearthstudio.co.uk",
+  "titanMx": { "mx1.titan.email": 10, "mx2.titan.email": 20 },
+  "note": "Contains public DNS and configuration metadata only. No API key or private key value is stored here."
+}
