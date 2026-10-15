@@ -13,7 +13,7 @@ The rebuilt site is live on the public domain and stable Workers URL following t
 - [x] Set Cloudflare build variable `PUBLIC_TURNSTILE_SITE_KEY` so Git builds embed verification in the forms.
 - [x] Set production runtime secrets `RESEND_API_KEY` (owner entry) and `TURNSTILE_SECRET_KEY`; confirm encrypted bindings in Cloudflare.
 - [ ] Set `ALLOWED_ORIGINS`, `CONTACT_FROM`, `CONTACT_TO`, and `CONTACT_ENABLED=true` in the production Worker configuration. Keep preview delivery disabled unless a specific recipient test is authorized.
-- [ ] Live email delivery and inbox receipt remain untested. The owner explicitly requested no test submission or email; do not perform one without new authorization. Existing Worker tests use mocked providers.
+- [ ] The owner authorized a live test to `shaun@3md.com.au` on 15 October, superseding the earlier no-test instruction. The form reached Resend but the provider rejected the request; successful delivery and inbox receipt remain unconfirmed. Existing Worker tests use mocked providers.
 
 ## Content and domain launch
 
