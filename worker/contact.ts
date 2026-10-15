@@ -56,7 +56,18 @@ async function sendEmail(payload: ContactPayload, env: Env, origin: string, fetc
       body: JSON.stringify({ from: env.CONTACT_FROM, to: [env.CONTACT_TO], reply_to: payload.email, subject: payload.subject, text: body.text, html: body.html }),
     });
   } catch { throw new ContactError(502, "email_uncertain", "Delivery could not be confirmed. Please wait before retrying or use the email link."); }
-  if (!response.ok) throw new ContactError(502, "email_rejected", "Email delivery is temporarily unavailable. Please use the email link.");
+  if (!response.ok) {
+    let reason = "unknown";
+    try {
+      const error = await response.json() as { name?: unknown; message?: unknown };
+      const message = typeof error.message === "string" ? error.message : "";
+      if (/domain.*not verified/i.test(message)) reason = "domain_unverified";
+      else if (/api key.*invalid|invalid.*api key/i.test(message)) reason = "invalid_api_key";
+      else if (["missing_api_key", "restricted_api_key", "suspended_api_key", "invalid_permission", "daily_quota_exceeded", "monthly_quota_exceeded", "rate_limit_exceeded", "validation_error"].includes(String(error.name))) reason = String(error.name);
+    } catch { /* Provider error bodies are optional; never log their raw content. */ }
+    console.error(JSON.stringify({ event: "contact_email_rejected", providerStatus: response.status, reason }));
+    throw new ContactError(502, "email_rejected", "Email delivery is temporarily unavailable. Please use the email link.");
+  }
 }
 
 export async function handleContact(request: Request, env: Env, fetcher: Fetcher = fetch): Promise<Response> {

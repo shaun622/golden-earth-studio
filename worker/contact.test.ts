@@ -108,6 +108,28 @@ test("structured error logs do not include submitted private content", async () 
   assert.equal(messages.length, 1); assert.doesNotMatch(messages[0], /private@example|secret words/);
 });
 
+test("provider rejection diagnostics classify setup failures without leaking provider content", async () => {
+  const messages: string[] = [];
+  const original = console.error;
+  console.error = (message) => messages.push(String(message));
+  try {
+    for (const [message, reason] of [
+      ["The goldenearthstudio.co.uk domain is not verified. private@example.com", "domain_unverified"],
+      ["API key is invalid: test-key", "invalid_api_key"],
+      ["Unexpected error containing secret words", "unknown"],
+    ]) {
+      const fetcher: typeof fetch = async (input) => String(input).includes("siteverify")
+        ? Response.json({ success: true, hostname: "goldenearthstudio.co.uk", action: "contact" })
+        : Response.json({ name: "unrecognized private content", message }, { status: 403 });
+      const response = await handleContact(request(), enabledEnv, fetcher);
+      assert.equal(response.status, 502);
+      assert.equal((await responseBody(response)).code, "email_rejected");
+      assert.deepEqual(JSON.parse(messages.at(-2)!), { event: "contact_email_rejected", providerStatus: 403, reason });
+    }
+  } finally { console.error = original; }
+  assert.doesNotMatch(messages.join("\n"), /private@example|secret words|test-key|unrecognized private/);
+});
+
 test("three-field commissions work without a name and escape submitted HTML", async () => {
   const calls: Array<{ url: string; init?: RequestInit }> = [];
   const body = payload({ variant: "commission", firstName: "", lastName: "", message: "<script>private</script>", subject: "" });
