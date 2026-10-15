@@ -61,8 +61,8 @@
     "/gallery/edie-evans/",
     "/gallery/lucia-ocejo/",
     "/gallery/james-galbraith-kirkpatrick/square-plate/",
+    "/gallery/james-galbraith-kirkpatrick/cup-i/",
     "/gallery/james-galbraith-kirkpatrick/bowl/",
-    "/gallery/james-galbraith-kirkpatrick/cup-ii/",
     "/gallery/edie-evans/earth-memory/",
     "/gallery/edie-evans/bedrock/",
     "/gallery/edie-evans/fragmentation-1/",
@@ -74,7 +74,7 @@
   ],
   "redirects": [
     {
-      "from": "/gallery/james-galbraith-kirkpatrick/cup-i/",
+      "from": "/gallery/james-galbraith-kirkpatrick/cup-ii/",
       "to": "/gallery/james-galbraith-kirkpatrick/",
       "status": 301
     },

@@ -79,8 +79,16 @@ Build, site audit and Figma audit pass. Edge checks at 390px, 768px and 1280px c
 
 ## James Cup I withdrawal — 15 October 2026
 
+Historical entry: the owner's later photo clarification below supersedes this cup identification and withdrawal.
+
 The owner authorized removing James's straight-sided cup and deploying the change. Visual comparison identifies it as Cup I; Cup II is the retained tapered cup. The Cup I content record, public photo, media slot, profile card, generated route and Worker enquiry entry are removed. Both James Gallery hover references now use Cup II. The former Cup I product URL redirects to James's profile with an exact 301 rule, and the sitemap excludes it.
 
 Validation: build passes with zero Astro diagnostics; site, Figma and interior audits pass with 71 generated routes, 33 product records, 20 active photos and no blanks. Eleven mocked Worker tests pass. Runtime checks pass for 71 routes, six redirects and five existing not-found paths. Edge checks at 390px and 1280px confirm exactly three James profile cards, the retained cup in both views, no withdrawn photo/links and no overflow. Viewport overrides were reset.
 
 Form status was checked using GET only on the public domain and stable Workers URL: both return HTTP 503, `contact_disabled`. Deployment configuration still has `CONTACT_ENABLED=false` and empty `CONTACT_FROM`/`CONTACT_TO`. No live form submission or email test was performed; contact delivery was not activated.
+
+## Corrected James cup withdrawal — 15 October 2026
+
+The owner supplied two photos identifying the taller plain-sided brown Cup II as the cup to remove and the shorter patterned Cup I with a dark rim and small foot as the cup to keep. This reverses the earlier identification above. Cup I's original content, image, profile card, product URL and enquiry catalogue entry are restored. James's Gallery hover uses Cup I. Cup II's content and public image are removed, and its former product URL redirects to James's profile. There are still three James profile cards, eleven active new products and 20 supplied photo slots.
+
+Validation: production build passes with zero diagnostics; site, interior and Figma audits pass. The Figma audit normalizes Windows line endings before comparing reference biographies. All 15 mocked Worker tests pass. Local runtime checks pass for 71 generated routes, six redirects and five existing not-found paths. Edge reviews use 1280px and 390px frames for James's profile and Cup I product: correct image loaded, no Cup II content, no horizontal overflow, three profile cards. The profile link opens Cup I; its full-image viewer opens, Escape closes it and focus returns to the opener. No live form was submitted.

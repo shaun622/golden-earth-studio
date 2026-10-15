@@ -121,10 +121,10 @@ export default {
     "artist": "James Galbraith Kirkpatrick",
     "path": "/gallery/james-galbraith-kirkpatrick/bowl/"
   },
-  "james-galbraith-kirkpatrick/cup-ii": {
-    "title": "Cup II",
+  "james-galbraith-kirkpatrick/cup-i": {
+    "title": "Cup I",
     "artist": "James Galbraith Kirkpatrick",
-    "path": "/gallery/james-galbraith-kirkpatrick/cup-ii/"
+    "path": "/gallery/james-galbraith-kirkpatrick/cup-i/"
   },
   "edie-evans/earth-memory": {
     "title": "Earth Memory",

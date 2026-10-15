@@ -28,7 +28,7 @@ These PNGs were encoded to WebP at quality 92, preserving their original dimensi
 
 Following the owner's clarification on 14 October, Eleanor's clean painting also appears under Artworks on her artist profile, with a full-image viewer. Her portrait remains alongside the biography; both profile and Gallery hover reuse the same painting asset.
 
-On 15 October the owner withdrew James's straight-sided Cup I. Its photo, product page and enquiry catalogue entry were removed; James's Gallery hover now uses the retained, tapered Cup II. The active photo registry therefore has 20 filled slots and no blanks. The initial source table and manifests below remain historical provenance for the original import.
+The owner's photo clarification on 15 October corrects the earlier withdrawal: Cup I, the shorter cup with patterned glaze, dark rim and small foot (source 15.14.36), stays. Cup II, the taller plain-sided brown cup (source 15.14.56), is withdrawn. Cup I's original photo, product page and enquiry entry are restored, and James's Gallery hover uses Cup I. Cup II's photo, product page and enquiry entry are removed; its former URL redirects to James's profile. The active photo registry still has 20 filled slots and no blanks. The initial source table and manifests below remain historical provenance for the original import.
 
 ## Selected source files
 
