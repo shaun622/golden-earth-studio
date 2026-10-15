@@ -44,7 +44,7 @@ document.querySelectorAll<HTMLFormElement>("[data-contact-form]").forEach((form)
       if (!response.ok) throw new Error(result.message || "Email delivery is not available yet.");
       form.reset();
       resetVerification(form);
-      setState(form, "success", "Thank you. Your message has been sent.");
+      setState(form, "success", "Thank you. Your message has been sent. A copy is on its way to your inbox.");
     } catch (error) {
       resetVerification(form);
       setState(form, "error", error instanceof Error ? error.message : "Unable to send. Please use the email link.");

@@ -16,6 +16,10 @@ The dedicated key is **Golden Earth Studio - Website**, ID `dd4c5336-ad0b-49bb-8
 
 A live homepage form test from `info@goldenearthstudio.co.uk` to the owner-approved test recipient `shaun@3md.com.au` passed Turnstile and completed successfully. Resend reports **Delivered**; the test form's email address was `shaun@elitewalls.com.au` for Reply-To. The temporary recipient was restored to `info@goldenearthstudio.co.uk` immediately afterward. The Titan inbox itself has not been inspected or sent a separate test. Public setup metadata is recorded in `reference/resend-2026-10-15.json`.
 
+Enquiry emails use a shared responsive HTML design matching the site's pale paper, muted olive, fine rules and serif typography, with a plain-text alternative. Every accepted submission sends two separate messages: the studio notification to `CONTACT_TO`, with Reply-To set to the visitor, and a confirmation copy to the visitor, with Reply-To set to `info@goldenearthstudio.co.uk`. Both include the original message, subject, contact details and any artwork context. All submitted values are escaped in HTML.
+
+The pair is submitted through Resend's batch endpoint with one stable `ges-contact-pair/<submissionId>` idempotency key. The form reports success only when Resend acknowledges two message IDs. Existing origin restrictions and Turnstile checks run before either email is requested. No additional runtime secret or access permission is needed. The owner authorized sending both design previews to `shaun@3md.com.au`; the temporary studio test recipient must be restored to the info inbox afterward.
+
 To move sending back later, recover the original Resend login, verify/transfer the domain into the chosen team, update its exact DKIM/sending records, and install a dedicated restricted key from that team. Verify delivery before revoking this dedicated Poolmate key or removing the Poolmate domain. Do not remove the Poolmate setup while the live Worker depends on it.
 
 ## Original preparation snapshot — 10 October 2026

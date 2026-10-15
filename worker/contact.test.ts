@@ -25,7 +25,7 @@ function successfulFetch(calls: Array<{ url: string; init?: RequestInit }> = [])
     const url = String(input); calls.push({ url, init });
     return url.includes("siteverify")
       ? Response.json({ success: true, hostname: "goldenearthstudio.co.uk", action: "contact" })
-      : Response.json({ id: "email-id" });
+      : Response.json({ data: [{ id: "studio-email-id" }, { id: "confirmation-email-id" }] });
   };
 }
 
@@ -92,11 +92,20 @@ test("sends valid forms with fixed routing and stable retry idempotency", async 
   assert.equal((await handleContact(request(), enabledEnv, successfulFetch(secondCalls))).status, 200);
   const firstEmail = firstCalls.find((call) => call.url.includes("resend"));
   const secondEmail = secondCalls.find((call) => call.url.includes("resend"));
-  assert.equal(new Headers(firstEmail?.init?.headers).get("Idempotency-Key"), `ges-contact/${submissionId}`);
-  assert.equal(new Headers(secondEmail?.init?.headers).get("Idempotency-Key"), `ges-contact/${submissionId}`);
-  const sent = JSON.parse(String(firstEmail?.init?.body));
+  assert.equal(firstEmail?.url, "https://api.resend.com/emails/batch");
+  assert.equal(new Headers(firstEmail?.init?.headers).get("Idempotency-Key"), `ges-contact-pair/${submissionId}`);
+  assert.equal(new Headers(secondEmail?.init?.headers).get("Idempotency-Key"), `ges-contact-pair/${submissionId}`);
+  const [sent, confirmation] = JSON.parse(String(firstEmail?.init?.body));
   assert.deepEqual(sent.to, ["inbox@example.com"]); assert.equal(sent.reply_to, "ada@example.com");
   assert.match(sent.subject, /Chess Set by Jacob Chan/); assert.doesNotMatch(sent.text, /test-key|test-secret/);
+  assert.deepEqual(confirmation.to, ["ada@example.com"]);
+  assert.equal(confirmation.from, enabledEnv.CONTACT_FROM);
+  assert.equal(confirmation.reply_to, "info@goldenearthstudio.co.uk");
+  assert.equal(confirmation.subject, "Your enquiry — Golden Earth Studio");
+  assert.match(confirmation.text, /Chess Set by Jacob Chan/);
+  assert.ok(confirmation.text.includes("A private message"));
+  assert.equal(confirmation.cc, undefined); assert.equal(confirmation.bcc, undefined);
+  assert.equal(sent.cc, undefined); assert.equal(sent.bcc, undefined);
 });
 
 test("structured error logs do not include submitted private content", async () => {
@@ -134,11 +143,14 @@ test("three-field commissions work without a name and escape submitted HTML", as
   const calls: Array<{ url: string; init?: RequestInit }> = [];
   const body = payload({ variant: "commission", firstName: "", lastName: "", message: "<script>private</script>", subject: "" });
   assert.equal((await handleContact(request(body), enabledEnv, successfulFetch(calls))).status, 200);
-  const email = JSON.parse(String(calls.find((call) => call.url.includes("resend"))?.init?.body));
+  const [email, confirmation] = JSON.parse(String(calls.find((call) => call.url.includes("resend"))?.init?.body));
   assert.equal(email.subject, "Bespoke commission enquiry");
   assert.doesNotMatch(email.text, /Name:/);
   assert.match(email.html, /&lt;script&gt;private&lt;\/script&gt;/);
   assert.doesNotMatch(email.html, /<script>/);
+  assert.doesNotMatch(confirmation.text, /Name:/);
+  assert.match(confirmation.html, /&lt;script&gt;private&lt;\/script&gt;/);
+  assert.doesNotMatch(confirmation.html, /<script>/);
   for (const overrides of [{ email: "" }, { email: "invalid" }, { message: "" }]) {
     const response = await handleContact(request({ ...body, ...overrides }), enabledEnv);
     assert.equal(response.status, 400);
@@ -160,8 +172,46 @@ test("new artist catalogue IDs route enquiries to their authoritative titles", a
     const calls: Array<{ url: string; init?: RequestInit }> = [];
     const response = await handleContact(request(payload({ variant: "artwork", artworkId, subject: "untrusted title" })), enabledEnv, successfulFetch(calls));
     assert.equal(response.status, 200, artworkId);
-    const email = JSON.parse(String(calls.find((call) => call.url.includes("resend"))?.init?.body));
+    const [email, confirmation] = JSON.parse(String(calls.find((call) => call.url.includes("resend"))?.init?.body));
     assert.equal(email.subject, `Artwork enquiry: ${artwork.title} by ${artwork.artist}`);
     assert.ok(email.text.includes(`Artwork: ${artwork.title} by ${artwork.artist}`));
+    assert.ok(confirmation.text.includes(`Artwork: ${artwork.title} by ${artwork.artist}`));
+  }
+});
+
+test("both messages stay separate when studio and sender share the test inbox", async () => {
+  const calls: Array<{ url: string; init?: RequestInit }> = [];
+  const response = await handleContact(request(payload({ email: "inbox@example.com" })), enabledEnv, successfulFetch(calls));
+  assert.equal(response.status, 200);
+  const emails = JSON.parse(String(calls.find(call => call.url.includes("resend"))?.init?.body));
+  assert.equal(emails.length, 2);
+  assert.deepEqual(emails.map((email: { to: string[] }) => email.to), [["inbox@example.com"], ["inbox@example.com"]]);
+  assert.notEqual(emails[0].subject, emails[1].subject);
+});
+
+test("does not report success until Resend acknowledges both messages", async () => {
+  for (const result of [{}, { data: [{ id: "only-one" }] }, { data: [{ id: "one" }, {}] }, { data: null }]) {
+    const fetcher = async (input: RequestInfo | URL) => String(input).includes("siteverify")
+      ? Response.json({ success: true, hostname: "goldenearthstudio.co.uk", action: "contact" })
+      : Response.json(result);
+    const response = await handleContact(request(), enabledEnv, fetcher);
+    assert.equal(response.status, 502);
+    assert.equal((await responseBody(response)).code, "email_uncertain");
+  }
+});
+
+test("styled copies escape submitted content and preserve message line breaks", async () => {
+  const calls: Array<{ url: string; init?: RequestInit }> = [];
+  const body = payload({ name: '<img src=x onerror="alert(1)">', subject: '<em>Subject & test</em>', message: 'First line\n<script>alert("private")</script>\nLast line', sourcePath: '/\\attacker.example/' });
+  const response = await handleContact(request(body), enabledEnv, successfulFetch(calls));
+  assert.equal(response.status, 200);
+  const emails = JSON.parse(String(calls.find(call => call.url.includes("resend"))?.init?.body));
+  for (const email of emails) {
+    assert.match(email.html, /First line<br \/>&lt;script&gt;/);
+    assert.match(email.html, /&lt;img src=x onerror=&quot;/);
+    assert.match(email.html, /&lt;em&gt;Subject &amp; test&lt;\/em&gt;/);
+    assert.doesNotMatch(email.html, /<script>|<img src=x|href="https:\/\/attacker/);
+    assert.ok(email.text.includes(body.message));
+    assert.match(email.html, /max-width:600px/);
   }
 });
