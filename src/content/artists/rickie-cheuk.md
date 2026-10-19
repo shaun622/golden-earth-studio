@@ -4,7 +4,7 @@ slug: "rickie-cheuk"
 name: "Rickie Cheuk"
 discipline: "Metal"
 portrait: "/assets/migrated/artists/rickie-cheuk-portrait-6a418ff.webp"
-hoverImage: "/assets/migrated/artworks/rickie-cheuk/chopsticks-main-c891da9.webp"
+hoverImage: "/assets/migrated/artworks/rickie-cheuk/chopsticks-3-f6e2d7c.webp"
 profileVariant: "catalogue"
 listedInGallery: true
 order: 7
