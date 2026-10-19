@@ -3,7 +3,7 @@ id: "arran-gregory"
 slug: "arran-gregory"
 name: "Arran Gregory"
 discipline: "Clay"
-portrait: "/assets/migrated/artworks/arran-gregory/the-universe-was-an-egg-which-cracked-main-48ae385.webp"
+portrait: "/assets/migrated/gallery-index/6-image-f38b317.webp"
 hoverImage: "/assets/migrated/artworks/arran-gregory/the-universe-was-an-egg-which-cracked-main-48ae385.webp"
 profileVariant: "catalogue"
 listedInGallery: true

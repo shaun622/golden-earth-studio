@@ -322,14 +322,14 @@ const artworkById = new Map(artworkModels.map((item) => [item.id, item]));
 const artistModels = [];
 for (const [order, spec] of artistSpecs.entries()) {
   const record = await readReference("content", spec.id);
-  const portraitRemote = largestImage(record.images?.[0]) || mediaUrlsFromHtml(record.referenceHtml)[0];
+  // Arran's first captured image is a stale upload. The labelled portrait
+  // matches the working photograph also used by his Gallery artist card.
+  const portraitImage = spec.slug === "arran-gregory"
+    ? record.images?.find((image) => image.alt === "Arran Gregory - Golden Earth Studio")
+    : record.images?.[0];
+  const portraitRemote = largestImage(portraitImage) || mediaUrlsFromHtml(record.referenceHtml)[0];
   const firstArtwork = artworkById.get(`${spec.slug}/${spec.artworks[0]}`);
-  // Arran's displayed portrait remains visible in the browser cache/live render,
-  // but its public upload URL now returns 404. Use his first source-backed work
-  // until the owner can provide the original portrait file.
-  const portrait = spec.slug === "arran-gregory" && firstArtwork
-    ? firstArtwork.mainImage
-    : registerAsset(portraitRemote, "artists", `${spec.slug}-portrait`, `${spec.name} portrait`);
+  const portrait = registerAsset(portraitRemote, "artists", `${spec.slug}-portrait`, `${spec.name} portrait`);
   const studies = mediaLinks(record).map((remote, index) => ({
     image: registerAsset(remote, `artists/${spec.slug}`, `study-${index + 1}`, record.links.find((link) => link.href === remote)?.text || `${spec.name} material study ${index + 1}`),
     caption: record.links.find((link) => link.href === remote)?.text || `${spec.name} material study ${index + 1}`,
