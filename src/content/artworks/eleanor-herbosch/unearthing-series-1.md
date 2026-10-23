@@ -8,7 +8,7 @@ dimensions: "70cm(w) x 120cm(h)"
 materials: "London Clay on Canvas"
 price: "£7,200"
 mainImage: {"slot":"eleanor-herbosch-unearthing-series-1"}
-gallery: [{"src":{"slot":"eleanor-herbosch-unearthing-series-1-detail"},"alt":"Close-up of Unearthing Series #1 by Eleanor Herbosch showing ridges of raised London Clay and grey drips across the canvas"}]
+gallery: [{"src":{"slot":"eleanor-herbosch-unearthing-series-1-detail"},"alt":"Close-up of Unearthing Series #1 by Eleanor Herbosch showing ridges of raised London Clay and grey drips across the canvas"},{"src":{"slot":"eleanor-herbosch-unearthing-series-1-installed"},"alt":"Unearthing Series #1 by Eleanor Herbosch hanging on a curved plaster wall above a stairwell with a dark handrail"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Painting"
