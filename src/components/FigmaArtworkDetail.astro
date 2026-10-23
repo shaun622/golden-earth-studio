@@ -12,26 +12,37 @@ interface Props { artwork: CollectionEntry<"artworks">["data"]; }
 const { artwork } = Astro.props;
 const displayTitle = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
 const asset = resolveMedia(artwork.mainImage, `${artwork.title} by ${artwork.artistName}`);
+// Extra photos stack below the main image in display order; a gallery entry repeating the main photo is skipped.
+const extraImages = artwork.gallery.flatMap((item) => {
+  const image = resolveMedia(item.src, item.alt);
+  return image.src && image.src !== asset.src ? [{ src: image.src, alt: item.alt, width: image.width, height: image.height }] : [];
+});
+const hasDescription = Astro.slots.has("default");
+// All stacked photos share one width, sized so the tallest still fits within the window.
+const stackAspect = Math.min(...[asset, ...extraImages].filter((image) => image.src).map((image) => image.width / image.height));
+// Approximate heading width in ems so the title and artist can shrink to stay on one line.
+const headingEms = (0.42 * displayTitle.length + 0.45 * artwork.artistName.length).toFixed(2);
 const landscape = artwork.artistSlug === "edie-evans";
 ---
 <InteriorLayout className="figma-interior" title={`${displayTitle} | ${artwork.artistName}`} description={artwork.seoDescription} image={mediaSource(artwork.mainImage)}>
-  <main id="content" class:list={["figma-product", { "figma-product--landscape": landscape, "figma-product--screen": artwork.slug === "tiled-screen" }]}>
+  <main id="content" class:list={["figma-product", { "figma-product--described": hasDescription, "figma-product--landscape": landscape, "figma-product--screen": artwork.slug === "tiled-screen" }]}>
     <section class="figma-product-detail" aria-labelledby="artwork-heading">
-      <h1 id="artwork-heading" class="figma-product-heading"><span>{displayTitle}</span><span class="figma-product-heading-separator" aria-hidden="true">|</span><a href={`/gallery/${artwork.artistSlug}/`}>{artwork.artistName}</a></h1>
       <div class="figma-product-columns">
         <div class="figma-product-copy">
+          <h1 id="artwork-heading" class="figma-product-heading" style={`--heading-ems: ${headingEms}`}><span>{displayTitle}</span><span class="figma-product-heading-separator" aria-hidden="true">|</span><a href={`/gallery/${artwork.artistSlug}/`}>{artwork.artistName}</a></h1>
           <dl class="figma-product-facts">
             <div><dt class="visually-hidden">Dimensions</dt><dd>{artwork.dimensions}</dd></div>
             <div><dt class="visually-hidden">Materials</dt><dd>{artwork.materials}</dd></div>
             {artwork.price && <div><dt class="visually-hidden">Price</dt><dd>{artwork.price}</dd></div>}
           </dl>
+          {hasDescription && <div class="figma-product-description"><slot /></div>}
           <section class="figma-enquiry" aria-labelledby="enquire-heading">
             <h2 id="enquire-heading">Enquire now</h2>
             <ContactForm variant="artwork" artworkId={artwork.id} artworkTitle={artwork.title} presentation="figma-2026" />
           </section>
         </div>
-        <div class="figma-product-media" data-media-slot={asset.src ? asset.slot : undefined}>
-          {asset.src ? <ImageGallery label={`${artwork.title} by ${artwork.artistName}`} images={[{ src: asset.src, alt: asset.alt, width: asset.width, height: asset.height }]} /> : <MediaSlot media={artwork.mainImage} loading="eager" />}
+        <div class="figma-product-media" data-media-slot={asset.src ? asset.slot : undefined} style={Number.isFinite(stackAspect) ? `--stack-aspect: ${stackAspect.toFixed(4)}` : undefined}>
+          {asset.src ? <ImageGallery label={`${artwork.title} by ${artwork.artistName}`} images={[{ src: asset.src, alt: asset.alt, width: asset.width, height: asset.height }, ...extraImages]} /> : <MediaSlot media={artwork.mainImage} loading="eager" />}
         </div>
       </div>
     </section>

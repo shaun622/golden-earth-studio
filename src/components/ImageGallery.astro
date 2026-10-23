@@ -8,7 +8,7 @@ const galleryId = `lightbox-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
   <div class="image-gallery-grid" data-masonry={masonry || undefined}>
     {images.map((item, index) => (
       <a href={item.src} data-lightbox-open data-alt={item.alt} data-caption={item.caption || item.alt} aria-label={`Open ${label} image ${index + 1}`}>
-        <img src={item.src} alt={item.alt} width={item.width || 900} height={item.height || 900} loading={index === 0 ? "eager" : "lazy"} />
+        <img src={item.src} alt={item.alt} width={item.width || 900} height={item.height || 900} loading={index === 0 ? "eager" : "lazy"} style={item.width && item.height ? `--image-ratio: ${item.width} / ${item.height}` : undefined} />
         {captions && <span class="image-gallery-caption" aria-hidden="true"><span>{item.caption?.split(" - ")[0]}<br />-</span><em>{item.caption?.split(" - ").slice(1).join(" - ")}</em></span>}
       </a>
     ))}

@@ -23,7 +23,7 @@ const realImages = artwork.data.gallery.flatMap((item) => {
 });
 ---
 {artwork.data.detailVariant === "figma-2026" ? (
-  <FigmaArtworkDetail artwork={artwork.data} />
+  artwork.body?.trim() ? <FigmaArtworkDetail artwork={artwork.data}><Content /></FigmaArtworkDetail> : <FigmaArtworkDetail artwork={artwork.data} />
 ) : (
 <ArtworkLayout title={artwork.data.title} artist={artwork.data.artistName} description={artwork.data.seoDescription} image={mediaSource(artwork.data.mainImage)}>
   <main id="content" class="interior-main artwork-page">
