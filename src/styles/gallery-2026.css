@@ -7,7 +7,7 @@
 .figma-artist, .figma-product { width: calc(100% - 120px); max-width: 1360px; margin: 0 auto; padding-top: 110px; }
 .figma-profile { display: grid; grid-template-columns: 410px minmax(0, 1fr); gap: 37px; align-items: start; }
 .figma-artist--edie-evans .figma-profile { grid-template-columns: 334px minmax(0, 1fr); gap: 167px; }
-.figma-profile-portrait { width: 100%; height: auto; object-fit: cover; filter: grayscale(1); }
+.figma-profile-portrait { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(1); }
 .figma-artist--james-galbraith-kirkpatrick .figma-profile-portrait { aspect-ratio: 410 / 525; }
 .figma-artist--edie-evans .figma-profile-portrait { aspect-ratio: 334 / 442; }
 .figma-artist--lucia-ocejo .figma-profile-portrait { aspect-ratio: 410 / 498; }
@@ -20,9 +20,10 @@
 .figma-profile-contact a { display: block; margin-top: 5px; font-weight: 600; }
 .figma-profile-works { margin-top: 44px; }
 .figma-profile-works h2 { margin: 0 0 38px; padding-bottom: 14px; border-bottom: 1px solid #a7a79f; font: 300 14px/1.5 var(--body); }
-.figma-profile-artwork { width: min(100%, 410px); }
-.figma-profile-artwork .image-gallery-grid { grid-template-columns: 1fr; }
-.figma-profile-artwork .image-gallery-grid img { display: block; aspect-ratio: auto; height: auto; }
+/* Eleanor's painting sits in the first cell of the same three-column tile grid as catalogue works. */
+.figma-profile-artwork .image-gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 45px; padding-inline: 9px; }
+.figma-profile-artwork .image-gallery-grid > a { background: none; }
+.figma-profile-artwork .image-gallery-grid img { display: block; height: auto; aspect-ratio: .59; object-fit: cover; }
 .figma-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 45px; padding-inline: 9px; }
 .figma-work-card { min-width: 0; }
 .figma-work-link { display: block; position: relative; aspect-ratio: .59; overflow: hidden; }
@@ -96,7 +97,7 @@
 }
 @media (max-width: 900px) {
   .figma-artist, .figma-product { width: calc(100% - 64px); padding-top: 70px; }
-  .figma-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+  .figma-work-grid, .figma-profile-artwork .image-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
   .figma-product-heading { font-size: 30px; }
   .figma-product-heading a { font-size: 28px; }
   .figma-product-media { margin-top: 0; }
@@ -118,7 +119,7 @@
   .figma-profile-copy .figma-profile-contact { margin-top: 30px; }
   .figma-profile-works { margin-top: 45px; }
   .figma-profile-works h2 { margin-bottom: 30px; }
-  .figma-work-grid { grid-template-columns: 1fr; padding: 0; gap: 32px; }
+  .figma-work-grid, .figma-profile-artwork .image-gallery-grid { grid-template-columns: 1fr; padding: 0; gap: 32px; }
   .figma-artist--without-works .figma-profile-works { min-height: 140px; }
   .figma-commission { grid-template-columns: 1fr; padding: 35px 0 0; gap: 32px; margin: 65px 0; }
   .figma-commission-copy p { font-size: 16px; line-height: 26px; }
