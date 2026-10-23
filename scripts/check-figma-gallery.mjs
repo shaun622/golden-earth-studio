@@ -35,7 +35,7 @@ assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)]
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
 assert.equal(ledger.generated.length, 72);
 assert.equal(Object.keys(catalogue).length, 34);
-assert.equal(Object.keys(mediaSlots).length, 23);
+assert.equal(Object.keys(mediaSlots).length, 24);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -73,10 +73,9 @@ for (const slug of Object.keys(expectedWorks)) {
   if (slug === "eleanor-herbosch") {
     assert.equal(artist.discipline, "Painting");
     assert.ok(!page.includes("Material studies") && !page.includes("Which material(s)"));
-    assert.deepEqual(artist.profileArtworkImage, { slot: "eleanor-herbosch-painting-hover" });
-    const painting = resolveMedia(artist.profileArtworkImage);
-    assert.ok(page.includes(`src="${painting.src}"`), "Eleanor: supplied painting missing from profile");
-    assert.ok(page.includes(`href="${painting.src}" data-lightbox-open`), "Eleanor: painting viewer missing");
+    // The owner asked for only the catalogue artwork on Eleanor's profile; the earlier painting remains the Gallery hover only.
+    assert.equal(artist.profileArtworkImage, undefined);
+    assert.ok(!page.includes("figma-profile-artwork"), "Eleanor: standalone painting still on profile");
     assert.ok(!page.includes("figma-artist--without-works"), "Eleanor: empty artwork spacing retained");
   }
   for (const [work, title, dimensions, price] of works) {

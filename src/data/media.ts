@@ -31,6 +31,7 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "eleanor-herbosch-unearthing-series-1": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-1.webp", alt: "Unearthing Series #1 by Eleanor Herbosch, a tall canvas of pale earth tones with raised grey clay marks and drips, hung on a plaster wall", width: 1072, height: 1652 },
   "eleanor-herbosch-unearthing-series-1-detail": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-1-detail.webp", alt: "Close-up of Unearthing Series #1 by Eleanor Herbosch showing ridges of raised London Clay and grey drips across the canvas", width: 1092, height: 1648 },
   "eleanor-herbosch-unearthing-series-1-installed": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-1-installed.webp", alt: "Unearthing Series #1 by Eleanor Herbosch hanging on a curved plaster wall above a stairwell with a dark handrail", width: 1600, height: 1066 },
+  "eleanor-herbosch-unearthing-series-1-card": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-1-card.webp", alt: "Unearthing Series #1 by Eleanor Herbosch, a tall canvas of pale earth tones with raised grey clay marks and drips, hung on a plaster wall", width: 778, height: 1319 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

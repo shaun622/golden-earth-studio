@@ -35,7 +35,7 @@ To supply a photo:
 3. Review all repeated uses: artist portraits also appear in Gallery, and Cup I, Bedrock and Round Bud Vase also appear in the artist hover cards. Product images become lightbox links only once a real source exists.
 4. Run the build and audits. `audit:figma` checks that supplied paths exist, supplied photos render with viewer/social references on product pages, profile crops render, and only remaining null entries show blanks. Keep the content, links, forms and reference-copy checks.
 
-Eleanor's old biography/studies are archived at `docs/reference/figma-2026/eleanor-before.md`; old media assets remain available. Her profile displays the supplied painting below the biography using `profileArtworkImage`, added following the owner's 14 October clarification. This optional media reference is separate from catalogue product records and uses the existing image viewer. The Gallery hover reuses the same media slot. The archived studies are not displayed.
+Eleanor's old biography/studies are archived at `docs/reference/figma-2026/eleanor-before.md`; old media assets remain available. Following the owner's 23 October request, her profile shows only her catalogue artworks; the earlier painting (`eleanor-herbosch-painting-hover`) remains as her Gallery hover image. The optional `profileArtworkImage` field still exists for showing a non-catalogue image on a profile but is currently unused. Unearthing Series #1 uses a separate `cardImage` crop that centres the canvas in its profile tile. The archived studies are not displayed.
 
 ## Add a Journal story
 
