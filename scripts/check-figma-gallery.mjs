@@ -33,9 +33,9 @@ assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), 
 assert.equal(interior.gallery.artworks.length, 21);
 assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 33);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 74);
-assert.equal(Object.keys(catalogue).length, 36);
-assert.equal(Object.keys(mediaSlots).length, 33);
+assert.equal(ledger.generated.length, 79);
+assert.equal(Object.keys(catalogue).length, 41);
+assert.equal(Object.keys(mediaSlots).length, 38);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -112,6 +112,25 @@ for (const slug of Object.keys(expectedWorks)) {
     allUpdatedHtml += detail;
   }
 }
+// Louis Vincent's 2026 works lead his existing catalogue pieces on his profile.
+const louisWorks = [["bowl-iii", "Bowl III", "11.2cm(h) x 21.6cm(w)", "£350"], ["bowl-ii", "Bowl II", "9.8cm(h) x 21.7cm(w)", "£325"], ["plate-ii", "Plate II", "2.2cm(h) x 25.7cm(w)", "£225"], ["plate-iii", "Plate III", "0.4cm(h) x 19.5cm(w)", "£150"], ["plate-iv", "Plate IV", "0.4cm(h) x 19cm(w)", "£150"]];
+const louis = record("src/content/artists/louis-vincent.md").data;
+assert.deepEqual(louis.artworkIds.slice(0, louisWorks.length), louisWorks.map(([work]) => `louis-vincent/${work}`));
+const louisPage = html("/gallery/louis-vincent/");
+allUpdatedHtml += louisPage;
+for (const [work, title, dimensions, price] of louisWorks) {
+  const id = `louis-vincent/${work}`, route = `/gallery/${id}/`;
+  const { data } = record(`src/content/artworks/${id}.md`);
+  assert.deepEqual([data.title, data.dimensions, data.price, data.year, data.materials, data.tileMedium], [title, dimensions, price, 2026, "Wood, clay and lacquer", "Wood"], `${id}: wrong facts`);
+  assert.ok(louisPage.includes(`href="${route}"`), `${id}: missing profile link`);
+  assert.ok(ledger.generated.includes(route));
+  assert.deepEqual(catalogue[id], { title, artist: "Louis Vincent", path: route });
+  const detail = html(route);
+  assert.ok(detail.includes(`name="artworkId" value="${id}"`));
+  checkPage(detail, id);
+  allUpdatedHtml += detail;
+}
+
 for (const [slot, asset] of Object.entries(mediaSlots)) {
   assert.ok(allUpdatedHtml.includes(`data-media-slot="${slot}"`), `${slot}: unused/missing slot`);
   const blanks = [...allUpdatedHtml.matchAll(new RegExp(`<span[^>]*data-media-slot="${slot}"[^>]*>`, "g"))];
@@ -131,9 +150,9 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 36);
+assert.equal(artworkCount, 41);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 14 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 19 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);

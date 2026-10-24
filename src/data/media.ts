@@ -41,6 +41,11 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "eleanor-herbosch-unearthing-series-3-room": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-3-room.webp", alt: "Unearthing Series #3 by Eleanor Herbosch hanging on a plaster wall above a cream sofa, black side table and rattan armchair", width: 1038, height: 1650 },
   "eleanor-herbosch-unearthing-series-3-detail": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-3-detail.webp", alt: "Close-up of Unearthing Series #3 by Eleanor Herbosch showing cracked ridges of raised London Clay and dark splashes", width: 1600, height: 1066 },
   "eleanor-herbosch-unearthing-series-3-angle": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-3-angle.webp", alt: "Unearthing Series #3 by Eleanor Herbosch seen at an angle on a plaster wall, showing the depth of the canvas edge", width: 1600, height: 1466 },
+  "louis-vincent-bowl-iii": { src: null, alt: "Bowl III by Louis Vincent", width: 1000, height: 1000 },
+  "louis-vincent-bowl-ii": { src: null, alt: "Bowl II by Louis Vincent", width: 1000, height: 1000 },
+  "louis-vincent-plate-ii": { src: null, alt: "Plate II by Louis Vincent", width: 1000, height: 1000 },
+  "louis-vincent-plate-iii": { src: null, alt: "Plate III by Louis Vincent", width: 1000, height: 1000 },
+  "louis-vincent-plate-iv": { src: null, alt: "Plate IV by Louis Vincent", width: 1000, height: 1000 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
