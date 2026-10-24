@@ -335,5 +335,10 @@ export default {
     "title": "Cutlery Set",
     "artist": "Rickie Cheuk",
     "path": "/gallery/rickie-cheuk/cutlery-set/"
+  },
+  "james-galbraith-kirkpatrick/large-bowl": {
+    "title": "Large Bowl",
+    "artist": "James Galbraith Kirkpatrick",
+    "path": "/gallery/james-galbraith-kirkpatrick/large-bowl/"
   }
 } as const;

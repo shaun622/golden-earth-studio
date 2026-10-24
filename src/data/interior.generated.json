@@ -170,6 +170,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/james-galbraith-kirkpatrick/large-bowl/",
+        "label": "Large Bowl by James Galbraith Kirkpatrick",
+        "image": {
+          "slot": "james-galbraith-kirkpatrick-large-bowl"
+        },
+        "hoverImage": {
+          "slot": "james-galbraith-kirkpatrick-large-bowl"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/zahed-tajeddin/beauty-and-the-beast/",
         "label": "Beauty and the Beast by Zahed Tajeddin",
         "image": {

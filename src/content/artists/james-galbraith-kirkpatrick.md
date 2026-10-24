@@ -8,7 +8,7 @@ hoverImage: {"slot":"james-galbraith-kirkpatrick-cup-i"}
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 9
-artworkIds: ["james-galbraith-kirkpatrick/square-plate","james-galbraith-kirkpatrick/cup-i","james-galbraith-kirkpatrick/bowl"]
+artworkIds: ["james-galbraith-kirkpatrick/large-bowl","james-galbraith-kirkpatrick/square-plate","james-galbraith-kirkpatrick/cup-i","james-galbraith-kirkpatrick/bowl"]
 studies: []
 relatedProfiles: []
 seoDescription: "Ceramic artist James Galbraith Kirkpatrick transforms London construction clay and waste wood-ash into wheel-thrown tableware."
