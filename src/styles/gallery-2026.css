@@ -81,7 +81,7 @@
 .figma-interior .contact-form--figma button { font: 300 16px/1.5 var(--body); min-height: 44px; padding: 7px 14px; border-radius: 6px; background: #e7e7e7; }
 .figma-interior .contact-form--figma .form-status:not(:empty) { flex-basis: 100%; }
 .figma-interior .contact-form--figma ::placeholder { color: #74746d; opacity: 1; }
-.figma-interior .site-footer { min-height: 370px; padding-inline: var(--page-gutter); }
+.figma-interior .site-footer { padding-inline: var(--page-gutter); }
 
 /* The Gallery reference has a wider grid and much shorter cards than WordPress. */
 .figma-interior .gallery-reference .reference-intro { min-height: 400px; padding-top: 140px; padding-bottom: 35px; }
