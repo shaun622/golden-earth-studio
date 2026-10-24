@@ -8,6 +8,7 @@ dimensions: "35cm(h) x 9cm(w)"
 materials: "Ceramic"
 price: "2025 £1,600"
 mainImage: "/assets/migrated/artworks/zahed-tajeddin/stillness-main-3dbab0f.webp"
+cardImage: {"slot":"zahed-tajeddin-stillness-card"}
 gallery: [{"src":"/assets/migrated/artworks/zahed-tajeddin/stillness-main-3dbab0f.webp","alt":"Stillness | Zahed Tajeddin detail 1"},{"src":"/assets/migrated/artworks/zahed-tajeddin/stillness-2-a68937b.webp","alt":"Stillness | Zahed Tajeddin detail 2"},{"src":"/assets/migrated/artworks/zahed-tajeddin/stillness-3-8c22d6c.webp","alt":"Stillness | Zahed Tajeddin detail 3"}]
 detailVariant: "figma-2026"
 relatedIds: ["jacob-chan/ginger-jar","rickie-cheuk/chopsticks","jacob-chan/chess-set","jihyun-kim/teoju"]

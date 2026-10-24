@@ -143,6 +143,10 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "arran-gregory-meditation-balls-card": { src: "/assets/artworks/arran-gregory/meditation-balls-card.webp", alt: "Meditation Balls by Arran Gregory, two marbled burnished clay spheres side by side against a black background", width: 1474, height: 2500 },
   "arran-gregory-wheel-of-matter-2": { src: "/assets/artworks/arran-gregory/wheel-of-matter-2.webp", alt: "Wheel of Matter by Arran Gregory, seen from another side, showing its pale scratched surface", width: 992, height: 1240 },
   "arran-gregory-wheel-of-matter-3": { src: "/assets/artworks/arran-gregory/wheel-of-matter-3.webp", alt: "Wheel of Matter by Arran Gregory, seen from a third side, showing its folds and scored marks", width: 992, height: 1240 },
+  "zahed-tajeddin-bulls-matter-card": { src: "/assets/artworks/zahed-tajeddin/bulls-matter-card.webp", alt: "Bull's Matter by Zahed Tajeddin", width: 944, height: 1600 },
+  "zahed-tajeddin-bowing-bull-card": { src: "/assets/artworks/zahed-tajeddin/bowing-bull-card.webp", alt: "Bowing Bull by Zahed Tajeddin", width: 944, height: 1600 },
+  "zahed-tajeddin-elevation-card": { src: "/assets/artworks/zahed-tajeddin/elevation-card.webp", alt: "Elevation by Zahed Tajeddin", width: 944, height: 1600 },
+  "zahed-tajeddin-stillness-card": { src: "/assets/artworks/zahed-tajeddin/stillness-card.webp", alt: "Stillness by Zahed Tajeddin", width: 944, height: 1600 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

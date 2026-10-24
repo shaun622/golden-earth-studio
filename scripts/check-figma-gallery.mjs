@@ -37,7 +37,7 @@ assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)]
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
 assert.equal(ledger.generated.length, 102);
 assert.equal(Object.keys(catalogue).length, 64);
-assert.equal(Object.keys(mediaSlots).length, 135);
+assert.equal(Object.keys(mediaSlots).length, 139);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -179,6 +179,7 @@ const arranWorks = ["blue-entity-study-2", "wheel-of-matter", "all-our-gods-are-
 const arran = record("src/content/artists/arran-gregory.md").data;
 assert.deepEqual(arran.artworkIds.slice(0, arranWorks.length), arranWorks.map((work) => `arran-gregory/${work}`));
 allUpdatedHtml += html("/gallery/arran-gregory/");
+allUpdatedHtml += html("/gallery/zahed-tajeddin/");
 allUpdatedHtml += html("/gallery/arran-gregory/heart-of-matter/") + html("/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/");
 for (const work of arranWorks) {
   const detail = html(`/gallery/arran-gregory/${work}/`);
