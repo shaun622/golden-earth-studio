@@ -165,5 +165,10 @@ export default {
     "title": "Tiled Screen",
     "artist": "Lucia Ocejo",
     "path": "/gallery/lucia-ocejo/tiled-screen/"
+  },
+  "eleanor-herbosch/unearthing-series-1": {
+    "title": "Unearthing Series #1",
+    "artist": "Eleanor Herbosch",
+    "path": "/gallery/eleanor-herbosch/unearthing-series-1/"
   }
 } as const;

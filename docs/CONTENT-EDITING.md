@@ -24,6 +24,8 @@ James Galbraith Kirkpatrick, Edie Evans, Lucia Ocejo and Eleanor Herbosch use `p
 
 The 20 active photo entries live in `src/data/media.ts`: all are filled by supplied photos (16 retained from Drive and four attachments received on 14 October 2026). The retired Cup II photo is no longer public. Content refers to a photo as `{ "slot": "lucia-ocejo-mug" }`, rather than an empty image path. A null source renders a blank with “Photo pending”; do not substitute another photograph. The source mapping and resolved missing images are recorded in `docs/reference/figma-2026/PHOTO-MATCH-REPORT.md`.
 
+On `figma-2026` product pages, `mainImage` shows first and each `gallery` entry stacks below it at its own proportions, in order, all opening in the same image viewer. A `gallery` entry may be a path or a `{ "slot": "…" }` reference; one repeating the main photo is skipped. A Markdown body, when present, shows as a description beneath the facts.
+
 An optional artwork `cardImage` selects a different profile crop from `mainImage`. Edie's three portrait crops remain on her profile cards; the complete wide photos fill her product pages and image viewers. Tiled Screen uses its portrait crop on the profile and the complete three-panel image on its product page. Update the corresponding slot independently; do not stretch a card crop to imitate a missing wide photo.
 
 To supply a photo:
@@ -33,7 +35,7 @@ To supply a photo:
 3. Review all repeated uses: artist portraits also appear in Gallery, and Cup I, Bedrock and Round Bud Vase also appear in the artist hover cards. Product images become lightbox links only once a real source exists.
 4. Run the build and audits. `audit:figma` checks that supplied paths exist, supplied photos render with viewer/social references on product pages, profile crops render, and only remaining null entries show blanks. Keep the content, links, forms and reference-copy checks.
 
-Eleanor's old biography/studies are archived at `docs/reference/figma-2026/eleanor-before.md`; old media assets remain available. Her profile displays the supplied painting below the biography using `profileArtworkImage`, added following the owner's 14 October clarification. This optional media reference is separate from catalogue product records and uses the existing image viewer. The Gallery hover reuses the same media slot. The archived studies are not displayed.
+Eleanor's old biography/studies are archived at `docs/reference/figma-2026/eleanor-before.md`; old media assets remain available. Following the owner's 23 October request, her profile shows only her catalogue artworks; the earlier painting (`eleanor-herbosch-painting-hover`) remains as her Gallery hover image. The optional `profileArtworkImage` field still exists for showing a non-catalogue image on a profile but is currently unused. Unearthing Series #1 uses a separate `cardImage` crop that centres the canvas in its profile tile. The archived studies are not displayed.
 
 ## Add a Journal story
 

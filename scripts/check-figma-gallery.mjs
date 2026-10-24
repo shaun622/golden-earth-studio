@@ -20,7 +20,9 @@ const expectedWorks = {
   "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"]],
   "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "8cm(l) x 12cm(w) x 6.5cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"]],
   "lucia-ocejo": [["round-bud-vase", "Round Bud Vase", "18cm(w) x 20cm(h) x 7cm(w)", "£220"], ["tea-bowl", "Tea Bowl", "8cm(w) x 9cm(h)", "£50"], ["mug", "Mug", "9cm(w) x 8.5cm(h)", "£40"], ["jug", "Jug", "17cm(w) x 26cm(h)", "£160"], ["tiled-screen", "Tiled Screen", "156cm(w) x 130cm(h)", null]],
+  "eleanor-herbosch": [["unearthing-series-1", "Unearthing Series #1", "70cm(w) x 120cm(h)", "£7,200"]],
 };
+const expectedMaterials = { "tiled-screen": "Ceramic & Wood", "unearthing-series-1": "London Clay on Canvas" };
 const interior = json("src/data/interior.generated.json");
 const order = json("src/data/gallery.generated.json");
 const ledger = json("src/data/route-ledger.json");
@@ -31,9 +33,9 @@ assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), 
 assert.equal(interior.gallery.artworks.length, 21);
 assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 33);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 71);
-assert.equal(Object.keys(catalogue).length, 33);
-assert.equal(Object.keys(mediaSlots).length, 20);
+assert.equal(ledger.generated.length, 72);
+assert.equal(Object.keys(catalogue).length, 34);
+assert.equal(Object.keys(mediaSlots).length, 24);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -55,7 +57,7 @@ function checkPage(page, label) {
   assert.deepEqual(names.filter(name => !["variant", "sourcePath", "cf-turnstile-response"].includes(name)), ["email", "subject", "message"]);
 }
 checkPage(gallery, "Gallery");
-for (const slug of [...Object.keys(expectedWorks), "eleanor-herbosch"]) {
+for (const slug of Object.keys(expectedWorks)) {
   const { data: artist, body } = record(`src/content/artists/${slug}.md`);
   const page = html(`/gallery/${slug}/`);
   const section = plan.split(`### ${artist.name}\n\n`)[1].split(/\n\n(?:###|##) /)[0].trim();
@@ -71,10 +73,9 @@ for (const slug of [...Object.keys(expectedWorks), "eleanor-herbosch"]) {
   if (slug === "eleanor-herbosch") {
     assert.equal(artist.discipline, "Painting");
     assert.ok(!page.includes("Material studies") && !page.includes("Which material(s)"));
-    assert.deepEqual(artist.profileArtworkImage, { slot: "eleanor-herbosch-painting-hover" });
-    const painting = resolveMedia(artist.profileArtworkImage);
-    assert.ok(page.includes(`src="${painting.src}"`), "Eleanor: supplied painting missing from profile");
-    assert.ok(page.includes(`href="${painting.src}" data-lightbox-open`), "Eleanor: painting viewer missing");
+    // The owner asked for only the catalogue artwork on Eleanor's profile; the earlier painting remains the Gallery hover only.
+    assert.equal(artist.profileArtworkImage, undefined);
+    assert.ok(!page.includes("figma-profile-artwork"), "Eleanor: standalone painting still on profile");
     assert.ok(!page.includes("figma-artist--without-works"), "Eleanor: empty artwork spacing retained");
   }
   for (const [work, title, dimensions, price] of works) {
@@ -82,7 +83,7 @@ for (const slug of [...Object.keys(expectedWorks), "eleanor-herbosch"]) {
     const { data, body: description } = record(`src/content/artworks/${id}.md`);
     assert.deepEqual([data.title, data.dimensions, data.price, data.year], [title, dimensions, price, 2026], `${id}: wrong facts`);
     assert.equal(description, "");
-    assert.equal(data.materials, work === "tiled-screen" ? "Ceramic & Wood" : "London Clay");
+    assert.equal(data.materials, expectedMaterials[work] || "London Clay");
     assert.ok(page.includes(`href="${route}"`), `${id}: missing profile link`);
     assert.ok(ledger.generated.includes(route));
     assert.deepEqual(catalogue[id], { title, artist: artist.name, path: route });
@@ -112,7 +113,8 @@ for (const slug of [...Object.keys(expectedWorks), "eleanor-herbosch"]) {
   }
 }
 for (const [slot, asset] of Object.entries(mediaSlots)) {
-  assert.ok(allUpdatedHtml.includes(`data-media-slot="${slot}"`), `${slot}: unused/missing slot`);
+  // Extra product photos render inside the stacked image viewer, identified by their source rather than a slot attribute.
+  assert.ok(allUpdatedHtml.includes(`data-media-slot="${slot}"`) || (asset.src && allUpdatedHtml.includes(`href="${asset.src}" data-lightbox-open`)), `${slot}: unused/missing slot`);
   const blanks = [...allUpdatedHtml.matchAll(new RegExp(`<span[^>]*data-media-slot="${slot}"[^>]*>`, "g"))];
   if (asset.src === null) {
     assert.ok(blanks.length, `${slot}: actual blank not rendered`);
@@ -126,13 +128,13 @@ for (const [slot, asset] of Object.entries(mediaSlots)) {
 }
 assert.ok(!allUpdatedHtml.includes("Side Plate"));
 const sitemap = read("dist/sitemap.xml");
-for (const route of ledger.generated.filter(route => route.includes("james-galbraith-kirkpatrick") || route.includes("edie-evans") || route.includes("lucia-ocejo"))) assert.ok(sitemap.includes(route));
+for (const route of ledger.generated.filter(route => route.includes("james-galbraith-kirkpatrick") || route.includes("edie-evans") || route.includes("lucia-ocejo") || route.includes("eleanor-herbosch"))) assert.ok(sitemap.includes(route));
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 33);
+assert.equal(artworkCount, 34);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 11 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, photo viewers, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 12 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, photo viewers, forms, related links and sitemap.`);
