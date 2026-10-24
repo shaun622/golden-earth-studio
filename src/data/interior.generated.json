@@ -368,6 +368,127 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/james-galbraith-kirkpatrick/square-plate/",
+        "label": "Square Plate by James Galbraith Kirkpatrick",
+        "image": {
+          "slot": "james-galbraith-kirkpatrick-square-plate"
+        },
+        "hoverImage": {
+          "slot": "james-galbraith-kirkpatrick-square-plate"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/james-galbraith-kirkpatrick/cup-i/",
+        "label": "Cup I by James Galbraith Kirkpatrick",
+        "image": {
+          "slot": "james-galbraith-kirkpatrick-cup-i"
+        },
+        "hoverImage": {
+          "slot": "james-galbraith-kirkpatrick-cup-i"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/james-galbraith-kirkpatrick/bowl/",
+        "label": "Bowl by James Galbraith Kirkpatrick",
+        "image": {
+          "slot": "james-galbraith-kirkpatrick-bowl"
+        },
+        "hoverImage": {
+          "slot": "james-galbraith-kirkpatrick-bowl"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/edie-evans/earth-memory/",
+        "label": "Earth Memory by Edie Evans",
+        "image": {
+          "slot": "edie-evans-earth-memory-card"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-earth-memory-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/edie-evans/bedrock/",
+        "label": "Bedrock by Edie Evans",
+        "image": {
+          "slot": "edie-evans-bedrock-card"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-bedrock-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/edie-evans/fragmentation-1/",
+        "label": "Fragmentation 1 by Edie Evans",
+        "image": {
+          "slot": "edie-evans-fragmentation-1-card"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-fragmentation-1-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/lucia-ocejo/round-bud-vase/",
+        "label": "Round Bud Vase by Lucia Ocejo",
+        "image": {
+          "slot": "lucia-ocejo-round-bud-vase"
+        },
+        "hoverImage": {
+          "slot": "lucia-ocejo-round-bud-vase"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/lucia-ocejo/tea-bowl/",
+        "label": "Tea Bowl by Lucia Ocejo",
+        "image": {
+          "slot": "lucia-ocejo-tea-bowl"
+        },
+        "hoverImage": {
+          "slot": "lucia-ocejo-tea-bowl"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/lucia-ocejo/mug/",
+        "label": "Mug by Lucia Ocejo",
+        "image": {
+          "slot": "lucia-ocejo-mug"
+        },
+        "hoverImage": {
+          "slot": "lucia-ocejo-mug"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/lucia-ocejo/jug/",
+        "label": "Jug by Lucia Ocejo",
+        "image": {
+          "slot": "lucia-ocejo-jug"
+        },
+        "hoverImage": {
+          "slot": "lucia-ocejo-jug"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/lucia-ocejo/tiled-screen/",
+        "label": "Tiled Screen by Lucia Ocejo",
+        "image": {
+          "slot": "lucia-ocejo-tiled-screen-card"
+        },
+        "hoverImage": {
+          "slot": "lucia-ocejo-tiled-screen-card"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/jacob-chan/chess-set/",
         "label": "Chess Set by Jacob Chan",
         "image": "/assets/migrated/gallery-index/9-image-e4c0812.webp",

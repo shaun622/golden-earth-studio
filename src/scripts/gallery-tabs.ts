@@ -4,8 +4,24 @@ document.querySelectorAll<HTMLElement>("[data-gallery-tabs]").forEach((root) => 
   if (!tabs.length || !panels.length) return;
   root.dataset.enhanced = "true";
 
-  function select(id: string, { focus = false, updateHistory = true } = {}) {
+  // Artwork cards appear in a fresh random order on each visit and each time the Artwork tab is chosen.
+  // Without JavaScript they keep their authored order.
+  const shuffled = [...root.querySelectorAll<HTMLElement>("[data-gallery-shuffle]")];
+  function shuffle() {
+    shuffled.forEach((list) => {
+      const cards = [...list.children];
+      for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+      }
+      cards.forEach((card) => list.appendChild(card));
+    });
+  }
+  shuffle();
+
+  function select(id: string, { focus = false, updateHistory = true, reshuffle = false } = {}) {
     if (!tabs.some((tab) => tab.dataset.galleryTab === id)) id = "artists";
+    if (reshuffle && id === "artwork") shuffle();
     tabs.forEach((tab) => {
       const selected = tab.dataset.galleryTab === id;
       tab.setAttribute("aria-selected", String(selected));
@@ -17,7 +33,7 @@ document.querySelectorAll<HTMLElement>("[data-gallery-tabs]").forEach((root) => 
   }
   tabs.forEach((tab, index) => {
     tab.id = `${tab.dataset.galleryTab}-tab`;
-    tab.addEventListener("click", (event) => { event.preventDefault(); select(tab.dataset.galleryTab || "artists", { focus: true }); });
+    tab.addEventListener("click", (event) => { event.preventDefault(); select(tab.dataset.galleryTab || "artists", { focus: true, reshuffle: true }); });
     tab.addEventListener("keydown", (event) => {
       let next = index;
       if (event.key === "ArrowRight") next = (index + 1) % tabs.length;
@@ -26,7 +42,7 @@ document.querySelectorAll<HTMLElement>("[data-gallery-tabs]").forEach((root) => 
       else if (event.key === "End") next = tabs.length - 1;
       else return;
       event.preventDefault();
-      select(tabs[next].dataset.galleryTab || "artists", { focus: true });
+      select(tabs[next].dataset.galleryTab || "artists", { focus: true, reshuffle: true });
     });
   });
   select(location.hash === "#artwork" ? "artwork" : "artists", { updateHistory: false });
