@@ -205,5 +205,20 @@ export default {
     "title": "Plate IV",
     "artist": "Louis Vincent",
     "path": "/gallery/louis-vincent/plate-iv/"
+  },
+  "louis-vincent/wall-panel-iii": {
+    "title": "Wall Panel III",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/wall-panel-iii/"
+  },
+  "louis-vincent/wall-panel-iv": {
+    "title": "Wall Panel IV",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/wall-panel-iv/"
+  },
+  "louis-vincent/wall-panel-v": {
+    "title": "Wall Panel V",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/wall-panel-v/"
   }
 } as const;

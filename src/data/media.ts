@@ -63,6 +63,9 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "louis-vincent-plate-card": { src: "/assets/artworks/louis-vincent/plate-card.webp", alt: "Plate by Louis Vincent", width: 896, height: 1519 },
   "louis-vincent-conical-bowl-card": { src: "/assets/artworks/louis-vincent/conical-bowl-card.webp", alt: "Conical Bowl by Louis Vincent", width: 788, height: 1336 },
   "louis-vincent-bowl-card": { src: "/assets/artworks/louis-vincent/bowl-card.webp", alt: "Bowl by Louis Vincent", width: 832, height: 1410 },
+  "louis-vincent-wall-panel-iii": { src: null, alt: "Wall Panel III by Louis Vincent", width: 600, height: 1000 },
+  "louis-vincent-wall-panel-iv": { src: null, alt: "Wall Panel IV by Louis Vincent", width: 600, height: 1000 },
+  "louis-vincent-wall-panel-v": { src: null, alt: "Wall Panel V by Louis Vincent", width: 600, height: 1000 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
