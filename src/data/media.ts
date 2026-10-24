@@ -154,6 +154,8 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "zahed-tajeddin-beauty-and-the-beast-2": { src: "/assets/artworks/zahed-tajeddin/beauty-and-the-beast-2.webp", alt: "Beauty and the Beast by Zahed Tajeddin, seen from the front on a wooden table, the figure's arms outstretched", width: 1066, height: 1600 },
   "zahed-tajeddin-beauty-and-the-beast-3": { src: "/assets/artworks/zahed-tajeddin/beauty-and-the-beast-3.webp", alt: "Close-up of the standing figure in Beauty and the Beast by Zahed Tajeddin, arms outstretched", width: 1600, height: 1066 },
   "zahed-tajeddin-bull-leaping-ii-2": { src: "/assets/artworks/zahed-tajeddin/bull-leaping-ii-2.webp", alt: "Bull Leaping II by Zahed Tajeddin seen from above, the figure arching over the bull's back to hold its horns", width: 1066, height: 1600 },
+  "rickie-cheuk-cutlery-set": { src: "/assets/artworks/rickie-cheuk/cutlery-set.webp", alt: "Cutlery Set by Rickie Cheuk, a stainless steel fork, spoon and knife held in a black leather roll", width: 747, height: 939 },
+  "rickie-cheuk-cutlery-set-card": { src: "/assets/artworks/rickie-cheuk/cutlery-set-card.webp", alt: "Cutlery Set by Rickie Cheuk, a stainless steel fork, spoon and knife held in a black leather roll", width: 747, height: 1266 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

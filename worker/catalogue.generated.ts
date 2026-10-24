@@ -330,5 +330,10 @@ export default {
     "title": "Beauty and the Beast",
     "artist": "Zahed Tajeddin",
     "path": "/gallery/zahed-tajeddin/beauty-and-the-beast/"
+  },
+  "rickie-cheuk/cutlery-set": {
+    "title": "Cutlery Set",
+    "artist": "Rickie Cheuk",
+    "path": "/gallery/rickie-cheuk/cutlery-set/"
   }
 } as const;

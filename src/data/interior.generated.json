@@ -148,6 +148,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/rickie-cheuk/cutlery-set/",
+        "label": "Cutlery Set by Rickie Cheuk",
+        "image": {
+          "slot": "rickie-cheuk-cutlery-set-card"
+        },
+        "hoverImage": {
+          "slot": "rickie-cheuk-cutlery-set"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/arran-gregory/all-our-gods-are-dancing-gods/",
         "label": "All Our Gods Are Dancing Gods by Arran Gregory",
         "image": {

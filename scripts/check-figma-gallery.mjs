@@ -30,14 +30,14 @@ const plan = read("docs/FIGMA-ARTIST-EXPANSION-PLAN.md");
 const gallery = html("/gallery/");
 assert.deepEqual(order.artistOrder, expectedArtists);
 assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), expectedArtists);
-// The 21 original works follow 44 works added in 2026; cards are shuffled in the browser.
-assert.equal(interior.gallery.artworks.length, 65);
+// The 21 original works follow 45 works added in 2026; cards are shuffled in the browser.
+assert.equal(interior.gallery.artworks.length, 66);
 for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
-assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 77);
+assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 78);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 104);
-assert.equal(Object.keys(catalogue).length, 66);
-assert.equal(Object.keys(mediaSlots).length, 146);
+assert.equal(ledger.generated.length, 105);
+assert.equal(Object.keys(catalogue).length, 67);
+assert.equal(Object.keys(mediaSlots).length, 148);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -179,6 +179,7 @@ const arranWorks = ["blue-entity-study-2", "wheel-of-matter", "all-our-gods-are-
 const arran = record("src/content/artists/arran-gregory.md").data;
 assert.deepEqual(arran.artworkIds.slice(0, arranWorks.length), arranWorks.map((work) => `arran-gregory/${work}`));
 allUpdatedHtml += html("/gallery/arran-gregory/");
+allUpdatedHtml += html("/gallery/rickie-cheuk/") + html("/gallery/rickie-cheuk/cutlery-set/");
 allUpdatedHtml += html("/gallery/zahed-tajeddin/") + html("/gallery/zahed-tajeddin/bull-leaping-ii/") + html("/gallery/zahed-tajeddin/beauty-and-the-beast/");
 allUpdatedHtml += html("/gallery/arran-gregory/heart-of-matter/") + html("/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/");
 for (const work of arranWorks) {
@@ -218,9 +219,9 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 66);
+assert.equal(artworkCount, 67);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained and 44 added Gallery works, 44 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained and 45 added Gallery works, 45 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
