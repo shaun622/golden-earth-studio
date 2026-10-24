@@ -41,8 +41,15 @@ for (const [index, original] of sourceCards.entries()) {
   const href = new URL(original[1]).pathname;
   const card = cards.find((item) => item.href === href);
   assert.ok(card, `Missing original card ${href}`);
-  // Alexandra's first work was renamed Untitled (GES#1) when her GES series was added.
-  const expectedLabel = href === "/gallery/adam-weismann/" ? "Adam Weismann | Clay" : href === "/gallery/alexandra-yan-wong/untitled-2025/" ? "Untitled (GES#1) by Alexandra Yan Wong" : original[3];
+  // Deliberate label changes from the WordPress source: Adam's medium, Alexandra's GES#1 rename,
+  // Zahed's surname spelling and a distinct name for Jacob's second Ginger Jar.
+  const relabelled = {
+    "/gallery/adam-weismann/": "Adam Weismann | Clay",
+    "/gallery/alexandra-yan-wong/untitled-2025/": "Untitled (GES#1) by Alexandra Yan Wong",
+    "/gallery/zahed-tajeddin/bulls-matter/": "Bull's Matter by Zahed Tajeddin",
+    "/gallery/jacob-chan/ginger-jar-2/": "Ginger Jar II by Jacob Chan",
+  };
+  const expectedLabel = relabelled[href] ?? original[3];
   assert.equal(normalize(card.label), normalize(expectedLabel));
   if (href === "/gallery/jihyun-kim/") {
     assert.equal(card.image, "/assets/images/jihyun-kim.webp");
