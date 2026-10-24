@@ -77,7 +77,7 @@ export default {
     "path": "/gallery/adam-weismann/clay-2025/"
   },
   "arran-gregory/the-universe-was-an-egg-which-cracked": {
-    "title": "The Universe Was AN Egg Which Cracked",
+    "title": "The Universe Was an Egg Which Cracked",
     "artist": "Arran Gregory",
     "path": "/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/"
   },
