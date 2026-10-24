@@ -9,10 +9,11 @@ materials: "Ceramic"
 price: "£3,000"
 mainImage: {"slot":"zahed-tajeddin-bull-leaping-ii"}
 cardImage: {"slot":"zahed-tajeddin-bull-leaping-ii-card"}
-gallery: []
+gallery: [{"src":{"slot":"zahed-tajeddin-bull-leaping-ii-2"},"alt":"Bull Leaping II by Zahed Tajeddin seen from above, the figure arching over the bull's back to hold its horns"}]
 detailVariant: "figma-2026"
+year: 2026
 tileMedium: "Ceramic"
 relatedIds: ["zahed-tajeddin/bulls-matter","arran-gregory/inbetween-worlds","edie-evans/bedrock","jihyun-kim/teoju"]
-seoDescription: "Bull Leaping II by Zahed Tajeddin. Ceramic. Enquire with Golden Earth Studio about pricing and availability."
+seoDescription: "Bull Leaping II, 2026 by Zahed Tajeddin. Ceramic. Enquire with Golden Earth Studio about pricing and availability."
 sourceWpId: null
 ---
