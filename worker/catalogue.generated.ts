@@ -285,5 +285,10 @@ export default {
     "title": "Untitled (GES#7)",
     "artist": "Alexandra Yan Wong",
     "path": "/gallery/alexandra-yan-wong/ges-7/"
+  },
+  "adam-weismann/terre-verte": {
+    "title": "Terre Verte",
+    "artist": "Adam Weismann",
+    "path": "/gallery/adam-weismann/terre-verte/"
   }
 } as const;

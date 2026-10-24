@@ -8,7 +8,7 @@ hoverImage: "/assets/migrated/artworks/adam-weismann/clay-2025-main-76729cf.webp
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 4
-artworkIds: ["adam-weismann/clay-2025"]
+artworkIds: ["adam-weismann/terre-verte","adam-weismann/clay-2025"]
 studies: []
 relatedProfiles: []
 seoDescription: "Claymoon by Adam Weismann, is a series of hand-formed clay artworks by Adam Weismann that speak of the rhythms of nature, the beauty of imperfection and the processes of deep…"

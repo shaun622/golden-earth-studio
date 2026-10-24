@@ -104,6 +104,17 @@
     ],
     "artworks": [
       {
+        "href": "/gallery/adam-weismann/terre-verte/",
+        "label": "Terre Verte by Adam Weismann",
+        "image": {
+          "slot": "adam-weismann-terre-verte-card"
+        },
+        "hoverImage": {
+          "slot": "adam-weismann-terre-verte-angle"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/eleanor-herbosch/unearthing-series-1/",
         "label": "Unearthing Series #1 by Eleanor Herbosch",
         "image": {
