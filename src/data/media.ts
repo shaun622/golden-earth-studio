@@ -72,6 +72,13 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "louis-vincent-wall-panel-v-card": { src: "/assets/artworks/louis-vincent/wall-panel-v-card.webp", alt: "Wall Panel V by Louis Vincent, a dark brown panel with a rust-speckled textured clay surface", width: 681, height: 1155 },
   "louis-vincent-wall-panel-v": { src: "/assets/artworks/louis-vincent/wall-panel-v-front.webp", alt: "Wall Panel V by Louis Vincent, a dark brown panel with a rust-speckled textured clay surface", width: 893, height: 1116 },
   "louis-vincent-wall-panel-v-detail": { src: "/assets/artworks/louis-vincent/wall-panel-v-detail.webp", alt: "Close-up of the textured clay surface of Wall Panel V by Louis Vincent", width: 1080, height: 1350 },
+  "jacob-chan-sake-set-1": { src: null, alt: "Sake Set #1 by Jacob Chan", width: 1000, height: 1000 },
+  "jacob-chan-sake-set-2": { src: null, alt: "Sake Set #2 by Jacob Chan", width: 1000, height: 1000 },
+  "jacob-chan-sake-set-3": { src: null, alt: "Sake Set #3 by Jacob Chan", width: 1000, height: 1000 },
+  "jacob-chan-sake-set-4": { src: null, alt: "Sake Set #4 by Jacob Chan", width: 1000, height: 1000 },
+  "jacob-chan-ginger-jar-2026": { src: null, alt: "Ginger Jar by Jacob Chan", width: 1000, height: 1000 },
+  "jacob-chan-lotus-set": { src: null, alt: "Lotus Set by Jacob Chan", width: 1000, height: 1000 },
+  "jacob-chan-bottle-series": { src: null, alt: "Bottle Series by Jacob Chan", width: 1000, height: 1000 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

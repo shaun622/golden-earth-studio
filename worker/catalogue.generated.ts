@@ -220,5 +220,40 @@ export default {
     "title": "Wall Panel V",
     "artist": "Louis Vincent",
     "path": "/gallery/louis-vincent/wall-panel-v/"
+  },
+  "jacob-chan/sake-set-1": {
+    "title": "Sake Set #1",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/sake-set-1/"
+  },
+  "jacob-chan/sake-set-2": {
+    "title": "Sake Set #2",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/sake-set-2/"
+  },
+  "jacob-chan/sake-set-3": {
+    "title": "Sake Set #3",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/sake-set-3/"
+  },
+  "jacob-chan/sake-set-4": {
+    "title": "Sake Set #4",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/sake-set-4/"
+  },
+  "jacob-chan/ginger-jar-2026": {
+    "title": "Ginger Jar",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/ginger-jar-2026/"
+  },
+  "jacob-chan/lotus-set": {
+    "title": "Lotus Set",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/lotus-set/"
+  },
+  "jacob-chan/bottle-series": {
+    "title": "Bottle Series",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/bottle-series/"
   }
 } as const;

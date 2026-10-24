@@ -37,7 +37,7 @@ const landscape = artwork.artistSlug === "edie-evans";
         <div class="figma-product-copy">
           <h1 id="artwork-heading" class="figma-product-heading" style={`--heading-ems: ${headingEms}`}><span>{displayTitle}</span><span class="figma-product-heading-separator" aria-hidden="true">|</span><a href={`/gallery/${artwork.artistSlug}/`}>{artwork.artistName}</a></h1>
           <dl class="figma-product-facts">
-            <div><dt class="visually-hidden">Dimensions</dt><dd>{artwork.dimensions}</dd></div>
+            {artwork.dimensions && <div><dt class="visually-hidden">Dimensions</dt><dd>{artwork.dimensions}</dd></div>}
             <div><dt class="visually-hidden">Materials</dt><dd>{artwork.materials}</dd></div>
             {artwork.sold ? <div><dt class="visually-hidden">Availability</dt><dd>Sold</dd></div> : artwork.price && <div><dt class="visually-hidden">Price</dt><dd>{artwork.price}</dd></div>}
           </dl>

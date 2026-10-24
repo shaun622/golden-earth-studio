@@ -33,9 +33,9 @@ assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), 
 assert.equal(interior.gallery.artworks.length, 21);
 assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 33);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 82);
-assert.equal(Object.keys(catalogue).length, 44);
-assert.equal(Object.keys(mediaSlots).length, 64);
+assert.equal(ledger.generated.length, 89);
+assert.equal(Object.keys(catalogue).length, 51);
+assert.equal(Object.keys(mediaSlots).length, 71);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -134,6 +134,24 @@ for (const [work, title, dimensions, price] of [...louisWorks, ...louisPanels]) 
   allUpdatedHtml += detail;
 }
 
+// Jacob Chan's 2026 works follow his Chess Set; sizes are not yet supplied.
+const jacobWorks = [["sake-set-1", "Sake Set #1"], ["sake-set-2", "Sake Set #2"], ["sake-set-3", "Sake Set #3"], ["sake-set-4", "Sake Set #4"], ["ginger-jar-2026", "Ginger Jar"], ["lotus-set", "Lotus Set"], ["bottle-series", "Bottle Series"]];
+const jacob = record("src/content/artists/jacob-chan.md").data;
+assert.deepEqual(jacob.artworkIds.slice(0, jacobWorks.length + 1), ["jacob-chan/chess-set", ...jacobWorks.map(([work]) => `jacob-chan/${work}`)]);
+const jacobPage = html("/gallery/jacob-chan/");
+allUpdatedHtml += jacobPage;
+for (const [work, title] of jacobWorks) {
+  const id = `jacob-chan/${work}`, route = `/gallery/${id}/`;
+  assert.ok(jacobPage.includes(`href="${route}"`), `${id}: missing profile link`);
+  assert.ok(ledger.generated.includes(route));
+  assert.deepEqual(catalogue[id], { title, artist: "Jacob Chan", path: route });
+  const detail = html(route);
+  assert.ok(detail.includes(`name="artworkId" value="${id}"`));
+  assert.ok(!detail.includes(">Dimensions</dt>"), `${id}: empty dimensions rendered`);
+  checkPage(detail, id);
+  allUpdatedHtml += detail;
+}
+
 for (const [slot, asset] of Object.entries(mediaSlots)) {
   assert.ok(allUpdatedHtml.includes(`data-media-slot="${slot}"`), `${slot}: unused/missing slot`);
   const blanks = [...allUpdatedHtml.matchAll(new RegExp(`<span[^>]*data-media-slot="${slot}"[^>]*>`, "g"))];
@@ -153,9 +171,9 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 44);
+assert.equal(artworkCount, 51);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 22 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 29 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
