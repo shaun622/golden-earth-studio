@@ -77,7 +77,7 @@ export default {
     "path": "/gallery/adam-weismann/clay-2025/"
   },
   "arran-gregory/the-universe-was-an-egg-which-cracked": {
-    "title": "The Universe Was AN Egg Which Cracked",
+    "title": "The Universe Was an Egg Which Cracked",
     "artist": "Arran Gregory",
     "path": "/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/"
   },
@@ -290,5 +290,35 @@ export default {
     "title": "Terre Verte",
     "artist": "Adam Weismann",
     "path": "/gallery/adam-weismann/terre-verte/"
+  },
+  "arran-gregory/blue-entity-study-2": {
+    "title": "Blue Entity Study (2)",
+    "artist": "Arran Gregory",
+    "path": "/gallery/arran-gregory/blue-entity-study-2/"
+  },
+  "arran-gregory/wheel-of-matter": {
+    "title": "Wheel of Matter",
+    "artist": "Arran Gregory",
+    "path": "/gallery/arran-gregory/wheel-of-matter/"
+  },
+  "arran-gregory/all-our-gods-are-dancing-gods": {
+    "title": "All Our Gods Are Dancing Gods",
+    "artist": "Arran Gregory",
+    "path": "/gallery/arran-gregory/all-our-gods-are-dancing-gods/"
+  },
+  "arran-gregory/incense-ball": {
+    "title": "Incense Ball",
+    "artist": "Arran Gregory",
+    "path": "/gallery/arran-gregory/incense-ball/"
+  },
+  "arran-gregory/inbetween-worlds": {
+    "title": "Inbetween Worlds",
+    "artist": "Arran Gregory",
+    "path": "/gallery/arran-gregory/inbetween-worlds/"
+  },
+  "arran-gregory/meditation-balls": {
+    "title": "Meditation Balls",
+    "artist": "Arran Gregory",
+    "path": "/gallery/arran-gregory/meditation-balls/"
   }
 } as const;

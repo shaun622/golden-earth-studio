@@ -30,9 +30,9 @@ assert.ok(normalize(pages.gallery).includes(normalize(source(333).headings[0])))
 const cards = [...data.gallery.artists, ...data.gallery.artworks];
 const renderedCards = [...pages.gallery.matchAll(/<article class="reference-catalogue-card">([\s\S]*?)<\/article>/g)];
 assert.equal(data.gallery.artists.length, 12);
-assert.equal(data.gallery.artworks.length, 57);
-assert.equal(cards.length, 69);
-assert.equal(renderedCards.length, 69);
+assert.equal(data.gallery.artworks.length, 63);
+assert.equal(cards.length, 75);
+assert.equal(renderedCards.length, 75);
 const expectedHovers = [...new Map([...read("docs/reference/styles/post-333.css").matchAll(/\/\* Start custom CSS for image, class: \.elementor-element-([^ ]+)[\s\S]*?background-image:\s*url\('([^']+)'\)/g)].map((m) => [m[1], m[2]])).values()];
 // The Figma change deliberately appends four artists and changes Adam's medium.
 // All original URLs/hovers remain covered, matched by stable destination.
@@ -42,12 +42,13 @@ for (const [index, original] of sourceCards.entries()) {
   const card = cards.find((item) => item.href === href);
   assert.ok(card, `Missing original card ${href}`);
   // Deliberate label changes from the WordPress source: Adam's medium, Alexandra's GES#1 rename,
-  // Zahed's surname spelling and a distinct name for Jacob's second Ginger Jar.
+  // Zahed's surname spelling, a distinct name for Jacob's second Ginger Jar and a lowercase "an" in Arran's title.
   const relabelled = {
     "/gallery/adam-weismann/": "Adam Weismann | Clay",
     "/gallery/alexandra-yan-wong/untitled-2025/": "Untitled (GES#1) by Alexandra Yan Wong",
     "/gallery/zahed-tajeddin/bulls-matter/": "Bull's Matter by Zahed Tajeddin",
     "/gallery/jacob-chan/ginger-jar-2/": "Ginger Jar II by Jacob Chan",
+    "/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/": "The Universe Was an Egg Which Cracked by Arran Gregory",
   };
   const expectedLabel = relabelled[href] ?? original[3];
   assert.equal(normalize(card.label), normalize(expectedLabel));

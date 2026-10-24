@@ -40,7 +40,6 @@
 .figma-commission h2 { margin: 0 0 17px; font: 400 22px/1.6 var(--serif); }
 .figma-commission-copy p { margin: 0; font: 300 14px/24px var(--body); letter-spacing: .7px; }
 .figma-commission-copy > a { display: inline-block; margin-top: 25px; font: 300 14px/1.6 var(--body); overflow-wrap: anywhere; }
-.figma-product-detail { min-height: 1490px; }
 /* Title and artist stay on one line, shrinking from 36px to fit the copy column. */
 .figma-product-copy { container-type: inline-size; }
 .figma-product-heading { display: flex; flex-wrap: nowrap; align-items: baseline; gap: 0 .6em; margin: 0 0 45px; font: 300 min(36px, calc((100cqi - 4px) / var(--heading-ems, 18))) / 1 var(--body); color: #808080; white-space: nowrap; }
@@ -61,10 +60,13 @@
 .figma-product--landscape .figma-product-media > .media-slot { aspect-ratio: 550 / 370; }
 .figma-product-photos { display: grid; gap: 36px; }
 .figma-product-photos img { display: block; width: 100%; aspect-ratio: var(--image-ratio, auto); height: auto; }
-.figma-related h2 { margin: 0 0 28px; font: 400 22px/1.6 var(--serif); }
+.figma-related { margin-top: 115px; }
+/* A rule under the heading mirrors the one above Bespoke Commissions, with the same gap to the images. */
+.figma-related h2 { margin: 0 0 115px; padding-bottom: 14px; border-bottom: 1px solid #a7a79f; font: 400 22px/1.6 var(--serif); }
 .figma-related-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 38px; }
 .figma-related-card { min-width: 0; }
-.figma-related-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.figma-related-card[hidden] { display: none; }
+.figma-related-card img { width: 100%; height: auto; aspect-ratio: 330 / 395; object-fit: cover; }
 .figma-related-card h3 { margin: 12px 0 0; font: 300 14px/1.5 var(--body); }
 .figma-related-card h3 span { white-space: normal; }
 .figma-interior .contact-form--figma { grid-template-columns: 1fr; gap: 18px; }
@@ -127,7 +129,6 @@
   .figma-artist--without-works .figma-profile-works { min-height: 140px; }
   .figma-commission { grid-template-columns: 1fr; padding: 35px 0 0; gap: 32px; margin: 65px 0; }
   .figma-commission-copy p { font-size: 16px; line-height: 26px; }
-  .figma-product-detail { min-height: 0; }
   .figma-product-heading { display: block; font-size: 30px; line-height: 1.35; margin-bottom: 32px; white-space: normal; overflow-wrap: anywhere; }
   .figma-product-heading-separator { display: none; }
   .figma-product-heading a { display: block; margin-top: 10px; font-size: 25px; line-height: 1.35; }
@@ -137,6 +138,7 @@
   .figma-product-media { width: 100%; justify-self: start; margin-top: 0; }
   .figma-product-photos { gap: 20px; }
   .figma-related { margin-top: 75px; }
+  .figma-related h2 { margin-bottom: 65px; }
   .figma-related-grid { gap: 30px 20px; }
   .figma-interior .contact-form--figma input, .figma-interior .contact-form--figma textarea { font-size: 16px; }
   .figma-interior .gallery-reference .reference-intro { min-height: 220px; padding: 65px 7% 35px; }

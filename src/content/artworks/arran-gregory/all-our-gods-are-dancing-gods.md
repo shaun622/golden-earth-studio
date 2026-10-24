@@ -1,0 +1,19 @@
+---
+id: "arran-gregory/all-our-gods-are-dancing-gods"
+artistSlug: "arran-gregory"
+slug: "all-our-gods-are-dancing-gods"
+title: "All Our Gods Are Dancing Gods"
+artistName: "Arran Gregory"
+dimensions: "8.5 x 12 x 12.8 cm"
+materials: "Burnished London Clay"
+price: "£2,800"
+mainImage: {"slot":"arran-gregory-all-our-gods-are-dancing-gods"}
+cardImage: {"slot":"arran-gregory-all-our-gods-are-dancing-gods-card"}
+gallery: [{"src":{"slot":"arran-gregory-all-our-gods-are-dancing-gods-2"},"alt":"All Our Gods Are Dancing Gods by Arran Gregory, seen from the side with its face turned to the left"},{"src":{"slot":"arran-gregory-all-our-gods-are-dancing-gods-3"},"alt":"All Our Gods Are Dancing Gods by Arran Gregory, seen from another side, showing the curve of the head"},{"src":{"slot":"arran-gregory-all-our-gods-are-dancing-gods-4"},"alt":"All Our Gods Are Dancing Gods by Arran Gregory, seen from behind, showing the pointed crown"},{"src":{"slot":"arran-gregory-all-our-gods-are-dancing-gods-5"},"alt":"All Our Gods Are Dancing Gods by Arran Gregory, seen from the front"},{"src":{"slot":"arran-gregory-all-our-gods-are-dancing-gods-6"},"alt":"All Our Gods Are Dancing Gods by Arran Gregory, held in two cupped hands"}]
+detailVariant: "figma-2026"
+year: 2026
+tileMedium: "London Clay"
+relatedIds: ["arran-gregory/heart-of-matter","adam-weismann/terre-verte","edie-evans/bedrock","jihyun-kim/teoju"]
+seoDescription: "All Our Gods Are Dancing Gods, 2026 by Arran Gregory. Burnished London Clay. Enquire with Golden Earth Studio about pricing and availability."
+sourceWpId: null
+---

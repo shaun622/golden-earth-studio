@@ -107,10 +107,76 @@
         "href": "/gallery/adam-weismann/terre-verte/",
         "label": "Terre Verte by Adam Weismann",
         "image": {
-          "slot": "adam-weismann-terre-verte-card"
+          "slot": "adam-weismann-terre-verte-installation"
         },
         "hoverImage": {
-          "slot": "adam-weismann-terre-verte-angle"
+          "slot": "adam-weismann-terre-verte"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/blue-entity-study-2/",
+        "label": "Blue Entity Study (2) by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-blue-entity-study-2-card"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-blue-entity-study-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/wheel-of-matter/",
+        "label": "Wheel of Matter by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-wheel-of-matter-card"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-wheel-of-matter-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/all-our-gods-are-dancing-gods/",
+        "label": "All Our Gods Are Dancing Gods by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-all-our-gods-are-dancing-gods-card"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-all-our-gods-are-dancing-gods-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/incense-ball/",
+        "label": "Incense Ball by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-incense-ball-card"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-incense-ball-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/inbetween-worlds/",
+        "label": "Inbetween Worlds by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-inbetween-worlds-card"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-inbetween-worlds-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/meditation-balls/",
+        "label": "Meditation Balls by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-meditation-balls-card"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-meditation-balls"
         },
         "objectPosition": "center"
       },
@@ -536,7 +602,7 @@
       },
       {
         "href": "/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/",
-        "label": "The Universe Was An Egg Which Cracked by Arran Gregory",
+        "label": "The Universe Was an Egg Which Cracked by Arran Gregory",
         "image": "/assets/migrated/artworks/arran-gregory/the-universe-was-an-egg-which-cracked-main-48ae385.webp",
         "hoverImage": "/assets/migrated/gallery-index/14-hover-c09bbb7.webp",
         "objectPosition": "center"
