@@ -8,7 +8,8 @@ dimensions: "45.4cm(h) x 10.2cm(w)"
 materials: "Wood, clay and lacquer"
 price: "£600"
 mainImage: {"slot":"louis-vincent-wall-panel-iii"}
-gallery: []
+cardImage: {"slot":"louis-vincent-wall-panel-iii-card"}
+gallery: [{"src":{"slot":"louis-vincent-wall-panel-iii-detail"},"alt":"Close-up of the textured clay surface of Wall Panel III by Louis Vincent"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Wood"

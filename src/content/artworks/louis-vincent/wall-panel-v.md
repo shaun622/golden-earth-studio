@@ -8,7 +8,8 @@ dimensions: "50.2cm(h) x 16.7cm(w)"
 materials: "Wood, clay and lacquer"
 price: "£725"
 mainImage: {"slot":"louis-vincent-wall-panel-v"}
-gallery: []
+cardImage: {"slot":"louis-vincent-wall-panel-v-card"}
+gallery: [{"src":{"slot":"louis-vincent-wall-panel-v-detail"},"alt":"Close-up of the textured clay surface of Wall Panel V by Louis Vincent"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Wood"

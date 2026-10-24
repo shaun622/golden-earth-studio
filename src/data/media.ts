@@ -63,9 +63,15 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "louis-vincent-plate-card": { src: "/assets/artworks/louis-vincent/plate-card.webp", alt: "Plate by Louis Vincent", width: 896, height: 1519 },
   "louis-vincent-conical-bowl-card": { src: "/assets/artworks/louis-vincent/conical-bowl-card.webp", alt: "Conical Bowl by Louis Vincent", width: 788, height: 1336 },
   "louis-vincent-bowl-card": { src: "/assets/artworks/louis-vincent/bowl-card.webp", alt: "Bowl by Louis Vincent", width: 832, height: 1410 },
-  "louis-vincent-wall-panel-iii": { src: null, alt: "Wall Panel III by Louis Vincent", width: 600, height: 1000 },
-  "louis-vincent-wall-panel-iv": { src: null, alt: "Wall Panel IV by Louis Vincent", width: 600, height: 1000 },
-  "louis-vincent-wall-panel-v": { src: null, alt: "Wall Panel V by Louis Vincent", width: 600, height: 1000 },
+  "louis-vincent-wall-panel-iii-card": { src: "/assets/artworks/louis-vincent/wall-panel-iii-card.webp", alt: "Wall Panel III by Louis Vincent, a narrow pale panel with a cream and grey textured clay surface", width: 651, height: 1104 },
+  "louis-vincent-wall-panel-iii": { src: "/assets/artworks/louis-vincent/wall-panel-iii-front.webp", alt: "Wall Panel III by Louis Vincent, a narrow pale panel with a cream and grey textured clay surface", width: 853, height: 1066 },
+  "louis-vincent-wall-panel-iii-detail": { src: "/assets/artworks/louis-vincent/wall-panel-iii-detail.webp", alt: "Close-up of the textured clay surface of Wall Panel III by Louis Vincent", width: 1080, height: 1350 },
+  "louis-vincent-wall-panel-iv-card": { src: "/assets/artworks/louis-vincent/wall-panel-iv-card.webp", alt: "Wall Panel IV by Louis Vincent, a pale panel with a cream and grey textured clay surface", width: 755, height: 1279 },
+  "louis-vincent-wall-panel-iv": { src: "/assets/artworks/louis-vincent/wall-panel-iv-front.webp", alt: "Wall Panel IV by Louis Vincent, a pale panel with a cream and grey textured clay surface", width: 988, height: 1235 },
+  "louis-vincent-wall-panel-iv-detail": { src: "/assets/artworks/louis-vincent/wall-panel-iv-detail.webp", alt: "Close-up of the textured clay surface of Wall Panel IV by Louis Vincent", width: 1080, height: 1350 },
+  "louis-vincent-wall-panel-v-card": { src: "/assets/artworks/louis-vincent/wall-panel-v-card.webp", alt: "Wall Panel V by Louis Vincent, a dark brown panel with a rust-speckled textured clay surface", width: 681, height: 1155 },
+  "louis-vincent-wall-panel-v": { src: "/assets/artworks/louis-vincent/wall-panel-v-front.webp", alt: "Wall Panel V by Louis Vincent, a dark brown panel with a rust-speckled textured clay surface", width: 893, height: 1116 },
+  "louis-vincent-wall-panel-v-detail": { src: "/assets/artworks/louis-vincent/wall-panel-v-detail.webp", alt: "Close-up of the textured clay surface of Wall Panel V by Louis Vincent", width: 1080, height: 1350 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
