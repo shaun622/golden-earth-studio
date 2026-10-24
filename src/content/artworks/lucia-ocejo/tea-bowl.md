@@ -8,6 +8,7 @@ dimensions: "8cm(w) x 9cm(h)"
 materials: "London Clay"
 price: "£50"
 mainImage: {"slot":"lucia-ocejo-tea-bowl"}
+cardImage: {"slot":"lucia-ocejo-tea-bowl-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026

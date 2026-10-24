@@ -23,6 +23,7 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "edie-evans-bedrock-card": { src: "/assets/artworks/edie-evans/bedrock-card.webp", alt: "Close-up of Bedrock by Edie Evans", width: 682, height: 1170 },
   "edie-evans-fragmentation-1-card": { src: "/assets/artworks/edie-evans/fragmentation-1-card.webp", alt: "Close-up of Fragmentation 1 by Edie Evans", width: 680, height: 1176 },
   "lucia-ocejo-round-bud-vase": { src: "/assets/artworks/lucia-ocejo/round-bud-vase.webp", alt: "Round Bud Vase by Lucia Ocejo with an incised wave pattern", width: 664, height: 1194 },
+  "lucia-ocejo-tea-bowl-card": { src: "/assets/artworks/lucia-ocejo/tea-bowl-card.webp", alt: "Pale blue Tea Bowl by Lucia Ocejo", width: 666, height: 1129 },
   "lucia-ocejo-tea-bowl": { src: "/assets/artworks/lucia-ocejo/tea-bowl.webp", alt: "Pale blue Tea Bowl by Lucia Ocejo", width: 666, height: 1188 },
   "lucia-ocejo-mug": { src: "/assets/artworks/lucia-ocejo/mug.webp", alt: "A hand holding the handle of Lucia Ocejo's Mug", width: 664, height: 1184 },
   "lucia-ocejo-jug": { src: "/assets/artworks/lucia-ocejo/jug.webp", alt: "Jug by Lucia Ocejo with a pale glazed upper half", width: 682, height: 1192 },

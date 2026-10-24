@@ -448,10 +448,10 @@
         "href": "/gallery/lucia-ocejo/tea-bowl/",
         "label": "Tea Bowl by Lucia Ocejo",
         "image": {
-          "slot": "lucia-ocejo-tea-bowl"
+          "slot": "lucia-ocejo-tea-bowl-card"
         },
         "hoverImage": {
-          "slot": "lucia-ocejo-tea-bowl"
+          "slot": "lucia-ocejo-tea-bowl-card"
         },
         "objectPosition": "center"
       },
