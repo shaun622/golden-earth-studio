@@ -9,6 +9,7 @@ materials: "Excavated clay"
 price: "£350"
 mainImage: "/assets/migrated/artworks/jacob-chan/ginger-jar-main-3153845.webp"
 gallery: [{"src":"/assets/migrated/artworks/jacob-chan/ginger-jar-main-3153845.webp","alt":"Ginger Jar | Jacob Chan detail 1"}]
+detailVariant: "figma-2026"
 relatedIds: ["louis-vincent/bowl","jacob-chan/chess-set","jihyun-kim/teoju","rickie-cheuk/chopsticks"]
 seoDescription: "The soda fired ginger jar contrasts a grogged textured clay body with a satin and gloss glaze, created by the movement of soda ash inside the kiln."
 sourceWpId: 2826

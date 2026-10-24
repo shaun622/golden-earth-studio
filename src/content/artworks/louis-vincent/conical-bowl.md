@@ -10,6 +10,7 @@ price: "£450"
 mainImage: "/assets/migrated/artworks/louis-vincent/conical-bowl-main-2b0dbe3.webp"
 cardImage: {"slot":"louis-vincent-conical-bowl-card"}
 gallery: [{"src":"/assets/migrated/artworks/louis-vincent/conical-bowl-main-2b0dbe3.webp","alt":"Conical Bowl | Louis Vincent detail 1"},{"src":"/assets/migrated/artworks/louis-vincent/conical-bowl-2-2cb8cb8.webp","alt":"Conical Bowl | Louis Vincent detail 2"},{"src":"/assets/migrated/artworks/louis-vincent/conical-bowl-3-025eacc.webp","alt":"Conical Bowl | Louis Vincent detail 3"},{"src":"/assets/migrated/artworks/louis-vincent/conical-bowl-4-88b9715.webp","alt":"Conical Bowl | Louis Vincent detail 4"}]
+detailVariant: "figma-2026"
 relatedIds: ["zahed-tajeddin/bulls-matter","jacob-chan/chess-set","rickie-cheuk/chopsticks","jihyun-kim/teoju"]
 seoDescription: "At first glance, Conical Bowl by Louis Vincent defies material expectations. Hand-turned on a lathe to an extraordinary thinness, the piece creates the illusion of ceramic or…"
 sourceWpId: 3017

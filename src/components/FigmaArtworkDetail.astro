@@ -7,15 +7,22 @@ import FigmaCommission from "./FigmaCommission.astro";
 import { mediaSource, resolveMedia } from "../data/media";
 import { artworks as relatedWorks } from "../data/home";
 import "../styles/gallery-2026.css";
+import sharp from "sharp";
 interface Props { artwork: CollectionEntry<"artworks">["data"]; }
 const { artwork } = Astro.props;
 const displayTitle = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
-const asset = resolveMedia(artwork.mainImage, `${artwork.title} by ${artwork.artistName}`);
+// Plain image paths (migrated works) carry no size, so read the real pixel dimensions from the file.
+async function measured(image: ReturnType<typeof resolveMedia>, reference: unknown) {
+  if (typeof reference !== "string" || !image.src) return image;
+  const { width = image.width, height = image.height } = await sharp(`public${image.src}`).metadata();
+  return { ...image, width, height };
+}
+const asset = await measured(resolveMedia(artwork.mainImage, `${artwork.title} by ${artwork.artistName}`), artwork.mainImage);
 // Extra photos stack below the main image in display order; a gallery entry repeating the main photo is skipped.
-const extraImages = artwork.gallery.flatMap((item) => {
-  const image = resolveMedia(item.src, item.alt);
+const extraImages = (await Promise.all(artwork.gallery.map(async (item) => {
+  const image = await measured(resolveMedia(item.src, item.alt), item.src);
   return image.src && image.src !== asset.src ? [{ src: image.src, alt: item.alt, width: image.width, height: image.height, slot: image.slot }] : [];
-});
+}))).flat();
 const hasDescription = Astro.slots.has("default");
 // All stacked photos share one width, sized so the tallest still fits within the window.
 const stackAspect = Math.min(...[asset, ...extraImages].filter((image) => image.src).map((image) => image.width / image.height));
@@ -30,7 +37,7 @@ const landscape = artwork.artistSlug === "edie-evans";
         <div class="figma-product-copy">
           <h1 id="artwork-heading" class="figma-product-heading" style={`--heading-ems: ${headingEms}`}><span>{displayTitle}</span><span class="figma-product-heading-separator" aria-hidden="true">|</span><a href={`/gallery/${artwork.artistSlug}/`}>{artwork.artistName}</a></h1>
           <dl class="figma-product-facts">
-            <div><dt class="visually-hidden">Dimensions</dt><dd>{artwork.dimensions}</dd></div>
+            {artwork.dimensions && <div><dt class="visually-hidden">Dimensions</dt><dd>{artwork.dimensions}</dd></div>}
             <div><dt class="visually-hidden">Materials</dt><dd>{artwork.materials}</dd></div>
             {artwork.sold ? <div><dt class="visually-hidden">Availability</dt><dd>Sold</dd></div> : artwork.price && <div><dt class="visually-hidden">Price</dt><dd>{artwork.price}</dd></div>}
           </dl>

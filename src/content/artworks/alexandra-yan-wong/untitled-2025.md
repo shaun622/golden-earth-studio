@@ -2,13 +2,17 @@
 id: "alexandra-yan-wong/untitled-2025"
 artistSlug: "alexandra-yan-wong"
 slug: "untitled-2025"
-title: "Untitled, 2025"
+title: "Untitled (GES#1)"
 artistName: "Alexandra Yan Wong"
 dimensions: "3cm(l) x 50cm(w) x 65cm(h)"
 materials: "London Clay, Paper and Canvas"
 price: "£2,500"
 mainImage: "/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp"
-gallery: [{"src":"/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp","alt":"Untitled, 2025 | Alexandra Yan Wong detail 1"}]
+cardImage: {"slot":"alexandra-yan-wong-ges-1-card"}
+gallery: [{"src":"/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp","alt":"Untitled, 2025 | Alexandra Yan Wong detail 1"},{"src":{"slot":"alexandra-yan-wong-ges-1-wall"},"alt":"Untitled (GES#1) by Alexandra Yan Wong, hung between two brass wall lights on a pale plaster wall"},{"src":{"slot":"alexandra-yan-wong-ges-1-detail"},"alt":"Untitled (GES#1) by Alexandra Yan Wong, close-up of the layered clay and paper surface"}]
+detailVariant: "figma-2026"
+year: 2025
+tileMedium: "Painting"
 relatedIds: ["jihyun-kim/teoju","rickie-cheuk/chopsticks","zahed-tajeddin/stillness","louis-vincent/conical-bowl"]
 seoDescription: "Through layered depths of clay and paper, Wong reimagines London’s earth in shifting perspectives. Up close, her paintings reveal intricate textures that invite contemplation.…"
 sourceWpId: 4270

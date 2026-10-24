@@ -11,6 +11,7 @@ mainImage: "/assets/migrated/artworks/louis-vincent/bowl-main-ec1faab.webp"
 cardImage: {"slot":"louis-vincent-bowl-card"}
 sold: true
 gallery: [{"src":"/assets/migrated/artworks/louis-vincent/bowl-main-ec1faab.webp","alt":"Bowl | Louis Vincent detail 1"},{"src":"/assets/migrated/artworks/louis-vincent/bowl-2-5816894.webp","alt":"Bowl | Louis Vincent detail 2"},{"src":"/assets/migrated/artworks/louis-vincent/bowl-3-ce7e14e.webp","alt":"Bowl | Louis Vincent detail 3"},{"src":"/assets/migrated/artworks/louis-vincent/bowl-4-9c40186.webp","alt":"Bowl | Louis Vincent detail 4"}]
+detailVariant: "figma-2026"
 relatedIds: ["jihyun-kim/teoju","rickie-cheuk/chopsticks","jacob-chan/chess-set","jacob-chan/ginger-jar"]
 seoDescription: "At first glance, Bowl by Louis Vincent defies material expectations. Hand-turned on a lathe to an extraordinary thinness, the piece creates the illusion of ceramic or stoneware,…"
 sourceWpId: 2974

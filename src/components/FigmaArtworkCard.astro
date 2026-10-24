@@ -10,7 +10,7 @@ const title = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
     <MediaSlot media={artwork.cardImage || artwork.mainImage} />
     <span class="figma-work-caption">
       <span class="figma-work-title">{title}</span>
-      <span class="figma-work-dimensions">{artwork.dimensions}</span>
+      {artwork.dimensions && <span class="figma-work-dimensions">{artwork.dimensions}</span>}
       <span class="figma-work-medium">{artwork.tileMedium || artwork.materials}</span>
       {artwork.sold && <span class="figma-work-sold">Sold</span>}
     </span>

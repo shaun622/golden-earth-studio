@@ -67,7 +67,7 @@ export default {
     "path": "/gallery/jacob-chan/sake-bottle-2/"
   },
   "alexandra-yan-wong/untitled-2025": {
-    "title": "Untitled, 2025",
+    "title": "Untitled (GES#1)",
     "artist": "Alexandra Yan Wong",
     "path": "/gallery/alexandra-yan-wong/untitled-2025/"
   },
@@ -220,5 +220,70 @@ export default {
     "title": "Wall Panel V",
     "artist": "Louis Vincent",
     "path": "/gallery/louis-vincent/wall-panel-v/"
+  },
+  "jacob-chan/sake-set-1": {
+    "title": "Sake Set #1",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/sake-set-1/"
+  },
+  "jacob-chan/sake-set-2": {
+    "title": "Sake Set #2",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/sake-set-2/"
+  },
+  "jacob-chan/sake-set-3": {
+    "title": "Sake Set #3",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/sake-set-3/"
+  },
+  "jacob-chan/sake-set-4": {
+    "title": "Sake Set #4",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/sake-set-4/"
+  },
+  "jacob-chan/ginger-jar-2026": {
+    "title": "Ginger Jar",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/ginger-jar-2026/"
+  },
+  "jacob-chan/lotus-set": {
+    "title": "Lotus Set",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/lotus-set/"
+  },
+  "jacob-chan/bottle-series": {
+    "title": "Bottle Series",
+    "artist": "Jacob Chan",
+    "path": "/gallery/jacob-chan/bottle-series/"
+  },
+  "alexandra-yan-wong/ges-2": {
+    "title": "Untitled (GES#2)",
+    "artist": "Alexandra Yan Wong",
+    "path": "/gallery/alexandra-yan-wong/ges-2/"
+  },
+  "alexandra-yan-wong/ges-3": {
+    "title": "Untitled (GES#3)",
+    "artist": "Alexandra Yan Wong",
+    "path": "/gallery/alexandra-yan-wong/ges-3/"
+  },
+  "alexandra-yan-wong/ges-4": {
+    "title": "Untitled (GES#4)",
+    "artist": "Alexandra Yan Wong",
+    "path": "/gallery/alexandra-yan-wong/ges-4/"
+  },
+  "alexandra-yan-wong/ges-5": {
+    "title": "Untitled (GES#5)",
+    "artist": "Alexandra Yan Wong",
+    "path": "/gallery/alexandra-yan-wong/ges-5/"
+  },
+  "alexandra-yan-wong/ges-6": {
+    "title": "Untitled (GES#6)",
+    "artist": "Alexandra Yan Wong",
+    "path": "/gallery/alexandra-yan-wong/ges-6/"
+  },
+  "alexandra-yan-wong/ges-7": {
+    "title": "Untitled (GES#7)",
+    "artist": "Alexandra Yan Wong",
+    "path": "/gallery/alexandra-yan-wong/ges-7/"
   }
 } as const;

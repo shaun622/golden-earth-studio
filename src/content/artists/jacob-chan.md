@@ -8,7 +8,7 @@ hoverImage: "/assets/migrated/artworks/jacob-chan/chess-set-main-861f74f.webp"
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 2
-artworkIds: ["jacob-chan/chess-set","jacob-chan/sake-set","jacob-chan/ginger-jar-2","jacob-chan/sake-bottle","jacob-chan/ginger-jar","jacob-chan/sake-bottle-2"]
+artworkIds: ["jacob-chan/chess-set","jacob-chan/sake-set-1","jacob-chan/lotus-set","jacob-chan/sake-set-2","jacob-chan/ginger-jar-2026","jacob-chan/sake-set-3","jacob-chan/bottle-series","jacob-chan/sake-set-4","jacob-chan/sake-set","jacob-chan/ginger-jar-2","jacob-chan/sake-bottle","jacob-chan/ginger-jar","jacob-chan/sake-bottle-2"]
 studies: []
 relatedProfiles: []
 seoDescription: "Using a combination of wheel-thrown and figurative vessels, Jacob creates bodies of work that are heavily influenced by his cultural background and heritage. Fired in his soda gas…"
