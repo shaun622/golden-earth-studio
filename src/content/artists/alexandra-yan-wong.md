@@ -8,7 +8,7 @@ hoverImage: "/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 3
-artworkIds: ["alexandra-yan-wong/untitled-2025"]
+artworkIds: ["alexandra-yan-wong/untitled-2025","alexandra-yan-wong/ges-2","alexandra-yan-wong/ges-3","alexandra-yan-wong/ges-4","alexandra-yan-wong/ges-5","alexandra-yan-wong/ges-6","alexandra-yan-wong/ges-7"]
 studies: []
 relatedProfiles: []
 seoDescription: "Materiality underpins Alexandra Yan Wong’s (b. 1993) practice, which emerges from her interest in understanding how aesthetics is perceived and experienced in the modern world.…"

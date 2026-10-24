@@ -89,6 +89,12 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "jacob-chan-lotus-set-2": { src: "/assets/artworks/jacob-chan/lotus-set-2.webp", alt: "Lotus bowls by Jacob Chan stacked at angles, showing their petal rims and stamped seals", width: 781, height: 1053 },
   "jacob-chan-bottle-series-card": { src: "/assets/artworks/jacob-chan/bottle-series-card.webp", alt: "Bottle Series by Jacob Chan, five unglazed London Clay bottles rising in height from dark brown to pale terracotta", width: 944, height: 1600 },
   "jacob-chan-bottle-series": { src: "/assets/artworks/jacob-chan/bottle-series.webp", alt: "Bottle Series by Jacob Chan, five unglazed London Clay bottles rising in height from dark brown to pale terracotta", width: 1448, height: 799 },
+  "alexandra-yan-wong-ges-2": { src: null, alt: "Untitled (GES#2) by Alexandra Yan Wong", width: 1000, height: 1300 },
+  "alexandra-yan-wong-ges-3": { src: null, alt: "Untitled (GES#3) by Alexandra Yan Wong", width: 1000, height: 1300 },
+  "alexandra-yan-wong-ges-4": { src: null, alt: "Untitled (GES#4) by Alexandra Yan Wong", width: 1000, height: 1300 },
+  "alexandra-yan-wong-ges-5": { src: null, alt: "Untitled (GES#5) by Alexandra Yan Wong", width: 1000, height: 1300 },
+  "alexandra-yan-wong-ges-6": { src: null, alt: "Untitled (GES#6) by Alexandra Yan Wong", width: 1000, height: 1300 },
+  "alexandra-yan-wong-ges-7": { src: null, alt: "Untitled (GES#7) by Alexandra Yan Wong", width: 1000, height: 1300 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
