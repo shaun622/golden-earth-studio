@@ -35,7 +35,7 @@ assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)]
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
 assert.equal(ledger.generated.length, 79);
 assert.equal(Object.keys(catalogue).length, 41);
-assert.equal(Object.keys(mediaSlots).length, 54);
+assert.equal(Object.keys(mediaSlots).length, 55);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
