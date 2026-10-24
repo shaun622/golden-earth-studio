@@ -195,10 +195,10 @@
         "href": "/gallery/edie-evans/dorodango-pair-ii/",
         "label": "Dorodango Pair II by Edie Evans",
         "image": {
-          "slot": "edie-evans-dorodango-pair-ii"
+          "slot": "edie-evans-dorodango-pair-ii-card"
         },
         "hoverImage": {
-          "slot": "edie-evans-dorodango-pair-ii"
+          "slot": "edie-evans-dorodango-pair-ii-2"
         },
         "objectPosition": "center"
       },
@@ -239,10 +239,10 @@
         "href": "/gallery/edie-evans/dorodango-pair-i/",
         "label": "Dorodango Pair I by Edie Evans",
         "image": {
-          "slot": "edie-evans-dorodango-pair-i"
+          "slot": "edie-evans-dorodango-pair-i-card"
         },
         "hoverImage": {
-          "slot": "edie-evans-dorodango-pair-i"
+          "slot": "edie-evans-dorodango-pair-i-2"
         },
         "objectPosition": "center"
       },
@@ -283,10 +283,10 @@
         "href": "/gallery/edie-evans/holding/",
         "label": "Holding by Edie Evans",
         "image": {
-          "slot": "edie-evans-holding"
+          "slot": "edie-evans-holding-card"
         },
         "hoverImage": {
-          "slot": "edie-evans-holding"
+          "slot": "edie-evans-holding-2"
         },
         "objectPosition": "center"
       },
@@ -327,10 +327,10 @@
         "href": "/gallery/edie-evans/ground/",
         "label": "Ground by Edie Evans",
         "image": {
-          "slot": "edie-evans-ground"
+          "slot": "edie-evans-ground-card"
         },
         "hoverImage": {
-          "slot": "edie-evans-ground"
+          "slot": "edie-evans-ground-2"
         },
         "objectPosition": "center"
       },

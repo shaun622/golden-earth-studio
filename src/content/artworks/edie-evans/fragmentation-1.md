@@ -9,7 +9,7 @@ materials: "London Clay"
 price: "£175"
 mainImage: {"slot":"edie-evans-fragmentation-1"}
 cardImage: {"slot":"edie-evans-fragmentation-1-card"}
-gallery: []
+gallery: [{"src":{"slot":"edie-evans-fragmentation-1-2"},"alt":"Fragmentation 1 by Edie Evans, seen from another side, showing the cracked plates"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Ceramic"

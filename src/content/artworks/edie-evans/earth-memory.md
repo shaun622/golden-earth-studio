@@ -12,7 +12,7 @@ cardImage: {"slot":"edie-evans-earth-memory-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026
-tileMedium: "Burnished Clay"
+tileMedium: "London Clay"
 relatedIds: ["jihyun-kim/teoju","zahed-tajeddin/bulls-matter","louis-vincent/bowl","rickie-cheuk/chopsticks"]
 seoDescription: "Earth Memory, 2026 by Edie Evans. London Clay. Enquire with Golden Earth Studio about pricing and availability."
 sourceWpId: null
