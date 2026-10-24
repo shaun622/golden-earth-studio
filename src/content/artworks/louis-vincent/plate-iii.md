@@ -8,7 +8,7 @@ dimensions: "0.4cm(h) x 19.5cm(w)"
 materials: "Wood, clay and lacquer"
 price: "£150"
 mainImage: {"slot":"louis-vincent-plate-iii"}
-gallery: []
+gallery: [{"src":{"slot":"louis-vincent-plate-iii-side"},"alt":"Plate III by Louis Vincent seen from the side, showing its thin flat profile"},{"src":{"slot":"louis-vincent-plate-iii-detail"},"alt":"Close-up of the speckled clay surface of Plate III by Louis Vincent"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Wood"

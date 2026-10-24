@@ -8,7 +8,7 @@ dimensions: "11.2cm(h) x 21.6cm(w)"
 materials: "Wood, clay and lacquer"
 price: "£350"
 mainImage: {"slot":"louis-vincent-bowl-iii"}
-gallery: []
+gallery: [{"src":{"slot":"louis-vincent-bowl-iii-top"},"alt":"Bowl III by Louis Vincent seen from above, showing its dark mottled interior"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Wood"

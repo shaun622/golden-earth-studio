@@ -8,7 +8,7 @@ dimensions: "9.8cm(h) x 21.7cm(w)"
 materials: "Wood, clay and lacquer"
 price: "£325"
 mainImage: {"slot":"louis-vincent-bowl-ii"}
-gallery: []
+gallery: [{"src":{"slot":"louis-vincent-bowl-ii-top"},"alt":"Bowl II by Louis Vincent seen from above, showing its speckled interior"},{"src":{"slot":"louis-vincent-bowl-ii-detail"},"alt":"Close-up of the rim of Bowl II by Louis Vincent showing the speckled clay surface"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Wood"
