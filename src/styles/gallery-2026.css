@@ -58,9 +58,8 @@
 .figma-product-media { width: min(610px, calc((100svh - 120px) * var(--stack-aspect, .583))); max-width: 100%; justify-self: end; }
 .figma-product-media > .media-slot { aspect-ratio: 350 / 600; }
 .figma-product--landscape .figma-product-media > .media-slot { aspect-ratio: 550 / 370; }
-.figma-product-media .image-gallery-grid { grid-template-columns: 1fr; gap: 36px; }
-.figma-product-media .image-gallery-grid > a { background: none; }
-.figma-product-media .image-gallery-grid img { display: block; width: 100%; aspect-ratio: var(--image-ratio, auto); height: auto; }
+.figma-product-photos { display: grid; gap: 36px; }
+.figma-product-photos img { display: block; width: 100%; aspect-ratio: var(--image-ratio, auto); height: auto; }
 .figma-related h2 { margin: 0 0 28px; font: 400 22px/1.6 var(--serif); }
 .figma-related-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 38px; }
 .figma-related-card { min-width: 0; }
@@ -135,7 +134,7 @@
   .figma-product-facts { margin-bottom: 35px; }
   .figma-enquiry h2 { padding-bottom: 14px; margin-bottom: 20px; }
   .figma-product-media { width: 100%; justify-self: start; margin-top: 0; }
-  .figma-product-media .image-gallery-grid { gap: 20px; }
+  .figma-product-photos { gap: 20px; }
   .figma-related { margin-top: 75px; }
   .figma-related-grid { gap: 30px 20px; }
   .figma-interior .contact-form--figma input, .figma-interior .contact-form--figma textarea { font-size: 16px; }
