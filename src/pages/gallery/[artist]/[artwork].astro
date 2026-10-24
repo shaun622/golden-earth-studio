@@ -34,7 +34,7 @@ const realImages = artwork.data.gallery.flatMap((item) => {
         <dl class="artwork-facts">
           {artwork.data.dimensions && <div><dt>Dimensions</dt><dd>{artwork.data.dimensions}</dd></div>}
           {artwork.data.materials && <div><dt>Materials</dt><dd>{artwork.data.materials}</dd></div>}
-          {artwork.data.price && <div><dt>Price</dt><dd>{artwork.data.price}</dd></div>}
+          {artwork.data.sold ? <div><dt>Price</dt><dd>Sold</dd></div> : artwork.data.price && <div><dt>Price</dt><dd>{artwork.data.price}</dd></div>}
         </dl>
         <div class="prose"><Content /></div>
         <section class="artwork-enquiry" aria-labelledby="enquire-heading">
