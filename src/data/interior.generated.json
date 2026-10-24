@@ -173,10 +173,10 @@
         "href": "/gallery/james-galbraith-kirkpatrick/large-bowl/",
         "label": "Large Bowl by James Galbraith Kirkpatrick",
         "image": {
-          "slot": "james-galbraith-kirkpatrick-large-bowl"
+          "slot": "james-galbraith-kirkpatrick-large-bowl-card"
         },
         "hoverImage": {
-          "slot": "james-galbraith-kirkpatrick-large-bowl"
+          "slot": "james-galbraith-kirkpatrick-large-bowl-2"
         },
         "objectPosition": "center"
       },

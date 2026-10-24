@@ -17,7 +17,7 @@ function record(file) {
 }
 const expectedArtists = ["louis-vincent", "jihyun-kim", "jacob-chan", "alexandra-yan-wong", "adam-weismann", "arran-gregory", "zahed-tajeddin", "rickie-cheuk", "lucia-ocejo", "james-galbraith-kirkpatrick", "edie-evans", "eleanor-herbosch"];
 const expectedWorks = {
-  "james-galbraith-kirkpatrick": [["large-bowl", "Large Bowl", "", "£80"], ["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"]],
+  "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"], ["large-bowl", "Large Bowl", "", "£80"]],
   "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "8cm(l) x 12cm(w) x 6.5cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"]],
   "lucia-ocejo": [["round-bud-vase", "Round Bud Vase", "18cm(w) x 20cm(h) x 7cm(w)", "£220"], ["tea-bowl", "Tea Bowl", "8cm(w) x 9cm(h)", "£50"], ["mug", "Mug", "9cm(w) x 8.5cm(h)", "£40"], ["jug", "Jug", "17cm(w) x 26cm(h)", "£160"], ["tiled-screen", "Tiled Screen", "156cm(w) x 130cm(h)", null]],
   "eleanor-herbosch": [["unearthing-series-1", "Unearthing Series #1", "70cm(w) x 120cm(h)", "£7,200"], ["unearthing-series-2", "Unearthing Series #2", "160cm(w) x 80cm(h)", "£10,500"], ["unearthing-series-3", "Unearthing Series #3", "160cm(w) x 80cm(h)", "£10,500"]],
@@ -37,7 +37,7 @@ assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)]
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
 assert.equal(ledger.generated.length, 106);
 assert.equal(Object.keys(catalogue).length, 68);
-assert.equal(Object.keys(mediaSlots).length, 149);
+assert.equal(Object.keys(mediaSlots).length, 152);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
