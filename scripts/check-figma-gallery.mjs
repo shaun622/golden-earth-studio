@@ -169,7 +169,7 @@ const adam = record("src/content/artists/adam-weismann.md").data;
 assert.equal(adam.artworkIds[0], "adam-weismann/terre-verte");
 assert.deepEqual(catalogue["adam-weismann/terre-verte"], { title: "Terre Verte", artist: "Adam Weismann", path: "/gallery/adam-weismann/terre-verte/" });
 const terreVerte = html("/gallery/adam-weismann/terre-verte/");
-assert.ok(terreVerte.includes("£16,000") && !terreVerte.includes(">Materials</dt>"));
+assert.ok(terreVerte.includes("£16,000 for the diptych (two panels)") && !terreVerte.includes(">Materials</dt>"));
 checkPage(terreVerte, "adam-weismann/terre-verte");
 allUpdatedHtml += html("/gallery/adam-weismann/") + terreVerte;
 for (const [work, title, dimensions, price] of alexWorks) {
