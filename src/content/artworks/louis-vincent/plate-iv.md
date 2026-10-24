@@ -8,6 +8,7 @@ dimensions: "0.4cm(h) x 19cm(w)"
 materials: "Wood, clay and lacquer"
 price: "£150"
 mainImage: {"slot":"louis-vincent-plate-iv"}
+cardImage: {"slot":"louis-vincent-plate-iv-card"}
 gallery: [{"src":{"slot":"louis-vincent-plate-iv-side"},"alt":"Plate IV by Louis Vincent seen from the side, showing its thin flat profile"},{"src":{"slot":"louis-vincent-plate-iv-detail"},"alt":"Close-up of the mottled clay surface of Plate IV by Louis Vincent"}]
 detailVariant: "figma-2026"
 year: 2026
