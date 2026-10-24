@@ -83,11 +83,12 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "jacob-chan-ginger-jar-2026-card": { src: "/assets/artworks/jacob-chan/ginger-jar-2026-card.webp", alt: "Ginger Jar by Jacob Chan, a lidded jar with a glossy red shoulder above a speckled green base", width: 869, height: 1473 },
   "jacob-chan-ginger-jar-2026": { src: "/assets/artworks/jacob-chan/ginger-jar-2026.webp", alt: "Ginger Jar by Jacob Chan, a lidded jar with a glossy red shoulder above a speckled green base", width: 874, height: 1544 },
   "jacob-chan-ginger-jar-2026-2": { src: "/assets/artworks/jacob-chan/ginger-jar-2026-2.webp", alt: "The other side of Ginger Jar by Jacob Chan, showing green and rust glaze over the bare clay foot", width: 914, height: 1599 },
-  "jacob-chan-lotus-set-card": { src: "/assets/artworks/jacob-chan/lotus-set-card.webp", alt: "Lotus Set by Jacob Chan, a petal-rimmed plate and bowl in cream glaze with rust brushwork beside a matching cup", width: 944, height: 1600 },
+  "jacob-chan-lotus-set-card": { src: "/assets/artworks/jacob-chan/lotus-set-card.webp", alt: "Lotus Set by Jacob Chan, a cup stacked in a bowl on a petal-rimmed plate, all in cream glaze with rust brushwork", width: 944, height: 1600 },
+  "jacob-chan-lotus-set-stack": { src: "/assets/artworks/jacob-chan/lotus-set-stack.webp", alt: "Lotus Set by Jacob Chan, a cup stacked in a bowl on a petal-rimmed plate, all in cream glaze with rust brushwork", width: 1280, height: 1138 },
   "jacob-chan-lotus-set": { src: "/assets/artworks/jacob-chan/lotus-set.webp", alt: "Lotus Set by Jacob Chan, a petal-rimmed plate and bowl in cream glaze with rust brushwork beside a matching cup", width: 1394, height: 601 },
   "jacob-chan-lotus-set-2": { src: "/assets/artworks/jacob-chan/lotus-set-2.webp", alt: "Lotus bowls by Jacob Chan stacked at angles, showing their petal rims and stamped seals", width: 781, height: 1053 },
   "jacob-chan-bottle-series-card": { src: "/assets/artworks/jacob-chan/bottle-series-card.webp", alt: "Bottle Series by Jacob Chan, five unglazed London Clay bottles rising in height from dark brown to pale terracotta", width: 944, height: 1600 },
-  "jacob-chan-bottle-series": { src: "/assets/artworks/jacob-chan/bottle-series.webp", alt: "Bottle Series by Jacob Chan, five unglazed London Clay bottles rising in height from dark brown to pale terracotta", width: 1494, height: 799 },
+  "jacob-chan-bottle-series": { src: "/assets/artworks/jacob-chan/bottle-series.webp", alt: "Bottle Series by Jacob Chan, five unglazed London Clay bottles rising in height from dark brown to pale terracotta", width: 1448, height: 799 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

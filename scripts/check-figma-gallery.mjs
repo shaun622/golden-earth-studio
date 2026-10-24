@@ -35,7 +35,7 @@ assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)]
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
 assert.equal(ledger.generated.length, 89);
 assert.equal(Object.keys(catalogue).length, 51);
-assert.equal(Object.keys(mediaSlots).length, 80);
+assert.equal(Object.keys(mediaSlots).length, 81);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -137,7 +137,10 @@ for (const [work, title, dimensions, price] of [...louisWorks, ...louisPanels]) 
 // Jacob Chan's 2026 works follow his Chess Set; sizes are not yet supplied.
 const jacobWorks = [["sake-set-1", "Sake Set #1"], ["sake-set-2", "Sake Set #2"], ["sake-set-3", "Sake Set #3"], ["sake-set-4", "Sake Set #4"], ["ginger-jar-2026", "Ginger Jar"], ["lotus-set", "Lotus Set"], ["bottle-series", "Bottle Series"]];
 const jacob = record("src/content/artists/jacob-chan.md").data;
-assert.deepEqual(jacob.artworkIds.slice(0, jacobWorks.length + 1), ["jacob-chan/chess-set", ...jacobWorks.map(([work]) => `jacob-chan/${work}`)]);
+// The Chess Set leads, the Lotus Set is third, and the sake sets are spread out rather than grouped.
+assert.equal(jacob.artworkIds[0], "jacob-chan/chess-set");
+assert.equal(jacob.artworkIds[2], "jacob-chan/lotus-set");
+assert.deepEqual(new Set(jacob.artworkIds.slice(1, jacobWorks.length + 1)), new Set(jacobWorks.map(([work]) => `jacob-chan/${work}`)));
 const jacobPage = html("/gallery/jacob-chan/");
 allUpdatedHtml += jacobPage;
 for (const [work, title] of jacobWorks) {
