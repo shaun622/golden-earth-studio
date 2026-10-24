@@ -141,6 +141,8 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "arran-gregory-the-universe-was-an-egg-which-cracked-1": { src: "/assets/artworks/arran-gregory/the-universe-was-an-egg-which-cracked-1.webp", alt: "The Universe Was an Egg Which Cracked by Arran Gregory, seen in studio light on a wooden table", width: 742, height: 927 },
   "arran-gregory-the-universe-was-an-egg-which-cracked-2": { src: "/assets/artworks/arran-gregory/the-universe-was-an-egg-which-cracked-2.webp", alt: "The Universe Was an Egg Which Cracked by Arran Gregory, seen from another side, showing fine cracks in the dark surface", width: 742, height: 927 },
   "arran-gregory-meditation-balls-card": { src: "/assets/artworks/arran-gregory/meditation-balls-card.webp", alt: "Meditation Balls by Arran Gregory, two marbled burnished clay spheres side by side against a black background", width: 1474, height: 2500 },
+  "arran-gregory-wheel-of-matter-2": { src: "/assets/artworks/arran-gregory/wheel-of-matter-2.webp", alt: "Wheel of Matter by Arran Gregory, seen from another side, showing its pale scratched surface", width: 992, height: 1240 },
+  "arran-gregory-wheel-of-matter-3": { src: "/assets/artworks/arran-gregory/wheel-of-matter-3.webp", alt: "Wheel of Matter by Arran Gregory, seen from a third side, showing its folds and scored marks", width: 992, height: 1240 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

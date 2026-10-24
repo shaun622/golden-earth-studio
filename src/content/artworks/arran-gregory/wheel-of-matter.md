@@ -9,7 +9,7 @@ materials: "Burnished London Clay"
 price: "£2,000"
 mainImage: {"slot":"arran-gregory-wheel-of-matter"}
 cardImage: {"slot":"arran-gregory-wheel-of-matter-card"}
-gallery: []
+gallery: [{"src":{"slot":"arran-gregory-wheel-of-matter-2"},"alt":"Wheel of Matter by Arran Gregory, seen from another side, showing its pale scratched surface"},{"src":{"slot":"arran-gregory-wheel-of-matter-3"},"alt":"Wheel of Matter by Arran Gregory, seen from a third side, showing its folds and scored marks"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "London Clay"
