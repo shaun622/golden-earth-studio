@@ -2,7 +2,6 @@
 import type { CollectionEntry } from "astro:content";
 import InteriorLayout from "../layouts/InteriorLayout.astro";
 import MediaSlot from "./MediaSlot.astro";
-import ImageGallery from "./ImageGallery.astro";
 import ContactForm from "./ContactForm.astro";
 import FigmaCommission from "./FigmaCommission.astro";
 import { mediaSource, resolveMedia } from "../data/media";
@@ -15,7 +14,7 @@ const asset = resolveMedia(artwork.mainImage, `${artwork.title} by ${artwork.art
 // Extra photos stack below the main image in display order; a gallery entry repeating the main photo is skipped.
 const extraImages = artwork.gallery.flatMap((item) => {
   const image = resolveMedia(item.src, item.alt);
-  return image.src && image.src !== asset.src ? [{ src: image.src, alt: item.alt, width: image.width, height: image.height }] : [];
+  return image.src && image.src !== asset.src ? [{ src: image.src, alt: item.alt, width: image.width, height: image.height, slot: image.slot }] : [];
 });
 const hasDescription = Astro.slots.has("default");
 // All stacked photos share one width, sized so the tallest still fits within the window.
@@ -42,7 +41,11 @@ const landscape = artwork.artistSlug === "edie-evans";
           </section>
         </div>
         <div class="figma-product-media" data-media-slot={asset.src ? asset.slot : undefined} style={Number.isFinite(stackAspect) ? `--stack-aspect: ${stackAspect.toFixed(4)}` : undefined}>
-          {asset.src ? <ImageGallery label={`${artwork.title} by ${artwork.artistName}`} images={[{ src: asset.src, alt: asset.alt, width: asset.width, height: asset.height }, ...extraImages]} /> : <MediaSlot media={artwork.mainImage} loading="eager" />}
+          {asset.src ? (
+            <div class="figma-product-photos">
+              {[{ ...asset, src: asset.src }, ...extraImages].map((image, index) => <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading={index === 0 ? "eager" : "lazy"} data-media-slot={index === 0 ? undefined : image.slot} style={`--image-ratio: ${image.width} / ${image.height}`} />)}
+            </div>
+          ) : <MediaSlot media={artwork.mainImage} loading="eager" />}
         </div>
       </div>
     </section>

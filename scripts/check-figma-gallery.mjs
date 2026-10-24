@@ -97,7 +97,7 @@ for (const slug of Object.keys(expectedWorks)) {
     const image = resolveMedia(data.mainImage);
     if (image.src) {
       assert.ok(detail.includes(`src="${image.src}"`), `${id}: supplied product photo not rendered`);
-      assert.ok(detail.includes(`href="${image.src}" data-lightbox-open`), `${id}: photo viewer missing`);
+      assert.ok(!detail.includes("data-lightbox-open"), `${id}: product photos should not open a viewer`);
       assert.ok(detail.includes(`content="https://goldenearthstudio.co.uk${image.src}"`), `${id}: social image mismatch`);
     } else {
       assert.ok(!detail.includes("data-lightbox-open"), `${id}: blank is a lightbox target`);
@@ -113,8 +113,7 @@ for (const slug of Object.keys(expectedWorks)) {
   }
 }
 for (const [slot, asset] of Object.entries(mediaSlots)) {
-  // Extra product photos render inside the stacked image viewer, identified by their source rather than a slot attribute.
-  assert.ok(allUpdatedHtml.includes(`data-media-slot="${slot}"`) || (asset.src && allUpdatedHtml.includes(`href="${asset.src}" data-lightbox-open`)), `${slot}: unused/missing slot`);
+  assert.ok(allUpdatedHtml.includes(`data-media-slot="${slot}"`), `${slot}: unused/missing slot`);
   const blanks = [...allUpdatedHtml.matchAll(new RegExp(`<span[^>]*data-media-slot="${slot}"[^>]*>`, "g"))];
   if (asset.src === null) {
     assert.ok(blanks.length, `${slot}: actual blank not rendered`);
@@ -137,4 +136,4 @@ assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 13 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, photo viewers, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 13 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
