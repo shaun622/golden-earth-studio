@@ -118,6 +118,12 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "adam-weismann-terre-verte-installation": { src: "/assets/artworks/adam-weismann/terre-verte-installation.webp", alt: "Two Terre Verte panels by Adam Weismann standing either side of a dark pool beneath a suspended petal installation", width: 1137, height: 1600 },
   "adam-weismann-terre-verte-detail": { src: "/assets/artworks/adam-weismann/terre-verte-detail.webp", alt: "Close-up of Terre Verte by Adam Weismann showing two glassy green ridges crossing the earth surface", width: 1063, height: 1600 },
   "adam-weismann-terre-verte-texture": { src: "/assets/artworks/adam-weismann/terre-verte-texture.webp", alt: "Close-up of the layered green earth strata of Terre Verte by Adam Weismann", width: 1069, height: 1600 },
+  "arran-gregory-blue-entity-study-2": { src: null, alt: "Blue Entity Study (2) by Arran Gregory", width: 1000, height: 1300 },
+  "arran-gregory-wheel-of-matter": { src: null, alt: "Wheel of Matter by Arran Gregory", width: 1000, height: 1300 },
+  "arran-gregory-all-our-gods-are-dancing-gods": { src: null, alt: "All Our Gods Are Dancing Gods by Arran Gregory", width: 1000, height: 1300 },
+  "arran-gregory-incense-ball": { src: null, alt: "Incense Ball by Arran Gregory", width: 1000, height: 1300 },
+  "arran-gregory-inbetween-worlds": { src: null, alt: "Inbetween Worlds by Arran Gregory", width: 1000, height: 1300 },
+  "arran-gregory-meditation-balls": { src: null, alt: "Meditation Balls by Arran Gregory", width: 1000, height: 1300 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

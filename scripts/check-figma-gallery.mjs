@@ -30,14 +30,14 @@ const plan = read("docs/FIGMA-ARTIST-EXPANSION-PLAN.md");
 const gallery = html("/gallery/");
 assert.deepEqual(order.artistOrder, expectedArtists);
 assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), expectedArtists);
-// The 21 original works follow 36 works added in 2026; cards are shuffled in the browser.
-assert.equal(interior.gallery.artworks.length, 57);
+// The 21 original works follow 42 works added in 2026; cards are shuffled in the browser.
+assert.equal(interior.gallery.artworks.length, 63);
 for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
-assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 69);
+assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 75);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 96);
-assert.equal(Object.keys(catalogue).length, 58);
-assert.equal(Object.keys(mediaSlots).length, 110);
+assert.equal(ledger.generated.length, 102);
+assert.equal(Object.keys(catalogue).length, 64);
+assert.equal(Object.keys(mediaSlots).length, 116);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -172,6 +172,17 @@ const terreVerte = html("/gallery/adam-weismann/terre-verte/");
 assert.ok(terreVerte.includes("£16,000 for the diptych (two panels)") && !terreVerte.includes(">Materials</dt>"));
 checkPage(terreVerte, "adam-weismann/terre-verte");
 allUpdatedHtml += html("/gallery/adam-weismann/") + terreVerte;
+// Arran Gregory's 2026 works lead his profile.
+const arranWorks = ["blue-entity-study-2", "wheel-of-matter", "all-our-gods-are-dancing-gods", "incense-ball", "inbetween-worlds", "meditation-balls"];
+const arran = record("src/content/artists/arran-gregory.md").data;
+assert.deepEqual(arran.artworkIds.slice(0, arranWorks.length), arranWorks.map((work) => `arran-gregory/${work}`));
+allUpdatedHtml += html("/gallery/arran-gregory/");
+for (const work of arranWorks) {
+  const detail = html(`/gallery/arran-gregory/${work}/`);
+  assert.ok(detail.includes(`name="artworkId" value="arran-gregory/${work}"`));
+  checkPage(detail, work);
+  allUpdatedHtml += detail;
+}
 for (const [work, title, dimensions, price] of alexWorks) {
   const id = `alexandra-yan-wong/${work}`, route = `/gallery/${id}/`;
   const { data } = record(`src/content/artworks/${id}.md`);
@@ -203,9 +214,9 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 58);
+assert.equal(artworkCount, 64);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained and 36 added Gallery works, 36 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained and 42 added Gallery works, 42 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);

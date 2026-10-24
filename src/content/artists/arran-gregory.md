@@ -8,7 +8,7 @@ hoverImage: "/assets/migrated/artworks/arran-gregory/the-universe-was-an-egg-whi
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 5
-artworkIds: ["arran-gregory/the-universe-was-an-egg-which-cracked","arran-gregory/heart-of-matter"]
+artworkIds: ["arran-gregory/blue-entity-study-2","arran-gregory/wheel-of-matter","arran-gregory/all-our-gods-are-dancing-gods","arran-gregory/incense-ball","arran-gregory/inbetween-worlds","arran-gregory/meditation-balls","arran-gregory/the-universe-was-an-egg-which-cracked","arran-gregory/heart-of-matter"]
 studies: []
 relatedProfiles: []
 seoDescription: "Arran Gregory is a British–Sri Lankan artist based in the UK. His sculptural practice explores impermanence, transcendence, and the primal psyche through working with raw…"

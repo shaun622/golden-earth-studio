@@ -115,6 +115,72 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/arran-gregory/blue-entity-study-2/",
+        "label": "Blue Entity Study (2) by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-blue-entity-study-2"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-blue-entity-study-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/wheel-of-matter/",
+        "label": "Wheel of Matter by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-wheel-of-matter"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-wheel-of-matter"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/all-our-gods-are-dancing-gods/",
+        "label": "All Our Gods Are Dancing Gods by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-all-our-gods-are-dancing-gods"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-all-our-gods-are-dancing-gods"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/incense-ball/",
+        "label": "Incense Ball by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-incense-ball"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-incense-ball"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/inbetween-worlds/",
+        "label": "Inbetween Worlds by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-inbetween-worlds"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-inbetween-worlds"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/arran-gregory/meditation-balls/",
+        "label": "Meditation Balls by Arran Gregory",
+        "image": {
+          "slot": "arran-gregory-meditation-balls"
+        },
+        "hoverImage": {
+          "slot": "arran-gregory-meditation-balls"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/eleanor-herbosch/unearthing-series-1/",
         "label": "Unearthing Series #1 by Eleanor Herbosch",
         "image": {
