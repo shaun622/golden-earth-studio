@@ -104,6 +104,17 @@
     ],
     "artworks": [
       {
+        "href": "/gallery/adam-weismann/terre-verte/",
+        "label": "Terre Verte by Adam Weismann",
+        "image": {
+          "slot": "adam-weismann-terre-verte-card"
+        },
+        "hoverImage": {
+          "slot": "adam-weismann-terre-verte-angle"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/eleanor-herbosch/unearthing-series-1/",
         "label": "Unearthing Series #1 by Eleanor Herbosch",
         "image": {
@@ -448,10 +459,10 @@
         "href": "/gallery/lucia-ocejo/tea-bowl/",
         "label": "Tea Bowl by Lucia Ocejo",
         "image": {
-          "slot": "lucia-ocejo-tea-bowl"
+          "slot": "lucia-ocejo-tea-bowl-card"
         },
         "hoverImage": {
-          "slot": "lucia-ocejo-tea-bowl"
+          "slot": "lucia-ocejo-tea-bowl-card"
         },
         "objectPosition": "center"
       },

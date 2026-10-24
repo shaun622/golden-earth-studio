@@ -23,6 +23,7 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "edie-evans-bedrock-card": { src: "/assets/artworks/edie-evans/bedrock-card.webp", alt: "Close-up of Bedrock by Edie Evans", width: 682, height: 1170 },
   "edie-evans-fragmentation-1-card": { src: "/assets/artworks/edie-evans/fragmentation-1-card.webp", alt: "Close-up of Fragmentation 1 by Edie Evans", width: 680, height: 1176 },
   "lucia-ocejo-round-bud-vase": { src: "/assets/artworks/lucia-ocejo/round-bud-vase.webp", alt: "Round Bud Vase by Lucia Ocejo with an incised wave pattern", width: 664, height: 1194 },
+  "lucia-ocejo-tea-bowl-card": { src: "/assets/artworks/lucia-ocejo/tea-bowl-card.webp", alt: "Pale blue Tea Bowl by Lucia Ocejo", width: 666, height: 1129 },
   "lucia-ocejo-tea-bowl": { src: "/assets/artworks/lucia-ocejo/tea-bowl.webp", alt: "Pale blue Tea Bowl by Lucia Ocejo", width: 666, height: 1188 },
   "lucia-ocejo-mug": { src: "/assets/artworks/lucia-ocejo/mug.webp", alt: "A hand holding the handle of Lucia Ocejo's Mug", width: 664, height: 1184 },
   "lucia-ocejo-jug": { src: "/assets/artworks/lucia-ocejo/jug.webp", alt: "Jug by Lucia Ocejo with a pale glazed upper half", width: 682, height: 1192 },
@@ -111,6 +112,12 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "alexandra-yan-wong-ges-4-wall": { src: "/assets/artworks/alexandra-yan-wong/ges-4-wall.webp", alt: "Untitled (GES#4) by Alexandra Yan Wong, hung between two brass wall lights on a pale plaster wall", width: 1600, height: 1066 },
   "alexandra-yan-wong-ges-4-angle": { src: "/assets/artworks/alexandra-yan-wong/ges-4-angle.webp", alt: "Untitled (GES#4) by Alexandra Yan Wong, seen at an angle on a blue plaster wall, showing the canvas edge", width: 1600, height: 1066 },
   "alexandra-yan-wong-ges-5-angle": { src: "/assets/artworks/alexandra-yan-wong/ges-5-angle.webp", alt: "Untitled (GES#5) by Alexandra Yan Wong, seen at an angle on a blue plaster wall, showing the canvas edge", width: 1066, height: 1600 },
+  "adam-weismann-terre-verte-card": { src: "/assets/artworks/adam-weismann/terre-verte-card.webp", alt: "Terre Verte by Adam Weismann, a tall green rammed-earth panel with layered strata and two glassy ridges, on a black stand against a plaster column", width: 620, height: 1051 },
+  "adam-weismann-terre-verte": { src: "/assets/artworks/adam-weismann/terre-verte.webp", alt: "Terre Verte by Adam Weismann, a tall green rammed-earth panel with layered strata and two glassy ridges, on a black stand against a plaster column", width: 1066, height: 1600 },
+  "adam-weismann-terre-verte-angle": { src: "/assets/artworks/adam-weismann/terre-verte-angle.webp", alt: "Terre Verte by Adam Weismann seen at an angle on its black stand, with white suspended petals in front", width: 1068, height: 1600 },
+  "adam-weismann-terre-verte-installation": { src: "/assets/artworks/adam-weismann/terre-verte-installation.webp", alt: "Two Terre Verte panels by Adam Weismann standing either side of a dark pool beneath a suspended petal installation", width: 1067, height: 1600 },
+  "adam-weismann-terre-verte-detail": { src: "/assets/artworks/adam-weismann/terre-verte-detail.webp", alt: "Close-up of Terre Verte by Adam Weismann showing two glassy green ridges crossing the earth surface", width: 1063, height: 1600 },
+  "adam-weismann-terre-verte-texture": { src: "/assets/artworks/adam-weismann/terre-verte-texture.webp", alt: "Close-up of the layered green earth strata of Terre Verte by Adam Weismann", width: 1069, height: 1600 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

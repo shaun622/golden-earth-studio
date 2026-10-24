@@ -30,14 +30,14 @@ const plan = read("docs/FIGMA-ARTIST-EXPANSION-PLAN.md");
 const gallery = html("/gallery/");
 assert.deepEqual(order.artistOrder, expectedArtists);
 assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), expectedArtists);
-// The 21 original works follow 35 works added in 2026; cards are shuffled in the browser.
-assert.equal(interior.gallery.artworks.length, 56);
+// The 21 original works follow 36 works added in 2026; cards are shuffled in the browser.
+assert.equal(interior.gallery.artworks.length, 57);
 for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
-assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 68);
+assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 69);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 95);
-assert.equal(Object.keys(catalogue).length, 57);
-assert.equal(Object.keys(mediaSlots).length, 103);
+assert.equal(ledger.generated.length, 96);
+assert.equal(Object.keys(catalogue).length, 58);
+assert.equal(Object.keys(mediaSlots).length, 110);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -164,6 +164,14 @@ assert.deepEqual(alex.artworkIds, ["alexandra-yan-wong/untitled-2025", ...alexWo
 const alexPage = html("/gallery/alexandra-yan-wong/");
 allUpdatedHtml += alexPage;
 allUpdatedHtml += html("/gallery/alexandra-yan-wong/untitled-2025/");
+// Adam Weismann's Terre Verte leads his profile; materials and size are not yet supplied.
+const adam = record("src/content/artists/adam-weismann.md").data;
+assert.equal(adam.artworkIds[0], "adam-weismann/terre-verte");
+assert.deepEqual(catalogue["adam-weismann/terre-verte"], { title: "Terre Verte", artist: "Adam Weismann", path: "/gallery/adam-weismann/terre-verte/" });
+const terreVerte = html("/gallery/adam-weismann/terre-verte/");
+assert.ok(terreVerte.includes("£16,000") && !terreVerte.includes(">Materials</dt>"));
+checkPage(terreVerte, "adam-weismann/terre-verte");
+allUpdatedHtml += html("/gallery/adam-weismann/") + terreVerte;
 for (const [work, title, dimensions, price] of alexWorks) {
   const id = `alexandra-yan-wong/${work}`, route = `/gallery/${id}/`;
   const { data } = record(`src/content/artworks/${id}.md`);
@@ -195,9 +203,9 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 57);
+assert.equal(artworkCount, 58);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained and 35 added Gallery works, 35 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained and 36 added Gallery works, 36 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
