@@ -8,6 +8,7 @@ dimensions: ""
 materials: "Soda Fired London Clay"
 price: "£580"
 mainImage: {"slot":"jacob-chan-bottle-series"}
+cardImage: {"slot":"jacob-chan-bottle-series-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026

@@ -8,6 +8,7 @@ dimensions: ""
 materials: "Soda Fired London Clay and Stoneware"
 price: "£130"
 mainImage: {"slot":"jacob-chan-sake-set-2"}
+cardImage: {"slot":"jacob-chan-sake-set-2-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026

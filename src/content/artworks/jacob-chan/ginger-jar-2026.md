@@ -8,7 +8,8 @@ dimensions: ""
 materials: "Soda Fired London Clay and Stoneware"
 price: "£350"
 mainImage: {"slot":"jacob-chan-ginger-jar-2026"}
-gallery: []
+cardImage: {"slot":"jacob-chan-ginger-jar-2026-card"}
+gallery: [{"src":{"slot":"jacob-chan-ginger-jar-2026-2"},"alt":"The other side of Ginger Jar by Jacob Chan, showing green and rust glaze over the bare clay foot"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Ceramic"
