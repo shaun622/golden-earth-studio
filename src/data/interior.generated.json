@@ -107,10 +107,10 @@
         "href": "/gallery/adam-weismann/terre-verte/",
         "label": "Terre Verte by Adam Weismann",
         "image": {
-          "slot": "adam-weismann-terre-verte-card"
+          "slot": "adam-weismann-terre-verte-installation"
         },
         "hoverImage": {
-          "slot": "adam-weismann-terre-verte-angle"
+          "slot": "adam-weismann-terre-verte"
         },
         "objectPosition": "center"
       },
