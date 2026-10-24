@@ -36,6 +36,7 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "eleanor-herbosch-unearthing-series-2-card": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-2-card.webp", alt: "Unearthing Series #2 by Eleanor Herbosch, a wide canvas of pale earth tones crossed by two ridges of raised grey clay with dark splashes", width: 582, height: 987 },
   "eleanor-herbosch-unearthing-series-2-corner": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-2-corner.webp", alt: "Lower right corner of Unearthing Series #2 by Eleanor Herbosch showing raised clay ridges, grey splashes and the canvas edge against a plaster wall", width: 1600, height: 1067 },
   "eleanor-herbosch-unearthing-series-2-detail": { src: "/assets/artworks/eleanor-herbosch/unearthing-series-2-detail.webp", alt: "Close-up of Unearthing Series #2 by Eleanor Herbosch showing two ridges of raised London Clay converging across the canvas", width: 1600, height: 1066 },
+  "eleanor-herbosch-unearthing-series-3": { src: null, alt: "Unearthing Series #3 by Eleanor Herbosch", width: 582, height: 987 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
