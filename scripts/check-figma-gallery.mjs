@@ -18,11 +18,11 @@ function record(file) {
 const expectedArtists = ["louis-vincent", "jihyun-kim", "jacob-chan", "alexandra-yan-wong", "adam-weismann", "arran-gregory", "zahed-tajeddin", "rickie-cheuk", "lucia-ocejo", "james-galbraith-kirkpatrick", "edie-evans", "eleanor-herbosch"];
 const expectedWorks = {
   "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"], ["large-bowl", "Large Bowl", "", "£80"]],
-  "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "8cm(l) x 12cm(w) x 6.5cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"]],
+  "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "8cm(l) x 12cm(w) x 6.5cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"], ["dorodango-pair-ii", "Dorodango Pair II", "", "£275"], ["dorodango-pair-i", "Dorodango Pair I", "", "£275"], ["holding", "Holding", "", "£575"], ["ground", "Ground", "10 x 9.5 x 8 cm", "£575"]],
   "lucia-ocejo": [["round-bud-vase", "Round Bud Vase", "18cm(w) x 20cm(h) x 7cm(w)", "£220"], ["tea-bowl", "Tea Bowl", "8cm(w) x 9cm(h)", "£50"], ["mug", "Mug", "9cm(w) x 8.5cm(h)", "£40"], ["jug", "Jug", "17cm(w) x 26cm(h)", "£160"], ["tiled-screen", "Tiled Screen", "156cm(w) x 130cm(h)", null]],
   "eleanor-herbosch": [["unearthing-series-1", "Unearthing Series #1", "70cm(w) x 120cm(h)", "£7,200"], ["unearthing-series-2", "Unearthing Series #2", "160cm(w) x 80cm(h)", "£10,500"], ["unearthing-series-3", "Unearthing Series #3", "160cm(w) x 80cm(h)", "£10,500"]],
 };
-const expectedMaterials = { "tiled-screen": "Ceramic & Wood", "unearthing-series-1": "London Clay on Canvas", "unearthing-series-2": "London Clay on Canvas", "unearthing-series-3": "London Clay on Canvas" };
+const expectedMaterials = { "dorodango-pair-ii": "Burnished London Clay", "dorodango-pair-i": "Burnished London Clay", "holding": "Burnished London Clay", "ground": "Burnished London Clay", "tiled-screen": "Ceramic & Wood", "unearthing-series-1": "London Clay on Canvas", "unearthing-series-2": "London Clay on Canvas", "unearthing-series-3": "London Clay on Canvas" };
 const interior = json("src/data/interior.generated.json");
 const order = json("src/data/gallery.generated.json");
 const ledger = json("src/data/route-ledger.json");
@@ -30,14 +30,14 @@ const plan = read("docs/FIGMA-ARTIST-EXPANSION-PLAN.md");
 const gallery = html("/gallery/");
 assert.deepEqual(order.artistOrder, expectedArtists);
 assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), expectedArtists);
-// The 21 original works follow 46 works added in 2026; cards are shuffled in the browser.
-assert.equal(interior.gallery.artworks.length, 67);
+// The 21 original works follow 50 works added in 2026; cards are shuffled in the browser.
+assert.equal(interior.gallery.artworks.length, 71);
 for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
-assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 79);
+assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 83);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 106);
-assert.equal(Object.keys(catalogue).length, 68);
-assert.equal(Object.keys(mediaSlots).length, 152);
+assert.equal(ledger.generated.length, 110);
+assert.equal(Object.keys(catalogue).length, 72);
+assert.equal(Object.keys(mediaSlots).length, 156);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -219,9 +219,9 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 68);
+assert.equal(artworkCount, 72);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained and 46 added Gallery works, 46 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained and 50 added Gallery works, 50 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);

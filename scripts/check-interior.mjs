@@ -30,9 +30,9 @@ assert.ok(normalize(pages.gallery).includes(normalize(source(333).headings[0])))
 const cards = [...data.gallery.artists, ...data.gallery.artworks];
 const renderedCards = [...pages.gallery.matchAll(/<article class="reference-catalogue-card">([\s\S]*?)<\/article>/g)];
 assert.equal(data.gallery.artists.length, 12);
-assert.equal(data.gallery.artworks.length, 67);
-assert.equal(cards.length, 79);
-assert.equal(renderedCards.length, 79);
+assert.equal(data.gallery.artworks.length, 71);
+assert.equal(cards.length, 83);
+assert.equal(renderedCards.length, 83);
 const expectedHovers = [...new Map([...read("docs/reference/styles/post-333.css").matchAll(/\/\* Start custom CSS for image, class: \.elementor-element-([^ ]+)[\s\S]*?background-image:\s*url\('([^']+)'\)/g)].map((m) => [m[1], m[2]])).values()];
 // The Figma change deliberately appends four artists and changes Adam's medium.
 // All original URLs/hovers remain covered, matched by stable destination.

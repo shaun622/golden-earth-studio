@@ -160,6 +160,10 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "james-galbraith-kirkpatrick-large-bowl-card": { src: "/assets/artworks/james-galbraith-kirkpatrick/large-bowl-card.webp", alt: "Large Bowl by James Galbraith Kirkpatrick, two stacked stoneware bowls with a speckled cream glaze and grey leaf-like marks, in low sunlight", width: 944, height: 1600 },
   "james-galbraith-kirkpatrick-large-bowl-2": { src: "/assets/artworks/james-galbraith-kirkpatrick/large-bowl-2.webp", alt: "Large Bowl by James Galbraith Kirkpatrick, the stacked bowls from another side showing drips of pale glaze", width: 1320, height: 990 },
   "james-galbraith-kirkpatrick-large-bowl-3": { src: "/assets/artworks/james-galbraith-kirkpatrick/large-bowl-3.webp", alt: "Inside Large Bowl by James Galbraith Kirkpatrick, a crackled amber glaze with throwing rings", width: 1600, height: 1066 },
+  "edie-evans-dorodango-pair-ii": { src: null, alt: "Dorodango Pair II by Edie Evans", width: 1500, height: 1000 },
+  "edie-evans-dorodango-pair-i": { src: null, alt: "Dorodango Pair I by Edie Evans", width: 1500, height: 1000 },
+  "edie-evans-holding": { src: null, alt: "Holding by Edie Evans", width: 1500, height: 1000 },
+  "edie-evans-ground": { src: null, alt: "Ground by Edie Evans", width: 1500, height: 1000 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 

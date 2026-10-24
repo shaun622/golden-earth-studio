@@ -192,6 +192,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/edie-evans/dorodango-pair-ii/",
+        "label": "Dorodango Pair II by Edie Evans",
+        "image": {
+          "slot": "edie-evans-dorodango-pair-ii"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-dorodango-pair-ii"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/arran-gregory/incense-ball/",
         "label": "Incense Ball by Arran Gregory",
         "image": {
@@ -221,6 +232,17 @@
         },
         "hoverImage": {
           "slot": "arran-gregory-meditation-balls"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/edie-evans/dorodango-pair-i/",
+        "label": "Dorodango Pair I by Edie Evans",
+        "image": {
+          "slot": "edie-evans-dorodango-pair-i"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-dorodango-pair-i"
         },
         "objectPosition": "center"
       },
@@ -258,6 +280,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/edie-evans/holding/",
+        "label": "Holding by Edie Evans",
+        "image": {
+          "slot": "edie-evans-holding"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-holding"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/alexandra-yan-wong/ges-2/",
         "label": "Untitled (GES#2) by Alexandra Yan Wong",
         "image": {
@@ -287,6 +320,17 @@
         },
         "hoverImage": {
           "slot": "louis-vincent-plate-ii-side"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/edie-evans/ground/",
+        "label": "Ground by Edie Evans",
+        "image": {
+          "slot": "edie-evans-ground"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-ground"
         },
         "objectPosition": "center"
       },

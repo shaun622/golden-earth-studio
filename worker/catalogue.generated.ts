@@ -340,5 +340,25 @@ export default {
     "title": "Large Bowl",
     "artist": "James Galbraith Kirkpatrick",
     "path": "/gallery/james-galbraith-kirkpatrick/large-bowl/"
+  },
+  "edie-evans/dorodango-pair-ii": {
+    "title": "Dorodango Pair II",
+    "artist": "Edie Evans",
+    "path": "/gallery/edie-evans/dorodango-pair-ii/"
+  },
+  "edie-evans/dorodango-pair-i": {
+    "title": "Dorodango Pair I",
+    "artist": "Edie Evans",
+    "path": "/gallery/edie-evans/dorodango-pair-i/"
+  },
+  "edie-evans/holding": {
+    "title": "Holding",
+    "artist": "Edie Evans",
+    "path": "/gallery/edie-evans/holding/"
+  },
+  "edie-evans/ground": {
+    "title": "Ground",
+    "artist": "Edie Evans",
+    "path": "/gallery/edie-evans/ground/"
   }
 } as const;
