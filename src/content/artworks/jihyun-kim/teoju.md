@@ -9,6 +9,7 @@ materials: "Excavated clay"
 price: "£1,500"
 mainImage: "/assets/migrated/artworks/jihyun-kim/teoju-main-ec2b6eb.webp"
 gallery: [{"src":"/assets/migrated/artworks/jihyun-kim/teoju-main-ec2b6eb.webp","alt":"Teoju #1 | Jihyun Kim detail 1"}]
+detailVariant: "figma-2026"
 relatedIds: ["jacob-chan/chess-set","zahed-tajeddin/bowing-bull","rickie-cheuk/chopsticks","jacob-chan/ginger-jar"]
 seoDescription: "Teoju #1 is inspired by the Korean god Teojusin, traditionally represented as the god of land, who protects the earth where the home is located. Traditionally, by placing a big…"
 sourceWpId: 2861

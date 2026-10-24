@@ -9,6 +9,7 @@ materials: "Birch, clay and lacquer."
 price: "£750"
 mainImage: "/assets/migrated/artworks/louis-vincent/wall-panel-i-main-0d39b1e.webp"
 gallery: [{"src":"/assets/migrated/artworks/louis-vincent/wall-panel-i-main-0d39b1e.webp","alt":"Wall Panel 1 | Louis Vincent detail 1"}]
+detailVariant: "figma-2026"
 relatedIds: ["jihyun-kim/teoju","jacob-chan/chess-set","zahed-tajeddin/bowing-bull","rickie-cheuk/chopsticks"]
 seoDescription: "Louis Vincent invites a second glance with the wall panel’s unexpected surface. Made from reclaimed wood panels, the piece is treated with clay sourced from London construction…"
 sourceWpId: 3007

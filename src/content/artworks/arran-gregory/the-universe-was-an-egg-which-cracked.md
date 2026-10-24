@@ -9,6 +9,7 @@ materials: "Burnished London Clay"
 price: "£2,800"
 mainImage: "/assets/migrated/artworks/arran-gregory/the-universe-was-an-egg-which-cracked-main-48ae385.webp"
 gallery: [{"src":"/assets/migrated/artworks/arran-gregory/the-universe-was-an-egg-which-cracked-main-48ae385.webp","alt":"The Universe Was AN Egg Which Cracked | Arran Gregory detail 1"}]
+detailVariant: "figma-2026"
 relatedIds: ["rickie-cheuk/chopsticks","jihyun-kim/teoju","zahed-tajeddin/stillness","louis-vincent/conical-bowl"]
 seoDescription: "This sculpture was created during Arran’s residency at Golden Earth Studio, where a temporary workspace was established to transform the by-products of a London construction site…"
 sourceWpId: 4257
