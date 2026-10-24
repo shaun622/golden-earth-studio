@@ -107,9 +107,11 @@ for (const slug of Object.keys(expectedWorks)) {
     const card = resolveMedia(data.cardImage || data.mainImage);
     assert.ok(page.includes(`data-media-slot="${card.slot}"`), `${id}: profile crop missing`);
     if (card.src) assert.ok(page.includes(`src="${card.src}"`), `${id}: profile photo missing`);
-    const related = detail.match(/<div class="figma-related-grid">([\s\S]*?)<\/div>/)?.[1];
+    const related = detail.match(/<div class="figma-related-grid"[^>]*>([\s\S]*?)<\/div>/)?.[1];
+    // Related works come from a pool of similar Artworks-tab pieces; the browser shows a random four.
     const links = [...related.matchAll(/href="([^"]+)"/g)].map(item => item[1]);
-    assert.deepEqual(links, ["/gallery/jihyun-kim/teoju/", "/gallery/zahed-tajeddin/bulls-matter/", "/gallery/louis-vincent/bowl/", "/gallery/rickie-cheuk/chopsticks/"]);
+    const tab = new Set(interior.gallery.artworks.map(card => card.href));
+    assert.ok(links.length >= 4 && links.every(link => tab.has(link) && link !== route), `${id}: related pool must hold four or more other Artworks-tab works`);
     checkPage(detail, id);
     allUpdatedHtml += detail;
   }

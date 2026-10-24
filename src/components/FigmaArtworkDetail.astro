@@ -5,11 +5,19 @@ import MediaSlot from "./MediaSlot.astro";
 import ContactForm from "./ContactForm.astro";
 import FigmaCommission from "./FigmaCommission.astro";
 import { mediaSource, resolveMedia } from "../data/media";
-import { artworks as relatedWorks } from "../data/home";
+import { getCollection } from "astro:content";
+import { relatedPool } from "../data/related";
 import "../styles/gallery-2026.css";
 import sharp from "sharp";
 interface Props { artwork: CollectionEntry<"artworks">["data"]; }
 const { artwork } = Astro.props;
+const related = relatedPool(artwork, (await getCollection("artworks")).map((entry) => entry.data)).map((work) => ({
+  href: `/gallery/${work.id}/`,
+  title: work.year ? `${work.title}, ${work.year}` : work.title,
+  artist: work.artistName,
+  artistSlug: work.artistSlug,
+  image: resolveMedia(work.cardImage || work.mainImage),
+}));
 const displayTitle = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
 // Plain image paths (migrated works) carry no size, so read the real pixel dimensions from the file.
 async function measured(image: ReturnType<typeof resolveMedia>, reference: unknown) {
@@ -58,10 +66,26 @@ const landscape = artwork.artistSlug === "edie-evans";
     </section>
     <section class="figma-related" aria-labelledby="related-heading">
       <h2 id="related-heading">Related Artworks</h2>
-      <div class="figma-related-grid">
-        {relatedWorks.map((item) => <article class="figma-related-card"><a href={item.href}><img src={item.image} alt={`${item.title} by ${item.artist}`} width="600" height="450" loading="lazy" /><h3>{item.title} <span>by {item.artist}</span></h3></a></article>)}
+      <div class="figma-related-grid" data-related-pool>
+        {related.map((item, index) => <article class="figma-related-card" hidden={index >= 4} data-artist={item.artistSlug}><a href={item.href}><img src={item.image.src!} alt={item.image.alt || `${item.title} by ${item.artist}`} width={item.image.width} height={item.image.height} loading="lazy" /><h3>{item.title} <span>by {item.artist}</span></h3></a></article>)}
       </div>
     </section>
     <FigmaCommission />
   </main>
 </InteriorLayout>
+<script>
+  // Show a fresh random four of the similar works on every visit, one per artist where possible;
+  // without JavaScript the first four remain.
+  document.querySelectorAll<HTMLElement>("[data-related-pool]").forEach((grid) => {
+    const cards = [...grid.querySelectorAll<HTMLElement>(".figma-related-card")];
+    for (let i = cards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    const artists = new Set<string>();
+    const picked = cards.filter((card) => !artists.has(card.dataset.artist!) && artists.add(card.dataset.artist!)).slice(0, 4);
+    for (const card of cards) if (picked.length < 4 && !picked.includes(card)) picked.push(card);
+    cards.forEach((card) => { card.hidden = !picked.includes(card); });
+    picked.forEach((card) => grid.appendChild(card));
+  });
+</script>

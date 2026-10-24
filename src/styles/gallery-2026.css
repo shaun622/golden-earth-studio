@@ -64,7 +64,8 @@
 .figma-related h2 { margin: 0 0 28px; font: 400 22px/1.6 var(--serif); }
 .figma-related-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 38px; }
 .figma-related-card { min-width: 0; }
-.figma-related-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.figma-related-card[hidden] { display: none; }
+.figma-related-card img { width: 100%; height: auto; aspect-ratio: 330 / 395; object-fit: cover; }
 .figma-related-card h3 { margin: 12px 0 0; font: 300 14px/1.5 var(--body); }
 .figma-related-card h3 span { white-space: normal; }
 .figma-interior .contact-form--figma { grid-template-columns: 1fr; gap: 18px; }
