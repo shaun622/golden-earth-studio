@@ -30,9 +30,9 @@ assert.ok(normalize(pages.gallery).includes(normalize(source(333).headings[0])))
 const cards = [...data.gallery.artists, ...data.gallery.artworks];
 const renderedCards = [...pages.gallery.matchAll(/<article class="reference-catalogue-card">([\s\S]*?)<\/article>/g)];
 assert.equal(data.gallery.artists.length, 12);
-assert.equal(data.gallery.artworks.length, 21);
-assert.equal(cards.length, 33);
-assert.equal(renderedCards.length, 33);
+assert.equal(data.gallery.artworks.length, 45);
+assert.equal(cards.length, 57);
+assert.equal(renderedCards.length, 57);
 const expectedHovers = [...new Map([...read("docs/reference/styles/post-333.css").matchAll(/\/\* Start custom CSS for image, class: \.elementor-element-([^ ]+)[\s\S]*?background-image:\s*url\('([^']+)'\)/g)].map((m) => [m[1], m[2]])).values()];
 // The Figma change deliberately appends four artists and changes Adam's medium.
 // All original URLs/hovers remain covered, matched by stable destination.
@@ -41,7 +41,8 @@ for (const [index, original] of sourceCards.entries()) {
   const href = new URL(original[1]).pathname;
   const card = cards.find((item) => item.href === href);
   assert.ok(card, `Missing original card ${href}`);
-  const expectedLabel = href === "/gallery/adam-weismann/" ? "Adam Weismann | Clay" : original[3];
+  // Alexandra's first work was renamed Untitled (GES#1) when her GES series was added.
+  const expectedLabel = href === "/gallery/adam-weismann/" ? "Adam Weismann | Clay" : href === "/gallery/alexandra-yan-wong/untitled-2025/" ? "Untitled (GES#1) by Alexandra Yan Wong" : original[3];
   assert.equal(normalize(card.label), normalize(expectedLabel));
   if (href === "/gallery/jihyun-kim/") {
     assert.equal(card.image, "/assets/images/jihyun-kim.webp");

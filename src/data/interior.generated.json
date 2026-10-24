@@ -104,6 +104,270 @@
     ],
     "artworks": [
       {
+        "href": "/gallery/eleanor-herbosch/unearthing-series-1/",
+        "label": "Unearthing Series #1 by Eleanor Herbosch",
+        "image": {
+          "slot": "eleanor-herbosch-unearthing-series-1-card"
+        },
+        "hoverImage": {
+          "slot": "eleanor-herbosch-unearthing-series-1-detail"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/bowl-iii/",
+        "label": "Bowl III by Louis Vincent",
+        "image": {
+          "slot": "louis-vincent-bowl-iii-card"
+        },
+        "hoverImage": {
+          "slot": "louis-vincent-bowl-iii-top"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/lotus-set/",
+        "label": "Lotus Set by Jacob Chan",
+        "image": {
+          "slot": "jacob-chan-lotus-set-card"
+        },
+        "hoverImage": {
+          "slot": "jacob-chan-lotus-set"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/ges-2/",
+        "label": "Untitled (GES#2) by Alexandra Yan Wong",
+        "image": {
+          "slot": "alexandra-yan-wong-ges-2-card"
+        },
+        "hoverImage": {
+          "slot": "alexandra-yan-wong-ges-2-room"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/eleanor-herbosch/unearthing-series-2/",
+        "label": "Unearthing Series #2 by Eleanor Herbosch",
+        "image": {
+          "slot": "eleanor-herbosch-unearthing-series-2-card"
+        },
+        "hoverImage": {
+          "slot": "eleanor-herbosch-unearthing-series-2-corner"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/plate-ii/",
+        "label": "Plate II by Louis Vincent",
+        "image": {
+          "slot": "louis-vincent-plate-ii-card"
+        },
+        "hoverImage": {
+          "slot": "louis-vincent-plate-ii-side"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/sake-set-1/",
+        "label": "Sake Set #1 by Jacob Chan",
+        "image": {
+          "slot": "jacob-chan-sake-set-1-card"
+        },
+        "hoverImage": {
+          "slot": "jacob-chan-sake-set-1-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/ges-3/",
+        "label": "Untitled (GES#3) by Alexandra Yan Wong",
+        "image": {
+          "slot": "alexandra-yan-wong-ges-3-card"
+        },
+        "hoverImage": {
+          "slot": "alexandra-yan-wong-ges-3-angle"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/eleanor-herbosch/unearthing-series-3/",
+        "label": "Unearthing Series #3 by Eleanor Herbosch",
+        "image": {
+          "slot": "eleanor-herbosch-unearthing-series-3-card"
+        },
+        "hoverImage": {
+          "slot": "eleanor-herbosch-unearthing-series-3-detail"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/wall-panel-iii/",
+        "label": "Wall Panel III by Louis Vincent",
+        "image": {
+          "slot": "louis-vincent-wall-panel-iii-card"
+        },
+        "hoverImage": {
+          "slot": "louis-vincent-wall-panel-iii-detail"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/ginger-jar-2026/",
+        "label": "Ginger Jar, 2026 by Jacob Chan",
+        "image": {
+          "slot": "jacob-chan-ginger-jar-2026-card"
+        },
+        "hoverImage": {
+          "slot": "jacob-chan-ginger-jar-2026-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/ges-4/",
+        "label": "Untitled (GES#4) by Alexandra Yan Wong",
+        "image": {
+          "slot": "alexandra-yan-wong-ges-4-card"
+        },
+        "hoverImage": {
+          "slot": "alexandra-yan-wong-ges-4-wall"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/bowl-ii/",
+        "label": "Bowl II by Louis Vincent",
+        "image": {
+          "slot": "louis-vincent-bowl-ii-card"
+        },
+        "hoverImage": {
+          "slot": "louis-vincent-bowl-ii-top"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/bottle-series/",
+        "label": "Bottle Series by Jacob Chan",
+        "image": {
+          "slot": "jacob-chan-bottle-series-card"
+        },
+        "hoverImage": {
+          "slot": "jacob-chan-bottle-series-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/ges-5/",
+        "label": "Untitled (GES#5) by Alexandra Yan Wong",
+        "image": {
+          "slot": "alexandra-yan-wong-ges-5-card"
+        },
+        "hoverImage": {
+          "slot": "alexandra-yan-wong-ges-5-angle"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/plate-iii/",
+        "label": "Plate III by Louis Vincent",
+        "image": {
+          "slot": "louis-vincent-plate-iii-card"
+        },
+        "hoverImage": {
+          "slot": "louis-vincent-plate-iii-side"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/sake-set-2/",
+        "label": "Sake Set #2 by Jacob Chan",
+        "image": {
+          "slot": "jacob-chan-sake-set-2-card"
+        },
+        "hoverImage": {
+          "slot": "jacob-chan-sake-set-2-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/ges-6/",
+        "label": "Untitled (GES#6) by Alexandra Yan Wong",
+        "image": {
+          "slot": "alexandra-yan-wong-ges-6-card"
+        },
+        "hoverImage": {
+          "slot": "alexandra-yan-wong-ges-6-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/wall-panel-iv/",
+        "label": "Wall Panel IV by Louis Vincent",
+        "image": {
+          "slot": "louis-vincent-wall-panel-iv-card"
+        },
+        "hoverImage": {
+          "slot": "louis-vincent-wall-panel-iv-detail"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/sake-set-3/",
+        "label": "Sake Set #3 by Jacob Chan",
+        "image": {
+          "slot": "jacob-chan-sake-set-3-card"
+        },
+        "hoverImage": {
+          "slot": "jacob-chan-sake-set-3-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/ges-7/",
+        "label": "Untitled (GES#7) by Alexandra Yan Wong",
+        "image": {
+          "slot": "alexandra-yan-wong-ges-7-card"
+        },
+        "hoverImage": {
+          "slot": "alexandra-yan-wong-ges-7-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/plate-iv/",
+        "label": "Plate IV by Louis Vincent",
+        "image": {
+          "slot": "louis-vincent-plate-iv-card"
+        },
+        "hoverImage": {
+          "slot": "louis-vincent-plate-iv-side"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jacob-chan/sake-set-4/",
+        "label": "Sake Set #4 by Jacob Chan",
+        "image": {
+          "slot": "jacob-chan-sake-set-4-card"
+        },
+        "hoverImage": {
+          "slot": "jacob-chan-sake-set-4-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/louis-vincent/wall-panel-v/",
+        "label": "Wall Panel V by Louis Vincent",
+        "image": {
+          "slot": "louis-vincent-wall-panel-v-card"
+        },
+        "hoverImage": {
+          "slot": "louis-vincent-wall-panel-v-detail"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/jacob-chan/chess-set/",
         "label": "Chess Set by Jacob Chan",
         "image": "/assets/migrated/gallery-index/9-image-e4c0812.webp",
@@ -112,7 +376,7 @@
       },
       {
         "href": "/gallery/alexandra-yan-wong/untitled-2025/",
-        "label": "Untitled by Alexandra Yan Wong",
+        "label": "Untitled (GES#1) by Alexandra Yan Wong",
         "image": "/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp",
         "hoverImage": "/assets/migrated/gallery-index/10-hover-d3ac5d9.webp",
         "objectPosition": "center"
