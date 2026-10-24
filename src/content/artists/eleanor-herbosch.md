@@ -8,7 +8,7 @@ hoverImage: {"slot":"eleanor-herbosch-painting-hover"}
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 11
-artworkIds: ["eleanor-herbosch/unearthing-series-1"]
+artworkIds: ["eleanor-herbosch/unearthing-series-1","eleanor-herbosch/unearthing-series-2"]
 studies: [{"image":"/assets/migrated/artists/eleanor-herbosch/study-1-4af13a3.webp","caption":"Material Foraging - Soil and clay"},{"image":"/assets/migrated/artists/eleanor-herbosch/study-2-d2d4d33.webp","caption":"Golden Earth 01 - 110cm (h) x 70cm (w) - Excavated clay, bricks, roof tiles and gravel"},{"image":"/assets/migrated/artists/eleanor-herbosch/study-3-d3f6545.webp","caption":"Detail of relief - Excavated clay, bricks, roof tiles and gravel"}]
 relatedProfiles: []
 seoDescription: "Eleanor Herbosch explores the tactile qualities of soil and clay through paintings made with reclaimed construction materials."

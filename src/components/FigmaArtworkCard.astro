@@ -1,11 +1,15 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import MediaSlot from "./MediaSlot.astro";
+import { resolveMedia } from "../data/media";
 interface Props { artwork: CollectionEntry<"artworks">["data"]; }
 const { artwork } = Astro.props;
 const title = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
+// Landscape tile photos span two grid columns at their own proportions instead of being cropped tall.
+const tile = resolveMedia(artwork.cardImage || artwork.mainImage);
+const wide = Boolean(tile.src) && tile.width > tile.height;
 ---
-<article class="figma-work-card">
+<article class:list={["figma-work-card", { "figma-work-card--wide": wide }]} style={wide ? `--card-ratio: ${tile.width} / ${tile.height}` : undefined}>
   <a href={`/gallery/${artwork.id}/`} class="figma-work-link" aria-label={`${title} by ${artwork.artistName}`}>
     <MediaSlot media={artwork.cardImage || artwork.mainImage} />
     <span class="figma-work-caption">

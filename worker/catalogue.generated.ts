@@ -170,5 +170,10 @@ export default {
     "title": "Unearthing Series #1",
     "artist": "Eleanor Herbosch",
     "path": "/gallery/eleanor-herbosch/unearthing-series-1/"
+  },
+  "eleanor-herbosch/unearthing-series-2": {
+    "title": "Unearthing Series #2",
+    "artist": "Eleanor Herbosch",
+    "path": "/gallery/eleanor-herbosch/unearthing-series-2/"
   }
 } as const;

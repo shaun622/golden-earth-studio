@@ -20,9 +20,9 @@ const expectedWorks = {
   "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"]],
   "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "8cm(l) x 12cm(w) x 6.5cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"]],
   "lucia-ocejo": [["round-bud-vase", "Round Bud Vase", "18cm(w) x 20cm(h) x 7cm(w)", "£220"], ["tea-bowl", "Tea Bowl", "8cm(w) x 9cm(h)", "£50"], ["mug", "Mug", "9cm(w) x 8.5cm(h)", "£40"], ["jug", "Jug", "17cm(w) x 26cm(h)", "£160"], ["tiled-screen", "Tiled Screen", "156cm(w) x 130cm(h)", null]],
-  "eleanor-herbosch": [["unearthing-series-1", "Unearthing Series #1", "70cm(w) x 120cm(h)", "£7,200"]],
+  "eleanor-herbosch": [["unearthing-series-1", "Unearthing Series #1", "70cm(w) x 120cm(h)", "£7,200"], ["unearthing-series-2", "Unearthing Series #2", "160cm(w) x 80cm(h)", "£10,500"]],
 };
-const expectedMaterials = { "tiled-screen": "Ceramic & Wood", "unearthing-series-1": "London Clay on Canvas" };
+const expectedMaterials = { "tiled-screen": "Ceramic & Wood", "unearthing-series-1": "London Clay on Canvas", "unearthing-series-2": "London Clay on Canvas" };
 const interior = json("src/data/interior.generated.json");
 const order = json("src/data/gallery.generated.json");
 const ledger = json("src/data/route-ledger.json");
@@ -33,9 +33,9 @@ assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), 
 assert.equal(interior.gallery.artworks.length, 21);
 assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 33);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 72);
-assert.equal(Object.keys(catalogue).length, 34);
-assert.equal(Object.keys(mediaSlots).length, 24);
+assert.equal(ledger.generated.length, 73);
+assert.equal(Object.keys(catalogue).length, 35);
+assert.equal(Object.keys(mediaSlots).length, 27);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -69,7 +69,7 @@ for (const slug of Object.keys(expectedWorks)) {
   allUpdatedHtml += page;
   const works = expectedWorks[slug] || [];
   assert.deepEqual(artist.artworkIds, works.map(([work]) => `${slug}/${work}`));
-  assert.equal([...page.matchAll(/<article class="figma-work-card"/g)].length, works.length);
+  assert.equal([...page.matchAll(/<article class="figma-work-card[" ]/g)].length, works.length);
   if (slug === "eleanor-herbosch") {
     assert.equal(artist.discipline, "Painting");
     assert.ok(!page.includes("Material studies") && !page.includes("Which material(s)"));
@@ -132,9 +132,9 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 13);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 34);
+assert.equal(artworkCount, 35);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 12 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, photo viewers, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 13 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, photo viewers, forms, related links and sitemap.`);
