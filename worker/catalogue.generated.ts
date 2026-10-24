@@ -320,5 +320,15 @@ export default {
     "title": "Meditation Balls",
     "artist": "Arran Gregory",
     "path": "/gallery/arran-gregory/meditation-balls/"
+  },
+  "zahed-tajeddin/bull-leaping-ii": {
+    "title": "Bull Leaping II",
+    "artist": "Zahed Tajeddin",
+    "path": "/gallery/zahed-tajeddin/bull-leaping-ii/"
+  },
+  "zahed-tajeddin/beauty-and-the-beast": {
+    "title": "Beauty and the Beast",
+    "artist": "Zahed Tajeddin",
+    "path": "/gallery/zahed-tajeddin/beauty-and-the-beast/"
   }
 } as const;

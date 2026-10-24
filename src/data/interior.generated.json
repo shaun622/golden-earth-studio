@@ -126,6 +126,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/zahed-tajeddin/bull-leaping-ii/",
+        "label": "Bull Leaping II by Zahed Tajeddin",
+        "image": {
+          "slot": "zahed-tajeddin-bull-leaping-ii-card"
+        },
+        "hoverImage": {
+          "slot": "zahed-tajeddin-bull-leaping-ii"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/arran-gregory/wheel-of-matter/",
         "label": "Wheel of Matter by Arran Gregory",
         "image": {
@@ -144,6 +155,17 @@
         },
         "hoverImage": {
           "slot": "arran-gregory-all-our-gods-are-dancing-gods-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/zahed-tajeddin/beauty-and-the-beast/",
+        "label": "Beauty and the Beast by Zahed Tajeddin",
+        "image": {
+          "slot": "zahed-tajeddin-beauty-and-the-beast-card"
+        },
+        "hoverImage": {
+          "slot": "zahed-tajeddin-beauty-and-the-beast"
         },
         "objectPosition": "center"
       },

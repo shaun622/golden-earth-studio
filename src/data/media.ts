@@ -147,6 +147,10 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "zahed-tajeddin-bowing-bull-card": { src: "/assets/artworks/zahed-tajeddin/bowing-bull-card.webp", alt: "Bowing Bull by Zahed Tajeddin", width: 944, height: 1600 },
   "zahed-tajeddin-elevation-card": { src: "/assets/artworks/zahed-tajeddin/elevation-card.webp", alt: "Elevation by Zahed Tajeddin", width: 944, height: 1600 },
   "zahed-tajeddin-stillness-card": { src: "/assets/artworks/zahed-tajeddin/stillness-card.webp", alt: "Stillness by Zahed Tajeddin", width: 944, height: 1600 },
+  "zahed-tajeddin-bull-leaping-ii": { src: "/assets/artworks/zahed-tajeddin/bull-leaping-ii.webp", alt: "Bull Leaping II by Zahed Tajeddin, a terracotta bull with a figure arching over its back, on a black wooden plinth", width: 400, height: 500 },
+  "zahed-tajeddin-bull-leaping-ii-card": { src: "/assets/artworks/zahed-tajeddin/bull-leaping-ii-card.webp", alt: "Bull Leaping II by Zahed Tajeddin, a terracotta bull with a figure arching over its back, on a black wooden plinth", width: 360, height: 610 },
+  "zahed-tajeddin-beauty-and-the-beast": { src: "/assets/artworks/zahed-tajeddin/beauty-and-the-beast.webp", alt: "Beauty and the Beast by Zahed Tajeddin, a terracotta bull with a standing figure on its back, on a black wooden plinth", width: 400, height: 500 },
+  "zahed-tajeddin-beauty-and-the-beast-card": { src: "/assets/artworks/zahed-tajeddin/beauty-and-the-beast-card.webp", alt: "Beauty and the Beast by Zahed Tajeddin, a terracotta bull with a standing figure on its back, on a black wooden plinth", width: 360, height: 610 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
