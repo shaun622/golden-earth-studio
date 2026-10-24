@@ -32,7 +32,7 @@ const landscape = artwork.artistSlug === "edie-evans";
           <dl class="figma-product-facts">
             <div><dt class="visually-hidden">Dimensions</dt><dd>{artwork.dimensions}</dd></div>
             <div><dt class="visually-hidden">Materials</dt><dd>{artwork.materials}</dd></div>
-            {artwork.price && <div><dt class="visually-hidden">Price</dt><dd>{artwork.price}</dd></div>}
+            {artwork.sold ? <div><dt class="visually-hidden">Availability</dt><dd>Sold</dd></div> : artwork.price && <div><dt class="visually-hidden">Price</dt><dd>{artwork.price}</dd></div>}
           </dl>
           {hasDescription && <div class="figma-product-description"><slot /></div>}
           <section class="figma-enquiry" aria-labelledby="enquire-heading">

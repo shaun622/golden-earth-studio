@@ -180,5 +180,45 @@ export default {
     "title": "Unearthing Series #3",
     "artist": "Eleanor Herbosch",
     "path": "/gallery/eleanor-herbosch/unearthing-series-3/"
+  },
+  "louis-vincent/bowl-iii": {
+    "title": "Bowl III",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/bowl-iii/"
+  },
+  "louis-vincent/bowl-ii": {
+    "title": "Bowl II",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/bowl-ii/"
+  },
+  "louis-vincent/plate-ii": {
+    "title": "Plate II",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/plate-ii/"
+  },
+  "louis-vincent/plate-iii": {
+    "title": "Plate III",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/plate-iii/"
+  },
+  "louis-vincent/plate-iv": {
+    "title": "Plate IV",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/plate-iv/"
+  },
+  "louis-vincent/wall-panel-iii": {
+    "title": "Wall Panel III",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/wall-panel-iii/"
+  },
+  "louis-vincent/wall-panel-iv": {
+    "title": "Wall Panel IV",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/wall-panel-iv/"
+  },
+  "louis-vincent/wall-panel-v": {
+    "title": "Wall Panel V",
+    "artist": "Louis Vincent",
+    "path": "/gallery/louis-vincent/wall-panel-v/"
   }
 } as const;
