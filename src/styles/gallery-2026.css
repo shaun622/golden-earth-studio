@@ -32,6 +32,7 @@
 .figma-work-caption { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; gap: 22px; padding: 20px; background: rgb(0 0 0 / 55%); color: #f2f2f2; text-align: center; opacity: 0; transition: opacity 700ms ease; }
 .figma-work-title { font: italic 400 21px/1.5 var(--serif); letter-spacing: 1px; }
 .figma-work-dimensions, .figma-work-medium { font: 300 14px/1.6 var(--body); letter-spacing: 1px; white-space: pre-line; }
+.figma-work-sold { font: 300 12px/1.6 var(--body); letter-spacing: 3px; text-transform: uppercase; }
 .figma-work-link:hover .figma-work-caption, .figma-work-link:focus-visible .figma-work-caption { opacity: 1; }
 .figma-artist--without-works .figma-profile-works { min-height: 1480px; border-top: 1px solid #a7a79f; }
 .figma-commission { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 335px); gap: 180px; border-top: 1px solid #a7a79f; padding: 55px 100px 0 80px; margin: 115px 0 90px; }

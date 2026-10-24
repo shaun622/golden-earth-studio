@@ -8,6 +8,7 @@ dimensions: "2cm(h) x 29cm(w)"
 materials: "Ash, clay and lacquer."
 price: "£275"
 mainImage: "/assets/migrated/artworks/louis-vincent/plate-main-a9fb884.webp"
+cardImage: {"slot":"louis-vincent-plate-card"}
 gallery: [{"src":"/assets/migrated/artworks/louis-vincent/plate-main-a9fb884.webp","alt":"Plate | Louis Vincent detail 1"},{"src":"/assets/migrated/artworks/louis-vincent/plate-2-9f805c0.webp","alt":"Plate | Louis Vincent detail 2"},{"src":"/assets/migrated/artworks/louis-vincent/plate-3-e368ef4.webp","alt":"Plate | Louis Vincent detail 3"},{"src":"/assets/migrated/artworks/louis-vincent/plate-4-c61f11d.webp","alt":"Plate | Louis Vincent detail 4"}]
 relatedIds: ["zahed-tajeddin/elevation","jihyun-kim/teoju","rickie-cheuk/chopsticks","jacob-chan/ginger-jar"]
 seoDescription: "At first glance, Plate by Louis Vincent defies material expectations. Hand-turned on a lathe to an extraordinary thinness, the piece creates the illusion of ceramic or stoneware,…"

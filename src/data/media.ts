@@ -59,6 +59,9 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "louis-vincent-plate-iv": { src: "/assets/artworks/louis-vincent/plate-iv-top.webp", alt: "Plate IV by Louis Vincent seen from above, a flat disc with a light mottled clay surface", width: 1080, height: 1351 },
   "louis-vincent-plate-iv-side": { src: "/assets/artworks/louis-vincent/plate-iv-side.webp", alt: "Plate IV by Louis Vincent seen from the side, showing its thin flat profile", width: 1080, height: 1350 },
   "louis-vincent-plate-iv-detail": { src: "/assets/artworks/louis-vincent/plate-iv-detail.webp", alt: "Close-up of the mottled clay surface of Plate IV by Louis Vincent", width: 899, height: 1125 },
+  "louis-vincent-plate-card": { src: "/assets/artworks/louis-vincent/plate-card.webp", alt: "Plate by Louis Vincent", width: 896, height: 1519 },
+  "louis-vincent-conical-bowl-card": { src: "/assets/artworks/louis-vincent/conical-bowl-card.webp", alt: "Conical Bowl by Louis Vincent", width: 788, height: 1336 },
+  "louis-vincent-bowl-card": { src: "/assets/artworks/louis-vincent/bowl-card.webp", alt: "Bowl by Louis Vincent", width: 832, height: 1410 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
