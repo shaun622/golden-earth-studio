@@ -30,8 +30,10 @@ const plan = read("docs/FIGMA-ARTIST-EXPANSION-PLAN.md");
 const gallery = html("/gallery/");
 assert.deepEqual(order.artistOrder, expectedArtists);
 assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), expectedArtists);
-assert.equal(interior.gallery.artworks.length, 21);
-assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 33);
+// The 21 original works follow 35 works added in 2026; cards are shuffled in the browser.
+assert.equal(interior.gallery.artworks.length, 56);
+for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
+assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 68);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
 assert.equal(ledger.generated.length, 95);
 assert.equal(Object.keys(catalogue).length, 57);
@@ -198,4 +200,4 @@ assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
-console.log(`Figma content audit passed: 12 artists, 21 retained Gallery works, 35 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
+console.log(`Figma content audit passed: 12 artists, 21 retained and 35 added Gallery works, 35 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);

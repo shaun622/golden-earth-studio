@@ -47,7 +47,7 @@ export default {
     "path": "/gallery/jacob-chan/sake-set/"
   },
   "jacob-chan/ginger-jar-2": {
-    "title": "Ginger Jar",
+    "title": "Ginger Jar II",
     "artist": "Jacob Chan",
     "path": "/gallery/jacob-chan/ginger-jar-2/"
   },
