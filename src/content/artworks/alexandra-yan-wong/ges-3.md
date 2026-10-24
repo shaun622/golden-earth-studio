@@ -9,7 +9,7 @@ materials: "London Clay, Paper and Canvas"
 price: "£850"
 mainImage: {"slot":"alexandra-yan-wong-ges-3"}
 cardImage: {"slot":"alexandra-yan-wong-ges-3-card"}
-gallery: []
+gallery: [{"src":{"slot":"alexandra-yan-wong-ges-3-angle"},"alt":"Untitled (GES#3) by Alexandra Yan Wong, seen at an angle on a blue plaster wall, showing the canvas edge"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Painting"

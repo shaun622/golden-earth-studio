@@ -9,7 +9,7 @@ materials: "London Clay, Paper and Canvas"
 price: "£850"
 mainImage: {"slot":"alexandra-yan-wong-ges-4"}
 cardImage: {"slot":"alexandra-yan-wong-ges-4-card"}
-gallery: []
+gallery: [{"src":{"slot":"alexandra-yan-wong-ges-4-wall"},"alt":"Untitled (GES#4) by Alexandra Yan Wong, hung between two brass wall lights on a pale plaster wall"},{"src":{"slot":"alexandra-yan-wong-ges-4-angle"},"alt":"Untitled (GES#4) by Alexandra Yan Wong, seen at an angle on a blue plaster wall, showing the canvas edge"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Painting"

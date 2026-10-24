@@ -9,7 +9,7 @@ materials: "London Clay, Paper and Canvas"
 price: "£2,500"
 mainImage: "/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp"
 cardImage: {"slot":"alexandra-yan-wong-ges-1-card"}
-gallery: [{"src":"/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp","alt":"Untitled, 2025 | Alexandra Yan Wong detail 1"}]
+gallery: [{"src":"/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp","alt":"Untitled, 2025 | Alexandra Yan Wong detail 1"},{"src":{"slot":"alexandra-yan-wong-ges-1-wall"},"alt":"Untitled (GES#1) by Alexandra Yan Wong, hung between two brass wall lights on a pale plaster wall"},{"src":{"slot":"alexandra-yan-wong-ges-1-detail"},"alt":"Untitled (GES#1) by Alexandra Yan Wong, close-up of the layered clay and paper surface"}]
 detailVariant: "figma-2026"
 year: 2025
 tileMedium: "Painting"

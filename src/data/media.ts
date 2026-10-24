@@ -102,6 +102,15 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "alexandra-yan-wong-ges-6": { src: "/assets/artworks/alexandra-yan-wong/ges-6.webp", alt: "Untitled (GES#6) by Alexandra Yan Wong, a pale ochre rectangle of clay and paper inside a darker border with faint grey marks", width: 714, height: 1022 },
   "alexandra-yan-wong-ges-7-card": { src: "/assets/artworks/alexandra-yan-wong/ges-7-card.webp", alt: "Untitled (GES#7) by Alexandra Yan Wong, a pale paper panel splashed with black inside a warm brown border", width: 944, height: 1600 },
   "alexandra-yan-wong-ges-7": { src: "/assets/artworks/alexandra-yan-wong/ges-7.webp", alt: "Untitled (GES#7) by Alexandra Yan Wong, a pale paper panel splashed with black inside a warm brown border", width: 728, height: 1030 },
+  "alexandra-yan-wong-ges-1-wall": { src: "/assets/artworks/alexandra-yan-wong/ges-1-wall.webp", alt: "Untitled (GES#1) by Alexandra Yan Wong, hung between two brass wall lights on a pale plaster wall", width: 1600, height: 1066 },
+  "alexandra-yan-wong-ges-1-detail": { src: "/assets/artworks/alexandra-yan-wong/ges-1-detail.webp", alt: "Untitled (GES#1) by Alexandra Yan Wong, close-up of the layered clay and paper surface", width: 1066, height: 1600 },
+  "alexandra-yan-wong-ges-2-room": { src: "/assets/artworks/alexandra-yan-wong/ges-2-room.webp", alt: "Untitled (GES#2) by Alexandra Yan Wong, hung on a blue plaster wall above a curved stair rail", width: 1066, height: 1600 },
+  "alexandra-yan-wong-ges-2-plant": { src: "/assets/artworks/alexandra-yan-wong/ges-2-plant.webp", alt: "Untitled (GES#2) by Alexandra Yan Wong, on a blue plaster wall seen through leaves", width: 1066, height: 1600 },
+  "alexandra-yan-wong-ges-2-detail": { src: "/assets/artworks/alexandra-yan-wong/ges-2-detail.webp", alt: "Untitled (GES#2) by Alexandra Yan Wong, close-up of the layered clay and paper surface", width: 1600, height: 1066 },
+  "alexandra-yan-wong-ges-3-angle": { src: "/assets/artworks/alexandra-yan-wong/ges-3-angle.webp", alt: "Untitled (GES#3) by Alexandra Yan Wong, seen at an angle on a blue plaster wall, showing the canvas edge", width: 1066, height: 1600 },
+  "alexandra-yan-wong-ges-4-wall": { src: "/assets/artworks/alexandra-yan-wong/ges-4-wall.webp", alt: "Untitled (GES#4) by Alexandra Yan Wong, hung between two brass wall lights on a pale plaster wall", width: 1600, height: 1066 },
+  "alexandra-yan-wong-ges-4-angle": { src: "/assets/artworks/alexandra-yan-wong/ges-4-angle.webp", alt: "Untitled (GES#4) by Alexandra Yan Wong, seen at an angle on a blue plaster wall, showing the canvas edge", width: 1600, height: 1066 },
+  "alexandra-yan-wong-ges-5-angle": { src: "/assets/artworks/alexandra-yan-wong/ges-5-angle.webp", alt: "Untitled (GES#5) by Alexandra Yan Wong, seen at an angle on a blue plaster wall, showing the canvas edge", width: 1066, height: 1600 },
   "eleanor-herbosch-painting-hover": { src: "/assets/artworks/eleanor-herbosch/painting-hover.webp", alt: "Painting detail by Eleanor Herbosch with dark branching marks and raised textures on a grey surface", width: 758, height: 954 },
 };
 
