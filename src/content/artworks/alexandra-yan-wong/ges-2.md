@@ -8,6 +8,7 @@ dimensions: "100 x 75 cm"
 materials: "London Clay, Paper and Canvas"
 price: "£5,500"
 mainImage: {"slot":"alexandra-yan-wong-ges-2"}
+cardImage: {"slot":"alexandra-yan-wong-ges-2-card"}
 gallery: []
 detailVariant: "figma-2026"
 year: 2026

@@ -8,6 +8,7 @@ dimensions: "3cm(l) x 50cm(w) x 65cm(h)"
 materials: "London Clay, Paper and Canvas"
 price: "£2,500"
 mainImage: "/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp"
+cardImage: {"slot":"alexandra-yan-wong-ges-1-card"}
 gallery: [{"src":"/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp","alt":"Untitled, 2025 | Alexandra Yan Wong detail 1"}]
 detailVariant: "figma-2026"
 year: 2025
