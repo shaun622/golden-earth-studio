@@ -466,6 +466,8 @@ img { height: auto; }
   grid-template-columns: minmax(0, 30rem) minmax(0, 1fr) max-content;
   gap: clamp(2rem, 4vw, 4.5rem);
   align-items: center;
+  /* Fills the window inside the page edge, like the video and the Journal photograph. */
+  min-height: calc(100svh - (var(--edge) * 2));
   padding-block: clamp(4rem, 6vw, 6rem);
   background: var(--olive);
   color: var(--white);
@@ -1104,7 +1106,6 @@ img { height: auto; }
   }
 
   .artists-section {
-    min-height: 0;
     gap: 3rem;
     padding: 3.5rem 1.35rem 4rem;
   }
