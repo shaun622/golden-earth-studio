@@ -16,13 +16,13 @@ const featuredIds = [
   "arran-gregory/wheel-of-matter", "jacob-chan/ginger-jar-2026", "edie-evans/holding", "zahed-tajeddin/bulls-matter",
   "alexandra-yan-wong/ges-4", "jihyun-kim/teoju",
 ];
-// Every listed artist, in Gallery order, for the name list with its portrait preview.
+// Every listed artist, alphabetically by first name, for the name list with its portrait preview.
 const artistEntries = new Map((await getCollection("artists")).map((entry) => [entry.data.slug, entry.data]));
 const homeArtists = galleryOrder.artistOrder.flatMap((slug) => {
   const artist = artistEntries.get(slug);
   const portrait = artist && resolveMedia(artist.portrait).src;
   return artist && portrait ? [{ name: artist.name, discipline: artist.discipline, portrait, href: `/gallery/${slug}/` }] : [];
-});
+}).sort((a, b) => a.name.localeCompare(b.name));
 const byId = new Map((await getCollection("artworks")).map((entry) => [entry.data.id, entry.data]));
 const featuredWorks = featuredIds.flatMap((id) => {
   const work = byId.get(id);
@@ -74,20 +74,18 @@ const featuredWorks = featuredIds.flatMap((id) => {
         <p data-reveal style="--reveal-delay: 140ms">
           We work with established artists whose practice is deeply rooted in material exploration, skillfully translating their knowledge and research into fine art and functional ware.
         </p>
+        <a class="artists-all" href="/gallery/#artists">View all artists</a>
       </div>
-      <div class="artists-browse" data-artists-browse>
-        <ul class="artists-names">
-          {homeArtists.map((artist, index) => (
-            <li><a href={artist.href} data-artist-index={index} class:list={{ "is-active": index === 0 }}>{artist.name}</a></li>
-          ))}
-        </ul>
-        <div class="artists-portrait" aria-hidden="true">
-          {homeArtists.map((artist, index) => (
-            <img src={artist.portrait} alt="" width="600" height="750" loading="lazy" data-artist-index={index} class:list={{ "is-active": index === 0 }} />
-          ))}
-        </div>
+      <div class="artists-portrait" aria-hidden="true" data-artists-portraits>
+        {homeArtists.map((artist, index) => (
+          <img src={artist.portrait} alt="" width="600" height="750" loading="lazy" data-artist-index={index} />
+        ))}
       </div>
-      <a class="artists-all" href="/gallery/#artists">View all artists</a>
+      <ul class="artists-names" data-artists-names>
+        {homeArtists.map((artist, index) => (
+          <li><a href={artist.href} data-artist-index={index}>{artist.name}</a></li>
+        ))}
+      </ul>
     </section>
 
     <section class="collective-section section-pad" aria-labelledby="collective-heading">

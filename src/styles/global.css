@@ -458,67 +458,40 @@ img { height: auto; }
   transform: scale(1.012);
 }
 
-/* Title and text centred above a full-width row of artist portraits. */
+/* Title and text on the left, artist names alphabetically on the right; hovering a name shows that
+   artist's portrait in the space between. */
 .artists-section {
   display: grid;
-  gap: clamp(2.5rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) max-content;
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: center;
   padding-block: clamp(4rem, 6vw, 6rem);
   background: var(--olive);
   color: var(--white);
 }
 
 .artists-intro {
-  max-width: 44rem;
-  margin-inline: auto;
-  text-align: center;
+  max-width: 30rem;
 }
 
 .artists-intro p {
-  max-width: 38rem;
-  margin-inline: auto;
   letter-spacing: 0.04em;
 }
 
-/* Artist names on the left; hovering or focusing a name shows that artist's portrait beside it. */
-.artists-browse {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 15rem);
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: center;
-  width: min(100%, 44rem);
-  margin-inline: auto;
-}
-
-.artists-names {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.15rem 2rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.artists-names a {
+.artists-all {
   display: inline-block;
-  padding: 0.3rem 0;
-  font-family: var(--serif);
-  font-size: 1rem;
-  letter-spacing: 0.02em;
-  opacity: 0.6;
-  transition: opacity 300ms ease, transform 300ms ease;
-}
-
-.artists-names a.is-active,
-.artists-names a:hover,
-.artists-names a:focus-visible {
-  opacity: 1;
-  transform: translateX(0.35rem);
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
 }
 
 .artists-portrait {
   position: relative;
+  width: min(100%, 15rem);
   aspect-ratio: 4 / 5;
-  overflow: hidden;
+  justify-self: center;
 }
 
 .artists-portrait img {
@@ -530,7 +503,7 @@ img { height: auto; }
   filter: grayscale(1);
   opacity: 0;
   transform: scale(1.03);
-  transition: opacity 500ms ease, transform 900ms ease;
+  transition: opacity 450ms ease, transform 900ms ease;
 }
 
 .artists-portrait img.is-active {
@@ -538,12 +511,28 @@ img { height: auto; }
   transform: none;
 }
 
-.artists-all {
-  justify-self: center;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-decoration: underline;
-  text-underline-offset: 0.3em;
+.artists-names {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.artists-names a {
+  display: inline-block;
+  padding: 0.22rem 0;
+  font-family: var(--serif);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.artists-names a.is-active,
+.artists-names a:hover,
+.artists-names a:focus-visible {
+  opacity: 1;
+  transform: translateX(-0.35rem);
 }
 
 .artist-image {
@@ -945,7 +934,7 @@ img { height: auto; }
   }
 
   .artists-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) 10rem max-content;
   }
 
   .artists-intro {
@@ -1106,8 +1095,10 @@ img { height: auto; }
     font-size: 0.93rem;
   }
 
-  .artists-browse { grid-template-columns: minmax(0, 1fr) 7.5rem; gap: 1.25rem; }
-  .artists-names { grid-template-columns: 1fr; }
+  .artists-section { grid-template-columns: minmax(0, 1fr) 7.5rem; }
+  .artists-intro { grid-column: 1 / -1; }
+  .artists-portrait { grid-row: 2; grid-column: 2; width: 100%; }
+  .artists-names { grid-row: 2; grid-column: 1; }
 
   .artist-card h3 {
     font-family: var(--body);
