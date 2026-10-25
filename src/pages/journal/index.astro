@@ -1,22 +1,16 @@
 ---
 import { getCollection } from "astro:content";
 import JournalCard from "../../components/JournalCard.astro";
-import JournalDialog from "../../components/JournalDialog.astro";
 import InteriorLayout from "../../layouts/InteriorLayout.astro";
 import "../../styles/journal.css";
 
 const entries = (await getCollection("journal")).filter((entry) => entry.data.showInIndex).sort((a, b) => a.data.displayOrder - b.data.displayOrder);
-const dialogArticles = entries.map((entry) => ({
-  slug: entry.data.slug, title: entry.data.articleTitle, date: entry.data.articleDateLabel,
-  image: entry.data.coverImage, legacyPopupId: entry.data.legacyPopupId, entry,
-}));
 ---
 <InteriorLayout className="journal-interior" title="Journal" description="Curated chronicles of the innovation, news and events as it unfolds." image={entries[0]?.data.cardImage || undefined}>
   <main id="content" class="interior-main journal-page">
-    <header class="journal-intro"><h1>Curated chronicles of the <em>innovation</em>, news and events as it unfolds</h1></header>
+    <header class="journal-intro"><h1>Curated chronicles of the <em>innovation</em>,<br />news and events as it unfolds.</h1></header>
     <div class="journal-grid">
       {entries.map((entry) => <JournalCard slug={entry.data.slug} title={entry.data.title} date={entry.data.indexDateLabel} image={entry.data.cardImage} />)}
     </div>
-    <JournalDialog articles={dialogArticles} />
   </main>
 </InteriorLayout>

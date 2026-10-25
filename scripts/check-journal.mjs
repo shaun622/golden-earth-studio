@@ -20,11 +20,13 @@ for (const [index, card] of cards.entries()) {
   assert.equal(entry.title, expectedTitle);
   assert.equal(text(entry.indexDateLabel), expectedDate);
   assert.equal(manifest.find((asset) => asset.localPath === entry.cardImage)?.remote, expectedImage);
-  const renderedCard = html.match(new RegExp(`<article class="journal-card">[\\s\\S]*?data-journal-open="${entry.slug}"[\\s\\S]*?<\\/article>`))?.[0];
+  const renderedCard = html.match(new RegExp(`<article class="journal-card">[\\s\\S]*?href="/journal/${entry.slug}/"[\\s\\S]*?<\\/article>`))?.[0];
   assert.ok(renderedCard?.includes(`src="${entry.cardImage}"`), `Wrong card image: ${entry.slug}`);
   assert.ok(text(renderedCard).includes(expectedTitle), `Missing title: ${entry.slug}`);
   assert.ok(text(renderedCard).includes(expectedDate), `Missing date: ${entry.slug}`);
 }
-assert.ok(html.includes("Curated chronicles of the <em>innovation</em>, news and events as it unfolds"));
+assert.ok(html.includes("Curated chronicles of the <em>innovation</em>,<br>news and events as it unfolds."));
+// Cards open each story's own page rather than a pop-up.
+assert.ok(!html.includes("data-journal-open") && !html.includes("<dialog"), "Journal pop-up still present");
 for (const addedCopy of ["<h1>The Journal</h1>", "Past and future events, active invitations", "contact-general-main", "Add Your Heading Text Here"]) assert.ok(!html.includes(addedCopy), `Unexpected Journal content: ${addedCopy}`);
-console.log("Journal parity passed: 16 source titles, dates, popup IDs and card images; no invented intro or contact section.");
+console.log("Journal parity passed: 16 source titles, dates, popup IDs and card images; cards link to story pages; no invented intro or contact section.");
