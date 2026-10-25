@@ -2,7 +2,6 @@
   "generated": [
     "/",
     "/gallery/",
-    "/collective/",
     "/our-mission/",
     "/journal/",
     "/journal2/",
@@ -142,6 +141,11 @@
       "from": "/the-circular-economy-podcast/",
       "to": "/journal/the-circular-economy-podcast/",
       "status": 301
+    },
+    {
+      "from": "/collective/",
+      "to": "/",
+      "status": 302
     }
   ],
   "notFound": [

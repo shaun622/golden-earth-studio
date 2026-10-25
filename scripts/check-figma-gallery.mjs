@@ -35,7 +35,7 @@ assert.equal(interior.gallery.artworks.length, 71);
 for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
 assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 83);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 111);
+assert.equal(ledger.generated.length, 110);
 assert.equal(Object.keys(catalogue).length, 72);
 assert.equal(Object.keys(mediaSlots).length, 168);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
