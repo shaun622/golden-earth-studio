@@ -462,7 +462,8 @@ img { height: auto; }
    artist's portrait in the space between. */
 .artists-section {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) max-content;
+  /* The middle column takes the space between the text and the names, so the image sits centred between them. */
+  grid-template-columns: minmax(0, 30rem) minmax(0, 1fr) max-content;
   gap: clamp(2rem, 4vw, 4.5rem);
   align-items: center;
   padding-block: clamp(4rem, 6vw, 6rem);
