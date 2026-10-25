@@ -649,6 +649,8 @@ img { height: auto; }
   text-underline-offset: 0.18em;
 }
 
+.journal-copy .heading-link { text-decoration: none; }
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(16rem, 0.85fr) minmax(30rem, 1.35fr);
