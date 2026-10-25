@@ -77,6 +77,7 @@ const featuredWorks = featuredIds.flatMap((id) => {
         <a class="artists-all" href="/gallery/#artists">View all artists</a>
       </div>
       <div class="artists-portrait" aria-hidden="true" data-artists-portraits>
+        <img class="artists-portrait-default is-active" src="/assets/images/artists-display.webp" alt="" width="800" height="1000" loading="lazy" />
         {homeArtists.map((artist, index) => (
           <img src={artist.portrait} alt="" width="600" height="750" loading="lazy" data-artist-index={index} />
         ))}
