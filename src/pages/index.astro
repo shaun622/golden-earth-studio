@@ -32,9 +32,9 @@ const featuredWorks = featuredIds.flatMap((id) => {
 
 // Homepage Exhibitions slideshow; each slide opens the exhibition's Journal story.
 const exhibitions = [
-  { title: "Six Senses London x Golden Earth Studio", href: "/journal/six-senses-london/", image: "/assets/exhibitions/six-senses-london.webp", width: 1200, height: 983, alt: "Adam Weismann's Terre Verte panels either side of a pool beneath a suspended petal installation at Six Senses London" },
-  { title: "London Design Festival 2025", href: "/journal/reframing-waste/", image: "/assets/exhibitions/london-design-festival-2025.webp", width: 1200, height: 983, alt: "Clay sculptures and vessels on a terracotta display table at Bloobloom Covent Garden" },
-  { title: "London Craft Week 2025", href: "/journal/london-craft-week/", image: "/assets/exhibitions/london-craft-week-2025.webp", width: 556, height: 456, alt: "Material samples and Jacob Chan's chess set on long tables beneath hanging photographs at County Hall Pottery" },
+  { title: "Art of the Earth – Six Senses London x Golden Earth Studio", href: "/journal/six-senses-london/", image: "/assets/exhibitions/six-senses-london.webp", width: 1200, height: 983, alt: "Adam Weismann's Terre Verte panels either side of a pool beneath a suspended petal installation at Six Senses London" },
+  { title: "Reframing Waste – Bloobloom x Golden Earth Studio", href: "/journal/reframing-waste/", image: "/assets/exhibitions/london-design-festival-2025.webp", width: 1200, height: 983, alt: "Clay sculptures and vessels on a terracotta display table at Bloobloom Covent Garden" },
+  { title: "Ground Works – London Craft Week", href: "/journal/london-craft-week/", image: "/assets/exhibitions/london-craft-week-2025.webp", width: 556, height: 456, alt: "Material samples and Jacob Chan's chess set on long tables beneath hanging photographs at County Hall Pottery" },
 ];
 ---
 
@@ -105,7 +105,10 @@ const exhibitions = [
               <img src={exhibition.image} alt={exhibition.alt} width={exhibition.width} height={exhibition.height} loading="lazy" />
             </a>
           ))}
-          <button class="exhibitions-next" type="button" aria-label="Next exhibition" data-exhibitions-next>
+          <button class="exhibitions-arrow exhibitions-prev" type="button" aria-label="Previous exhibition" data-exhibitions-prev>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8" /></svg>
+          </button>
+          <button class="exhibitions-arrow exhibitions-next" type="button" aria-label="Next exhibition" data-exhibitions-next>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" /></svg>
           </button>
         </div>
@@ -114,7 +117,7 @@ const exhibitions = [
       <div class="collective-copy">
         <h2 id="exhibitions-heading" data-reveal>Exhibitions</h2>
         <p data-reveal style="--reveal-delay: 100ms">
-          Explore our exhibitions, where clay transformed by artists and designers is brought into interiors and living environments.
+          Explore our series of exhibitions where we collaborate with hotels and brands that align with our vision of a circular future. The discarded London clay, transformed by artists and designers, is brought back into interiors through Golden Earth Studio's unique partnerships.
         </p>
       </div>
     </section>

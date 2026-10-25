@@ -1,9 +1,10 @@
-// Homepage Exhibitions slideshow: the arrow shows the next exhibition and the caption follows it.
+// Homepage Exhibitions slideshow: the arrows step through the exhibitions and the caption follows it.
 document.querySelectorAll<HTMLElement>("[data-exhibitions]").forEach((carousel) => {
   const slides = [...carousel.querySelectorAll<HTMLAnchorElement>("[data-exhibition-slide]")];
   const caption = carousel.querySelector<HTMLAnchorElement>("[data-exhibitions-caption]");
+  const prev = carousel.querySelector<HTMLButtonElement>("[data-exhibitions-prev]");
   const next = carousel.querySelector<HTMLButtonElement>("[data-exhibitions-next]");
-  if (!caption || !next || slides.length < 2) return;
+  if (!caption || !prev || !next || slides.length < 2) return;
   let current = 0;
 
   const show = (index: number) => {
@@ -25,6 +26,7 @@ document.querySelectorAll<HTMLElement>("[data-exhibitions]").forEach((carousel) 
 
   carousel.classList.add("is-ready");
   show(0);
+  prev.addEventListener("click", () => show((current - 1 + slides.length) % slides.length));
   next.addEventListener("click", () => show((current + 1) % slides.length));
 });
 

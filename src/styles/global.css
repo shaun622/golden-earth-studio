@@ -629,10 +629,9 @@ img { height: auto; }
   object-fit: cover;
 }
 
-.exhibitions-next {
+.exhibitions-arrow {
   position: absolute;
   top: 50%;
-  right: 0.9rem;
   display: grid;
   place-items: center;
   width: 2.5rem;
@@ -647,9 +646,12 @@ img { height: auto; }
   transition: transform 300ms ease;
 }
 
+.exhibitions-prev { left: 0.9rem; }
+.exhibitions-next { right: 0.9rem; }
+.exhibitions-prev:hover { transform: translate(-3px, -50%); }
 .exhibitions-next:hover { transform: translate(3px, -50%); }
 
-.exhibitions-next svg {
+.exhibitions-arrow svg {
   width: 1.6rem;
   height: 1.6rem;
   fill: none;
