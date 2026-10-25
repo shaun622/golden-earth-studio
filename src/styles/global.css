@@ -672,37 +672,67 @@ img { height: auto; }
   align-items: flex-end;
 }
 
+/* Footer form: placeholder-labelled underlined fields, evenly spaced, with a quiet focus state. */
 .contact-form.compact {
-  width: min(100%, 34rem);
+  width: min(100%, 26rem);
   grid-template-columns: 1fr;
-  gap: 0.45rem;
+  gap: 1.1rem;
 }
 
-.contact-form.compact label {
-  text-align: right;
-  color: var(--white);
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: lowercase;
+.contact-form.compact label > span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .contact-form.compact input {
-  border-color: rgba(242, 242, 242, 0.65);
+  padding: 0.35rem 0;
+  border-bottom-color: rgba(242, 242, 242, 0.45);
   color: var(--white);
+  font-family: var(--serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  transition: border-color 200ms ease;
+}
+
+.contact-form.compact input::placeholder {
+  color: rgba(242, 242, 242, 0.75);
+  opacity: 1;
+}
+
+.contact-form.compact input:focus,
+.contact-form.compact input:focus-visible {
+  outline: none;
+  border-bottom-color: var(--white);
 }
 
 .contact-form.compact .form-actions {
   justify-content: flex-end;
+  margin-top: 0.4rem;
 }
+
+.contact-form.compact .form-mailto { display: none; }
 
 .contact-form.compact .cf-turnstile {
   justify-self: end;
 }
 
 .contact-form.compact button {
-  padding: 0.55rem 1.3rem;
-  border: 1px solid var(--white);
+  padding: 0.5rem 1.4rem;
+  border: 1px solid rgba(242, 242, 242, 0.8);
   font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.contact-form.compact button:hover,
+.contact-form.compact button:focus-visible {
+  background: var(--white);
+  color: var(--olive);
+  outline: none;
 }
 
 .contact-form.compact .form-status {

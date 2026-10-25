@@ -23,15 +23,15 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
     <>
       <label>
         <span>Email address</span>
-        <input type="email" name="email" autocomplete="email" required />
+        <input type="email" name="email" autocomplete="email" required placeholder="email address" />
       </label>
       <label>
         <span>Name</span>
-        <input type="text" name="name" autocomplete="name" required />
+        <input type="text" name="name" autocomplete="name" required placeholder="name" />
       </label>
       <label>
         <span>Message</span>
-        <input type="text" name="message" required />
+        <input type="text" name="message" required placeholder="message" />
       </label>
     </>
   ) : variant === "artwork" ? (
