@@ -1,11 +1,34 @@
 ---
-import ArtistCard from "../components/ArtistCard.astro";
 import ArtworkCard from "../components/ArtworkCard.astro";
 import ContactSection from "../components/ContactSection.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import { artworks, featuredArtists } from "../data/home";
+import galleryOrder from "../data/gallery.generated.json";
+import { resolveMedia } from "../data/media";
+import { getCollection } from "astro:content";
+import { mediaSource } from "../data/media";
 import BaseLayout from "../layouts/BaseLayout.astro";
+// Hand-picked works for the homepage strip; the browser shuffles their order on each visit.
+const featuredIds = [
+  "eleanor-herbosch/unearthing-series-1", "adam-weismann/terre-verte", "louis-vincent/bowl-iii", "jacob-chan/lotus-set",
+  "alexandra-yan-wong/ges-2", "arran-gregory/inbetween-worlds", "zahed-tajeddin/beauty-and-the-beast", "edie-evans/bedrock",
+  "james-galbraith-kirkpatrick/large-bowl", "lucia-ocejo/jug", "louis-vincent/wall-panel-v", "eleanor-herbosch/unearthing-series-3",
+  "arran-gregory/wheel-of-matter", "jacob-chan/ginger-jar-2026", "edie-evans/holding", "zahed-tajeddin/bulls-matter",
+  "alexandra-yan-wong/ges-4", "jihyun-kim/teoju",
+];
+// Every listed artist, alphabetically by first name, for the name list with its portrait preview.
+const artistEntries = new Map((await getCollection("artists")).map((entry) => [entry.data.slug, entry.data]));
+const homeArtists = galleryOrder.artistOrder.flatMap((slug) => {
+  const artist = artistEntries.get(slug);
+  const portrait = artist && resolveMedia(artist.portrait).src;
+  return artist && portrait ? [{ name: artist.name, discipline: artist.discipline, portrait, href: `/gallery/${slug}/` }] : [];
+}).sort((a, b) => a.name.localeCompare(b.name));
+const byId = new Map((await getCollection("artworks")).map((entry) => [entry.data.id, entry.data]));
+const featuredWorks = featuredIds.flatMap((id) => {
+  const work = byId.get(id);
+  const image = work && mediaSource(work.cardImage || work.mainImage);
+  return work && image ? [{ title: work.title, artist: work.artistName, image, href: `/gallery/${id}/` }] : [];
+});
 ---
 
 <BaseLayout
@@ -14,7 +37,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
   <main id="content" class="page-frame">
     <section class="hero" aria-label="Subsurface by Hal Strode">
-      <video autoplay muted loop playsinline preload="metadata" poster="/assets/images/hero-fallback.webp">
+      <video autoplay muted loop playsinline preload="metadata">
         <source src="/assets/video/homepage.mp4" type="video/mp4" />
       </video>
       <div class="hero-shade"></div>
@@ -24,7 +47,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <section class="intro section-pad">
       <div class="intro-inner">
-        <h1 data-reveal>Table for the Anthropocene</h1>
+        <h1 data-reveal>Art for the Anthropocene</h1>
         <span class="small-rule" aria-hidden="true"></span>
         <p data-reveal style="--reveal-delay: 140ms">
           Golden Earth Studio is a platform for creatives<br />
@@ -35,30 +58,41 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <section class="gallery-section section-pad" aria-labelledby="gallery-heading">
       <div class="section-heading-row">
-        <h2 id="gallery-heading" data-reveal>Gallery</h2>
+        <h2 id="gallery-heading" data-reveal><a href="/gallery/">Gallery</a></h2>
         <span aria-hidden="true"></span>
       </div>
-      <div class="artwork-grid">
-        {artworks.map((artwork) => <ArtworkCard {...artwork} />)}
+      <div class="artwork-strip" data-artwork-strip>
+        <div class="artwork-strip-track" data-artwork-track>
+          {featuredWorks.map((artwork) => <ArtworkCard {...artwork} />)}
+        </div>
       </div>
     </section>
 
     <section class="artists-section section-pad" aria-labelledby="artists-heading">
       <div class="artists-intro">
-        <h2 id="artists-heading" data-reveal>Explore Our Featured Artists</h2>
+        <h2 id="artists-heading" data-reveal>Explore the artists transforming construction clay</h2>
         <p data-reveal style="--reveal-delay: 140ms">
           We work with established artists whose practice is deeply rooted in material exploration, skillfully translating their knowledge and research into fine art and functional ware.
         </p>
+        <a class="artists-all" href="/gallery/#artists">View all artists</a>
       </div>
-      <div class="artists-grid">
-        {featuredArtists.map((artist) => <ArtistCard {...artist} />)}
+      <div class="artists-portrait" aria-hidden="true" data-artists-portraits>
+        <img class="artists-portrait-default is-active" src="/assets/images/artists-display.webp" alt="" width="800" height="1000" loading="lazy" />
+        {homeArtists.map((artist, index) => (
+          <img src={artist.portrait} alt="" width="600" height="750" loading="lazy" data-artist-index={index} />
+        ))}
       </div>
+      <ul class="artists-names" data-artists-names>
+        {homeArtists.map((artist, index) => (
+          <li><a href={artist.href} data-artist-index={index}>{artist.name}</a></li>
+        ))}
+      </ul>
     </section>
 
     <section class="collective-section section-pad" aria-labelledby="collective-heading">
       <img src="/assets/images/collective.webp" alt="Hands testing reclaimed construction materials in the studio" width="1024" height="824" loading="lazy" />
       <div class="collective-copy">
-        <h2 id="collective-heading" data-reveal>The Collective</h2>
+        <h2 id="collective-heading" data-reveal><a href="/collective/">The Collective</a></h2>
         <p data-reveal style="--reveal-delay: 100ms">
           Extending an invitation to all who are intrigued by the possibilities within the construction industry’s abundance of discarded resources, Golden Earth Studio engages with creatives from a wide range of disciplines.
         </p>
@@ -68,10 +102,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
     </section>
 
-    <section class="journal-section" aria-labelledby="journal-heading" data-parallax>
+    <section class="journal-section" aria-labelledby="journal-heading">
+      <div class="journal-bg" aria-hidden="true"></div>
       <div class="journal-overlay"></div>
       <div class="journal-copy">
-        <h2 id="journal-heading" data-reveal>The Journal</h2>
+        <h2 id="journal-heading" data-reveal><a class="heading-link" href="/journal/">The Journal</a></h2>
         <p data-reveal style="--reveal-delay: 100ms">
           Golden Earth Studio is an ever-evolving initiative, seizing new opportunities to collaborate, innovate and make an impact wherever and however we can.
         </p>
@@ -86,3 +121,5 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <Footer />
   </main>
 </BaseLayout>
+<script>import "../scripts/artwork-strip";</script>
+<script>import "../scripts/artists-browse";</script>
