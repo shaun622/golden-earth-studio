@@ -602,7 +602,8 @@ img { height: auto; }
 .journal-section {
   position: relative;
   display: grid;
-  min-height: 42rem;
+  /* Same frame as the landing video: full window height inside the page edge. */
+  min-height: calc(100svh - (var(--edge) * 2));
   align-items: start;
   padding: clamp(3rem, 6vw, 6rem);
   clip-path: inset(0);
@@ -1132,7 +1133,6 @@ img { height: auto; }
   }
 
   .journal-section {
-    min-height: 35rem;
     padding: 3rem 1.2rem;
   }
 
