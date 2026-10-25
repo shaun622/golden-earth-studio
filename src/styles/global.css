@@ -597,6 +597,8 @@ img { height: auto; }
   text-underline-offset: 0.18em;
 }
 
+.collective-copy h2 a { text-decoration: none; }
+
 /* Fixed background: the photograph stays still while the section scrolls past it. The section clips
    the fixed layer to its own box. */
 .journal-section {
