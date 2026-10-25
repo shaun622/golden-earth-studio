@@ -1,10 +1,9 @@
 ---
-import ArtistCard from "../components/ArtistCard.astro";
 import ArtworkCard from "../components/ArtworkCard.astro";
 import ContactSection from "../components/ContactSection.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import { featuredArtists } from "../data/home";
+import galleryOrder from "../data/gallery.generated.json";
 import { resolveMedia } from "../data/media";
 import { getCollection } from "astro:content";
 import { mediaSource } from "../data/media";
@@ -17,15 +16,13 @@ const featuredIds = [
   "arran-gregory/wheel-of-matter", "jacob-chan/ginger-jar-2026", "edie-evans/holding", "zahed-tajeddin/bulls-matter",
   "alexandra-yan-wong/ges-4", "jihyun-kim/teoju",
 ];
-// Two newer artists join the original three featured portraits.
+// Every listed artist, in Gallery order, for the name list with its portrait preview.
 const artistEntries = new Map((await getCollection("artists")).map((entry) => [entry.data.slug, entry.data]));
-const extraArtists = ["edie-evans", "arran-gregory"].flatMap((slug) => {
+const homeArtists = galleryOrder.artistOrder.flatMap((slug) => {
   const artist = artistEntries.get(slug);
   const portrait = artist && resolveMedia(artist.portrait).src;
-  const artwork = artist && resolveMedia(artist.hoverImage).src;
-  return artist && portrait && artwork ? [{ name: artist.name, portrait, artwork, href: `/gallery/${slug}/` }] : [];
+  return artist && portrait ? [{ name: artist.name, discipline: artist.discipline, portrait, href: `/gallery/${slug}/` }] : [];
 });
-const homeArtists = [...featuredArtists, ...extraArtists];
 const byId = new Map((await getCollection("artworks")).map((entry) => [entry.data.id, entry.data]));
 const featuredWorks = featuredIds.flatMap((id) => {
   const work = byId.get(id);
@@ -78,9 +75,19 @@ const featuredWorks = featuredIds.flatMap((id) => {
           We work with established artists whose practice is deeply rooted in material exploration, skillfully translating their knowledge and research into fine art and functional ware.
         </p>
       </div>
-      <div class="artists-grid">
-        {homeArtists.map((artist) => <ArtistCard {...artist} />)}
+      <div class="artists-browse" data-artists-browse>
+        <ul class="artists-names">
+          {homeArtists.map((artist, index) => (
+            <li><a href={artist.href} data-artist-index={index} class:list={{ "is-active": index === 0 }}>{artist.name}</a></li>
+          ))}
+        </ul>
+        <div class="artists-portrait" aria-hidden="true">
+          {homeArtists.map((artist, index) => (
+            <img src={artist.portrait} alt="" width="600" height="750" loading="lazy" data-artist-index={index} class:list={{ "is-active": index === 0 }} />
+          ))}
+        </div>
       </div>
+      <a class="artists-all" href="/gallery/#artists">View all artists</a>
     </section>
 
     <section class="collective-section section-pad" aria-labelledby="collective-heading">
@@ -115,3 +122,4 @@ const featuredWorks = featuredIds.flatMap((id) => {
   </main>
 </BaseLayout>
 <script>import "../scripts/artwork-strip";</script>
+<script>import "../scripts/artists-browse";</script>
