@@ -20,19 +20,3 @@ function initializeMotion() {
 
 initializeMotion();
 reducedMotion.addEventListener("change", initializeMotion);
-
-const parallax = document.querySelector<HTMLElement>("[data-parallax]");
-let ticking = false;
-function updateParallax() {
-  ticking = false;
-  if (!parallax || reducedMotion.matches) return;
-  const rect = parallax.getBoundingClientRect();
-  const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
-  parallax.style.setProperty("--parallax-y", `${40 + Math.max(0, Math.min(1, progress)) * 20}%`);
-}
-window.addEventListener("scroll", () => {
-  if (ticking) return;
-  ticking = true;
-  requestAnimationFrame(updateParallax);
-}, { passive: true });
-updateParallax();

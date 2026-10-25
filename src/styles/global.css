@@ -597,17 +597,27 @@ img { height: auto; }
   text-underline-offset: 0.18em;
 }
 
+/* Fixed background: the photograph stays still while the section scrolls past it. The section clips
+   the fixed layer to its own box. */
 .journal-section {
-  --parallax-y: 50%;
   position: relative;
   display: grid;
   min-height: 42rem;
   align-items: center;
   padding: clamp(3rem, 9vw, 11rem);
-  background-image: url("/assets/images/journal.png");
-  background-position: center var(--parallax-y);
-  background-size: cover;
+  clip-path: inset(0);
+  background: #262626;
   color: var(--white);
+}
+
+.journal-bg {
+  position: fixed;
+  inset: 0;
+  background: url("/assets/images/journal.png") center / cover no-repeat;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journal-bg { position: absolute; }
 }
 
 .journal-overlay {
@@ -1118,7 +1128,6 @@ img { height: auto; }
   .journal-section {
     min-height: 35rem;
     padding: 3rem 1.2rem;
-    background-position: center;
   }
 
   .journal-copy p {
