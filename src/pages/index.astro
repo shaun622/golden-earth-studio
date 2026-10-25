@@ -5,6 +5,7 @@ import ContactSection from "../components/ContactSection.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { featuredArtists } from "../data/home";
+import { resolveMedia } from "../data/media";
 import { getCollection } from "astro:content";
 import { mediaSource } from "../data/media";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -16,6 +17,15 @@ const featuredIds = [
   "arran-gregory/wheel-of-matter", "jacob-chan/ginger-jar-2026", "edie-evans/holding", "zahed-tajeddin/bulls-matter",
   "alexandra-yan-wong/ges-4", "jihyun-kim/teoju",
 ];
+// Two newer artists join the original three featured portraits.
+const artistEntries = new Map((await getCollection("artists")).map((entry) => [entry.data.slug, entry.data]));
+const extraArtists = ["edie-evans", "arran-gregory"].flatMap((slug) => {
+  const artist = artistEntries.get(slug);
+  const portrait = artist && resolveMedia(artist.portrait).src;
+  const artwork = artist && resolveMedia(artist.hoverImage).src;
+  return artist && portrait && artwork ? [{ name: artist.name, portrait, artwork, href: `/gallery/${slug}/` }] : [];
+});
+const homeArtists = [...featuredArtists, ...extraArtists];
 const byId = new Map((await getCollection("artworks")).map((entry) => [entry.data.id, entry.data]));
 const featuredWorks = featuredIds.flatMap((id) => {
   const work = byId.get(id);
@@ -63,13 +73,13 @@ const featuredWorks = featuredIds.flatMap((id) => {
 
     <section class="artists-section section-pad" aria-labelledby="artists-heading">
       <div class="artists-intro">
-        <h2 id="artists-heading" data-reveal>Explore Our Featured Artists</h2>
+        <h2 id="artists-heading" data-reveal>Explore the artists transforming construction clay</h2>
         <p data-reveal style="--reveal-delay: 140ms">
           We work with established artists whose practice is deeply rooted in material exploration, skillfully translating their knowledge and research into fine art and functional ware.
         </p>
       </div>
       <div class="artists-grid">
-        {featuredArtists.map((artist) => <ArtistCard {...artist} />)}
+        {homeArtists.map((artist) => <ArtistCard {...artist} />)}
       </div>
     </section>
 
