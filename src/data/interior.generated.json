@@ -126,6 +126,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/zahed-tajeddin/bull-leaping-ii/",
+        "label": "Bull Leaping II by Zahed Tajeddin",
+        "image": {
+          "slot": "zahed-tajeddin-bull-leaping-ii-card"
+        },
+        "hoverImage": {
+          "slot": "zahed-tajeddin-bull-leaping-ii"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/arran-gregory/wheel-of-matter/",
         "label": "Wheel of Matter by Arran Gregory",
         "image": {
@@ -137,6 +148,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/rickie-cheuk/cutlery-set/",
+        "label": "Cutlery Set by Rickie Cheuk",
+        "image": {
+          "slot": "rickie-cheuk-cutlery-set-card"
+        },
+        "hoverImage": {
+          "slot": "rickie-cheuk-cutlery-set"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/arran-gregory/all-our-gods-are-dancing-gods/",
         "label": "All Our Gods Are Dancing Gods by Arran Gregory",
         "image": {
@@ -144,6 +166,39 @@
         },
         "hoverImage": {
           "slot": "arran-gregory-all-our-gods-are-dancing-gods-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/james-galbraith-kirkpatrick/large-bowl/",
+        "label": "Large Bowl by James Galbraith Kirkpatrick",
+        "image": {
+          "slot": "james-galbraith-kirkpatrick-large-bowl-card"
+        },
+        "hoverImage": {
+          "slot": "james-galbraith-kirkpatrick-large-bowl-2"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/zahed-tajeddin/beauty-and-the-beast/",
+        "label": "Beauty and the Beast by Zahed Tajeddin",
+        "image": {
+          "slot": "zahed-tajeddin-beauty-and-the-beast-card"
+        },
+        "hoverImage": {
+          "slot": "zahed-tajeddin-beauty-and-the-beast"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/edie-evans/dorodango-pair-ii/",
+        "label": "Dorodango Pair II by Edie Evans",
+        "image": {
+          "slot": "edie-evans-dorodango-pair-ii-card"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-dorodango-pair-ii-2"
         },
         "objectPosition": "center"
       },
@@ -181,6 +236,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/edie-evans/dorodango-pair-i/",
+        "label": "Dorodango Pair I by Edie Evans",
+        "image": {
+          "slot": "edie-evans-dorodango-pair-i-card"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-dorodango-pair-i-2"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/eleanor-herbosch/unearthing-series-1/",
         "label": "Unearthing Series #1 by Eleanor Herbosch",
         "image": {
@@ -214,6 +280,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/edie-evans/holding/",
+        "label": "Holding by Edie Evans",
+        "image": {
+          "slot": "edie-evans-holding-card"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-holding-2"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/alexandra-yan-wong/ges-2/",
         "label": "Untitled (GES#2) by Alexandra Yan Wong",
         "image": {
@@ -243,6 +320,17 @@
         },
         "hoverImage": {
           "slot": "louis-vincent-plate-ii-side"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/edie-evans/ground/",
+        "label": "Ground by Edie Evans",
+        "image": {
+          "slot": "edie-evans-ground-card"
+        },
+        "hoverImage": {
+          "slot": "edie-evans-ground-2"
         },
         "objectPosition": "center"
       },

@@ -320,5 +320,45 @@ export default {
     "title": "Meditation Balls",
     "artist": "Arran Gregory",
     "path": "/gallery/arran-gregory/meditation-balls/"
+  },
+  "zahed-tajeddin/bull-leaping-ii": {
+    "title": "Bull Leaping II",
+    "artist": "Zahed Tajeddin",
+    "path": "/gallery/zahed-tajeddin/bull-leaping-ii/"
+  },
+  "zahed-tajeddin/beauty-and-the-beast": {
+    "title": "Beauty and the Beast",
+    "artist": "Zahed Tajeddin",
+    "path": "/gallery/zahed-tajeddin/beauty-and-the-beast/"
+  },
+  "rickie-cheuk/cutlery-set": {
+    "title": "Cutlery Set",
+    "artist": "Rickie Cheuk",
+    "path": "/gallery/rickie-cheuk/cutlery-set/"
+  },
+  "james-galbraith-kirkpatrick/large-bowl": {
+    "title": "Large Bowl",
+    "artist": "James Galbraith Kirkpatrick",
+    "path": "/gallery/james-galbraith-kirkpatrick/large-bowl/"
+  },
+  "edie-evans/dorodango-pair-ii": {
+    "title": "Dorodango Pair II",
+    "artist": "Edie Evans",
+    "path": "/gallery/edie-evans/dorodango-pair-ii/"
+  },
+  "edie-evans/dorodango-pair-i": {
+    "title": "Dorodango Pair I",
+    "artist": "Edie Evans",
+    "path": "/gallery/edie-evans/dorodango-pair-i/"
+  },
+  "edie-evans/holding": {
+    "title": "Holding",
+    "artist": "Edie Evans",
+    "path": "/gallery/edie-evans/holding/"
+  },
+  "edie-evans/ground": {
+    "title": "Ground",
+    "artist": "Edie Evans",
+    "path": "/gallery/edie-evans/ground/"
   }
 } as const;

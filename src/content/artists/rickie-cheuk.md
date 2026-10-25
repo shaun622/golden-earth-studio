@@ -8,7 +8,7 @@ hoverImage: "/assets/migrated/artworks/rickie-cheuk/chopsticks-3-f6e2d7c.webp"
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 7
-artworkIds: ["rickie-cheuk/chopsticks"]
+artworkIds: ["rickie-cheuk/cutlery-set","rickie-cheuk/chopsticks"]
 studies: []
 relatedProfiles: []
 seoDescription: "British-born Hong Kong artisan Rickie Cheuk is a materials explorer whose practice centres around experimental making and circular design. Working across disciplines, he creates…"

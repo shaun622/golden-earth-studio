@@ -213,7 +213,7 @@ img { height: auto; }
   place-items: center;
   width: 44px;
   height: 44px;
-  margin: -12px -12px -12px 0;
+  margin: -12px -13.5px -12px 0;
   padding: 0;
   border: 0;
   background: transparent;
@@ -626,8 +626,8 @@ img { height: auto; }
   display: grid;
   grid-template-columns: 1fr 0.45fr 1fr;
   gap: clamp(3rem, 8vw, 9rem);
-  min-height: 25rem;
-  padding: clamp(3.5rem, 6vw, 6rem);
+  /* Roughly 25% shorter than the original WordPress footer. */
+  padding: clamp(1.5rem, 2vw, 2rem) clamp(3.5rem, 6vw, 6rem);
   background: var(--olive);
   color: var(--white);
 }
@@ -643,9 +643,10 @@ img { height: auto; }
   justify-content: space-between;
 }
 
-.footer-identity > p:nth-child(2) {
-  margin-top: -4rem;
-}
+.footer-about p { margin: 0; }
+.footer-dash { margin: 0.35rem 0; }
+.footer-tagline { font-family: var(--serif); font-style: italic; }
+.footer-mission { max-width: 22rem; margin-top: 0.35rem; font-size: 0.9rem; line-height: 1.5; }
 
 .footer-brand {
   font-size: 1rem;
@@ -671,37 +672,67 @@ img { height: auto; }
   align-items: flex-end;
 }
 
+/* Footer form: placeholder-labelled underlined fields, evenly spaced, with a quiet focus state. */
 .contact-form.compact {
-  width: min(100%, 34rem);
+  width: min(100%, 26rem);
   grid-template-columns: 1fr;
-  gap: 0.45rem;
+  gap: 1.1rem;
 }
 
-.contact-form.compact label {
-  text-align: right;
-  color: var(--white);
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: lowercase;
+.contact-form.compact label > span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .contact-form.compact input {
-  border-color: rgba(242, 242, 242, 0.65);
+  padding: 0.35rem 0;
+  border-bottom-color: rgba(242, 242, 242, 0.45);
   color: var(--white);
+  font-family: var(--serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  transition: border-color 200ms ease;
+}
+
+.contact-form.compact input::placeholder {
+  color: rgba(242, 242, 242, 0.75);
+  opacity: 1;
+}
+
+.contact-form.compact input:focus,
+.contact-form.compact input:focus-visible {
+  outline: none;
+  border-bottom-color: var(--white);
 }
 
 .contact-form.compact .form-actions {
   justify-content: flex-end;
+  margin-top: 0.4rem;
 }
+
+.contact-form.compact .form-mailto { display: none; }
 
 .contact-form.compact .cf-turnstile {
   justify-self: end;
 }
 
 .contact-form.compact button {
-  padding: 0.55rem 1.3rem;
-  border: 1px solid var(--white);
+  padding: 0.5rem 1.4rem;
+  border: 1px solid rgba(242, 242, 242, 0.8);
   font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.contact-form.compact button:hover,
+.contact-form.compact button:focus-visible {
+  background: var(--white);
+  color: var(--olive);
+  outline: none;
 }
 
 .contact-form.compact .form-status {
@@ -711,7 +742,7 @@ img { height: auto; }
 }
 
 .footer-email {
-  margin-top: 1.1rem;
+  margin-top: 0.7rem;
   font-family: var(--serif);
   font-style: italic;
   letter-spacing: 0.05em;
@@ -719,9 +750,34 @@ img { height: auto; }
 
 .social-links {
   display: flex;
-  gap: 1.2rem;
-  margin-top: 1.1rem;
-  font-size: 0.78rem;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+.social-links a { display: grid; place-items: center; width: 28px; height: 28px; margin-right: -5px; }
+.social-links svg { display: block; }
+.social-links a:hover, .social-links a:focus-visible { opacity: 0.7; }
+
+.email-copied {
+  position: absolute;
+  z-index: 20;
+  margin: 0;
+  padding: 0.35rem 0.75rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, calc(-100% + 4px));
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.email-copied[data-visible="true"] {
+  opacity: 1;
+  transform: translate(-50%, -100%);
 }
 
 .js [data-reveal] {
@@ -992,10 +1048,6 @@ img { height: auto; }
     min-height: 0;
     gap: 3rem;
     padding: 3.5rem 1.5rem;
-  }
-
-  .footer-identity > p:nth-child(2) {
-    margin-top: 0;
   }
 
   .footer-nav {

@@ -8,6 +8,7 @@ dimensions: "21cm(h) x 24cm(w) x 12cm (d)"
 materials: "Ceramic"
 price: "2025 £1,600"
 mainImage: "/assets/migrated/artworks/zahed-tajeddin/bowing-bull-main-dca0b91.webp"
+cardImage: {"slot":"zahed-tajeddin-bowing-bull-card"}
 gallery: [{"src":"/assets/migrated/artworks/zahed-tajeddin/bowing-bull-main-dca0b91.webp","alt":"Bowing Bull | Zahed Tajeddin detail 1"},{"src":"/assets/migrated/artworks/zahed-tajeddin/bowing-bull-2-4167915.webp","alt":"Bowing Bull | Zahed Tajeddin detail 2"},{"src":"/assets/migrated/artworks/zahed-tajeddin/bowing-bull-3-51eeffd.webp","alt":"Bowing Bull | Zahed Tajeddin detail 3"}]
 detailVariant: "figma-2026"
 relatedIds: ["jacob-chan/chess-set","jacob-chan/ginger-jar","jihyun-kim/teoju","rickie-cheuk/chopsticks"]

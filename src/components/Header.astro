@@ -13,7 +13,7 @@ const currentPath = Astro.url.pathname;
       {navigation.map((item) => <a href={item.href} aria-current={isCurrentPath(currentPath, item.href) ? "page" : undefined}>{item.label}</a>)}
     </nav>
     <button class="search-button" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Search artists and artworks" data-search-button>
-      <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="1.2" /><path d="M13 13l5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" /></svg>
+      <svg viewBox="1.9 1.9 16.7 16.7" width="17" height="17" aria-hidden="true" focusable="false"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="1.2" /><path d="M13 13l5 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" /></svg>
     </button>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open menu" data-menu-button>
       <span></span><span></span>

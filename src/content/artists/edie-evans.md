@@ -8,7 +8,7 @@ hoverImage: {"slot":"edie-evans-bedrock-card"}
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 10
-artworkIds: ["edie-evans/earth-memory","edie-evans/bedrock","edie-evans/fragmentation-1"]
+artworkIds: ["edie-evans/earth-memory","edie-evans/bedrock","edie-evans/fragmentation-1","edie-evans/dorodango-pair-ii","edie-evans/dorodango-pair-i","edie-evans/holding","edie-evans/ground"]
 studies: []
 relatedProfiles: []
 seoDescription: "Edie Evans explores place-responsive ceramics using raw London clay, reclaimed aggregates and organic matter, burnished and sealed with local beeswax."

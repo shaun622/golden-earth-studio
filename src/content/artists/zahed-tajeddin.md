@@ -8,7 +8,7 @@ hoverImage: "/assets/migrated/artworks/zahed-tajeddin/bulls-matter-main-166fffa.
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 6
-artworkIds: ["zahed-tajeddin/bulls-matter","zahed-tajeddin/bowing-bull","zahed-tajeddin/elevation","zahed-tajeddin/stillness"]
+artworkIds: ["zahed-tajeddin/bull-leaping-ii","zahed-tajeddin/beauty-and-the-beast","zahed-tajeddin/bulls-matter","zahed-tajeddin/bowing-bull","zahed-tajeddin/elevation","zahed-tajeddin/stillness"]
 studies: []
 relatedProfiles: []
 seoDescription: "Born in Aleppo, Syria, one of the world’s oldest inhabited cities, Zahed draws deeply from its archaeological and cultural heritage. His work explores identity, history, and…"

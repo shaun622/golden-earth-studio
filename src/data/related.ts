@@ -20,7 +20,7 @@ function kindOf(work: Artwork): Kind {
   if (kindById[work.id]) return kindById[work.id];
   if (work.tileMedium === "Painting" || /canvas/i.test(work.materials)) return "painting";
   if (/panel/i.test(work.title)) return "wall";
-  if (/bowl|plate|cup|mug|jug|vase|jar|sake|lotus|bottle/i.test(work.title)) return "vessel";
+  if (/bowl|plate|cup|mug|jug|vase|jar|sake|lotus|bottle|cutlery/i.test(work.title)) return "vessel";
   return "sculpture";
 }
 
