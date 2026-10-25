@@ -29,7 +29,7 @@ const artworks = defineCollection({
 const journal = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/journal" }),
   schema: z.object({
-    id: z.string(), slug: z.string(), title: z.string(), articleTitle: z.string(), indexDateLabel: z.string(), articleDateLabel: z.string(),
+    id: z.string(), slug: z.string(), title: z.string(), articleTitle: z.string(), subtitle: z.string().optional(), indexDateLabel: z.string(), articleDateLabel: z.string(),
     displayOrder: z.number(), legacyPopupId: z.string().nullable(), coverImage: z.string().nullable(), showInIndex: z.boolean(),
     cardImage: z.string().optional(),
     seoDescription: z.string(), externalLinks: z.array(z.object({ text: z.string(), href: z.string() })), source: z.string(),

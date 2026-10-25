@@ -6,7 +6,15 @@ const manifest = JSON.parse(fs.readFileSync("src/data/asset-manifest.json", "utf
 const html = fs.readFileSync("dist/journal/index.html", "utf8");
 const text = (value) => value.replace(/<[^>]*>/g, " ").replace(/&#x27;|&#39;|&apos;/g, "'").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
 const fields = (file) => Object.fromEntries([...fs.readFileSync(file, "utf8").matchAll(/^(\w+): (.+)$/gm)].map((m) => [m[1], JSON.parse(m[2])]));
-const entries = fs.readdirSync("src/content/journal").map((file) => fields(`src/content/journal/${file}`)).filter((entry) => entry.showInIndex).sort((a, b) => a.displayOrder - b.displayOrder);
+// Stories added after the WordPress migration (no legacy popup) lead the index and are checked separately.
+const allEntries = fs.readdirSync("src/content/journal").map((file) => fields(`src/content/journal/${file}`)).filter((entry) => entry.showInIndex).sort((a, b) => a.displayOrder - b.displayOrder);
+const newEntries = allEntries.filter((entry) => entry.legacyPopupId === null);
+const entries = allEntries.filter((entry) => entry.legacyPopupId !== null);
+for (const entry of newEntries) {
+  assert.ok(html.includes(`href="/journal/${entry.slug}/"`), `New story missing from index: ${entry.slug}`);
+  assert.ok(fs.existsSync(`dist/journal/${entry.slug}/index.html`), `New story page missing: ${entry.slug}`);
+  assert.ok(fs.existsSync(`public${entry.cardImage}`) && fs.existsSync(`public${entry.coverImage}`), `New story images missing: ${entry.slug}`);
+}
 const cards = [...source.referenceHtml.matchAll(/<a class="elementor-cta" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
 assert.equal(cards.length, 16);
 assert.equal(entries.length, 16);
