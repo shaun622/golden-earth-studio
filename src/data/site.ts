@@ -10,7 +10,6 @@ export const site = {
 
 export const navigation = [
   { label: "Gallery", href: "/gallery/" },
-  { label: "Collective", href: "/collective/" },
   { label: "Journal", href: "/journal/" },
   { label: "Our Mission", href: "/our-mission/" },
 ];

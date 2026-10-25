@@ -29,6 +29,13 @@ const featuredWorks = featuredIds.flatMap((id) => {
   const image = work && mediaSource(work.cardImage || work.mainImage);
   return work && image ? [{ title: work.title, artist: work.artistName, image, href: `/gallery/${id}/` }] : [];
 });
+
+// Homepage Exhibitions slideshow; each slide opens the exhibition's Journal story.
+const exhibitions = [
+  { title: "Art of the Earth – Six Senses London x Golden Earth Studio", href: "/journal/six-senses-london/", image: "/assets/exhibitions/six-senses-london.webp", width: 1200, height: 983, alt: "Adam Weismann's Terre Verte panels either side of a pool beneath a suspended petal installation at Six Senses London" },
+  { title: "Reframing Waste – Bloobloom x Golden Earth Studio", href: "/journal/reframing-waste/", image: "/assets/exhibitions/london-design-festival-2025.webp", width: 1400, height: 1148, alt: "Clay sculptures on a tiled display counter among terracotta shelving at Bloobloom Covent Garden" },
+  { title: "Groundworks – London Craft Week", href: "/journal/london-craft-week/", image: "/assets/exhibitions/london-craft-week-2025.webp", width: 1400, height: 1147, alt: "Jacob Chan's chess set, ceramics and material samples on long tables beneath hanging photographs of excavation sites" },
+];
 ---
 
 <BaseLayout
@@ -89,15 +96,28 @@ const featuredWorks = featuredIds.flatMap((id) => {
       </ul>
     </section>
 
-    <section class="collective-section section-pad" aria-labelledby="collective-heading">
-      <img src="/assets/images/collective.webp" alt="Hands testing reclaimed construction materials in the studio" width="1024" height="824" loading="lazy" />
+
+    <section class="collective-section exhibitions-section section-pad" aria-labelledby="exhibitions-heading">
+      <div class="exhibitions-carousel" data-exhibitions>
+        <div class="exhibitions-frame">
+          {exhibitions.map((exhibition, index) => (
+            <a class="exhibitions-slide" href={exhibition.href} data-exhibition-slide data-title={exhibition.title} aria-hidden={index ? "true" : undefined} tabindex={index ? -1 : undefined}>
+              <img src={exhibition.image} alt={exhibition.alt} width={exhibition.width} height={exhibition.height} loading="lazy" />
+            </a>
+          ))}
+          <button class="exhibitions-arrow exhibitions-prev" type="button" aria-label="Previous exhibition" data-exhibitions-prev>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8" /></svg>
+          </button>
+          <button class="exhibitions-arrow exhibitions-next" type="button" aria-label="Next exhibition" data-exhibitions-next>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" /></svg>
+          </button>
+        </div>
+        <a class="exhibitions-caption" href={exhibitions[0].href} aria-live="polite" data-exhibitions-caption>{exhibitions[0].title}</a>
+      </div>
       <div class="collective-copy">
-        <h2 id="collective-heading" data-reveal><a href="/collective/">The Collective</a></h2>
+        <h2 id="exhibitions-heading" data-reveal>Exhibitions</h2>
         <p data-reveal style="--reveal-delay: 100ms">
-          Extending an invitation to all who are intrigued by the possibilities within the construction industry’s abundance of discarded resources, Golden Earth Studio engages with creatives from a wide range of disciplines.
-        </p>
-        <p data-reveal style="--reveal-delay: 180ms">
-          <a href="/collective/"><em>Explore</em></a> the many ways circularity has been embraced across multiple mediums through our collective.
+          Explore our series of exhibitions where we collaborate with hotels and brands that align with our vision of a circular future. The discarded London clay, transformed by artists and designers, is brought back into interiors through Golden Earth Studio's unique partnerships.
         </p>
       </div>
     </section>
@@ -122,4 +142,5 @@ const featuredWorks = featuredIds.flatMap((id) => {
   </main>
 </BaseLayout>
 <script>import "../scripts/artwork-strip";</script>
+<script>import "../scripts/exhibitions";</script>
 <script>import "../scripts/artists-browse";</script>
