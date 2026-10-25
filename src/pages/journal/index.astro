@@ -14,3 +14,17 @@ const entries = (await getCollection("journal")).filter((entry) => entry.data.sh
     </div>
   </main>
 </InteriorLayout>
+<script>
+  // Start the intro under the first navigation link ("Gallery"), whatever the window width.
+  const intro = document.querySelector<HTMLElement>(".journal-intro h1");
+  const nav = document.querySelector<HTMLElement>(".desktop-nav");
+  const align = () => {
+    if (!intro || !nav || !nav.offsetWidth) { intro?.style.removeProperty("margin-left"); return; }
+    const parent = intro.parentElement!.getBoundingClientRect();
+    const padding = parseFloat(getComputedStyle(intro.parentElement!).paddingLeft);
+    intro.style.marginLeft = `${nav.getBoundingClientRect().left - parent.left - padding}px`;
+  };
+  align();
+  window.addEventListener("resize", align);
+  document.fonts?.ready.then(align);
+</script>
