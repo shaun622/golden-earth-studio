@@ -603,8 +603,8 @@ img { height: auto; }
   position: relative;
   display: grid;
   min-height: 42rem;
-  align-items: center;
-  padding: clamp(3rem, 9vw, 11rem);
+  align-items: start;
+  padding: clamp(3rem, 6vw, 6rem);
   clip-path: inset(0);
   background: #262626;
   color: var(--white);
@@ -613,23 +613,24 @@ img { height: auto; }
 .journal-bg {
   position: fixed;
   inset: 0;
-  background: url("/assets/images/journal.png") center / cover no-repeat;
+  background: url("/assets/images/journal-bloobloom.webp") center / cover no-repeat;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .journal-bg { position: absolute; }
 }
 
+/* Darkest behind the text in the top left, lifting towards the bottom right so the artworks still read. */
 .journal-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.52);
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.45) 100%);
 }
 
 .journal-copy {
   position: relative;
   z-index: 1;
-  max-width: 53rem;
+  max-width: 32rem;
 }
 
 .journal-copy h2 {
