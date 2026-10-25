@@ -121,7 +121,7 @@ img { height: auto; }
   position: relative;
   min-height: calc(100svh - (var(--edge) * 2));
   overflow: hidden;
-  background: #262626 url("/assets/images/hero-fallback.webp") center / cover no-repeat;
+  background: #262626;
   color: var(--white);
 }
 
@@ -143,9 +143,9 @@ img { height: auto; }
 
 .hero video {
   position: fixed;
-  inset: var(--edge) auto auto var(--edge);
+  inset: 0 auto auto var(--edge);
   width: calc(100% - (var(--edge) * 2));
-  height: calc(100svh - (var(--edge) * 2));
+  height: 100svh;
 }
 
 @media (prefers-reduced-motion: reduce) {
