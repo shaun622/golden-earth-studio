@@ -394,6 +394,37 @@ img { height: auto; }
   gap: clamp(1.8rem, 4.5vw, 6rem);
 }
 
+.section-heading-row h2 a { transition: opacity 220ms ease; }
+
+/* Homepage strip: four works in view, scrolling sideways by trackpad, swipe, or by resting the
+   pointer near either edge. */
+.artwork-strip {
+  --strip-gap: clamp(1.8rem, 4.5vw, 6rem);
+  overflow-x: auto;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.artwork-strip::-webkit-scrollbar { display: none; }
+
+.artwork-strip-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 3 * var(--strip-gap)) / 4);
+  gap: var(--strip-gap);
+}
+
+.artwork-strip .artwork-image-link img { aspect-ratio: 330 / 395; }
+
+@media (max-width: 1050px) {
+  .artwork-strip-track { grid-auto-columns: calc((100% - 2 * var(--strip-gap)) / 2.6); }
+}
+
+@media (max-width: 767px) {
+  .artwork-strip { --strip-gap: 1rem; }
+  .artwork-strip-track { grid-auto-columns: 72%; }
+}
+
 .artwork-card h3,
 .artist-card h3 {
   margin: 0.45rem 0 0;
