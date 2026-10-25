@@ -611,9 +611,7 @@ img { height: auto; }
   color: var(--white);
 }
 
-/* An even thin light edge on all four sides: the neighbouring sections stop the same distance above
-   and below the photograph as the page edge at the sides. */
-.collective-section:has(+ .journal-section) { padding-bottom: var(--edge); }
+/* The Contact section starts close below the Journal photograph. */
 .journal-section + .contact-section { padding-top: var(--edge); }
 
 .journal-bg {
