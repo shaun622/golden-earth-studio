@@ -11,7 +11,7 @@ import "../../styles/gallery-2026.css";
   <main id="content" class="interior-main gallery-reference">
     <header class="reference-intro"><h1 data-reveal>Explore the artists who <em>transform</em> construction <br />by-products into fine art and functional ware</h1></header>
     <GalleryTabs>
-      <div slot="artists" class="reference-catalogue">{content.gallery.artists.map((card) => <CatalogueCard {...card} />)}</div>
+      <div slot="artists" class="reference-catalogue" data-gallery-shuffle>{content.gallery.artists.map((card) => <CatalogueCard {...card} />)}</div>
       <div slot="artwork" class="reference-catalogue" data-gallery-shuffle>{content.gallery.artworks.map((card) => <CatalogueCard {...card} />)}</div>
     </GalleryTabs>
     <FigmaCommission />

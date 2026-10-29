@@ -4,11 +4,11 @@ document.querySelectorAll<HTMLElement>("[data-gallery-tabs]").forEach((root) => 
   if (!tabs.length || !panels.length) return;
   root.dataset.enhanced = "true";
 
-  // Artwork cards appear in a fresh random order on each visit and each time the Artwork tab is chosen.
+  // Artist and artwork cards appear in a fresh random order on each visit and each time their tab is chosen.
   // Without JavaScript they keep their authored order.
   const shuffled = [...root.querySelectorAll<HTMLElement>("[data-gallery-shuffle]")];
-  function shuffle() {
-    shuffled.forEach((list) => {
+  function shuffle(lists = shuffled) {
+    lists.forEach((list) => {
       const cards = [...list.children];
       for (let i = cards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -21,7 +21,7 @@ document.querySelectorAll<HTMLElement>("[data-gallery-tabs]").forEach((root) => 
 
   function select(id: string, { focus = false, updateHistory = true, reshuffle = false } = {}) {
     if (!tabs.some((tab) => tab.dataset.galleryTab === id)) id = "artists";
-    if (reshuffle && id === "artwork") shuffle();
+    if (reshuffle) shuffle(shuffled.filter((list) => list.closest<HTMLElement>("[data-gallery-panel]")?.dataset.galleryPanel === id));
     tabs.forEach((tab) => {
       const selected = tab.dataset.galleryTab === id;
       tab.setAttribute("aria-selected", String(selected));
