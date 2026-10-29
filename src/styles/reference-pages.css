@@ -74,7 +74,8 @@
 .mission-opening-copy h1 { margin: 15% 0 5% 10%; font: 400 22px/44px var(--serif); }
 .mission-opening-copy > div { margin-left: 10%; }
 .mission-opening-copy p { font: 300 16px/28px var(--body); margin: 0 0 28px; }
-.mission-founders { display: grid; grid-template-columns: 1fr 1fr; min-height: 50vh; margin: 2% 0 5%; align-items: center; }
+/* A full window tall, so the founders photograph can sit centred with the photograph above out of view. */
+.mission-founders { display: grid; grid-template-columns: 1fr 1fr; min-height: 100svh; margin: 0; padding-block: 115px; box-sizing: border-box; align-items: center; }
 .mission-founders .founder-portraits { margin-left: 40%; margin-right: 10%; }
 .mission-founders .image-gallery-grid { grid-template-columns: minmax(0, 1fr); }
 .mission-founders .image-gallery-grid img { display: block; width: 100%; height: auto; aspect-ratio: 886 / 1186; filter: grayscale(1); }
@@ -145,7 +146,7 @@
   .mission-opening-copy h1 { margin: 0 0 24px; }
   .mission-opening-copy > div { margin: 0; }
   .mission-opening-copy p { font-size: 14px; line-height: 26px; }
-  .mission-founders { grid-template-columns: 1fr; margin: 12% 7% 18%; gap: 40px; }
+  .mission-founders { grid-template-columns: 1fr; min-height: 0; margin: 12% 7% 18%; padding-block: 0; gap: 40px; }
   .mission-founders .founder-portraits { margin: 0; }
   .mission-founders .image-gallery-grid { gap: 10px; }
   .mission-founders-copy { padding: 0; }
