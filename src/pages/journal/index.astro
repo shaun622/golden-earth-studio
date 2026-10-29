@@ -15,14 +15,15 @@ const entries = (await getCollection("journal")).filter((entry) => entry.data.sh
   </main>
 </InteriorLayout>
 <script>
-  // Start the intro under the first navigation link ("Gallery"), whatever the window width.
+  // Start the intro under the first navigation link ("Gallery"), moving it left only when its two lines would run off the page.
   const intro = document.querySelector<HTMLElement>(".journal-intro h1");
   const nav = document.querySelector<HTMLElement>(".desktop-nav");
   const align = () => {
     if (!intro || !nav || !nav.offsetWidth) { intro?.style.removeProperty("margin-left"); return; }
     const parent = intro.parentElement!.getBoundingClientRect();
     const padding = parseFloat(getComputedStyle(intro.parentElement!).paddingLeft);
-    intro.style.marginLeft = `${nav.getBoundingClientRect().left - parent.left - padding}px`;
+    const room = parent.width - padding * 2 - intro.scrollWidth;
+    intro.style.marginLeft = `${Math.max(0, Math.min(nav.getBoundingClientRect().left - parent.left - padding, room))}px`;
   };
   align();
   window.addEventListener("resize", align);
