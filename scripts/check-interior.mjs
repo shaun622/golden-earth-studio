@@ -78,9 +78,6 @@ for (const card of data.gallery.artists.slice(8)) {
 }
 for (const copy of data.gallery.commission) assert.ok(normalize(pages.gallery).includes(normalize(copy)));
 for (const [slug, forbidden] of [["collective", "<h1>The Collective</h1>"], ["collective", "contact-general-main"], ["gallery", "<h1>Gallery</h1>"], ["our-mission", "page-kicker"], ["our-mission", "mission-statement"]]) if (pages[slug]) assert.ok(!pages[slug].includes(forbidden));
-const portraits = [...source(600).referenceHtml.matchAll(/data-thumbnail="([^"]+)"/g)];
-for (const portrait of portraits) {
-  const asset = manifest.find((a) => a.remote === portrait[1]);
-  assert.ok(asset && pages["our-mission"].includes(`src="${asset.localPath}"`), "Missing founder portrait");
-}
-console.log((collectiveHidden ? "Collective page hidden and redirected. " : "") + "Interior parity passed: original Collective/Mission copy, 9 Collective images, retained Gallery URLs/hovers with explicit Jihyun Figma portrait override, 4 added artist cards, 2 founder portraits, original backgrounds and commission copy.");
+// The original two founder portraits were replaced by one photograph of both founders.
+assert.ok(pages["our-mission"].includes('src="/assets/pages/our-mission/founders.webp"'), "Missing founders photograph");
+console.log((collectiveHidden ? "Collective page hidden and redirected. " : "") + "Interior parity passed: original Collective/Mission copy, 9 Collective images, retained Gallery URLs/hovers with explicit Jihyun Figma portrait override, 4 added artist cards, founders photograph, original backgrounds and commission copy.");
