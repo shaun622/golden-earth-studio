@@ -3,7 +3,7 @@ id: "our-mission"
 slug: "our-mission"
 title: "Our Mission"
 description: "Currently, only half of all excavation waste produced in the UK is recovered for secondary uses. At Golden Earth Studio, we see an opportunity to change that. Our focus is to make…"
-images: ["/assets/migrated/pages/our-mission/our-mission-1-0d0c679.webp","/assets/migrated/pages/our-mission/our-mission-2-0338cfa.webp"]
+images: ["/assets/pages/our-mission/founders.webp"]
 sourceWpId: 600
 ---
 

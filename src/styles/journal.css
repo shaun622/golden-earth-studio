@@ -4,7 +4,7 @@
 .journal-interior .brand { font-size: 22px; letter-spacing: 4px; }
 .journal-interior .desktop-nav { gap: 3vw; }
 .journal-intro { min-height: 40vh; display: flex; align-items: flex-end; padding: 140px 3.5% 2%; }
-.journal-intro h1 { margin: 0 0 0 53.5%; font: 400 22px/44px var(--serif); letter-spacing: 0; }
+.journal-intro h1 { margin: 0 0 0 53.5%; font: 400 22px/44px var(--serif); letter-spacing: 0; white-space: nowrap; }
 .journal-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 4%; width: 93%; margin: 0 auto; padding-top: 18px; }
 .journal-card { min-width: 0; min-height: 50vh; }
 .journal-card > a { display: block; opacity: 1; }
@@ -32,7 +32,7 @@
   .journal-interior .site-header { min-height: 72px; padding-inline: 5%; }
   .journal-interior .brand { font-size: 18px; letter-spacing: 3px; }
   .journal-intro { padding: 32vw 7% 5%; align-items: center; }
-  .journal-intro h1 { margin: 0; text-align: center; font-size: 22px; line-height: 1.4; }
+  .journal-intro h1 { margin: 0; text-align: center; font-size: min(22px, 5.2vw); line-height: 1.4; }
   .journal-grid { grid-template-columns: 1fr; padding-top: 9%; }
   .journal-card { min-height: 0; margin-bottom: 8vh; }
   .journal-card h2 { font-size: 17px; line-height: 1.4; }

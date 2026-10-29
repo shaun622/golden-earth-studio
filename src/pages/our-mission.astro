@@ -16,7 +16,7 @@ const { Content } = await render(page);
       <div class="mission-opening-copy"><h1 id="mission-heading" data-reveal>Our Mission</h1><div data-reveal><Content /></div></div>
     </section>
     <section id="about" class="mission-founders" aria-labelledby="founders-heading">
-      <ImageGallery className="founder-portraits" label="Golden Earth Studio founders" images={page.data.images.map((src, i) => ({ src, alt: i === 0 ? "Sara Howard" : "Gabriel Lau" }))} />
+      <ImageGallery className="founder-portraits" label="Golden Earth Studio founders" images={page.data.images.map((src) => ({ src, alt: "Sara Howard and Gabriel Lau", width: 886, height: 1186 }))} />
       <div class="mission-founders-copy"><h2 id="founders-heading" data-reveal>Founders</h2><p data-reveal>{content.mission.founders}</p></div>
     </section>
   </main>
