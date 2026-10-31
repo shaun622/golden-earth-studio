@@ -13,6 +13,9 @@ const kindById: Record<string, Kind> = {
   "jacob-chan/chess-set": "sculpture",
   "jihyun-kim/teoju": "sculpture",
   "jihyun-kim/small-teoju": "sculpture",
+  "jihyun-kim/teoju-2": "sculpture",
+  "jihyun-kim/mini-teoju-1": "sculpture",
+  "jihyun-kim/mini-teoju-2": "sculpture",
   "rickie-cheuk/chopsticks": "vessel",
 };
 
