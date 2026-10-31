@@ -55,7 +55,8 @@
 .figma-enquiry { max-width: 335px; }
 .figma-product-facts dd { margin: 0; white-space: pre-line; }
 .figma-product-facts > div + div::before { display: block; content: "–"; margin-block: 4px; line-height: 10px; }
-.figma-enquiry h2 { margin: 0 0 55px; padding-bottom: 100px; border-bottom: 1px solid #aaa99f; font: 300 16px/1.5 var(--body); }
+/* The heading sits just above its rule; the space above it keeps the rule where it was. */
+.figma-enquiry h2 { margin: 86px 0 55px; padding-bottom: 14px; border-bottom: 1px solid #aaa99f; font: 300 16px/1.5 var(--body); }
 /* Product photos stack in one column at their own proportions, main photo first. */
 .figma-product-media { width: min(610px, calc((100svh - 120px) * var(--stack-aspect, .583))); max-width: 100%; justify-self: end; }
 .figma-product-media > .media-slot { aspect-ratio: 350 / 600; }
@@ -137,7 +138,7 @@
   .figma-product-heading a { display: block; margin-top: 10px; font-size: 25px; line-height: 1.35; }
   .figma-product-columns { grid-template-columns: 1fr; gap: 40px; }
   .figma-product-facts { margin-bottom: 35px; }
-  .figma-enquiry h2 { padding-bottom: 14px; margin-bottom: 20px; }
+  .figma-enquiry h2 { padding-bottom: 14px; margin-top: 0; margin-bottom: 20px; }
   .figma-product-media { width: 100%; justify-self: start; margin-top: 0; }
   .figma-product-photos { gap: 20px; }
   .figma-related { margin-top: 75px; }
