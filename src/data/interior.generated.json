@@ -192,6 +192,13 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/jihyun-kim/teoju-2/",
+        "label": "Teoju 2 by Jihyun Kim",
+        "image": "/assets/artworks/jihyun-kim/teoju-2.webp",
+        "hoverImage": "/assets/artworks/jihyun-kim/teoju-2.webp",
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/edie-evans/dorodango-pair-ii/",
         "label": "Dorodango Pair II by Edie Evans",
         "image": {
@@ -420,6 +427,13 @@
         "hoverImage": {
           "slot": "jacob-chan-bottle-series-card"
         },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jihyun-kim/mini-teoju-3/",
+        "label": "Mini Teoju 3 by Jihyun Kim",
+        "image": "/assets/artworks/jihyun-kim/mini-teoju-3.webp",
+        "hoverImage": "/assets/artworks/jihyun-kim/mini-teoju-3.webp",
         "objectPosition": "center"
       },
       {
@@ -654,6 +668,13 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/jihyun-kim/mini-teoju-2/",
+        "label": "Mini Teoju 2 by Jihyun Kim",
+        "image": "/assets/artworks/jihyun-kim/mini-teoju-2.webp",
+        "hoverImage": "/assets/artworks/jihyun-kim/mini-teoju-2.webp",
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/jacob-chan/chess-set/",
         "label": "Chess Set by Jacob Chan",
         "image": "/assets/migrated/gallery-index/9-image-e4c0812.webp",
@@ -683,7 +704,7 @@
       },
       {
         "href": "/gallery/jihyun-kim/teoju/",
-        "label": "Teoju by Jihyun Kim",
+        "label": "Teoju 1 by Jihyun Kim",
         "image": "/assets/migrated/gallery-index/13-image-cf1090d.webp",
         "hoverImage": "/assets/migrated/gallery-index/13-hover-3fc58f4.webp",
         "objectPosition": "center"
@@ -732,7 +753,7 @@
       },
       {
         "href": "/gallery/jihyun-kim/small-teoju/",
-        "label": "Small Teoju by Jihyun Kim",
+        "label": "Mini Teoju 1 by Jihyun Kim",
         "image": "/assets/migrated/artworks/jihyun-kim/small-teoju-main-9f1d8e8.webp",
         "hoverImage": "/assets/migrated/gallery-index/20-hover-0cb7f93.webp",
         "objectPosition": "center"

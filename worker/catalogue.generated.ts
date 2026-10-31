@@ -27,12 +27,27 @@ export default {
     "path": "/gallery/louis-vincent/wall-panel-ii/"
   },
   "jihyun-kim/teoju": {
-    "title": "Teoju #1",
+    "title": "Teoju 1",
     "artist": "Jihyun Kim",
     "path": "/gallery/jihyun-kim/teoju/"
   },
+  "jihyun-kim/teoju-2": {
+    "title": "Teoju 2",
+    "artist": "Jihyun Kim",
+    "path": "/gallery/jihyun-kim/teoju-2/"
+  },
+  "jihyun-kim/mini-teoju-3": {
+    "title": "Mini Teoju 3",
+    "artist": "Jihyun Kim",
+    "path": "/gallery/jihyun-kim/mini-teoju-3/"
+  },
+  "jihyun-kim/mini-teoju-2": {
+    "title": "Mini Teoju 2",
+    "artist": "Jihyun Kim",
+    "path": "/gallery/jihyun-kim/mini-teoju-2/"
+  },
   "jihyun-kim/small-teoju": {
-    "title": "Small Teoju",
+    "title": "Mini Teoju 1",
     "artist": "Jihyun Kim",
     "path": "/gallery/jihyun-kim/small-teoju/"
   },

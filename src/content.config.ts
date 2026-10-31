@@ -21,7 +21,7 @@ const artworks = defineCollection({
   schema: z.object({
     id: z.string(), artistSlug: z.string(), slug: z.string(), title: z.string(), artistName: z.string(),
     dimensions: z.string(), materials: z.string(), price: z.string().nullable(), mainImage: mediaReference, cardImage: mediaReference.optional(), gallery: z.array(mediaItem),
-    detailVariant: z.enum(["legacy", "figma-2026"]).default("legacy"), year: z.number().int().optional(), tileMedium: z.string().optional(), sold: z.boolean().default(false),
+    detailVariant: z.enum(["legacy", "figma-2026"]).default("legacy"), year: z.number().int().optional(), tileMedium: z.string().optional(), sold: z.boolean().default(false), collaborator: z.string().optional(),
     relatedIds: z.array(z.string()), seoDescription: z.string(), sourceWpId: z.number().nullable(),
   }),
 });
