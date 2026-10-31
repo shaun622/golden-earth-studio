@@ -8,7 +8,7 @@ dimensions: "17cm(l) x 17cm(w) x 31cm(h)"
 materials: "Excavated Clay, Porcelain, Excavated clay glaze, Gold Lustre"
 price: "£940"
 mainImage: "/assets/artworks/jihyun-kim/mini-teoju-2.webp"
-gallery: [{"src":"/assets/artworks/jihyun-kim/mini-teoju-2.webp","alt":"Mini Teoju 2 by Jihyun Kim in collaboration with Neve Beill, pale carved clay with red and gold glaze drops"}]
+gallery: [{"src":"/assets/artworks/jihyun-kim/mini-teoju-2.webp","alt":"Mini Teoju 2 by Jihyun Kim in collaboration with Neve Beill, a carved green-glazed clay vessel with a tiered conical lid and gold lustre"}]
 detailVariant: "figma-2026"
 relatedIds: ["jihyun-kim/teoju","zahed-tajeddin/bowing-bull","jacob-chan/ginger-jar","rickie-cheuk/chopsticks"]
 seoDescription: "Mini Teoju 2 by Jihyun Kim in collaboration with Neve Beill. Excavated Clay, Porcelain, Excavated clay glaze, Gold Lustre."

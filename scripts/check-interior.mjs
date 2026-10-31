@@ -58,7 +58,7 @@ for (const [index, original] of sourceCards.entries()) {
     "/gallery/jacob-chan/ginger-jar-2/": "Ginger Jar II by Jacob Chan",
     "/gallery/arran-gregory/the-universe-was-an-egg-which-cracked/": "The Universe Was an Egg Which Cracked by Arran Gregory",
     "/gallery/jihyun-kim/teoju/": "Teoju 1 by Jihyun Kim",
-    "/gallery/jihyun-kim/small-teoju/": "Mini Teoju 3 by Jihyun Kim",
+    "/gallery/jihyun-kim/small-teoju/": "Mini Teoju 1 by Jihyun Kim",
   };
   const expectedLabel = relabelled[href] ?? original[3];
   assert.equal(normalize(card.label), normalize(expectedLabel));

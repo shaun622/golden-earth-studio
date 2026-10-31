@@ -8,7 +8,7 @@ dimensions: "21cm(l) x 21cm(w) x 35cm(h)"
 materials: "Excavated Clay, Porcelain, Gloop glaze, Gold Lustre"
 price: "£1,800"
 mainImage: "/assets/artworks/jihyun-kim/teoju-2.webp"
-gallery: [{"src":"/assets/artworks/jihyun-kim/teoju-2.webp","alt":"Teoju 2 by Jihyun Kim, a carved green-glazed clay vessel with a tiered conical lid and gold lustre"}]
+gallery: [{"src":"/assets/artworks/jihyun-kim/teoju-2.webp","alt":"Teoju 2 by Jihyun Kim, sand-coloured carved clay with red and gold glaze drops"}]
 detailVariant: "figma-2026"
 relatedIds: ["jihyun-kim/teoju","zahed-tajeddin/bowing-bull","jacob-chan/ginger-jar","rickie-cheuk/chopsticks"]
 seoDescription: "Teoju 2 by Jihyun Kim. Excavated Clay, Porcelain, Gloop glaze, Gold Lustre."

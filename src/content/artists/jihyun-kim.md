@@ -8,7 +8,7 @@ hoverImage: "/assets/artworks/jihyun-kim/teoju.webp"
 profileVariant: "figma-2026"
 listedInGallery: true
 order: 1
-artworkIds: ["jihyun-kim/teoju","jihyun-kim/mini-teoju-2","jihyun-kim/small-teoju","jihyun-kim/teoju-2","jihyun-kim/mini-teoju-1"]
+artworkIds: ["jihyun-kim/teoju","jihyun-kim/teoju-2","jihyun-kim/small-teoju","jihyun-kim/mini-teoju-2","jihyun-kim/mini-teoju-3"]
 studies: []
 relatedProfiles: []
 seoDescription: "Jihyun’s creations beautifully blend sculptural and functional elements, inspired by her cultural heritage and nature’s mystical aspects. Her exploration of organic forms,…"

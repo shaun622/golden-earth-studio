@@ -36,10 +36,10 @@ export default {
     "artist": "Jihyun Kim",
     "path": "/gallery/jihyun-kim/teoju-2/"
   },
-  "jihyun-kim/mini-teoju-1": {
-    "title": "Mini Teoju 1",
+  "jihyun-kim/mini-teoju-3": {
+    "title": "Mini Teoju 3",
     "artist": "Jihyun Kim",
-    "path": "/gallery/jihyun-kim/mini-teoju-1/"
+    "path": "/gallery/jihyun-kim/mini-teoju-3/"
   },
   "jihyun-kim/mini-teoju-2": {
     "title": "Mini Teoju 2",
@@ -47,7 +47,7 @@ export default {
     "path": "/gallery/jihyun-kim/mini-teoju-2/"
   },
   "jihyun-kim/small-teoju": {
-    "title": "Mini Teoju 3",
+    "title": "Mini Teoju 1",
     "artist": "Jihyun Kim",
     "path": "/gallery/jihyun-kim/small-teoju/"
   },
