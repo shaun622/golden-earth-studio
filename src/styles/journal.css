@@ -3,7 +3,8 @@
 .journal-interior .site-header { position: absolute; min-height: 140px; padding-inline: 5%; }
 .journal-interior .brand { font-size: 22px; letter-spacing: 4px; }
 .journal-interior .desktop-nav { gap: 3vw; }
-.journal-intro { min-height: 40vh; display: flex; align-items: flex-end; padding: 140px 3.5% 2%; }
+/* Centred between the bottom of the navigation (82px) and the first row of images (18px below the intro). */
+.journal-intro { min-height: 40vh; display: flex; align-items: center; padding: 100px 3.5% 0; box-sizing: border-box; }
 .journal-intro h1 { margin: 0 0 0 53.5%; font: 400 22px/44px var(--serif); letter-spacing: 0; white-space: nowrap; }
 .journal-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 4%; width: 93%; margin: 0 auto; padding-top: 18px; }
 .journal-card { min-width: 0; min-height: 50vh; }
