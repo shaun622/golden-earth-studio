@@ -6,7 +6,7 @@ title: "Teoju 2"
 artistName: "Jihyun Kim"
 dimensions: "21cm(l) x 21cm(w) x 35cm(h)"
 materials: "Excavated Clay, Porcelain, Gloop glaze, Gold Lustre"
-price: "£1,800"
+price: "£1,500"
 mainImage: "/assets/artworks/jihyun-kim/teoju-2.webp"
 gallery: [{"src":"/assets/artworks/jihyun-kim/teoju-2.webp","alt":"Teoju 2 by Jihyun Kim, sand-coloured carved clay with red and gold glaze drops"}]
 detailVariant: "figma-2026"
