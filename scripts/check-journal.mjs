@@ -15,9 +15,11 @@ for (const entry of newEntries) {
   assert.ok(fs.existsSync(`dist/journal/${entry.slug}/index.html`), `New story page missing: ${entry.slug}`);
   assert.ok(fs.existsSync(`public${entry.cardImage}`) && fs.existsSync(`public${entry.coverImage}`), `New story images missing: ${entry.slug}`);
 }
-const cards = [...source.referenceHtml.matchAll(/<a class="elementor-cta" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
-assert.equal(cards.length, 16);
-assert.equal(entries.length, 16);
+const cards = [...source.referenceHtml.matchAll(/<a class="elementor-cta" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)]
+  // "We're Hiring" was deliberately taken off the Journal index in 2026.
+  .filter((card) => !/hiring/i.test(text(card[2].match(/<h2[^>]*>([\s\S]*?)<\/h2>/)[1])));
+assert.equal(cards.length, 15);
+assert.equal(entries.length, 15);
 for (const [index, card] of cards.entries()) {
   const popup = JSON.parse(Buffer.from(decodeURIComponent(card[1]).split("settings=")[1], "base64").toString());
   const entry = entries[index];
