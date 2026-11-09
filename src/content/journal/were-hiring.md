@@ -9,7 +9,7 @@ displayOrder: 0
 cardImage: "/assets/migrated/journal/were-hiring-card-5b84b57.webp"
 legacyPopupId: "4602"
 coverImage: "/assets/migrated/journal/were-hiring-cover-2bf5f93.webp"
-showInIndex: true
+showInIndex: false
 seoDescription: "Golden Earth Studio is looking for a Fine Art Sales Specialist (part-time) to support the growth of our gallery, which represents artists transforming construction waste through…"
 externalLinks: [{"text":"Apply for the role","href":"https://docs.google.com/forms/d/e/1FAIpQLSeJhABsdMitVtcdyjqgRuonbvSVRSS_7d8Dj1SldxuLkO0-_g/viewform?usp=dialog"}]
 source: "popup 4602"
