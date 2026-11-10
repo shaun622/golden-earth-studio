@@ -8,6 +8,7 @@ dimensions: "80cm(w) x 60cm(h)"
 materials: "Clay, Emulsion, Graphite"
 price: "£9,000"
 mainImage: "/assets/artworks/grace-rose-watts/elements.webp"
+cardImage: "/assets/artworks/grace-rose-watts/elements-card.webp"
 gallery: [{"src":"/assets/artworks/grace-rose-watts/elements.webp","alt":"Elements by Grace Rose Watts, a clay-toned canvas covered in sweeping graphite lines and arcs, hung on a white wall"}]
 detailVariant: "figma-2026"
 year: 2026

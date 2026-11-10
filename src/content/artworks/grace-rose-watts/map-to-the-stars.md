@@ -8,6 +8,7 @@ dimensions: "70cm(w) x 40cm(h)"
 materials: "Clay, Emulsion, Graphite"
 price: "£7,000"
 mainImage: "/assets/artworks/grace-rose-watts/map-to-the-stars.webp"
+cardImage: "/assets/artworks/grace-rose-watts/map-to-the-stars-card.webp"
 gallery: [{"src":"/assets/artworks/grace-rose-watts/map-to-the-stars.webp","alt":"Map to the Stars by Grace Rose Watts, a wide clay-toned canvas covered in looping graphite lines with small gold stars, hung on a white wall"}]
 detailVariant: "figma-2026"
 year: 2026
