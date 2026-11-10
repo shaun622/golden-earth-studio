@@ -15,7 +15,7 @@ function record(file) {
     return [line.slice(0, split), JSON.parse(line.slice(split + 1).trim())];
   })), body: body.trim() };
 }
-const expectedArtists = ["louis-vincent", "jihyun-kim", "jacob-chan", "alexandra-yan-wong", "adam-weismann", "arran-gregory", "zahed-tajeddin", "rickie-cheuk", "lucia-ocejo", "james-galbraith-kirkpatrick", "edie-evans", "eleanor-herbosch", "jo-pearl"];
+const expectedArtists = ["louis-vincent", "jihyun-kim", "jacob-chan", "alexandra-yan-wong", "adam-weismann", "arran-gregory", "zahed-tajeddin", "rickie-cheuk", "lucia-ocejo", "james-galbraith-kirkpatrick", "edie-evans", "eleanor-herbosch", "jo-pearl", "grace-rose-watts"];
 const expectedWorks = {
   "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"], ["large-bowl", "Large Bowl", "", "£80"]],
   "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "16.5cm(l) x 12cm(w) x 8cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"], ["dorodango-pair-ii", "Dorodango Pair II", "", "£275"], ["dorodango-pair-i", "Dorodango Pair I", "", "£275"], ["holding", "Holding", "", "£575"], ["ground", "Ground", "10 x 9.5 x 8 cm", "£575"]],
@@ -31,13 +31,13 @@ const gallery = html("/gallery/");
 assert.deepEqual(order.artistOrder, expectedArtists);
 assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), expectedArtists);
 // The 21 original works follow 50 works added in 2026; cards are shuffled in the browser.
-assert.equal(interior.gallery.artworks.length, 76);
+assert.equal(interior.gallery.artworks.length, 80);
 for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
-assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 89);
+assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 94);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 116);
-assert.equal(Object.keys(catalogue).length, 77);
-assert.equal(Object.keys(mediaSlots).length, 170);
+assert.equal(ledger.generated.length, 121);
+assert.equal(Object.keys(catalogue).length, 81);
+assert.equal(Object.keys(mediaSlots).length, 172);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -217,9 +217,9 @@ assert.ok(!allUpdatedHtml.includes("Side Plate"));
 const sitemap = read("dist/sitemap.xml");
 for (const route of ledger.generated.filter(route => route.includes("james-galbraith-kirkpatrick") || route.includes("edie-evans") || route.includes("lucia-ocejo") || route.includes("eleanor-herbosch"))) assert.ok(sitemap.includes(route));
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
-assert.equal(files.length, 14);
+assert.equal(files.length, 15);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 77);
+assert.equal(artworkCount, 81);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
