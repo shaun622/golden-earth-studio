@@ -17,5 +17,3 @@ sourceWpId: null
 ---
 
 Jo Pearl uses clay to animate what she describes as ‘the hidden abundance of life beneath our feet’. Fascinated by soil, the material foundation of ceramics, she focuses on the complexity of underground ecosystems. Collaborating with Golden Earth Studio on a new body of work seemed a perfect fit: using construction clay waste to explore further the microorganisms that live in the hidden world of soil. This piece is inspired by the microscopic spore of fungi; its terracotta form appears to be in suspended animation, its spines swirling, defying gravity.
-
-Like all Golden Earth Studio artists, Pearl hand-sieved the clay to prepare it for sculpting. Spore includes a stone peeping through the ceramic surface – a testament to the artisan nature of this way of working.
