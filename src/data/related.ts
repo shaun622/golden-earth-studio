@@ -19,6 +19,8 @@ const kindById: Record<string, Kind> = {
   "rickie-cheuk/chopsticks": "vessel",
   "jo-pearl/oddkin-constellation": "sculpture",
   "jo-pearl/spore": "sculpture",
+  "grace-rose-watts/clear-quartz": "sculpture",
+  "grace-rose-watts/iridescent-marcasite": "sculpture",
 };
 
 function kindOf(work: Artwork): Kind {

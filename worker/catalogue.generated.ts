@@ -1,6 +1,26 @@
 // Curated catalogue: WordPress migration plus the 2026 Figma additions.
 // Keep IDs and paths aligned with src/content/artworks; do not rerun the historical importer.
 export default {
+  "grace-rose-watts/map-to-the-stars": {
+    "title": "Map to the Stars",
+    "artist": "Grace Rose Watts",
+    "path": "/gallery/grace-rose-watts/map-to-the-stars/"
+  },
+  "grace-rose-watts/clear-quartz": {
+    "title": "Clear Quartz",
+    "artist": "Grace Rose Watts",
+    "path": "/gallery/grace-rose-watts/clear-quartz/"
+  },
+  "grace-rose-watts/elements": {
+    "title": "Elements",
+    "artist": "Grace Rose Watts",
+    "path": "/gallery/grace-rose-watts/elements/"
+  },
+  "grace-rose-watts/iridescent-marcasite": {
+    "title": "Iridescent Marcasite",
+    "artist": "Grace Rose Watts",
+    "path": "/gallery/grace-rose-watts/iridescent-marcasite/"
+  },
   "jo-pearl/oddkin-constellation": {
     "title": "Oddkin Constellation",
     "artist": "Jo Pearl",

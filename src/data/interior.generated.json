@@ -111,6 +111,17 @@
           "slot": "jo-pearl-spore"
         },
         "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/grace-rose-watts/",
+        "label": "Grace Rose Watts | Paintings & Sculpture",
+        "image": {
+          "slot": "grace-rose-watts-portrait"
+        },
+        "hoverImage": {
+          "slot": "grace-rose-watts-map-to-the-stars"
+        },
+        "objectPosition": "center"
       }
     ],
     "artworks": [
@@ -123,6 +134,13 @@
         "hoverImage": {
           "slot": "adam-weismann-terre-verte"
         },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/grace-rose-watts/map-to-the-stars/",
+        "label": "Map to the Stars by Grace Rose Watts",
+        "image": "/assets/artworks/grace-rose-watts/map-to-the-stars.webp",
+        "hoverImage": "/assets/artworks/grace-rose-watts/map-to-the-stars.webp",
         "objectPosition": "center"
       },
       {
@@ -313,6 +331,13 @@
         "hoverImage": {
           "slot": "edie-evans-holding-2"
         },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/grace-rose-watts/clear-quartz/",
+        "label": "Clear Quartz by Grace Rose Watts",
+        "image": "/assets/artworks/grace-rose-watts/clear-quartz.webp",
+        "hoverImage": "/assets/artworks/grace-rose-watts/clear-quartz.webp",
         "objectPosition": "center"
       },
       {
@@ -517,6 +542,13 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/grace-rose-watts/elements/",
+        "label": "Elements by Grace Rose Watts",
+        "image": "/assets/artworks/grace-rose-watts/elements.webp",
+        "hoverImage": "/assets/artworks/grace-rose-watts/elements.webp",
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/jacob-chan/sake-set-3/",
         "label": "Sake Set #3 by Jacob Chan",
         "image": {
@@ -711,6 +743,13 @@
         "label": "Untitled (GES#1) by Alexandra Yan Wong",
         "image": "/assets/migrated/artworks/alexandra-yan-wong/untitled-2025-main-6e5c97c.webp",
         "hoverImage": "/assets/migrated/gallery-index/10-hover-d3ac5d9.webp",
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/grace-rose-watts/iridescent-marcasite/",
+        "label": "Iridescent Marcasite by Grace Rose Watts",
+        "image": "/assets/artworks/grace-rose-watts/iridescent-marcasite.webp",
+        "hoverImage": "/assets/artworks/grace-rose-watts/iridescent-marcasite.webp",
         "objectPosition": "center"
       },
       {
