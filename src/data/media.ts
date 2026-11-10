@@ -11,6 +11,8 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "james-galbraith-kirkpatrick-portrait": { src: "/assets/artists/james-galbraith-kirkpatrick-portrait.webp", alt: "James Galbraith Kirkpatrick working at a pottery wheel", width: 862, height: 1034 },
   "edie-evans-portrait": { src: "/assets/artists/edie-evans-portrait.webp", alt: "Edie Evans working with clay in her studio", width: 864, height: 1026 },
   "lucia-ocejo-portrait": { src: "/assets/artists/lucia-ocejo-portrait.webp", alt: "Lucia Ocejo wearing an apron in a doorway", width: 866, height: 1050 },
+  "jo-pearl-portrait": { src: "/assets/artists/jo-pearl-portrait.webp", alt: "Portrait of Jo Pearl in a blue denim dress beside one of her kinetic ceramic sculptures", width: 1280, height: 1600 },
+  "jo-pearl-spore": { src: "/assets/artworks/jo-pearl/spore.webp", alt: "Spore by Jo Pearl, a terracotta sphere covered in curving spines, on a white reflective surface", width: 1067, height: 1600 },
   "eleanor-herbosch-portrait": { src: "/assets/artists/eleanor-herbosch-portrait.webp", alt: "Portrait of Eleanor Herbosch in a light shirt", width: 860, height: 1032 },
   "james-galbraith-kirkpatrick-square-plate": { src: "/assets/artworks/james-galbraith-kirkpatrick/square-plate.webp", alt: "Stack of Square Plates by James Galbraith Kirkpatrick", width: 682, height: 1180 },
   "james-galbraith-kirkpatrick-bowl": { src: "/assets/artworks/james-galbraith-kirkpatrick/bowl.webp", alt: "Stack of Bowls by James Galbraith Kirkpatrick", width: 682, height: 1178 },

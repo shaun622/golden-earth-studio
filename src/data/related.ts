@@ -17,6 +17,8 @@ const kindById: Record<string, Kind> = {
   "jihyun-kim/mini-teoju-3": "sculpture",
   "jihyun-kim/mini-teoju-2": "sculpture",
   "rickie-cheuk/chopsticks": "vessel",
+  "jo-pearl/oddkin-constellation": "sculpture",
+  "jo-pearl/spore": "sculpture",
 };
 
 function kindOf(work: Artwork): Kind {

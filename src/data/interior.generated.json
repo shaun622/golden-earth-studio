@@ -100,6 +100,17 @@
           "slot": "eleanor-herbosch-painting-hover"
         },
         "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jo-pearl/",
+        "label": "Jo Pearl | Ceramic",
+        "image": {
+          "slot": "jo-pearl-portrait"
+        },
+        "hoverImage": {
+          "slot": "jo-pearl-spore"
+        },
+        "objectPosition": "center"
       }
     ],
     "artworks": [
@@ -134,6 +145,13 @@
         "hoverImage": {
           "slot": "zahed-tajeddin-bull-leaping-ii"
         },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jo-pearl/oddkin-constellation/",
+        "label": "Oddkin Constellation by Jo Pearl",
+        "image": "/assets/artworks/jo-pearl/oddkin-constellation.webp",
+        "hoverImage": "/assets/artworks/jo-pearl/oddkin-constellation.webp",
         "objectPosition": "center"
       },
       {
@@ -489,6 +507,13 @@
         "hoverImage": {
           "slot": "louis-vincent-wall-panel-iv-detail"
         },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/jo-pearl/spore/",
+        "label": "Spore by Jo Pearl",
+        "image": "/assets/artworks/jo-pearl/spore.webp",
+        "hoverImage": "/assets/artworks/jo-pearl/spore.webp",
         "objectPosition": "center"
       },
       {
