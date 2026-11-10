@@ -5,7 +5,7 @@ slug: "spore"
 title: "Spore"
 artistName: "Jo Pearl"
 dimensions: "18cm(l) x 15cm(w) x 15cm(h)"
-materials: "Terracotta (clay from the Walled Villas site – Golden Earth Developments)"
+materials: "Terracotta"
 price: "£800"
 mainImage: "/assets/artworks/jo-pearl/spore.webp"
 gallery: [{"src":"/assets/artworks/jo-pearl/spore.webp","alt":"Spore by Jo Pearl, a terracotta sphere covered in curving spines, on a white reflective surface"}]
