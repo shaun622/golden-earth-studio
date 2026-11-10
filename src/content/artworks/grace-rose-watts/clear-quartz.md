@@ -10,6 +10,7 @@ price: "£760"
 mainImage: "/assets/artworks/grace-rose-watts/clear-quartz.webp"
 gallery: [{"src":"/assets/artworks/grace-rose-watts/clear-quartz.webp","alt":"Clear Quartz crystal formation sourced by Grace Rose Watts, on an oak plinth in front of a graphite drawing"},{"src":"/assets/artworks/grace-rose-watts/clear-quartz-2.webp","alt":"Clear Quartz crystal formation sourced by Grace Rose Watts, seen from above on an oak plinth"},{"src":"/assets/artworks/grace-rose-watts/clear-quartz-3.webp","alt":"Side view of the Clear Quartz crystal formation sourced by Grace Rose Watts on an oak plinth"}]
 detailVariant: "figma-2026"
+year: 2026
 relatedIds: ["grace-rose-watts/map-to-the-stars","grace-rose-watts/iridescent-marcasite","edie-evans/bedrock","jo-pearl/spore"]
 seoDescription: "Clear Quartz by Grace Rose Watts. Clear Quartz. Origin: British Isles."
 sourceWpId: null
