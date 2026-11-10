@@ -1,6 +1,16 @@
 // Curated catalogue: WordPress migration plus the 2026 Figma additions.
 // Keep IDs and paths aligned with src/content/artworks; do not rerun the historical importer.
 export default {
+  "jo-pearl/oddkin-constellation": {
+    "title": "Oddkin Constellation",
+    "artist": "Jo Pearl",
+    "path": "/gallery/jo-pearl/oddkin-constellation/"
+  },
+  "jo-pearl/spore": {
+    "title": "Spore",
+    "artist": "Jo Pearl",
+    "path": "/gallery/jo-pearl/spore/"
+  },
   "louis-vincent/wall-panel-i": {
     "title": "Wall Panel 1",
     "artist": "Louis Vincent",
