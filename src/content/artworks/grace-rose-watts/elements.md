@@ -5,7 +5,7 @@ slug: "elements"
 title: "Elements"
 artistName: "Grace Rose Watts"
 dimensions: "80cm(w) x 60cm(h)"
-materials: "Clay, Emulsion, Graphite"
+materials: "Clay, emulsion, graphite, gold ink on linen"
 price: "£9,000"
 mainImage: "/assets/artworks/grace-rose-watts/elements.webp"
 cardImage: "/assets/artworks/grace-rose-watts/elements-card.webp"
@@ -14,7 +14,7 @@ detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Painting"
 relatedIds: ["grace-rose-watts/iridescent-marcasite","grace-rose-watts/map-to-the-stars","eleanor-herbosch/unearthing-series-2","adam-weismann/terre-verte"]
-seoDescription: "Elements by Grace Rose Watts. Clay, Emulsion, Graphite."
+seoDescription: "Elements by Grace Rose Watts. Clay, emulsion, graphite, gold ink on linen."
 sourceWpId: null
 ---
 
