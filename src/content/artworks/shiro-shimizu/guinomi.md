@@ -6,7 +6,7 @@ title: "Guinomi (Sake cup)"
 artistName: "Shiro Shimizu"
 dimensions: ""
 materials: "Wimbledon Clay, ‘Seven Sisters’ Chalk glaze"
-price: "£50 each"
+price: "Available upon request"
 mainImage: "/assets/artworks/shiro-shimizu/guinomi.webp"
 cardImage: "/assets/artworks/shiro-shimizu/guinomi-card.webp"
 gallery: [{"src":"/assets/artworks/shiro-shimizu/guinomi.webp","alt":"Two Guinomi sake cups by Shiro Shimizu, dark glazed and hand-formed, on an old wooden table"}]
