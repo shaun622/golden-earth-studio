@@ -1,6 +1,16 @@
 // Curated catalogue: WordPress migration plus the 2026 Figma additions.
 // Keep IDs and paths aligned with src/content/artworks; do not rerun the historical importer.
 export default {
+  "shiro-shimizu/chawan": {
+    "title": "Chawan",
+    "artist": "Shiro Shimizu",
+    "path": "/gallery/shiro-shimizu/chawan/"
+  },
+  "shiro-shimizu/guinomi": {
+    "title": "Guinomi (Sake cup)",
+    "artist": "Shiro Shimizu",
+    "path": "/gallery/shiro-shimizu/guinomi/"
+  },
   "grace-rose-watts/map-to-the-stars": {
     "title": "Map to the Stars",
     "artist": "Grace Rose Watts",

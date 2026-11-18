@@ -3,7 +3,7 @@ id: "six-senses-london"
 slug: "six-senses-london"
 title: "Six Senses London Exhibition"
 articleTitle: "Six Senses London Exhibition"
-subtitle: "Art of the Earth Exhibition"
+subtitle: "Art of the Earth"
 indexDateLabel: "31 | 10 | 2026"
 articleDateLabel: "31 | 10 | 2026"
 displayOrder: -1

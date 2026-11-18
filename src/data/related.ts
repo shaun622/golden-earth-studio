@@ -21,6 +21,8 @@ const kindById: Record<string, Kind> = {
   "jo-pearl/spore": "sculpture",
   "grace-rose-watts/clear-quartz": "sculpture",
   "grace-rose-watts/iridescent-marcasite": "sculpture",
+  "shiro-shimizu/chawan": "vessel",
+  "shiro-shimizu/guinomi": "vessel",
 };
 
 function kindOf(work: Artwork): Kind {
