@@ -122,6 +122,17 @@
           "slot": "grace-rose-watts-map-to-the-stars"
         },
         "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/shiro-shimizu/",
+        "label": "Shiro Shimizu | Ceramic",
+        "image": {
+          "slot": "shiro-shimizu-portrait"
+        },
+        "hoverImage": {
+          "slot": "shiro-shimizu-chawan"
+        },
+        "objectPosition": "center"
       }
     ],
     "artworks": [
@@ -225,6 +236,13 @@
         "hoverImage": {
           "slot": "zahed-tajeddin-beauty-and-the-beast"
         },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/shiro-shimizu/chawan/",
+        "label": "Chawan by Shiro Shimizu",
+        "image": "/assets/artworks/shiro-shimizu/chawan.webp",
+        "hoverImage": "/assets/artworks/shiro-shimizu/chawan.webp",
         "objectPosition": "center"
       },
       {
@@ -634,6 +652,13 @@
         "hoverImage": {
           "slot": "james-galbraith-kirkpatrick-bowl"
         },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/shiro-shimizu/guinomi/",
+        "label": "Guinomi (Sake cup) by Shiro Shimizu",
+        "image": "/assets/artworks/shiro-shimizu/guinomi-card.webp",
+        "hoverImage": "/assets/artworks/shiro-shimizu/guinomi-card.webp",
         "objectPosition": "center"
       },
       {
