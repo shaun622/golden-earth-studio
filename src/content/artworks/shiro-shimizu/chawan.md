@@ -6,7 +6,7 @@ title: "Chawan"
 artistName: "Shiro Shimizu"
 dimensions: ""
 materials: "Wimbledon Clay, ‘Seven Sisters’ Chalk glaze"
-price: "£250"
+price: "Available upon request"
 mainImage: "/assets/artworks/shiro-shimizu/chawan.webp"
 gallery: [{"src":"/assets/artworks/shiro-shimizu/chawan.webp","alt":"Chawan by Shiro Shimizu, a dark glazed tea bowl on an old wooden table"}]
 detailVariant: "figma-2026"
