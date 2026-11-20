@@ -31,13 +31,13 @@ const gallery = html("/gallery/");
 assert.deepEqual(order.artistOrder, expectedArtists);
 assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), expectedArtists);
 // The 21 original works follow 50 works added in 2026; cards are shuffled in the browser.
-assert.equal(interior.gallery.artworks.length, 82);
+assert.equal(interior.gallery.artworks.length, 83);
 for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
-assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 97);
+assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 98);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 125);
-assert.equal(Object.keys(catalogue).length, 83);
-assert.equal(Object.keys(mediaSlots).length, 174);
+assert.equal(ledger.generated.length, 126);
+assert.equal(Object.keys(catalogue).length, 84);
+assert.equal(Object.keys(mediaSlots).length, 177);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -162,7 +162,15 @@ for (const [work, title] of jacobWorks) {
 // Alexandra Yan Wong's GES series runs in number order after the renamed GES#1.
 const alexWorks = [["ges-2", "Untitled (GES#2)", "100 x 75 cm", "£5,500"], ["ges-3", "Untitled (GES#3)", "30.5 x 30.5 cm", "£850"], ["ges-4", "Untitled (GES#4)", "30.5 x 30.5 cm", "£850"], ["ges-5", "Untitled (GES#5)", "21 x 30 cm", "£550"], ["ges-6", "Untitled (GES#6)", "21 x 30 cm", "£550"], ["ges-7", "Untitled (GES#7)", "21 x 30 cm", "£550"]];
 const alex = record("src/content/artists/alexandra-yan-wong.md").data;
-assert.deepEqual(alex.artworkIds, ["alexandra-yan-wong/untitled-2025", ...alexWorks.map(([work]) => `alexandra-yan-wong/${work}`)]);
+assert.deepEqual(alex.artworkIds, ["alexandra-yan-wong/untitled-2025", ...alexWorks.map(([work]) => `alexandra-yan-wong/${work}`), "alexandra-yan-wong/ges-8"]);
+// Her large GES#8 is sold, so it shows "Sold" and no price.
+const alexGes8 = record("src/content/artworks/alexandra-yan-wong/ges-8.md").data;
+assert.deepEqual([alexGes8.title, alexGes8.dimensions, alexGes8.price, alexGes8.sold, alexGes8.year], ["Untitled (GES#8)", "140 x 140 cm", null, true, 2026]);
+assert.deepEqual(catalogue["alexandra-yan-wong/ges-8"], { title: "Untitled (GES#8)", artist: "Alexandra Yan Wong", path: "/gallery/alexandra-yan-wong/ges-8/" });
+const alexGes8Page = html("/gallery/alexandra-yan-wong/ges-8/");
+assert.ok(alexGes8Page.includes(">Sold</dd>") && !alexGes8Page.includes("£"), "alexandra-yan-wong/ges-8: should show Sold and no price");
+checkPage(alexGes8Page, "alexandra-yan-wong/ges-8");
+allUpdatedHtml += alexGes8Page;
 const alexPage = html("/gallery/alexandra-yan-wong/");
 allUpdatedHtml += alexPage;
 allUpdatedHtml += html("/gallery/alexandra-yan-wong/untitled-2025/");
@@ -219,7 +227,7 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 16);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 83);
+assert.equal(artworkCount, 84);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");

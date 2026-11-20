@@ -1,6 +1,11 @@
 // Curated catalogue: WordPress migration plus the 2026 Figma additions.
 // Keep IDs and paths aligned with src/content/artworks; do not rerun the historical importer.
 export default {
+  "alexandra-yan-wong/ges-8": {
+    "title": "Untitled (GES#8)",
+    "artist": "Alexandra Yan Wong",
+    "path": "/gallery/alexandra-yan-wong/ges-8/"
+  },
   "shiro-shimizu/chawan": {
     "title": "Chawan",
     "artist": "Shiro Shimizu",
