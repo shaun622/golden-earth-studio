@@ -589,6 +589,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/alexandra-yan-wong/ges-8/",
+        "label": "Untitled (GES#8) by Alexandra Yan Wong",
+        "image": {
+          "slot": "alexandra-yan-wong-ges-8-card"
+        },
+        "hoverImage": {
+          "slot": "alexandra-yan-wong-ges-8-card"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/louis-vincent/plate-iv/",
         "label": "Plate IV by Louis Vincent",
         "image": {
