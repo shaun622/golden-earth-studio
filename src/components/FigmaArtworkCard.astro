@@ -9,10 +9,10 @@ const title = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
   <a href={`/gallery/${artwork.id}/`} class="figma-work-link" aria-label={`${title} by ${artwork.artistName}${artwork.sold ? " (sold)" : ""}`}>
     <MediaSlot media={artwork.cardImage || artwork.mainImage} />
     <span class="figma-work-caption">
+      {artwork.sold && <span class="figma-work-sold">SOLD</span>}
       <span class="figma-work-title">{title}</span>
       {artwork.dimensions && <span class="figma-work-dimensions">{artwork.dimensions}</span>}
       <span class="figma-work-medium">{artwork.tileMedium || artwork.materials}</span>
-      {artwork.sold && <span class="figma-work-sold">Sold</span>}
     </span>
   </a>
 </article>
