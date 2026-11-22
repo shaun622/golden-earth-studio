@@ -40,7 +40,7 @@ const headingEms = (0.42 * displayTitle.length + 0.45 * artwork.artistName.lengt
 const landscape = artwork.artistSlug === "edie-evans";
 ---
 <InteriorLayout className="figma-interior" title={`${displayTitle} | ${artwork.artistName}`} description={artwork.seoDescription} image={mediaSource(artwork.mainImage)}>
-  <main id="content" class:list={["figma-product", { "figma-product--described": hasDescription, "figma-product--landscape": landscape, "figma-product--screen": artwork.slug === "tiled-screen" }]}>
+  <main id="content" class:list={["figma-product", { "figma-product--described": hasDescription, "figma-product--landscape": landscape, "figma-product--screen": artwork.slug === "tiled-screen", "figma-product--wide": artwork.wideMedia }]}>
     <section class="figma-product-detail" aria-labelledby="artwork-heading">
       <div class="figma-product-columns">
         <div class="figma-product-copy">
