@@ -148,6 +148,17 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/adam-weismann/red-earth/",
+        "label": "Red Earth by Adam Weismann",
+        "image": {
+          "slot": "adam-weismann-red-earth-card"
+        },
+        "hoverImage": {
+          "slot": "adam-weismann-red-earth-card"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/grace-rose-watts/map-to-the-stars/",
         "label": "Map to the Stars by Grace Rose Watts",
         "image": "/assets/artworks/grace-rose-watts/map-to-the-stars-card.webp",
@@ -436,6 +447,28 @@
         "objectPosition": "center"
       },
       {
+        "href": "/gallery/eleanor-herbosch/unearthing-series-4/",
+        "label": "Unearthing Series #4 by Eleanor Herbosch",
+        "image": {
+          "slot": "eleanor-herbosch-unearthing-series-4-card"
+        },
+        "hoverImage": {
+          "slot": "eleanor-herbosch-unearthing-series-4-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/eleanor-herbosch/unearthing-series-5/",
+        "label": "Unearthing Series #5 by Eleanor Herbosch",
+        "image": {
+          "slot": "eleanor-herbosch-unearthing-series-5-card"
+        },
+        "hoverImage": {
+          "slot": "eleanor-herbosch-unearthing-series-5-card"
+        },
+        "objectPosition": "center"
+      },
+      {
         "href": "/gallery/louis-vincent/wall-panel-iii/",
         "label": "Wall Panel III by Louis Vincent",
         "image": {
@@ -596,6 +629,17 @@
         },
         "hoverImage": {
           "slot": "alexandra-yan-wong-ges-8-card"
+        },
+        "objectPosition": "center"
+      },
+      {
+        "href": "/gallery/alexandra-yan-wong/untitled-series/",
+        "label": "Untitled Series by Alexandra Yan Wong",
+        "image": {
+          "slot": "alexandra-yan-wong-untitled-series-card"
+        },
+        "hoverImage": {
+          "slot": "alexandra-yan-wong-untitled-series-card"
         },
         "objectPosition": "center"
       },

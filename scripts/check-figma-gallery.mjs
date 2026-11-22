@@ -20,9 +20,9 @@ const expectedWorks = {
   "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"], ["large-bowl", "Large Bowl", "", "£80"]],
   "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "16.5cm(l) x 12cm(w) x 8cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"], ["dorodango-pair-ii", "Dorodango Pair II", "", "£275"], ["dorodango-pair-i", "Dorodango Pair I", "", "£275"], ["holding", "Holding", "", "£575"], ["ground", "Ground", "10 x 9.5 x 8 cm", "£575"]],
   "lucia-ocejo": [["round-bud-vase", "Round Bud Vase", "18cm(w) x 20cm(h) x 7cm(w)", "£220"], ["tea-bowl", "Tea Bowl", "8cm(w) x 9cm(h)", "£50"], ["mug", "Mug", "9cm(w) x 8.5cm(h)", "£40"], ["jug", "Jug", "17cm(w) x 26cm(h)", "£160"], ["tiled-screen", "Tiled Screen", "156cm(w) x 130cm(h)", null]],
-  "eleanor-herbosch": [["unearthing-series-1", "Unearthing Series #1", "70cm(w) x 120cm(h)", "£7,200"], ["unearthing-series-2", "Unearthing Series #2", "160cm(w) x 80cm(h)", "£10,500"], ["unearthing-series-3", "Unearthing Series #3", "160cm(w) x 80cm(h)", "£10,500"]],
+  "eleanor-herbosch": [["unearthing-series-1", "Unearthing Series #1", "70cm(w) x 120cm(h)", "£7,200"], ["unearthing-series-2", "Unearthing Series #2", "160cm(w) x 80cm(h)", "£10,500"], ["unearthing-series-3", "Unearthing Series #3", "160cm(w) x 80cm(h)", "£10,500"], ["unearthing-series-4", "Unearthing Series #4", "160cm(w) x 90cm(h)", null], ["unearthing-series-5", "Unearthing Series #5", "90cm(w) x 120cm(h)", null]],
 };
-const expectedMaterials = { "tiled-screen": "Ceramic & Wood", "unearthing-series-1": "London Clay on Canvas", "unearthing-series-2": "London Clay on Canvas", "unearthing-series-3": "London Clay on Canvas" };
+const expectedMaterials = { "tiled-screen": "Ceramic & Wood", "unearthing-series-1": "London Clay on Canvas", "unearthing-series-2": "London Clay on Canvas", "unearthing-series-3": "London Clay on Canvas", "unearthing-series-4": "London construction clay", "unearthing-series-5": "London construction clay" };
 const interior = json("src/data/interior.generated.json");
 const order = json("src/data/gallery.generated.json");
 const ledger = json("src/data/route-ledger.json");
@@ -31,13 +31,13 @@ const gallery = html("/gallery/");
 assert.deepEqual(order.artistOrder, expectedArtists);
 assert.deepEqual(interior.gallery.artists.map(card => card.href.split("/")[2]), expectedArtists);
 // The 21 original works follow 50 works added in 2026; cards are shuffled in the browser.
-assert.equal(interior.gallery.artworks.length, 83);
+assert.equal(interior.gallery.artworks.length, 87);
 for (const card of interior.gallery.artworks) assert.ok(fs.existsSync(`dist${card.href}index.html`), `Broken Artworks tab link ${card.href}`);
-assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 98);
+assert.equal([...gallery.matchAll(/<article class="reference-catalogue-card"/g)].length, 102);
 assert.ok(gallery.indexOf('id="artwork-tab"') < gallery.indexOf('id="artists-tab"'));
-assert.equal(ledger.generated.length, 126);
-assert.equal(Object.keys(catalogue).length, 84);
-assert.equal(Object.keys(mediaSlots).length, 177);
+assert.equal(ledger.generated.length, 130);
+assert.equal(Object.keys(catalogue).length, 88);
+assert.equal(Object.keys(mediaSlots).length, 198);
 const retiredId = "james-galbraith-kirkpatrick/cup-ii";
 const retiredRoute = `/gallery/${retiredId}/`;
 assert.ok(!Object.hasOwn(catalogue, retiredId), "Retired Cup II remains available for enquiries");
@@ -112,6 +112,9 @@ for (const slug of Object.keys(expectedWorks)) {
     const links = [...related.matchAll(/href="([^"]+)"/g)].map(item => item[1]);
     const tab = new Set(interior.gallery.artworks.map(card => card.href));
     assert.ok(links.length >= 4 && links.every(link => tab.has(link) && link !== route), `${id}: related pool must hold four or more other Artworks-tab works`);
+    // The artist's own other works lead the pool, ahead of every other artist.
+    const own = links.map(link => link.startsWith(`/gallery/${slug}/`));
+    assert.ok(own.every((mine, index) => !mine || own.slice(0, index).every(Boolean)), `${id}: the artist's own works must come first in related artworks`);
     checkPage(detail, id);
     allUpdatedHtml += detail;
   }
@@ -162,7 +165,7 @@ for (const [work, title] of jacobWorks) {
 // Alexandra Yan Wong's GES series runs in number order after the renamed GES#1.
 const alexWorks = [["ges-2", "Untitled (GES#2)", "100 x 75 cm", "£5,500"], ["ges-3", "Untitled (GES#3)", "30.5 x 30.5 cm", "£850"], ["ges-4", "Untitled (GES#4)", "30.5 x 30.5 cm", "£850"], ["ges-5", "Untitled (GES#5)", "21 x 30 cm", "£550"], ["ges-6", "Untitled (GES#6)", "21 x 30 cm", "£550"], ["ges-7", "Untitled (GES#7)", "21 x 30 cm", "£550"]];
 const alex = record("src/content/artists/alexandra-yan-wong.md").data;
-assert.deepEqual(alex.artworkIds, ["alexandra-yan-wong/untitled-2025", ...alexWorks.map(([work]) => `alexandra-yan-wong/${work}`), "alexandra-yan-wong/ges-8"]);
+assert.deepEqual(alex.artworkIds, ["alexandra-yan-wong/untitled-2025", ...alexWorks.map(([work]) => `alexandra-yan-wong/${work}`), "alexandra-yan-wong/ges-8", "alexandra-yan-wong/untitled-series"]);
 // Her large GES#8 is sold, so it shows "Sold" and no price.
 const alexGes8 = record("src/content/artworks/alexandra-yan-wong/ges-8.md").data;
 assert.deepEqual([alexGes8.title, alexGes8.dimensions, alexGes8.price, alexGes8.sold, alexGes8.year], ["Untitled (GES#8)", "140 x 140 cm", null, true, 2026]);
@@ -171,12 +174,33 @@ const alexGes8Page = html("/gallery/alexandra-yan-wong/ges-8/");
 assert.ok(alexGes8Page.includes(">Sold</dd>") && !alexGes8Page.includes("£"), "alexandra-yan-wong/ges-8: should show Sold and no price");
 checkPage(alexGes8Page, "alexandra-yan-wong/ges-8");
 allUpdatedHtml += alexGes8Page;
+// Her Untitled Series is sold, so it shows "Sold" and no price.
+const alexSeries = record("src/content/artworks/alexandra-yan-wong/untitled-series.md").data;
+assert.deepEqual([alexSeries.title, alexSeries.price, alexSeries.sold, alexSeries.materials], ["Untitled Series", null, true, "London construction clay, paper and ink"]);
+const alexSeriesPage = html("/gallery/alexandra-yan-wong/untitled-series/");
+assert.ok(alexSeriesPage.includes(">Sold</dd>") && !alexSeriesPage.includes("£"), "alexandra-yan-wong/untitled-series: should show Sold and no price");
+checkPage(alexSeriesPage, "alexandra-yan-wong/untitled-series");
+allUpdatedHtml += alexSeriesPage;
 const alexPage = html("/gallery/alexandra-yan-wong/");
 allUpdatedHtml += alexPage;
 allUpdatedHtml += html("/gallery/alexandra-yan-wong/untitled-2025/");
 // Adam Weismann's Terre Verte leads his profile; materials and size are not yet supplied.
 const adam = record("src/content/artists/adam-weismann.md").data;
-assert.equal(adam.artworkIds[0], "adam-weismann/terre-verte");
+assert.deepEqual(adam.artworkIds.slice(0, 2), ["adam-weismann/red-earth", "adam-weismann/terre-verte"]);
+// Red Earth is sold, so it shows "Sold" and no price.
+const redEarth = record("src/content/artworks/adam-weismann/red-earth.md").data;
+assert.deepEqual([redEarth.title, redEarth.price, redEarth.sold, redEarth.year, redEarth.materials], ["Red Earth", null, true, 2026, "London construction clay"]);
+assert.deepEqual(catalogue["adam-weismann/red-earth"], { title: "Red Earth", artist: "Adam Weismann", path: "/gallery/adam-weismann/red-earth/" });
+const redEarthPage = html("/gallery/adam-weismann/red-earth/");
+assert.ok(redEarthPage.includes(">Sold</dd>") && !redEarthPage.includes("£"), "adam-weismann/red-earth: should show Sold and no price");
+checkPage(redEarthPage, "adam-weismann/red-earth");
+assert.ok(redEarthPage.includes("figma-product--wide"), "adam-weismann/red-earth: photos should take half the page");
+allUpdatedHtml += redEarthPage;
+// Eleanor Herbosch's Unearthing Series #4 and #5 are sold, so they show "Sold" and no price.
+for (const work of ["unearthing-series-4", "unearthing-series-5"]) {
+  assert.equal(record(`src/content/artworks/eleanor-herbosch/${work}.md`).data.sold, true, `${work}: should be sold`);
+  assert.ok(html(`/gallery/eleanor-herbosch/${work}/`).includes(">Sold</dd>"), `${work}: Sold not shown`);
+}
 assert.deepEqual(catalogue["adam-weismann/terre-verte"], { title: "Terre Verte", artist: "Adam Weismann", path: "/gallery/adam-weismann/terre-verte/" });
 const terreVerte = html("/gallery/adam-weismann/terre-verte/");
 assert.ok(terreVerte.includes("£16,000 for the diptych (two panels)") && !terreVerte.includes(">Materials</dt>"));
@@ -227,7 +251,7 @@ for (const route of ledger.generated.filter(route => route.includes("james-galbr
 const files = fs.readdirSync("src/content/artists").filter(file => file.endsWith(".md"));
 assert.equal(files.length, 16);
 const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true }).filter(file => path.extname(file) === ".md").length;
-assert.equal(artworkCount, 84);
+assert.equal(artworkCount, 88);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
 assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");

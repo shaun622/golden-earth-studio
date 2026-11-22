@@ -9,7 +9,7 @@ materials: "London Clay on Canvas"
 price: "£10,500"
 mainImage: {"slot":"eleanor-herbosch-unearthing-series-2"}
 cardImage: {"slot":"eleanor-herbosch-unearthing-series-2-card"}
-gallery: [{"src":{"slot":"eleanor-herbosch-unearthing-series-2-corner"},"alt":"Lower right corner of Unearthing Series #2 by Eleanor Herbosch showing raised clay ridges, grey splashes and the canvas edge against a plaster wall"},{"src":{"slot":"eleanor-herbosch-unearthing-series-2-detail"},"alt":"Close-up of Unearthing Series #2 by Eleanor Herbosch showing two ridges of raised London Clay converging across the canvas"}]
+gallery: [{"src":{"slot":"eleanor-herbosch-unearthing-series-2-spa"},"alt":"Unearthing Series #2 by Eleanor Herbosch on a plaster wall above rattan armchairs and a cream sofa"},{"src":{"slot":"eleanor-herbosch-unearthing-series-2-corner"},"alt":"Lower right corner of Unearthing Series #2 by Eleanor Herbosch showing raised clay ridges, grey splashes and the canvas edge against a plaster wall"},{"src":{"slot":"eleanor-herbosch-unearthing-series-2-detail"},"alt":"Close-up of Unearthing Series #2 by Eleanor Herbosch showing two ridges of raised London Clay converging across the canvas"}]
 detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Painting"

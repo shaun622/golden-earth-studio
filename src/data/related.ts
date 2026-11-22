@@ -43,13 +43,19 @@ const nearby: Record<Kind, Kind[]> = {
 
 const onArtworksTab = new Set(interior.gallery.artworks.map((card) => card.href));
 
-/** Similar works from the Artworks tab, other artists first; the page shows a random four from different artists. */
+/**
+ * The artist's own other works first, then similar works by other artists from the Artworks tab.
+ * The page shows four: as many of the artist's own works as it has, then other artists, one each.
+ */
 export function relatedPool(work: Artwork, all: Artwork[]): Artwork[] {
   const candidates = all.filter((other) => other.id !== work.id && onArtworksTab.has(`/gallery/${other.id}/`));
+  const sameArtist = candidates.filter((other) => other.artistSlug === work.artistSlug).sort((a, b) => a.id.localeCompare(b.id));
+  const others = candidates.filter((other) => other.artistSlug !== work.artistSlug);
   const kind = kindOf(work);
-  const rank = (other: Artwork) => (kindOf(other) === kind ? 0 : nearby[kind].includes(kindOf(other)) ? 2 : 4) + (other.artistSlug === work.artistSlug ? 1 : 0);
+  const rank = (other: Artwork) => (kindOf(other) === kind ? 0 : nearby[kind].includes(kindOf(other)) ? 1 : 2);
   // Neighbouring families only join when the work's own family has fewer than four other pieces.
-  const sameKind = candidates.filter((other) => rank(other) < 2);
-  return (sameKind.length >= 4 ? sameKind : candidates.filter((other) => rank(other) < 4))
+  const sameKind = others.filter((other) => rank(other) === 0);
+  const similar = (sameKind.length >= 4 ? sameKind : others.filter((other) => rank(other) < 2))
     .sort((a, b) => rank(a) - rank(b) || a.id.localeCompare(b.id));
+  return [...sameArtist, ...similar];
 }

@@ -1,6 +1,26 @@
 // Curated catalogue: WordPress migration plus the 2026 Figma additions.
 // Keep IDs and paths aligned with src/content/artworks; do not rerun the historical importer.
 export default {
+  "alexandra-yan-wong/untitled-series": {
+    "title": "Untitled Series",
+    "artist": "Alexandra Yan Wong",
+    "path": "/gallery/alexandra-yan-wong/untitled-series/"
+  },
+  "eleanor-herbosch/unearthing-series-5": {
+    "title": "Unearthing Series #5",
+    "artist": "Eleanor Herbosch",
+    "path": "/gallery/eleanor-herbosch/unearthing-series-5/"
+  },
+  "eleanor-herbosch/unearthing-series-4": {
+    "title": "Unearthing Series #4",
+    "artist": "Eleanor Herbosch",
+    "path": "/gallery/eleanor-herbosch/unearthing-series-4/"
+  },
+  "adam-weismann/red-earth": {
+    "title": "Red Earth",
+    "artist": "Adam Weismann",
+    "path": "/gallery/adam-weismann/red-earth/"
+  },
   "alexandra-yan-wong/ges-8": {
     "title": "Untitled (GES#8)",
     "artist": "Alexandra Yan Wong",

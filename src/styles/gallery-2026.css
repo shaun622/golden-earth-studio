@@ -61,6 +61,9 @@
 .figma-product-media { width: min(610px, calc((100svh - 120px) * var(--stack-aspect, .583))); max-width: 100%; justify-self: end; }
 .figma-product-media > .media-slot { aspect-ratio: 350 / 600; }
 .figma-product--landscape .figma-product-media > .media-slot { aspect-ratio: 550 / 370; }
+/* Wide works give the photos half the page, at full column width. */
+.figma-product--wide .figma-product-columns { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.figma-product--wide .figma-product-media { width: 100%; }
 .figma-product-photos { display: grid; gap: 36px; }
 .figma-product-photos img { display: block; width: 100%; aspect-ratio: var(--image-ratio, auto); height: auto; }
 .figma-related { margin-top: 115px; }
@@ -136,7 +139,7 @@
   .figma-product-heading { display: block; font-size: 30px; line-height: 1.35; margin-bottom: 32px; white-space: normal; overflow-wrap: anywhere; }
   .figma-product-heading-separator { display: none; }
   .figma-product-heading a { display: block; margin-top: 10px; font-size: 25px; line-height: 1.35; }
-  .figma-product-columns { grid-template-columns: 1fr; gap: 40px; }
+  .figma-product-columns, .figma-product--wide .figma-product-columns { grid-template-columns: 1fr; gap: 40px; }
   .figma-product-facts { margin-bottom: 35px; }
   .figma-enquiry h2 { padding-bottom: 14px; margin-top: 0; margin-bottom: 20px; }
   .figma-product-media { width: 100%; justify-self: start; margin-top: 0; }
