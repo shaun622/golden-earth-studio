@@ -166,19 +166,34 @@ for (const [work, title] of jacobWorks) {
 const alexWorks = [["ges-2", "Untitled (GES#2)", "100 x 75 cm", "£5,500"], ["ges-3", "Untitled (GES#3)", "30.5 x 30.5 cm", "£850"], ["ges-4", "Untitled (GES#4)", "30.5 x 30.5 cm", "£850"], ["ges-5", "Untitled (GES#5)", "21 x 30 cm", "£550"], ["ges-6", "Untitled (GES#6)", "21 x 30 cm", "£550"], ["ges-7", "Untitled (GES#7)", "21 x 30 cm", "£550"]];
 const alex = record("src/content/artists/alexandra-yan-wong.md").data;
 assert.deepEqual(alex.artworkIds, ["alexandra-yan-wong/untitled-2025", ...alexWorks.map(([work]) => `alexandra-yan-wong/${work}`), "alexandra-yan-wong/ges-8", "alexandra-yan-wong/untitled-series"]);
-// Her large GES#8 is sold, so it shows "Sold" and no price.
+// Sold pieces come first in every artist's list of artworks.
+for (const artistFile of fs.readdirSync("src/content/artists")) {
+  const artistData = record(`src/content/artists/${artistFile}`).data;
+  if (!artistData.listedInGallery || artistData.profileVariant !== "figma-2026") continue;
+  const cards = [...html(`/gallery/${artistData.slug}/`).matchAll(/<article class="figma-work-card[^"]*">\s*<a href="\/gallery\/([^"]+)\/"/g)].map((match) => match[1]);
+  const soldFlags = cards.map((id) => record(`src/content/artworks/${id}.md`).data.sold === true);
+  assert.ok(soldFlags.every((sold, index) => !sold || soldFlags.slice(0, index).every(Boolean)), `${artistData.slug}: sold works must come first`);
+}
+// Sold works say SOLD, in capitals, as the first line of the details and of the profile card caption.
+{
+  const page = html("/gallery/adam-weismann/red-earth/"), facts = page.match(/<dl class="figma-product-facts">([\s\S]*?)<\/dl>/)[1];
+  assert.ok(/^\s*<div><dt[^>]*>Availability<\/dt><dd>SOLD<\/dd>/.test(facts), "red-earth: SOLD should be the first detail");
+  const profile = html("/gallery/adam-weismann/"), caption = profile.match(/href="\/gallery\/adam-weismann\/red-earth\/"[\s\S]*?<span class="figma-work-caption">([\s\S]*?)<\/span>\s*<\/a>/)[1];
+  assert.ok(caption.trim().startsWith('<span class="figma-work-sold">SOLD</span>'), "red-earth: SOLD should lead the profile card caption");
+}
+// Her large GES#8 is sold, so it shows "SOLD" and no price.
 const alexGes8 = record("src/content/artworks/alexandra-yan-wong/ges-8.md").data;
 assert.deepEqual([alexGes8.title, alexGes8.dimensions, alexGes8.price, alexGes8.sold, alexGes8.year], ["Untitled (GES#8)", "140 x 140 cm", null, true, 2026]);
 assert.deepEqual(catalogue["alexandra-yan-wong/ges-8"], { title: "Untitled (GES#8)", artist: "Alexandra Yan Wong", path: "/gallery/alexandra-yan-wong/ges-8/" });
 const alexGes8Page = html("/gallery/alexandra-yan-wong/ges-8/");
-assert.ok(alexGes8Page.includes(">Sold</dd>") && !alexGes8Page.includes("£"), "alexandra-yan-wong/ges-8: should show Sold and no price");
+assert.ok(alexGes8Page.includes(">SOLD</dd>") && !alexGes8Page.includes("£"), "alexandra-yan-wong/ges-8: should show Sold and no price");
 checkPage(alexGes8Page, "alexandra-yan-wong/ges-8");
 allUpdatedHtml += alexGes8Page;
-// Her Untitled Series is sold, so it shows "Sold" and no price.
+// Her Untitled Series is sold, so it shows "SOLD" and no price.
 const alexSeries = record("src/content/artworks/alexandra-yan-wong/untitled-series.md").data;
 assert.deepEqual([alexSeries.title, alexSeries.price, alexSeries.sold, alexSeries.materials], ["Untitled Series", null, true, "London construction clay, paper and ink"]);
 const alexSeriesPage = html("/gallery/alexandra-yan-wong/untitled-series/");
-assert.ok(alexSeriesPage.includes(">Sold</dd>") && !alexSeriesPage.includes("£"), "alexandra-yan-wong/untitled-series: should show Sold and no price");
+assert.ok(alexSeriesPage.includes(">SOLD</dd>") && !alexSeriesPage.includes("£"), "alexandra-yan-wong/untitled-series: should show Sold and no price");
 checkPage(alexSeriesPage, "alexandra-yan-wong/untitled-series");
 allUpdatedHtml += alexSeriesPage;
 const alexPage = html("/gallery/alexandra-yan-wong/");
@@ -187,19 +202,19 @@ allUpdatedHtml += html("/gallery/alexandra-yan-wong/untitled-2025/");
 // Adam Weismann's Terre Verte leads his profile; materials and size are not yet supplied.
 const adam = record("src/content/artists/adam-weismann.md").data;
 assert.deepEqual(adam.artworkIds.slice(0, 2), ["adam-weismann/red-earth", "adam-weismann/terre-verte"]);
-// Red Earth is sold, so it shows "Sold" and no price.
+// Red Earth is sold, so it shows "SOLD" and no price.
 const redEarth = record("src/content/artworks/adam-weismann/red-earth.md").data;
 assert.deepEqual([redEarth.title, redEarth.price, redEarth.sold, redEarth.year, redEarth.materials], ["Red Earth", null, true, 2026, "London construction clay"]);
 assert.deepEqual(catalogue["adam-weismann/red-earth"], { title: "Red Earth", artist: "Adam Weismann", path: "/gallery/adam-weismann/red-earth/" });
 const redEarthPage = html("/gallery/adam-weismann/red-earth/");
-assert.ok(redEarthPage.includes(">Sold</dd>") && !redEarthPage.includes("£"), "adam-weismann/red-earth: should show Sold and no price");
+assert.ok(redEarthPage.includes(">SOLD</dd>") && !redEarthPage.includes("£"), "adam-weismann/red-earth: should show Sold and no price");
 checkPage(redEarthPage, "adam-weismann/red-earth");
 assert.ok(redEarthPage.includes("figma-product--wide"), "adam-weismann/red-earth: photos should take half the page");
 allUpdatedHtml += redEarthPage;
 // Eleanor Herbosch's Unearthing Series #4 and #5 are sold, so they show "Sold" and no price.
 for (const work of ["unearthing-series-4", "unearthing-series-5"]) {
   assert.equal(record(`src/content/artworks/eleanor-herbosch/${work}.md`).data.sold, true, `${work}: should be sold`);
-  assert.ok(html(`/gallery/eleanor-herbosch/${work}/`).includes(">Sold</dd>"), `${work}: Sold not shown`);
+  assert.ok(html(`/gallery/eleanor-herbosch/${work}/`).includes(">SOLD</dd>"), `${work}: Sold not shown`);
 }
 assert.deepEqual(catalogue["adam-weismann/terre-verte"], { title: "Terre Verte", artist: "Adam Weismann", path: "/gallery/adam-weismann/terre-verte/" });
 const terreVerte = html("/gallery/adam-weismann/terre-verte/");
