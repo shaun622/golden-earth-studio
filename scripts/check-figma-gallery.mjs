@@ -112,6 +112,9 @@ for (const slug of Object.keys(expectedWorks)) {
     const links = [...related.matchAll(/href="([^"]+)"/g)].map(item => item[1]);
     const tab = new Set(interior.gallery.artworks.map(card => card.href));
     assert.ok(links.length >= 4 && links.every(link => tab.has(link) && link !== route), `${id}: related pool must hold four or more other Artworks-tab works`);
+    // The artist's own other works lead the pool, ahead of every other artist.
+    const own = links.map(link => link.startsWith(`/gallery/${slug}/`));
+    assert.ok(own.every((mine, index) => !mine || own.slice(0, index).every(Boolean)), `${id}: the artist's own works must come first in related artworks`);
     checkPage(detail, id);
     allUpdatedHtml += detail;
   }

@@ -16,6 +16,7 @@ const related = relatedPool(artwork, (await getCollection("artworks")).map((entr
   title: work.year ? `${work.title}, ${work.year}` : work.title,
   artist: work.artistName,
   artistSlug: work.artistSlug,
+  sameArtist: work.artistSlug === artwork.artistSlug,
   image: resolveMedia(work.cardImage || work.mainImage),
 }));
 const displayTitle = `${artwork.title}${artwork.year ? `, ${artwork.year}` : ""}`;
@@ -68,24 +69,30 @@ const landscape = artwork.artistSlug === "edie-evans";
     <section class="figma-related" aria-labelledby="related-heading">
       <h2 id="related-heading">Related Artworks</h2>
       <div class="figma-related-grid" data-related-pool>
-        {related.map((item, index) => <article class="figma-related-card" hidden={index >= 4} data-artist={item.artistSlug}><a href={item.href}><img src={item.image.src!} alt={item.image.alt || `${item.title} by ${item.artist}`} width={item.image.width} height={item.image.height} loading="lazy" /><h3>{item.title} <span>by {item.artist}</span></h3></a></article>)}
+        {related.map((item, index) => <article class="figma-related-card" hidden={index >= 4} data-artist={item.artistSlug} data-same-artist={item.sameArtist ? "" : undefined}><a href={item.href}><img src={item.image.src!} alt={item.image.alt || `${item.title} by ${item.artist}`} width={item.image.width} height={item.image.height} loading="lazy" /><h3>{item.title} <span>by {item.artist}</span></h3></a></article>)}
       </div>
     </section>
     <FigmaCommission />
   </main>
 </InteriorLayout>
 <script>
-  // Show a fresh random four of the similar works on every visit, one per artist where possible;
-  // without JavaScript the first four remain.
+  // The artist's own other works come first, in a random order; similar works by other artists,
+  // one per artist where possible, fill the rest of the four. Without JavaScript the first four remain.
+  const shuffle = <T,>(items: T[]) => {
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+    return items;
+  };
   document.querySelectorAll<HTMLElement>("[data-related-pool]").forEach((grid) => {
     const cards = [...grid.querySelectorAll<HTMLElement>(".figma-related-card")];
-    for (let i = cards.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [cards[i], cards[j]] = [cards[j], cards[i]];
-    }
+    const own = shuffle(cards.filter((card) => card.hasAttribute("data-same-artist")));
+    const others = shuffle(cards.filter((card) => !card.hasAttribute("data-same-artist")));
+    const picked = own.slice(0, 4);
     const artists = new Set<string>();
-    const picked = cards.filter((card) => !artists.has(card.dataset.artist!) && artists.add(card.dataset.artist!)).slice(0, 4);
-    for (const card of cards) if (picked.length < 4 && !picked.includes(card)) picked.push(card);
+    for (const card of others) if (picked.length < 4 && !artists.has(card.dataset.artist!)) { artists.add(card.dataset.artist!); picked.push(card); }
+    for (const card of others) if (picked.length < 4 && !picked.includes(card)) picked.push(card);
     cards.forEach((card) => { card.hidden = !picked.includes(card); });
     picked.forEach((card) => grid.appendChild(card));
   });
