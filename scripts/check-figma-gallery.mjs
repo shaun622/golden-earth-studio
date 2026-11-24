@@ -92,7 +92,9 @@ for (const slug of Object.keys(expectedWorks)) {
     const detail = html(route);
     assert.ok(plain(detail).includes(`${title}, 2026`));
     assert.ok(plain(detail).includes(plain(dimensions)));
-    if (price) assert.ok(detail.includes(price));
+    // A sold work shows SOLD in place of its price.
+    if (data.sold) assert.ok(detail.includes("<dd>SOLD</dd>") && !detail.includes(price || "£"), `${id}: sold work should show SOLD, not a price`);
+    else if (price) assert.ok(detail.includes(price));
     else assert.ok(!detail.includes('>Price</dt>'), `${id}: invented price`);
     assert.ok(detail.includes(`name="artworkId" value="${id}"`));
     assert.equal([...detail.matchAll(new RegExp(`data-media-slot="${slug}-${work}"`, "g"))].length, 1);
