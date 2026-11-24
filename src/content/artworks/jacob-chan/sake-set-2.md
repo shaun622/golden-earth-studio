@@ -7,6 +7,7 @@ artistName: "Jacob Chan"
 dimensions: ""
 materials: "Soda Fired London Clay and Stoneware"
 price: "£130"
+sold: true
 mainImage: {"slot":"jacob-chan-sake-set-2"}
 cardImage: {"slot":"jacob-chan-sake-set-2-card"}
 gallery: []

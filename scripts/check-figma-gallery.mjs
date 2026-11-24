@@ -17,7 +17,7 @@ function record(file) {
 }
 const expectedArtists = ["louis-vincent", "jihyun-kim", "jacob-chan", "alexandra-yan-wong", "adam-weismann", "arran-gregory", "zahed-tajeddin", "rickie-cheuk", "lucia-ocejo", "james-galbraith-kirkpatrick", "edie-evans", "eleanor-herbosch", "jo-pearl", "grace-rose-watts", "shiro-shimizu"];
 const expectedWorks = {
-  "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Cup I", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"], ["large-bowl", "Large Bowl", "", "£80"]],
+  "james-galbraith-kirkpatrick": [["square-plate", "Square Plate", "15cm(w) x 4cm(h)", "£80"], ["cup-i", "Faceted Cup", "7cm(w) x 7.5cm(h)", "£70"], ["bowl", "Bowl", "17cm(w) x 7cm(h)", "£80"], ["large-bowl", "Large Bowl", "", "£80"]],
   "edie-evans": [["earth-memory", "Earth Memory", "Ball 7cm(l) x 7cm(w) x 7cm(h)\nRock 7cm(l) x 9cm(w) x 6cm(h)", "£275"], ["bedrock", "Bedrock", "16.5cm(l) x 12cm(w) x 8cm(h)", "£375"], ["fragmentation-1", "Fragmentation 1", "10cm(l) x 9.5cm(w) x 8cm(h)", "£175"], ["dorodango-pair-ii", "Dorodango Pair II", "", "£275"], ["dorodango-pair-i", "Dorodango Pair I", "", "£275"], ["holding", "Holding", "", "£575"], ["ground", "Ground", "10 x 9.5 x 8 cm", "£575"]],
   "lucia-ocejo": [["round-bud-vase", "Round Bud Vase", "18cm(w) x 20cm(h) x 7cm(w)", "£220"], ["tea-bowl", "Tea Bowl", "8cm(w) x 9cm(h)", "£50"], ["mug", "Mug", "9cm(w) x 8.5cm(h)", "£40"], ["jug", "Jug", "17cm(w) x 26cm(h)", "£160"], ["tiled-screen", "Tiled Screen", "156cm(w) x 130cm(h)", null]],
   "eleanor-herbosch": [["unearthing-series-1", "Unearthing Series #1", "70cm(w) x 120cm(h)", "£7,200"], ["unearthing-series-2", "Unearthing Series #2", "160cm(w) x 80cm(h)", "£10,500"], ["unearthing-series-3", "Unearthing Series #3", "160cm(w) x 80cm(h)", "£10,500"], ["unearthing-series-4", "Unearthing Series #4", "160cm(w) x 90cm(h)", null], ["unearthing-series-5", "Unearthing Series #5", "90cm(w) x 120cm(h)", null]],
@@ -269,6 +269,6 @@ const artworkCount = fs.readdirSync("src/content/artworks", { recursive: true })
 assert.equal(artworkCount, 88);
 assert.ok(!allUpdatedHtml.includes("Cup II, 2026") && !allUpdatedHtml.includes("/cup-ii/"), "Retired cup remains in rendered content");
 assert.ok(!sitemap.includes(retiredRoute), "Retired cup remains in sitemap");
-assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Cup I");
+assert.ok(gallery.includes('src="/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp"'), "James Gallery hover must use retained patterned Faceted Cup");
 const pendingPhotos = Object.values(mediaSlots).filter(asset => asset.src === null).length;
 console.log(`Figma content audit passed: 12 artists, 21 retained and 50 added Gallery works, 50 new products, retired Cup II absent, exact biographies/facts, ${Object.keys(mediaSlots).length - pendingPhotos} supplied photos, ${pendingPhotos} actual blanks, forms, related links and sitemap.`);
