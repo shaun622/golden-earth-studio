@@ -202,7 +202,7 @@ export default {
     "path": "/gallery/james-galbraith-kirkpatrick/bowl/"
   },
   "james-galbraith-kirkpatrick/cup-i": {
-    "title": "Cup I",
+    "title": "Faceted Cup",
     "artist": "James Galbraith Kirkpatrick",
     "path": "/gallery/james-galbraith-kirkpatrick/cup-i/"
   },

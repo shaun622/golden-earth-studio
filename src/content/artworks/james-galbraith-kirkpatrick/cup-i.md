@@ -2,7 +2,7 @@
 id: "james-galbraith-kirkpatrick/cup-i"
 artistSlug: "james-galbraith-kirkpatrick"
 slug: "cup-i"
-title: "Cup I"
+title: "Faceted Cup"
 artistName: "James Galbraith Kirkpatrick"
 dimensions: "7cm(w) x 7.5cm(h)"
 materials: "London Clay"
@@ -13,6 +13,6 @@ detailVariant: "figma-2026"
 year: 2026
 tileMedium: "Ceramic"
 relatedIds: ["jihyun-kim/teoju","zahed-tajeddin/bulls-matter","louis-vincent/bowl","rickie-cheuk/chopsticks"]
-seoDescription: "Cup I, 2026 by James Galbraith Kirkpatrick. London Clay. Enquire with Golden Earth Studio about pricing and availability."
+seoDescription: "Faceted Cup, 2026 by James Galbraith Kirkpatrick. London Clay. Enquire with Golden Earth Studio about pricing and availability."
 sourceWpId: null
 ---

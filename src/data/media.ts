@@ -20,7 +20,7 @@ export const mediaSlots: Record<string, MediaAsset> = {
   "eleanor-herbosch-portrait": { src: "/assets/artists/eleanor-herbosch-portrait.webp", alt: "Portrait of Eleanor Herbosch in a light shirt", width: 860, height: 1032 },
   "james-galbraith-kirkpatrick-square-plate": { src: "/assets/artworks/james-galbraith-kirkpatrick/square-plate.webp", alt: "Stack of Square Plates by James Galbraith Kirkpatrick", width: 682, height: 1180 },
   "james-galbraith-kirkpatrick-bowl": { src: "/assets/artworks/james-galbraith-kirkpatrick/bowl.webp", alt: "Stack of Bowls by James Galbraith Kirkpatrick", width: 682, height: 1178 },
-  "james-galbraith-kirkpatrick-cup-i": { src: "/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp", alt: "Cup I by James Galbraith Kirkpatrick, a short cup with a dark rim, patterned glaze and small foot", width: 684, height: 1178 },
+  "james-galbraith-kirkpatrick-cup-i": { src: "/assets/artworks/james-galbraith-kirkpatrick/cup-i.webp", alt: "Faceted Cup by James Galbraith Kirkpatrick, a short cup with a dark rim, patterned glaze and small foot", width: 684, height: 1178 },
   // Full product photos and the original portrait card crops have separate slots.
   "edie-evans-earth-memory": { src: "/assets/artworks/edie-evans/earth-memory.webp", alt: "Earth Memory by Edie Evans, a rough rock of excavated earth beside a polished clay sphere", width: 1600, height: 1064 },
   "edie-evans-bedrock": { src: "/assets/artworks/edie-evans/bedrock.webp", alt: "Bedrock by Edie Evans, a polished clay vessel with a deep hollow, seen from the side", width: 1600, height: 1064 },
